@@ -1,577 +1,592 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.1.0",
+  "kitVersion": "0.2.0",
   "chapterId": "steward",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "c7dc6552d0dcd164f1ec8c777d3b4f264149d6caae44d7ecb1d5454f9a040ca8",
+      "sha256": "874eb43e3083adcb8f6149037bfc01e25f5ccef01b96eb8b8f6cdb0c7376d112",
       "bytes": 4100
     },
     {
       "path": "expressions/steward-curious.png",
-      "sha256": "78db1040987cc613105ce084598e3808ab17991feb6dc7665b6dfc2ec984f293",
-      "bytes": 56149
+      "sha256": "be4489028987428e8d7ffe7ad22ad875c4d2c65bc244b2205b2a1686c15e22f6",
+      "bytes": 54017
     },
     {
       "path": "expressions/steward-curious.svg",
-      "sha256": "ba0bb42590a1854929d70c1f06d2924a7388849c607d5f850ce78f05954e55fc",
-      "bytes": 4282
+      "sha256": "e814d27bac27040c715232863dc465adb38302680b477ac7d48c679cc7bc597a",
+      "bytes": 4260
     },
     {
       "path": "expressions/steward-delighted.png",
-      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
-      "bytes": 56270
+      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
+      "bytes": 54127
     },
     {
       "path": "expressions/steward-delighted.svg",
-      "sha256": "0c9aebf49a22345e62b8077ee079525e0c97a71b505d65a9bc4bcdb02652cded",
-      "bytes": 4282
+      "sha256": "8d798645c2b85d19576d6cf96954cc91441d5163ca18a9d6b2091adea72b711b",
+      "bytes": 4260
     },
     {
       "path": "expressions/steward-gentle.png",
-      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
-      "bytes": 56223
+      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
+      "bytes": 54092
     },
     {
       "path": "expressions/steward-gentle.svg",
-      "sha256": "53378c554a80dd92e0e9f13c88f2b9381d33d66b01a13e8316690e947932c0c4",
-      "bytes": 4282
+      "sha256": "8030c1738c348360a6dff953fece0893dbd57ea5e64d468c91af659baea7a7bf",
+      "bytes": 4260
     },
     {
       "path": "expressions/steward-listening.png",
-      "sha256": "e407e99559214145991ad623c442dba543c728edf41d3cb2a91a5193aaa4acc2",
-      "bytes": 55397
+      "sha256": "5281e47f38a6d4f69eb915e7a5b13249052adac5810aeae26083c990dcf91913",
+      "bytes": 53262
     },
     {
       "path": "expressions/steward-listening.svg",
-      "sha256": "c2c2372222c1c6d3e80b1e2a5e5afbaae9ed0f06471d68a4d806c56885f33161",
-      "bytes": 4200
+      "sha256": "2b0cc4e20e213d70c6d9619cf56ce7c3864f852bc261dcc14f884485b9aec8c4",
+      "bytes": 4178
     },
     {
       "path": "expressions/steward-smile.png",
-      "sha256": "8c6d8ccdecbd2c9bdb39eff4d258c61ef09dbe29ea8caf9782c9512460624623",
-      "bytes": 55838
+      "sha256": "d66c429ba0a04ecd1d4987ca398d776c4955917f11bf7d9b4077c125fb9b0943",
+      "bytes": 53692
     },
     {
       "path": "expressions/steward-smile.svg",
-      "sha256": "119344497bafc940dcb7e53de2f584c5e94f554629433a92c337770b54f51453",
-      "bytes": 4181
+      "sha256": "eb6120dc149d4ee5bc0d7d8acc1044552073facf4b97171a3bdb541889f2deef",
+      "bytes": 4159
     },
     {
       "path": "expressions/steward-thoughtful.png",
-      "sha256": "28ff927b8d8635795474fccd7db704b560a41cf6f9e3cb5452a0407beffc6ce5",
-      "bytes": 55404
+      "sha256": "0ef2252529836b3da735ae99fa2da0ab6565be851bb1bd5df64898a64f7eff3d",
+      "bytes": 53318
     },
     {
       "path": "expressions/steward-thoughtful.svg",
-      "sha256": "25d7296d205d1030ba035f86dcb2942ebaa94cb0f6051ca8f3de0cc2f4c957a5",
-      "bytes": 4200
+      "sha256": "c5d73c89423886131fdaecb237e197388b270b7c9d121ce0e605075b0073afd5",
+      "bytes": 4178
     },
     {
       "path": "motion/steward-cool-gardening.svg",
-      "sha256": "ffeee0dd6b207d32450e08dcae889f47fadfdfedee7544df1d349bcde38311df",
-      "bytes": 17926
+      "sha256": "7f9382646ec9d56a42547284d9f1b317c485943252a4f45cd674d33ebc141a84",
+      "bytes": 17904
     },
     {
       "path": "motion/steward-cool-gardening.webp",
-      "sha256": "b05fd18501ca0b39c85e46280997155326af8f53e11d24d3f36813b4f6b576c7",
-      "bytes": 573974
+      "sha256": "71e098151b5b03344addff7a9d9a8b86ab740990cf5493e30dc6348fce50b7e0",
+      "bytes": 569454
     },
     {
       "path": "motion/steward-cool-pointing.svg",
-      "sha256": "d37555002e1fdbf0795061e208b1cb64ffc269094a0c1649e756d574fa291c6d",
-      "bytes": 16572
+      "sha256": "30dc5e45ae00bd97d14e60d46c1109649e13401183c5ece0c4e25072c06e2576",
+      "bytes": 16550
     },
     {
       "path": "motion/steward-cool-pointing.webp",
-      "sha256": "4547740598e4a541ec40e8500cb18bed0c627d3c91d0bef4c640d3fd2ced48f6",
-      "bytes": 493056
+      "sha256": "640e7882098d49c93f954dbd6c0d75aaf40ad86578a0201edb1df52c6bc6694f",
+      "bytes": 489878
     },
     {
       "path": "motion/steward-cool-resting.svg",
-      "sha256": "8f4d9bbedbd219fc15f9328007b1725f424200c34aaaa3af64961edd96ee3335",
-      "bytes": 15664
+      "sha256": "5f09c9180306d464df6b90fe513f1edc996af1dae6525238ebbc973eff5a9f88",
+      "bytes": 15642
     },
     {
       "path": "motion/steward-cool-resting.webp",
-      "sha256": "a1429daf3c86094da1c2756a731a18b57fd99bb0227ed14642266fefabdf72fc",
-      "bytes": 492466
+      "sha256": "e2acb81343d3da2a403a808dae4c4757c8308ed0682fa22f280d5668e8060fda",
+      "bytes": 489724
     },
     {
       "path": "motion/steward-cool-sitting.svg",
-      "sha256": "8db38469442a741ebf57e94fac49fc12ed4a7b6c7cde9eb7a8cae73176c9e740",
-      "bytes": 15935
+      "sha256": "fa63e793f43a81d3684f5883c5fabb69d4bfc82b01886d494f66dc820a6ed94f",
+      "bytes": 15913
     },
     {
       "path": "motion/steward-cool-sitting.webp",
-      "sha256": "38c9af68ee74f4cfd44faad24d2ca2b33f87c91b4f12d9ac84d08a3ccc427d3c",
-      "bytes": 442450
+      "sha256": "585bd121f5b15c446fbcf0bc61fb5a61944b683fdadabd336b1f50214a2d62f8",
+      "bytes": 438930
     },
     {
       "path": "motion/steward-cool-storytelling.svg",
-      "sha256": "0b19fb853ce4511c12fe2d1bfe64498f7f599b01a8f0d0f02c3f056d2fa4de49",
-      "bytes": 21645
+      "sha256": "b48e72b6a4ae0bb5b683f640cdbb70856b450c4b3e6958710f3f6da08daa7dac",
+      "bytes": 21623
     },
     {
       "path": "motion/steward-cool-storytelling.webp",
-      "sha256": "477374d6dbce7403cd8c841edf97cb2461b6f2bbf7f8398fcac9746bbf73d325",
-      "bytes": 705512
+      "sha256": "a2622e8723ae39a1b49fde260668cf1b3f0c7d2a3fb22ce28e6e489416a97b96",
+      "bytes": 700524
     },
     {
       "path": "motion/steward-cool-talking.svg",
-      "sha256": "ffa07f6ccd8a57d968b40f7dc845066e363445162f522dd2157b677e0324084d",
-      "bytes": 19979
+      "sha256": "756c7917740b1e628af59daa034ab90822a3ba53fac87122b05a4db73ed8d93c",
+      "bytes": 19957
     },
     {
       "path": "motion/steward-cool-talking.webp",
-      "sha256": "d540876c5c2d3752e7665d0ad087e45bdbadabe53329834262a52afaf56cb85d",
-      "bytes": 473666
+      "sha256": "b80a152a2851711d18c9d006d7cead59320a1b11c99bcdccb21c3240f492a106",
+      "bytes": 470308
     },
     {
       "path": "motion/steward-cool-walking.svg",
-      "sha256": "eb7ab5dc98bf64fe002457e6fdc2eebf9f88b7f273c0f71b958fa3e1e57149dd",
-      "bytes": 23358
+      "sha256": "ca3b250f3b83db9c26cf30c2cbf8c3102c532f63dded2af06fa5d011df302858",
+      "bytes": 23336
     },
     {
       "path": "motion/steward-cool-walking.webp",
-      "sha256": "dfd5d538880c4a2ea39f301e9d6838264b7400d9c7f1cb02ea816ec39fa22693",
-      "bytes": 431242
+      "sha256": "4cd9161fd116b8ec8c4bdae581c6f0091899b8096b4a5b77537baf2e87df6b59",
+      "bytes": 428442
     },
     {
       "path": "motion/steward-cool-waving.svg",
-      "sha256": "dc68524c840c05633f05b6e509b4037f5f4fbf7ef0a9a9ed130e574af475368c",
-      "bytes": 16647
+      "sha256": "b47ceda9b86116dbdcb01899d8e8e9a66a7d40219d8add584b222445de0b5c9d",
+      "bytes": 16625
     },
     {
       "path": "motion/steward-cool-waving.webp",
-      "sha256": "fba01bd3bdfdc22d4ed5726f7ca59d85421a561804d70da63cb01c73e19b8d46",
-      "bytes": 490250
+      "sha256": "fce8defb19d58e607f7ee2cf68700e333b966e4c6b5412f0a04d7d94bad50c4a",
+      "bytes": 486998
     },
     {
       "path": "motion/steward-monsoon-gardening.svg",
-      "sha256": "4e89ba089321dfee6aafe79e49607759132bbeb9266664c5794b360a78e3f8d3",
-      "bytes": 18221
+      "sha256": "e765a184c8d68566e9e90ede54abb3b6fcf6ea01e2415eb00858e411edee43d7",
+      "bytes": 18199
     },
     {
       "path": "motion/steward-monsoon-gardening.webp",
-      "sha256": "2620952190aa0a2763b03579bcbca68fdd12ff502f6c775c3c8fae74e9230b53",
-      "bytes": 557372
+      "sha256": "b6673dd02c8964542d5d2c91ed6a5891aabf5ffc8976edc7fdf3d4bb36ae17fb",
+      "bytes": 553010
     },
     {
       "path": "motion/steward-monsoon-pointing.svg",
-      "sha256": "0d9c1bbb25ca290c07375ca51438db9970160047c7acbedac48cf2bc96b416dd",
-      "bytes": 17391
+      "sha256": "d8dfc2f511fc7d91b996cfc96afd16f31e437cdbd17b2cd701895d1a60b63e07",
+      "bytes": 17369
     },
     {
       "path": "motion/steward-monsoon-pointing.webp",
-      "sha256": "e339e678c7990c5e1957204b6c7ed437099ee25e744e8687fe32424f0b87bfd5",
-      "bytes": 554126
+      "sha256": "07027442b1c09b8a4f6d919ec3038025ecee7249b6f4b108b2adfabbf2811cba",
+      "bytes": 550824
     },
     {
       "path": "motion/steward-monsoon-resting.svg",
-      "sha256": "26d4b457c18d8f5f23f52cefd88de3f0a2afd74fe1254e201db9c3ac17cc81c7",
-      "bytes": 16465
+      "sha256": "cf8393060699365184afe9f5a3e33fe45f24712e489dfbd2b63ad9d9d29b18d0",
+      "bytes": 16443
     },
     {
       "path": "motion/steward-monsoon-resting.webp",
-      "sha256": "f51342890317ccfe7dc60d278ac3021b6cd4c59b8596a5630007643c2f953323",
-      "bytes": 551558
+      "sha256": "762ed0bea8b7bee89bd5fd26a104ec35a2c7063ee97069ec71fc1bdc342e8501",
+      "bytes": 547812
     },
     {
       "path": "motion/steward-monsoon-sitting.svg",
-      "sha256": "87b50a3c4a79b371caad1c6409aada707ccd9b42c9a588e169285b0ffa041d51",
-      "bytes": 16212
+      "sha256": "292b4de3c403dc042dd2c8897eb746aafb7e996ffae2021b34ca5cd44c259026",
+      "bytes": 16190
     },
     {
       "path": "motion/steward-monsoon-sitting.webp",
-      "sha256": "7b2fb566d7922b937ffa0879410ceb273e6d6235357cd016668dc365f19fb6ce",
-      "bytes": 430630
+      "sha256": "5d99c970e3998b4e3b04786a11c02faf8a34e01fa9c0a2bfb1cee2a8812349ac",
+      "bytes": 427242
     },
     {
       "path": "motion/steward-monsoon-storytelling.svg",
-      "sha256": "43fa2af738c4332ebe55f26476ea91297c92817829478677eabda38a389d0d02",
-      "bytes": 22021
+      "sha256": "76f94b7051d7e22380da6fa9bf097dac06d9081d5f025efff27648586cc4a139",
+      "bytes": 21999
     },
     {
       "path": "motion/steward-monsoon-storytelling.webp",
-      "sha256": "65dc9b8b31ce6b05f65970a1cd1a77b37cec2b26ff4555165ec0fc8f48a2efba",
-      "bytes": 685924
+      "sha256": "2bf19257e64d7e0dabf4d3607e82a3d7760323c932ab19b343e115071249736b",
+      "bytes": 681038
     },
     {
       "path": "motion/steward-monsoon-talking.svg",
-      "sha256": "fe708f706b4df9914ceb6384fa200d67c475b48b4137831bae5a8f7b889a9a42",
-      "bytes": 20813
+      "sha256": "1b446c454d51ff864008d7f4ad6f84c55d79eeff5fba52951a98125fbcd40cc2",
+      "bytes": 20791
     },
     {
       "path": "motion/steward-monsoon-talking.webp",
-      "sha256": "5821cb1f07a764a5d3f46c5635dbe2f9d3dfba9937d6801abb8e24a3a389b267",
-      "bytes": 573372
+      "sha256": "a47aaa7f8e1bcfd403e020dcb66829d6212565f012280caf8f16a395218173c6",
+      "bytes": 570450
     },
     {
       "path": "motion/steward-monsoon-walking.svg",
-      "sha256": "14a2145120f81c6c6419ac12916c51d4975c443eaea0d9da4629569e4e43074b",
-      "bytes": 22751
+      "sha256": "f9a6084ddef25472ee54894b1da66ef61e3efa3c250f4a3439e1b643f8aca538",
+      "bytes": 22729
     },
     {
       "path": "motion/steward-monsoon-walking.webp",
-      "sha256": "1f0f20984d3fe4ada9358f32166579e19635f88653feb8b1d7861bfb819dddee",
-      "bytes": 475506
+      "sha256": "0e024e40c7dcf47ec9eff58ad26ee7b6ec43cb724cda7a6c3f9e88ca83271535",
+      "bytes": 473102
     },
     {
       "path": "motion/steward-monsoon-waving.svg",
-      "sha256": "230ecd234470600de5256895074e1075c831b44b91ecd1d572af16ac66ac7003",
-      "bytes": 17466
+      "sha256": "fc72af3929cd7792f0fa0ab067cf297a59039d0b3550f9db7888cb2f0a5403e3",
+      "bytes": 17444
     },
     {
       "path": "motion/steward-monsoon-waving.webp",
-      "sha256": "21eb215903c7119c0e338f74566502f44ecabb0411a81b5727f4d5c7225a2928",
-      "bytes": 552836
+      "sha256": "704c8037019439d286e522f66771eb1d428a7ebdbf622fcbf6714a27fb10789c",
+      "bytes": 548904
     },
     {
       "path": "motion/steward-warm-gardening.svg",
-      "sha256": "5a70f9c100eb83263a0525525194e9a5c2762a4d64d327e681b150e1073a60a6",
-      "bytes": 17706
+      "sha256": "0d88b1029c9dbc48acedfd18a40a072110445b31398e5d5495cdad5e1c631e4f",
+      "bytes": 17684
     },
     {
       "path": "motion/steward-warm-gardening.webp",
-      "sha256": "3918cfddfb4bf5cc4b1548420e430121c4774f321a3b19bd8ae7b9c4ae3ed42a",
-      "bytes": 555560
+      "sha256": "c9774e12ddbb1a772e58b110544944f8786c6ee34d6e3027fc8aa8e5e4e8d1c6",
+      "bytes": 550866
     },
     {
       "path": "motion/steward-warm-pointing.svg",
-      "sha256": "88413f231f6ba304d23a5c5bc88820b821eca55896c2649e2d4c43aab0689e8e",
-      "bytes": 16352
+      "sha256": "b22ccb85eb71f1747270b19dd1c505e422858901510061a1b6fb17884a66eb89",
+      "bytes": 16330
     },
     {
       "path": "motion/steward-warm-pointing.webp",
-      "sha256": "d31cdf813216f16b23ab1870dbbeeea2ac0f1dddd5b0cb931f80bc8c596cbc3b",
-      "bytes": 470974
+      "sha256": "afdbf39660fc0696b0c0e87991877de623842f902a3ddfc3bda8e1c3009898db",
+      "bytes": 467210
     },
     {
       "path": "motion/steward-warm-resting.svg",
-      "sha256": "62ec033294085cc04548952d2d956dcb137a24ea5bba28c54f92ae85783cdf76",
-      "bytes": 15444
+      "sha256": "1b83e6c206bd21ae5601942199cf144f254d232a993dc0296d4a0d8dfa32bd18",
+      "bytes": 15422
     },
     {
       "path": "motion/steward-warm-resting.webp",
-      "sha256": "ad3caec9c318df964dcb0daac50ba21af73b35b4fef5d803194d453766fb142f",
-      "bytes": 466782
+      "sha256": "cecc4d1d848ecc9ac7526a88c3e32a35a0192beee63becbe4c89acb58f21bf43",
+      "bytes": 463396
     },
     {
       "path": "motion/steward-warm-sitting.svg",
-      "sha256": "9d7789147bce4bb8561560be21358948ae8d4c42cfb8053bd7c0bd05d634ee9d",
-      "bytes": 15715
+      "sha256": "4c63768c4b8fbec51bba87144725213c7eb0ac5aeea8f966e71fca228a095745",
+      "bytes": 15693
     },
     {
       "path": "motion/steward-warm-sitting.webp",
-      "sha256": "a3ae870b6ec996ccf36543cccacd1205ed971b6ddd5f2af6755d5095ade10b67",
-      "bytes": 429298
+      "sha256": "b1daca1a809a1076b8e752e96a20c36ebf1e6e2ff888fff981d33c08a24d2786",
+      "bytes": 425844
     },
     {
       "path": "motion/steward-warm-storytelling.svg",
-      "sha256": "3f8c186bcb4dd2dc498c266e64f80d568696b03adf158e5ddf829d84c7af6848",
-      "bytes": 21425
+      "sha256": "a750230f7fd939c4e745a796795bda17fbb008149392b1c5039cedfae444cb08",
+      "bytes": 21403
     },
     {
       "path": "motion/steward-warm-storytelling.webp",
-      "sha256": "704ce9254b954a529f0e3826df1e2a9f912a0a02a3636e9e75760c2515062c89",
-      "bytes": 684548
+      "sha256": "cad87c3db06dbced177cb31079860b78ae249bfa554bde7eb020ccb36701b278",
+      "bytes": 679346
     },
     {
       "path": "motion/steward-warm-talking.svg",
-      "sha256": "65aeb7916e1d936eefa2dd26560f922120790b75625aa76befd7c73a4babebc7",
-      "bytes": 19759
+      "sha256": "7c91db4d8b879bfc3b1f9d06fa3f3d25d87339672b3b2c556fb4bfcf44d9755b",
+      "bytes": 19737
     },
     {
       "path": "motion/steward-warm-talking.webp",
-      "sha256": "ff8104518f113544db72b7ba3aa66d4864a6ce89d02be8c8a234223e42aeacac",
-      "bytes": 458014
+      "sha256": "2100a80c1a9f561feaca2b526fea04bff291cb8e09b5d47eb2a9ce3dd6ba1099",
+      "bytes": 454568
     },
     {
       "path": "motion/steward-warm-walking.svg",
-      "sha256": "02122735a5c73a49ae6b5c35a816bcb2819f71d082491cc6ea1167df3feab136",
-      "bytes": 23138
+      "sha256": "a9ef06f434aa29c15b7bc2d038dd6ad28d2661d316963103249eb8da88aff397",
+      "bytes": 23116
     },
     {
       "path": "motion/steward-warm-walking.webp",
-      "sha256": "89c4924154aa20a1c1994f9e7f27559db1d0a379928a6f1cd80c287c4713f988",
-      "bytes": 409970
+      "sha256": "eccb6139c899d0cb55fb548cde1e50b0a734f381f1b34ce8eb0f8d13d18da479",
+      "bytes": 407784
     },
     {
       "path": "motion/steward-warm-waving.svg",
-      "sha256": "69d633c16ab6d325da37bf50955d6bc7342c4e11b21b3b2b543d986587879b3e",
-      "bytes": 16427
+      "sha256": "3cec614caad935b00c223b3db9fe028a6676812dadb287784af9660a375ac3dd",
+      "bytes": 16405
     },
     {
       "path": "motion/steward-warm-waving.webp",
-      "sha256": "4a700cf5b2f8f5e4f16d2dab4718e4a44bd0b741269328ff3df2fcd9d0321499",
-      "bytes": 468348
+      "sha256": "cf16e6301f60081b26c40b5ac67f5a6d7a2b44a62f1b9b0db2067485c63466f8",
+      "bytes": 465090
     },
     {
       "path": "mouths/steward-A.png",
-      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
-      "bytes": 56270
+      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
+      "bytes": 54127
     },
     {
       "path": "mouths/steward-A.svg",
-      "sha256": "0c9aebf49a22345e62b8077ee079525e0c97a71b505d65a9bc4bcdb02652cded",
-      "bytes": 4282
+      "sha256": "8d798645c2b85d19576d6cf96954cc91441d5163ca18a9d6b2091adea72b711b",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-E.png",
-      "sha256": "f83294edfbabef75090844529ee0aa7883d1396ed64c05cfce94cb04b10081d5",
-      "bytes": 55793
+      "sha256": "cc2f8eca679bc9ab1136455a097cfa59b9228460a85a37d46f54bc3b24d89611",
+      "bytes": 53641
     },
     {
       "path": "mouths/steward-E.svg",
-      "sha256": "b29ed05ff9e1200ab6fbb6cca3e1ffaea19655c68a0e3af6cedcada4390851a5",
-      "bytes": 4282
+      "sha256": "e2e5844607e8fc8b789a6cd608e0ea70e4d5b89b7558a618b3d7712ea07cedd7",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-F.png",
-      "sha256": "f68224082ede10aabbd9de03e774dbb21ba00389f95c0a439c3322cbfcaaaf83",
-      "bytes": 55447
+      "sha256": "85878b69cd77793a57b89d6e4d52b79c8a0aad8210e07737ce2d71a5ad8b0eb3",
+      "bytes": 53313
     },
     {
       "path": "mouths/steward-F.svg",
-      "sha256": "9e95ca1963f4b40b0ebf41c80d911f99334b23972e2e21c2c3cb3239382b21c3",
-      "bytes": 4282
+      "sha256": "08ac001ef2e5397af010a528823ab6ba86cd7fed2001e53f19a50a9d6d0a1a11",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-L.png",
-      "sha256": "da9e92ba092d0afdc30deefc04da6c4f291e37b7d7ae5ddef0084bb648443d4e",
-      "bytes": 55908
+      "sha256": "327dc0638a3cc6ed65484d94daddaa3447fb7ec4f45c0e7db63d2ba551aff13e",
+      "bytes": 53762
     },
     {
       "path": "mouths/steward-L.svg",
-      "sha256": "17b8632bd3000cb2d1d23dcff482dcb61e288655d26ebd1a55577f45322b5be3",
-      "bytes": 4282
+      "sha256": "0d10faafaf9a53e88f985567dffe79c12c3df8fd833d7c937c266639b258b739",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-M.png",
-      "sha256": "151d422220b80d1f209e2229e711e4babb4fcf0e3b4c8539def10b0a520241bf",
-      "bytes": 55405
+      "sha256": "b6b71aa660c046dc177b39d279099c1af270cb1421e71dbe7cb2cbd370694eac",
+      "bytes": 53268
     },
     {
       "path": "mouths/steward-M.svg",
-      "sha256": "0419aee8d7db3b60081818db41b382305b41497a07284c7131b2312e268c305d",
-      "bytes": 4282
+      "sha256": "909fe658b46884fe9e34b7a2dbeabe1ff098fa6dae7154537a8e3935bb2f61ba",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-O.png",
-      "sha256": "89ad6b56510c647ef4a7ceb360f8022c000cffa3dbd88782f3339374483c7e98",
-      "bytes": 55615
+      "sha256": "bf864f908e2a432661bd34a6fc986c3b094cde0d59a615cdb84266793bd99e76",
+      "bytes": 53480
     },
     {
       "path": "mouths/steward-O.svg",
-      "sha256": "6a18ac75a517349e13b3eb56f9c89d17401c4b892bbadca428d69fb950a17dd9",
-      "bytes": 4282
+      "sha256": "873b7b11caf6fdb11dec81e9afc698273adbe8646f48eed6795f42f9b054bac0",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-rest.png",
-      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
-      "bytes": 56223
+      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
+      "bytes": 54092
     },
     {
       "path": "mouths/steward-rest.svg",
-      "sha256": "53378c554a80dd92e0e9f13c88f2b9381d33d66b01a13e8316690e947932c0c4",
-      "bytes": 4282
+      "sha256": "8030c1738c348360a6dff953fece0893dbd57ea5e64d468c91af659baea7a7bf",
+      "bytes": 4260
     },
     {
       "path": "mouths/steward-U.png",
-      "sha256": "3d70ddef3558f22d2c188874dab0c8b1443496fb59f56a4c5553640a836a5c16",
-      "bytes": 55383
+      "sha256": "8ba8bde4f40795c776aa0d21e0461b2173bbcb8e8ec436fbf0e715472f2ce2d6",
+      "bytes": 53256
     },
     {
       "path": "mouths/steward-U.svg",
-      "sha256": "2a10cf5630d537d9b4787b66be6602f6ecef9b8134a85195842530bd31432ad9",
-      "bytes": 4282
+      "sha256": "147fce609486377e942f8753fb5c364de4ed227f0e7bdbcaf89ace0fb400bfb1",
+      "bytes": 4260
     },
     {
       "path": "poses/steward-cool-gardening.png",
-      "sha256": "0ffa9d83f9b13cfcb7693eae605cb38dd07edb5667e9d414ee25a8dd50ec96da",
-      "bytes": 50384
+      "sha256": "31bbb4948b17765eed68a08f6ab55d0a6f33c73bd52be331fc6c16024d059c09",
+      "bytes": 49704
     },
     {
       "path": "poses/steward-cool-pointing.png",
-      "sha256": "3daf82c0c4d7419ac2375a03596d4b0cf3c25172b94d6f8b61872441708e5149",
-      "bytes": 44325
+      "sha256": "5172d7c69bcdd32411d40632eccab23c30c1724c56c07e5374c20b45c3b990a4",
+      "bytes": 43738
     },
     {
       "path": "poses/steward-cool-resting.png",
-      "sha256": "5909429e082c75e6c3cb511ff74e5adb850980792576e9898cd935b08e281f8e",
-      "bytes": 44321
+      "sha256": "052a92fb9265320915eb0cb00ab93c8a955441232d09b989922badab525934dd",
+      "bytes": 43780
     },
     {
       "path": "poses/steward-cool-sitting.png",
-      "sha256": "8941527e2706d73c09d00f2fc3856e6d9b8b91e4d820a9a742a18d1b4d92194e",
-      "bytes": 41498
+      "sha256": "763947cafc764757c053f4de1f83bc25e2c69e023e3e75cd2049f59a6b432e24",
+      "bytes": 40814
     },
     {
       "path": "poses/steward-cool-storytelling.png",
-      "sha256": "af7268bb539bad16f7c510e9587072bf2788068c20af85a3c329e40f178bb89b",
-      "bytes": 43287
+      "sha256": "3db0b87650ac181a2d136d67b9d0908fd8e735dbfc6e51e460e3214666fef7fd",
+      "bytes": 42632
     },
     {
       "path": "poses/steward-cool-talking.png",
-      "sha256": "2303616f9fa30c0b90c73636b480428ac4393714f00f695bc1be549441995c70",
-      "bytes": 41012
+      "sha256": "d8e84e0c80b029234601b4eecf3d7e234bcebee3bee4664723643c35509b1b7f",
+      "bytes": 40370
     },
     {
       "path": "poses/steward-cool-walking.png",
-      "sha256": "a41fed46f063f6a7ef78eb4bf0567f225d921ad743221ca7a9c687981353debd",
-      "bytes": 46925
+      "sha256": "24022af703e1c63a9c33d776700498b3ac51838c3b43cf1feee24fe77595d909",
+      "bytes": 46201
     },
     {
       "path": "poses/steward-cool-waving.png",
-      "sha256": "65b40decc6f191d8e5bdee17e7bb2b0c594ac15ef697235d2ec6eee45782f8e6",
-      "bytes": 43724
+      "sha256": "5cdeef0a772111b9a698f4b4248fec3c7228a4c947340f9e9caf608020f0c315",
+      "bytes": 43179
     },
     {
       "path": "poses/steward-monsoon-gardening.png",
-      "sha256": "695fac868adf169e9fb71ea0bf500266a1069a84d02b92b3821757d3b3720d5f",
-      "bytes": 50616
+      "sha256": "5b4feced73c573ee03c661d98f22124b4c656e2a37bf91ce506d99e15ee7f234",
+      "bytes": 49906
     },
     {
       "path": "poses/steward-monsoon-pointing.png",
-      "sha256": "87742a121a75dba3316ecb4426283bb2da1b14521a517a9a56d2002661d43db5",
-      "bytes": 47231
+      "sha256": "f3778462c19bdbb0e9605a372e9baeb7375b992a112ccbe919cf2d5d2821f02a",
+      "bytes": 46500
     },
     {
       "path": "poses/steward-monsoon-resting.png",
-      "sha256": "80d2781f6c5c7e22d11168041842726edc207bcf55830ebf4e3bf86a3e9101bb",
-      "bytes": 47561
+      "sha256": "8f481a3426c6c0370cad6abb20cf4ca5d3d843b4c0a47f4edfb09f7a2428cc7f",
+      "bytes": 46863
     },
     {
       "path": "poses/steward-monsoon-sitting.png",
-      "sha256": "63f44743409e4c086db18f359ee1d8e719b547cc1780b8cf185272e1e19ef789",
-      "bytes": 40110
+      "sha256": "ba2a0fdd30ca5f272f2df2d1919c7e5a96fafd94990ef1ee31aaf373a156f6fe",
+      "bytes": 39432
     },
     {
       "path": "poses/steward-monsoon-storytelling.png",
-      "sha256": "07f11e2cfeeaaba51532efc737360cc9b7cd4913488e41b2e77b77e102f42421",
-      "bytes": 41757
+      "sha256": "2d1f3d72c7a73c26f9c23d76274c0446173c922c63bc79f84651a2c5707694a3",
+      "bytes": 41075
     },
     {
       "path": "poses/steward-monsoon-talking.png",
-      "sha256": "d323eabac4ff4c2b1e2ad4b4d4569b38ed078bcab1c55d9c0e854b74e04c48c0",
-      "bytes": 45874
+      "sha256": "f79e43f11e13e446292915f3446842313e35ae4b136b05a665538c747a27be2f",
+      "bytes": 45161
     },
     {
       "path": "poses/steward-monsoon-walking.png",
-      "sha256": "fcc06bfe4e7cc7e6fdd642bc630d122e0c9358d48e8b61913a3777437bb26be0",
-      "bytes": 50524
+      "sha256": "ecad02ff492ffd02a55f6c76996def54c915a93288f9ebffb5de4bddfe86b79b",
+      "bytes": 49783
     },
     {
       "path": "poses/steward-monsoon-waving.png",
-      "sha256": "a83499dfc37b8697e474efdb1597bfeb15b176e84fe0dff77c29a1ec3e025a3a",
-      "bytes": 46845
+      "sha256": "20e477240f0b3c99589f0c7764eeb76702ef9ff9b5b1750ff21f0cd5e20716b5",
+      "bytes": 46165
     },
     {
       "path": "poses/steward-warm-gardening.png",
-      "sha256": "58bd3a934b89753403f756ff822d332fa34d66eeec334ac8119a537ce9651f98",
-      "bytes": 49306
+      "sha256": "c5c4ff8cdc0254017f458c922b5011ab548958532e59462f984c64e58672c9e4",
+      "bytes": 48609
     },
     {
       "path": "poses/steward-warm-pointing.png",
-      "sha256": "4fda29aca83f6ff49c5d7cc652515387217cd37d08b6cea061678beaeb58948e",
-      "bytes": 41831
+      "sha256": "d10cb4e6e6ad14bcd0fbbb640b5b65b81f3088719b45763dbb62fc6ddce9332f",
+      "bytes": 41172
     },
     {
       "path": "poses/steward-warm-resting.png",
-      "sha256": "7d786f78a4c09586b460d772b9412ba603f2da6f6c5b4068efb3a2c016dbe8dc",
-      "bytes": 41945
+      "sha256": "9a45505e83c1ebab23bdacb7a8e856d3c35445dfc2564f4d68e49d75b10ceb3f",
+      "bytes": 41273
     },
     {
       "path": "poses/steward-warm-sitting.png",
-      "sha256": "08c1e6ec3566bff033a15c70b0a24d95868d1d6e9be95a41a6af0d509fca87e6",
-      "bytes": 40029
+      "sha256": "c88bc33c3d5bcac98ec3844bff897839d1f6e44de35090c523972300fbcfdfdd",
+      "bytes": 39351
     },
     {
       "path": "poses/steward-warm-storytelling.png",
-      "sha256": "bbab7fa464ac344d65c64be59bcfc097b3a740ecae2e3e8c76a4a9b77956300b",
-      "bytes": 41721
+      "sha256": "d0da1dd44a59c7cf0d6bc7d240d377c64d262e61b015f4b2d6fc9ad5e3db1c2b",
+      "bytes": 41055
     },
     {
       "path": "poses/steward-warm-talking.png",
-      "sha256": "b82d5470bab7c3218b360f12589056875599d560100bbd47bb723a4ec1b399a5",
-      "bytes": 39317
+      "sha256": "9f8fb7058703886f035c38c65ac3a9f0319e7d9728b3aa7b69e072532a1e6361",
+      "bytes": 38628
     },
     {
       "path": "poses/steward-warm-walking.png",
-      "sha256": "03c267efc273a3d0b6cc60848c93839c70e80eb9964706e8f04e27aa9c9f082b",
-      "bytes": 44482
+      "sha256": "8bddda6c9260c2c12d5839bb2b16f8f8cef1ab8d6a0ae772faf5626e3e6d130b",
+      "bytes": 43719
     },
     {
       "path": "poses/steward-warm-waving.png",
-      "sha256": "02ecd911cf99dd47bfac868d70e2c8b416a0bf2a42c60f8dce5ff5cc468d54ac",
-      "bytes": 41304
+      "sha256": "7774d466d4bda08ddd3218ecee5ea28c17ec6db90312f705f581f7ed1e9134cd",
+      "bytes": 40637
+    },
+    {
+      "path": "references/steward-cool-preview.webp",
+      "sha256": "330a8c1c9a37e121f8ec211763d3706a97d34403e321767df7172744569a422f",
+      "bytes": 63652
     },
     {
       "path": "references/steward-cool.png",
-      "sha256": "ec132c527881020c266745851ddaffa75ce43575e8677416f4b7803c8adfce9c",
-      "bytes": 2074356
+      "sha256": "3e769dbd44f63056ead0231cc7f2ab426592cc91b68922fa570f36cf45f97d55",
+      "bytes": 2052942
     },
     {
       "path": "references/steward-cool.webp",
-      "sha256": "10dc9e2549f2862aa7243bfe537b71da4742c75b1def8b3140456e3008700e07",
-      "bytes": 880044
+      "sha256": "91162631ab4d34903a88750f1fac9533ca4f11d9552698a481de19ac8a7ad426",
+      "bytes": 874438
+    },
+    {
+      "path": "references/steward-monsoon-preview.webp",
+      "sha256": "848062daf1870b5776cf98c40774270933bbab77fc65443b6db597e1f7574bc3",
+      "bytes": 59826
     },
     {
       "path": "references/steward-monsoon.png",
-      "sha256": "0b352a2462528850712308b35c8f4c75afd499483899df8234ffaeee748a7799",
-      "bytes": 1996020
+      "sha256": "ab51701b3bd0dc2e8d123f9be80d54e72df61854ca17601bacdbb0f086b7f347",
+      "bytes": 2050263
     },
     {
       "path": "references/steward-monsoon.webp",
-      "sha256": "3b6e05d94a8956377d09f232abd2dd4b392c3b9e8771516751d50ab2246b7ab6",
-      "bytes": 833090
+      "sha256": "bda59ec6d6507c2ccedc901738ff9e66b0588e54b7bcf8d3cac5458c1ca440cd",
+      "bytes": 855870
+    },
+    {
+      "path": "references/steward-warm-preview.webp",
+      "sha256": "19d403534fea8c8bf4caa3b54fd45774b34e0b41ec755c22ad99454dcff632cd",
+      "bytes": 58816
     },
     {
       "path": "references/steward-warm.png",
-      "sha256": "023bd1f7dfa970664b27306d1ca560ec41c97310e6fe47dd204fb46274be34e8",
-      "bytes": 1984562
+      "sha256": "07d79ee6e570a63f9406aff46e051686d19ada314dab12d14a991ffa8a9e32c7",
+      "bytes": 1970703
     },
     {
       "path": "references/steward-warm.webp",
-      "sha256": "7568f39e3d34ee9f67da4b34b5f98823038f896d9dcdc8a5eb10fd028be936d3",
-      "bytes": 779746
+      "sha256": "76058ef1e1aa005776bd29983dc85249ed43b7620b1e26ab8255bdc40ad7f1f6",
+      "bytes": 792106
     },
     {
       "path": "rigs/steward-cool.png",
-      "sha256": "3af0343298fb3bb5bc179c3fda08f9b5ab63eb701f46db425b09ce6d0072d389",
-      "bytes": 102303
+      "sha256": "12a1df0ae4902274b0ad0fa9a12c147897f322d83be8e513096b02a52998e80f",
+      "bytes": 100844
     },
     {
       "path": "rigs/steward-cool.svg",
-      "sha256": "fe2b5c215ac996ec25f4dbaa30408575f308a2a273de700b6db32c046a32b488",
-      "bytes": 11327
+      "sha256": "eafdd51bad7ed64634909a792b56ce6531d1bedb5865bf942fa0e28aa1e7884c",
+      "bytes": 11305
     },
     {
       "path": "rigs/steward-monsoon.png",
-      "sha256": "f07a8b32c8430932c991f870ea6131f3c65aebfe78c2e78c966b97c1b8ca2e54",
-      "bytes": 110487
+      "sha256": "768dc0c45c194a4a222501fb43cc99e02212114580f68e7361c50e8ba95ddb7b",
+      "bytes": 109123
     },
     {
       "path": "rigs/steward-monsoon.svg",
-      "sha256": "a1e255c552acfdeca0805a2fde33e4dcd63a82b8a7b20806429f906289c62a11",
-      "bytes": 12026
+      "sha256": "b5e979a1109d379bfa20ffb35a9a5ee65f46995f13b80d9baef4d1d71c5af927",
+      "bytes": 12004
     },
     {
       "path": "rigs/steward-warm.png",
-      "sha256": "f60cc161353d1112907eac94bd3d7d8cf93724d5baa9f01277356d22d127edd5",
-      "bytes": 97676
+      "sha256": "44079dfe2e01823a3fad36e5c98f42f3235fb0202983aeb171735465fecd4df4",
+      "bytes": 96224
     },
     {
       "path": "rigs/steward-warm.svg",
-      "sha256": "c68bdd29cb30b8950ca4fe63d77e839d8e9e8b29a971f2a61579c22ec8969be6",
-      "bytes": 11107
+      "sha256": "d3e70ce08d2cbfd17549136dbb9e03f66cf1f190db2ec69e3837ce579f968c15",
+      "bytes": 11085
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "782a236370e9fc8d8b44210f7bdbf6adfec773559afd625825a3f1285f7a97dc",
+      "sha256": "53a781ce53fad7f1da4f7441746687a775f4ba386ad5756760dbd9bbdd0d87e5",
       "bytes": 2919
     },
     {
@@ -586,8 +601,8 @@
     },
     {
       "path": "runtime/rig.js",
-      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
-      "bytes": 21916
+      "sha256": "46a54f3db911bdd3e2d8253b9440434885a0fbce619b128726fa4274da0b3e34",
+      "bytes": 21905
     },
     {
       "path": "timelines/steward-cool-gardening.json",
@@ -721,33 +736,33 @@
     },
     {
       "path": "turnarounds/steward-cool-front.png",
-      "sha256": "27ec4fe860aa547f90bb18df3a378e54971c63d52cd53c2227d53aa942895e1d",
-      "bytes": 102547
+      "sha256": "360fdabcb50dceb99410af0f46df49ea27de6576bc0d8fb047b8611ee7737b7d",
+      "bytes": 101068
     },
     {
       "path": "turnarounds/steward-cool-front.svg",
-      "sha256": "d74ca91cdb4b641bea513eb00fbff9a34cd10de69378104872b3fb7d6580463b",
-      "bytes": 11284
+      "sha256": "cfe6b4a0ead8a901bdc105bf6b5add1d672f6ecb2bed323652bbcc55632270ea",
+      "bytes": 11262
     },
     {
       "path": "turnarounds/steward-cool-profile.png",
-      "sha256": "981f224bc3297669ed383048b16ffc982ef089e9ed169805aa91d56e05a56fa6",
-      "bytes": 97928
+      "sha256": "4286ceb7c2400ef8f411dd45c9afbb01d1980983f84d3b00b728fc45a3d0caac",
+      "bytes": 97354
     },
     {
       "path": "turnarounds/steward-cool-profile.svg",
-      "sha256": "86634a9ef6c0ce37b8ec63384b762d810cd22693e24f07132061ffd47afc59de",
-      "bytes": 10928
+      "sha256": "23370b78f48058258719da3e364b04d2b4ec7c773e3b8df181716cb1dc85c49d",
+      "bytes": 10917
     },
     {
       "path": "turnarounds/steward-cool-three-quarter.png",
-      "sha256": "3af0343298fb3bb5bc179c3fda08f9b5ab63eb701f46db425b09ce6d0072d389",
-      "bytes": 102303
+      "sha256": "12a1df0ae4902274b0ad0fa9a12c147897f322d83be8e513096b02a52998e80f",
+      "bytes": 100844
     },
     {
       "path": "turnarounds/steward-cool-three-quarter.svg",
-      "sha256": "fe2b5c215ac996ec25f4dbaa30408575f308a2a273de700b6db32c046a32b488",
-      "bytes": 11327
+      "sha256": "eafdd51bad7ed64634909a792b56ce6531d1bedb5865bf942fa0e28aa1e7884c",
+      "bytes": 11305
     },
     {
       "path": "turnarounds/steward-monsoon-back.png",
@@ -761,33 +776,33 @@
     },
     {
       "path": "turnarounds/steward-monsoon-front.png",
-      "sha256": "0257e96c0f01fdb2374f801a773a5834af4da55f67c17cdd72a01a861d5c048d",
-      "bytes": 110710
+      "sha256": "417e3951c353f76b96b27255a36e5e8f041ecc4872e9507e834b504271c1b96e",
+      "bytes": 109344
     },
     {
       "path": "turnarounds/steward-monsoon-front.svg",
-      "sha256": "1a4c2612bc58c53ece44b6b21d6b7e69539444a03ea6bb54c5dccd65d0d60e77",
-      "bytes": 11983
+      "sha256": "f3c49d8b455c769b7b908325c1394082ab804a5bdfc006b5c3cb11df637a8b59",
+      "bytes": 11961
     },
     {
       "path": "turnarounds/steward-monsoon-profile.png",
-      "sha256": "b923ec042e3965f923b043a1b1bb8c9ed2fc1abb00413a9a9e89049db2303df5",
-      "bytes": 104378
+      "sha256": "ca293c24b03b7756c661001cbf7b09e7d3d92245e166f4d28015a08ad718bcd3",
+      "bytes": 103826
     },
     {
       "path": "turnarounds/steward-monsoon-profile.svg",
-      "sha256": "afb92a2fdcc2c80c4b5ad05b329c8a2f2a8a923fe89c30a1e86f2af32fcec4bb",
-      "bytes": 11572
+      "sha256": "603c9eaaacd132f0c05dbfe9b5fd194ddda1f11c4ff3dd25638710dc8df0d272",
+      "bytes": 11561
     },
     {
       "path": "turnarounds/steward-monsoon-three-quarter.png",
-      "sha256": "f07a8b32c8430932c991f870ea6131f3c65aebfe78c2e78c966b97c1b8ca2e54",
-      "bytes": 110487
+      "sha256": "768dc0c45c194a4a222501fb43cc99e02212114580f68e7361c50e8ba95ddb7b",
+      "bytes": 109123
     },
     {
       "path": "turnarounds/steward-monsoon-three-quarter.svg",
-      "sha256": "a1e255c552acfdeca0805a2fde33e4dcd63a82b8a7b20806429f906289c62a11",
-      "bytes": 12026
+      "sha256": "b5e979a1109d379bfa20ffb35a9a5ee65f46995f13b80d9baef4d1d71c5af927",
+      "bytes": 12004
     },
     {
       "path": "turnarounds/steward-warm-back.png",
@@ -801,33 +816,53 @@
     },
     {
       "path": "turnarounds/steward-warm-front.png",
-      "sha256": "70fdb059a68e78668336c27b314c46bda14ef253e350e704b267afa8880f5e2b",
-      "bytes": 97925
+      "sha256": "cbeffb66be48fca871b749488807ef12ed63893f410154d36c3492f541543d43",
+      "bytes": 96456
     },
     {
       "path": "turnarounds/steward-warm-front.svg",
-      "sha256": "92ebae22bcb2fd54f190f2df7c2b617138f4cb10b42028c8da629299cd3c4837",
-      "bytes": 11064
+      "sha256": "347b6a8783986a8ad0c1425a92a25a871431bb5e6d7126a000f2ef8a7934a9b1",
+      "bytes": 11042
     },
     {
       "path": "turnarounds/steward-warm-profile.png",
-      "sha256": "287178f10b588f551b5d275363be97f27080d8f15b13b2a128caa9277c02d96d",
-      "bytes": 94107
+      "sha256": "cd44a82ac5845cd93f508bd44d416184f9a6e5f6420e6abb7122a4a08a8e871d",
+      "bytes": 93646
     },
     {
       "path": "turnarounds/steward-warm-profile.svg",
-      "sha256": "b0a2e9f94ab4b1a3acb0480dffcd2956d3dbfa599fb573aa8b8e9d2dfef183fe",
-      "bytes": 10649
+      "sha256": "64b9e8f0ba8e821cd288dbf4716cfee4d38fe1cdfb484d7784bd8dd648561726",
+      "bytes": 10638
     },
     {
       "path": "turnarounds/steward-warm-three-quarter.png",
-      "sha256": "f60cc161353d1112907eac94bd3d7d8cf93724d5baa9f01277356d22d127edd5",
-      "bytes": 97676
+      "sha256": "44079dfe2e01823a3fad36e5c98f42f3235fb0202983aeb171735465fecd4df4",
+      "bytes": 96224
     },
     {
       "path": "turnarounds/steward-warm-three-quarter.svg",
-      "sha256": "c68bdd29cb30b8950ca4fe63d77e839d8e9e8b29a971f2a61579c22ec8969be6",
-      "bytes": 11107
+      "sha256": "d3e70ce08d2cbfd17549136dbb9e03f66cf1f190db2ec69e3837ce579f968c15",
+      "bytes": 11085
+    },
+    {
+      "path": "videos/steward-canopy-alpha.webm",
+      "sha256": "df717f43572fa9d735a239bbbd71f1b66400b245ad4f05c81ade28eaafbf3214",
+      "bytes": 113411
+    },
+    {
+      "path": "videos/steward-canopy-poster.png",
+      "sha256": "73a3500da8f4037e6a656653edb66c6060133806664cbd3be89429b46c08a7a6",
+      "bytes": 85927
+    },
+    {
+      "path": "videos/steward-canopy.mp4",
+      "sha256": "3fcb4e575098be67ebb1c7974a0ffe118a9390da0f9e3a2dd2e97011d9c72909",
+      "bytes": 103542
+    },
+    {
+      "path": "videos/steward-canopy.vtt",
+      "sha256": "b9df0d4122c669067e7e6e70ca3e6a851f47c14de7f0e4aaea2fee72651aeb3c",
+      "bytes": 99
     }
   ]
 }

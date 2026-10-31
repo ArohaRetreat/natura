@@ -1,6 +1,6 @@
 {
   "name": "natura",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,8 @@
     "dev": "python3 -m http.server 8770 --directory dist",
     "deploy": "node scripts/deploy-design.mjs",
     "package:assets": "python3 scripts/package-assets.py",
-    "package:hrudhi": "node scripts/package-hrudhi.mjs && python3 scripts/zip-hrudhi.py"
+    "package:hrudhi": "node scripts/package-hrudhi.mjs && python3 scripts/zip-hrudhi.py",
+    "package:farm": "node scripts/package-farm-atlas.mjs && python3 scripts/zip-farm-atlas.py"
   },
   "engines": {
     "node": ">=20"

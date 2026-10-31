@@ -1,10 +1,10 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {chapters,seasons,motions,chapterForAge} from '../src/hrudhi/definition.js';
+import {chapters,seasons,motions,chapterForAge,KIT_VERSION} from '../src/hrudhi/definition.js';
 import {resolveGrowth,examplePolicy,chooseWardrobe,validateGrowthPolicy} from '../src/hrudhi/policy.js';
 import {renderHrudhi,makeMotionPlan,poseAt,armIK,forwardArm} from '../src/hrudhi/rig.js';
 import {createHrudhiPlayer} from '../src/hrudhi/player.js';
 const digests=Object.fromEntries(chapters.map((c,i)=>[c.id,String(i+1).repeat(64)]));
-const reviews=chapters.map(c=>({chapterId:c.id,status:'approved',kitVersion:'0.1.0',assetDigest:digests[c.id]}));
+const reviews=chapters.map(c=>({chapterId:c.id,status:'approved',kitVersion:KIT_VERSION,assetDigest:digests[c.id]}));
 const sample=()=>({policy:structuredClone(examplePolicy),currentChapterId:'explorer',completedMilestoneIds:['chapter-2-milestone'],reviews:structuredClone(reviews),installedChapterDigests:digests,expectedRevision:1,actualRevision:1,recommendation:{schemaVersion:1,policyRevision:1,chapterId:'naturalist',rationale:'Verified sample milestone completed.'}});
 test('age chapters cover every year 5–17 once and reject unsupported life stages',()=>{for(let age=5;age<=17;age++){assert.equal(chapters.filter(c=>age>=c.minAge&&age<=c.maxAge).length,1);assert.ok(chapterForAge(age));}for(const age of [4,18,5.5,NaN,'5'])assert.throws(()=>chapterForAge(age));});
 test('AI can publish a reviewed next chapter after its milestone, and retain an eligible current chapter',()=>{const result=resolveGrowth(sample());assert.equal(result.action,'publish');assert.equal(result.nextChapterId,'naturalist');assert.equal(result.effective,'next-visitor-session');const x=sample();x.recommendation.chapterId='explorer';assert.equal(resolveGrowth(x).action,'retain');});
