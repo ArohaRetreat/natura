@@ -1,0 +1,5 @@
+# Generated design documents are binary artifacts, even when PDF streams are ASCII encoded.
+*.pdf binary
+*.png binary
+*.webp binary
+*.zip binary
