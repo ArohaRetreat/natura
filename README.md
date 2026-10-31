@@ -1,46 +1,35 @@
-# App Launchpad Template
+# Natura v0.2.0
 
-Template version: **1.9.0** · [changelog](docs/template-changelog.md) · [MIT license](LICENSE)
+Template version: **1.9.0**
 
-A stack-neutral, **Dynatrace-opinionated** foundation for building and enhancing apps. Choose each product's stack and hosting deliberately; Dynatrace is the chosen observability platform. No tenant or application deployment is preconfigured.
+Official design standards of Aroha Retreat, with a working nature-inspired design application. Canonical deployment: https://aroha-retreat.web.app/design/.
 
-## Create a project
+Includes separate English, Kannada and bilingual logo families; transparent icon-only and favicon assets; 48 service icons; two original botanical illustrations; four independently drawn motion studies; type, colour and component references; and a browser-local website builder.
 
-Confirm the new owner, name, visibility and empty local destination, then use **Use this template → Create a new repository**, or:
+## Develop
 
-```sh
-gh repo create OWNER/PROJECT --template theharithsa/app-launchpad-template --private --clone
-cd PROJECT
-sh scripts/check.sh
-```
+Node 20+ and Python 3 are sufficient for the application. Run `npm test`, `npm run build`, then `npm run dev`. Open http://127.0.0.1:8770/design/. No dependency installation is needed for normal builds; fflate 0.8.3 is vendored with its MIT licence. Fonts are bundled with OFL licences. The PDF regeneration script needs reportlab, svglib and pymupdf and the included static fonts.
 
-Use public visibility only when approved. Follow [getting started](docs/getting-started.md): record source template version/revision, complete discovery decisions and register each actual service before implementation. Then run the discovery gate:
+The page builder supports up to 16 sections, 8 service cards and 100 KB JSON imports. User text is escaped and section types are allowlisted. Drafts remain in localStorage for this browser/origin; export JSON before moving to another origin. Website ZIPs contain HTML, CSS, local logo, chosen illustrations, fonts, licences and draft JSON. Confirm service content and contacts before publishing. Booking, payments and enquiry submission require separate implementation.
 
-```sh
-python3 scripts/check_foundation.py --ready --json
-```
+## Firebase Hosting
 
-The gate checks decisions, not application/release readiness. Add real stack-specific build, test and deployment checks for the selected app.
+Project and default site: `aroha-retreat`. Build output: `dist/design/`. `/design` redirects to `/design/`; only that route has an app rewrite. `npm run deploy` uses an already authenticated official Firebase CLI. Install Firebase CLI from its official npm package if needed, or set `FIREBASE_CLI_PATH` to its CLI JavaScript entry point. No authentication token is included in source.
 
-## What is included
+This site was empty before Natura's first deployment. Hosting publishes the entire `dist` directory: if a root website is added later, preserve its build output and configuration before the next release. Never deploy a design-only manifest over unrelated root content.
 
-- [Agent entrypoint](AGENTS.md), tool-specific pointer files and [policy ownership map](docs/policy-map.md).
-- [Visible skills catalog](skills/README.md): design, implementation, tests, deployment, Dynatrace observability, documentation and handoff.
-- Per-service skills/continuation, safe registration tooling and [JSON Schemas](schemas/README.md).
-- [Synthetic worked examples](examples/README.md) for decisions, execution evidence, continuation and a service skill.
-- Issue/agent-brief forms, PR checklist, CI, CODEOWNERS and an opt-in [repository ruleset procedure](docs/repository-ruleset.md).
-- [Ian Xiaohei Illustrations](skills/ian-xiaohei-illustrations/SKILL.md) for useful explanatory images under the [illustration policy](docs/illustrations.md).
+The provided Firebase web configuration is retained in `config/firebase.web.json` for future application integration. Analytics is not initialized. No database, backend, accounts or telemetry are configured. This is a public static design workspace; do not add confidential documents to public assets.
 
-## Checks and maintenance
+## Asset handoff
 
-Run **`sh scripts/check.sh`** locally and in CI: metadata validation, local Markdown links and safety/contract tests. For machine-readable diagnostics use `python3 scripts/check_foundation.py --json`; `--ready` adds discovery checks. Foundation success does not certify an application's behavior, deployment or tenant signals.
+`public/downloads/Natura-Design-Assets-v0.2.0.zip` is the complete current asset package. `public/docs/` contains the current field guide, motion field notes, retained identity handbook and corrected service icon PDFs. `Natura-Service-Icons-v0.2.0.zip` is a convenient icon-only subset, using approved v1.1 geometry. Botanical illustrations were generated specifically for this system with OpenAI image generation. PNG originals and web-optimized WebP files are included. Vector logos use SVG masters, with print and raster exports; no native proprietary Illustrator source is claimed.
 
-GitHub template generation copies files, not repository settings or future updates. Adopt upgrades through reviewed PRs and retain project-specific choices. See [versioning and migration](docs/versioning.md), [delivery](docs/delivery.md) and [service inventory](docs/services.md). The partial planning bootstrap was removed; use GitHub template generation or record adoption pending.
+Natura names the design application. Aroha Retreat names the retreat identity; its approved wording remains unchanged. Source ownership: `skills/service-natura/`. Repository: https://github.com/ArohaRetreat/natura. Template: theharithsa/app-launchpad-template v1.9.0 at f04c042a9e000f606982863518fa7bb9cfbb7d85. The previous Sites deployment is superseded; no new release is sent there.
 
-## Licensing
+## Seasonal typography and local weather
 
-The template is MIT-licensed by Vishruth Harithsa. Bundled Ian Xiaohei Illustrations retains its own [MIT license](skills/ian-xiaohei-illustrations/LICENSE) and [attribution](skills/ian-xiaohei-illustrations/NOTICE.md).
+The atmosphere atlas includes Cormorant Garamond Italic and Allura for limited heading roles, with locally bundled OFL files. Live weather is not configured: previews are synthetic and explicitly labelled. The fixed location from the owner’s map is Hrudhi Farms (12.5338071, 77.4562976), Asia/Kolkata. Read [seasonal standards](public/docs/Natura-Seasonal-Standards.md) and [location profile](config/retreat-location.json); the editorial calendar is proposed for retreat review.
 
-A generated application's license is a separate `needs-user-input` decision. Preserve the template and third-party copyright/license notices for inherited material; when selecting the app's license, retain those notices (for example under `LICENSES/`) and document the app's chosen terms separately. Copying the template does not record an approved license choice for new application code.
+## Restricted application licence
 
-[GitHub template documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
+Official design standards of Aroha Retreat. Custom application code, artwork and brand assets may be used only for authorised Aroha Retreat websites. Public visibility does not permit unrelated website use. See [LICENSE](LICENSE) and [third-party exceptions](THIRD-PARTY-NOTICES.md). Font, library and inherited template rights are retained under their original terms.

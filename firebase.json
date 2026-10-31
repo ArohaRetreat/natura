@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "site": "aroha-retreat",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/design/**",
+        "destination": "/design/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/design/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=0,must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/design/**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          }
+        ]
+      }
+    ],
+    "trailingSlash": true
+  }
+}

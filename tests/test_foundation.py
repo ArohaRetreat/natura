@@ -29,6 +29,16 @@ class FoundationTests(unittest.TestCase):
         for name in ('scripts', 'skills', '.agents', 'schemas', 'docs'):
             shutil.copytree(ROOT / name, root / name, dirs_exist_ok=True,
                             ignore=shutil.ignore_patterns('__pycache__'))
+        # Consumer app metadata is ready; governance fixtures deliberately start unconfigured.
+        for name in ('src', 'config'):
+            shutil.copytree(ROOT / name, root / name, dirs_exist_ok=True)
+        (root / 'public').mkdir(exist_ok=True)
+        project = json.loads((root / 'project.json').read_text())
+        project['name'] = None
+        project['template']['revision'] = None
+        for key in project['decisions']:
+            project['decisions'][key] = {'status': 'needs-user-input', 'value': None, 'approval': None}
+        (root / 'project.json').write_text(json.dumps(project))
         return root
 
     def test_discovery_gate_requires_decisions_and_provenance(self):
@@ -93,7 +103,8 @@ class FoundationTests(unittest.TestCase):
         payload = json.loads(result.stdout)
         self.assertEqual(result.returncode, 0, result.stdout)
         self.assertEqual(payload, {'ok': True, 'errors': [], 'ready': False})
-        result = subprocess.run(command+['--ready'], capture_output=True, text=True)
+        fixture_command = [sys.executable, str(ROOT/'scripts/check_foundation.py'), '--root', str(self.fixture()), '--json', '--ready']
+        result = subprocess.run(fixture_command, capture_output=True, text=True)
         payload = json.loads(result.stdout)
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(payload['ok'])
