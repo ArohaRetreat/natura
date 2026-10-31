@@ -1,0 +1,1069 @@
+{
+  "meditation": {
+    "label": "Meditation",
+    "category": "Experiences",
+    "aliases": [
+      "mindfulness",
+      "stillness",
+      "sitting"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 4.5,
+          "r": 1.6
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M8.5 10 Q12 7.5 15.5 10 M9 10 L8 14 L4 16 Q2.5 17.2 5 19 L10 19 M15 10 L16 14 L20 16 Q21.5 17.2 19 19 L14 19 M9 15 Q12 18 15 15 M10 19 Q12 16.5 14 19"
+        }
+      ]
+    ]
+  },
+  "yoga": {
+    "label": "Yoga",
+    "category": "Experiences",
+    "aliases": [
+      "asana",
+      "movement",
+      "stretch"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 4,
+          "r": 1.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M4 8 Q12 12 20 8 M12 9 V15 L7 20 M12 15 L17 20"
+        }
+      ]
+    ]
+  },
+  "breathwork": {
+    "label": "Breathwork",
+    "category": "Experiences",
+    "aliases": [
+      "breathing",
+      "air",
+      "calm"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 8 H14 Q19 8 19 4.5 Q19 2 16.5 3 M3 12 H18 Q22 12 21 9 M3 16 H12 Q17 16 17 19 Q17 22 14 21"
+        }
+      ]
+    ]
+  },
+  "nature-walk": {
+    "label": "Nature walk",
+    "category": "Experiences",
+    "aliases": [
+      "trail",
+      "hiking",
+      "walking"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 20 Q7 17 8 13 Q9 9 14 8 Q19 7 20 3 M4 10 Q3 5 8 4 Q10 8 4 10Z M14 17 Q17 12 21 14 Q21 19 14 17Z"
+        }
+      ]
+    ]
+  },
+  "forest-bathing": {
+    "label": "Forest bathing",
+    "category": "Experiences",
+    "aliases": [
+      "forest",
+      "trees",
+      "woodland"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 13 L7 5 L10 13Z M7 13 V19 M12 12 L16 3 L20 12Z M16 12 V19 M3 21 Q12 18 21 21"
+        }
+      ]
+    ]
+  },
+  "farm-experience": {
+    "label": "Farm experience",
+    "category": "Experiences",
+    "aliases": [
+      "farm",
+      "barn",
+      "agriculture"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 20 H21 M5 20 V10 L12 4 L19 10 V20 M9 20 V14 H15 V20 M10 9 H14 M4 11 H20"
+        }
+      ]
+    ]
+  },
+  "gardening": {
+    "label": "Gardening",
+    "category": "Experiences",
+    "aliases": [
+      "garden",
+      "seed",
+      "planting",
+      "sprout"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 18 V11 M12 13 Q5 13 5 6 Q12 6 12 13Z M12 10 Q12 3 19 3 Q19 10 12 10Z M5 20 Q12 16 19 20"
+        }
+      ]
+    ]
+  },
+  "birdwatching": {
+    "label": "Birdwatching",
+    "category": "Experiences",
+    "aliases": [
+      "bird",
+      "wildlife",
+      "nature"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 13 Q8 14 10 9 Q12 4 16 7 L18 6 L18 9 L21 10 L18 11 Q17 17 11 17 Q6 17 3 13Z M10 12 Q13 12 15 10 M10 17 L9 20 M13 17 V20"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 15.5,
+          "cy": 8.7,
+          "r": 0.55,
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    ]
+  },
+  "stargazing": {
+    "label": "Stargazing",
+    "category": "Experiences",
+    "aliases": [
+      "stars",
+      "night",
+      "sky"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 3 L14.4 8 L20 8.8 L16 12.8 L17 18.5 L12 15.8 L7 18.5 L8 12.8 L4 8.8 L9.6 8Z M20 3 V5 M19 4 H21 M3 19 V21 M2 20 H4"
+        }
+      ]
+    ]
+  },
+  "bonfire": {
+    "label": "Bonfire",
+    "category": "Experiences",
+    "aliases": [
+      "campfire",
+      "fire",
+      "evening"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 3 Q13 8 17 10 Q21 14 17 18 Q12 22 7 18 Q3 14 7 9 Q7 13 10 12 Q9 8 12 3Z M10 17 Q9 14 12 12 Q15 15 14 17 M5 21 L19 19 M5 19 L19 21"
+        }
+      ]
+    ]
+  },
+  "workshop": {
+    "label": "Workshop",
+    "category": "Experiences",
+    "aliases": [
+      "learning",
+      "class",
+      "creative"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 5 Q8 3 12 5 Q16 3 21 5 V19 Q16 17 12 19 Q8 17 3 19Z M12 5 V19 M6 8 L9 8 M6 11 H9 M15 8 H18 M15 11 H18"
+        }
+      ]
+    ]
+  },
+  "journaling": {
+    "label": "Journaling",
+    "category": "Experiences",
+    "aliases": [
+      "journal",
+      "writing",
+      "reflection"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 4,
+          "y": 3,
+          "width": 14,
+          "height": 18,
+          "rx": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M8 3 V21 M11 8 H15 M11 11 H15 M11 14 H14 M20 6 V17"
+        }
+      ]
+    ]
+  },
+  "cottage": {
+    "label": "Cottage",
+    "category": "Stay",
+    "aliases": [
+      "stay",
+      "home",
+      "cabin"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 11 L12 3 L21 11 M5 10 V21 H19 V10 M10 21 V15 H14 V21 M8 8 L12 5 L16 8"
+        }
+      ]
+    ]
+  },
+  "glamping": {
+    "label": "Glamping",
+    "category": "Stay",
+    "aliases": [
+      "tent",
+      "camping",
+      "stay"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 20 L12 4 L21 20Z M7 20 L12 11 L17 20 M3 20 H21 M12 4 V2"
+        }
+      ]
+    ]
+  },
+  "restful-sleep": {
+    "label": "Restful sleep",
+    "category": "Stay",
+    "aliases": [
+      "bed",
+      "bedroom",
+      "sleep"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 19 V9 M21 19 V12 Q21 10 19 10 H10 V16 H21 M3 16 H21"
+        }
+      ],
+      [
+        "rect",
+        {
+          "x": 4,
+          "y": 10,
+          "width": 5,
+          "height": 5,
+          "rx": 1.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M13 4 Q16 6 19 3 Q20 7 16 8"
+        }
+      ]
+    ]
+  },
+  "wifi": {
+    "label": "Wi-Fi",
+    "category": "Stay",
+    "aliases": [
+      "internet",
+      "wireless",
+      "connectivity"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 8 Q12 1 21 8 M6 12 Q12 7 18 12 M9 16 Q12 13 15 16"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 20,
+          "r": 0.9,
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    ]
+  },
+  "shower": {
+    "label": "Shower",
+    "category": "Stay",
+    "aliases": [
+      "bath",
+      "bathroom",
+      "wash"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M7 10 V7 Q7 3 11 3 Q15 3 15 7 M11 9 H19 Q19 6 15 6 Q11 6 11 9Z M12 13 L11 15 M16 13 L15 15 M20 13 L19 15 M11 18 L10 20 M15 18 L14 20 M19 18 L18 20"
+        }
+      ]
+    ]
+  },
+  "hot-water": {
+    "label": "Hot water",
+    "category": "Stay",
+    "aliases": [
+      "warm",
+      "water",
+      "bath"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 8 Q7 14 7 17 A5 5 0 0 0 17 17 Q17 14 12 8Z M8 3 Q6 5 8 7 M12 2 Q10 4 12 6 M16 3 Q14 5 16 7"
+        }
+      ]
+    ]
+  },
+  "laundry": {
+    "label": "Laundry",
+    "category": "Stay",
+    "aliases": [
+      "washing",
+      "clothes",
+      "amenity"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 4,
+          "y": 3,
+          "width": 16,
+          "height": 18,
+          "rx": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M4 8 H20"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 14,
+          "r": 4.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M8 14 Q10 12 12 14 Q14 16 16 14"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 7,
+          "cy": 5.5,
+          "r": 0.6,
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    ]
+  },
+  "pet-friendly": {
+    "label": "Pet friendly",
+    "category": "Stay",
+    "aliases": [
+      "pets",
+      "paw",
+      "dog"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M8 14 Q12 10 16 14 Q21 19 17 21 Q14 21 12 19 Q10 21 7 21 Q3 19 8 14Z"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 5.5,
+          "cy": 9,
+          "r": 1.5
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 10,
+          "cy": 5.5,
+          "r": 1.5
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 15,
+          "cy": 5.5,
+          "r": 1.5
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 19,
+          "cy": 9,
+          "r": 1.5
+        }
+      ]
+    ]
+  },
+  "farm-to-table": {
+    "label": "Farm to table",
+    "category": "Dining",
+    "aliases": [
+      "food",
+      "produce",
+      "organic",
+      "seasonal"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 15 H21 Q20 21 12 21 Q4 21 3 15Z M12 14 V8 M12 10 Q6 10 6 4 Q12 4 12 10Z M12 8 Q12 2 18 3 Q18 8 12 8Z"
+        }
+      ]
+    ]
+  },
+  "vegetarian": {
+    "label": "Vegetarian",
+    "category": "Dining",
+    "aliases": [
+      "plant-based",
+      "vegetable",
+      "leaf"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M6 19 Q4 9 19 4 Q19 19 6 19Z M5 21 L16 8 M10 14 H14"
+        }
+      ]
+    ]
+  },
+  "tea": {
+    "label": "Tea",
+    "category": "Dining",
+    "aliases": [
+      "chai",
+      "herbal",
+      "drink"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 10 H17 V15 Q17 19 11 19 Q4 19 4 15Z M17 11 H19 Q22 11 21 14 Q20 16 17 16 M3 21 H19 M8 3 Q6 5 8 7 M13 3 Q11 5 13 7"
+        }
+      ]
+    ]
+  },
+  "drinking-water": {
+    "label": "Drinking water",
+    "category": "Dining",
+    "aliases": [
+      "water",
+      "refill",
+      "hydration"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M6 9 H18 L16 21 H8Z M8 13 Q12 11 16 13 M12 2 Q9 5 10 6.5 Q12 9 14 6.5 Q15 5 12 2Z"
+        }
+      ]
+    ]
+  },
+  "breakfast": {
+    "label": "Breakfast",
+    "category": "Dining",
+    "aliases": [
+      "morning",
+      "meal",
+      "sunrise"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 18 H21 M6 18 A6 6 0 0 1 18 18 M12 6 V3 M5 9 L3 7 M19 9 L21 7 M3 21 H21"
+        }
+      ]
+    ]
+  },
+  "community-dining": {
+    "label": "Community dining",
+    "category": "Dining",
+    "aliases": [
+      "shared",
+      "table",
+      "meals"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M5 12 H19 M7 12 V21 M17 12 V21 M3 15 V20 H5 M21 15 V20 H19 M8 8 Q12 6 16 8"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 5,
+          "cy": 6,
+          "r": 2
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 19,
+          "cy": 6,
+          "r": 2
+        }
+      ]
+    ]
+  },
+  "calendar": {
+    "label": "Calendar",
+    "category": "Planning",
+    "aliases": [
+      "date",
+      "availability",
+      "schedule"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 3,
+          "y": 5,
+          "width": 18,
+          "height": 16,
+          "rx": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M7 3 V7 M17 3 V7 M3 10 H21 M8 14 H10 M14 14 H16 M8 18 H10"
+        }
+      ]
+    ]
+  },
+  "location": {
+    "label": "Location",
+    "category": "Planning",
+    "aliases": [
+      "map",
+      "pin",
+      "address"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 21 Q4 13 4 9 A8 7 0 0 1 20 9 Q20 13 12 21Z"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 9,
+          "r": 2.5
+        }
+      ]
+    ]
+  },
+  "directions": {
+    "label": "Directions",
+    "category": "Planning",
+    "aliases": [
+      "route",
+      "navigation",
+      "travel"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 2 L22 12 L12 22 L2 12Z M7 15 V11 H16 M13 8 L16 11 L13 14"
+        }
+      ]
+    ]
+  },
+  "time": {
+    "label": "Time",
+    "category": "Planning",
+    "aliases": [
+      "clock",
+      "duration",
+      "hours"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 12,
+          "r": 9
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M12 7 V12 L16 15"
+        }
+      ]
+    ]
+  },
+  "group-retreat": {
+    "label": "Group retreat",
+    "category": "Planning",
+    "aliases": [
+      "group",
+      "team",
+      "people"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 6,
+          "r": 2.5
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 5,
+          "cy": 9,
+          "r": 2
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 19,
+          "cy": 9,
+          "r": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M7 21 V18 Q7 13 12 13 Q17 13 17 18 V21 M2 20 V18 Q2 14 6 14 M22 20 V18 Q22 14 18 14"
+        }
+      ]
+    ]
+  },
+  "private-retreat": {
+    "label": "Private retreat",
+    "category": "Planning",
+    "aliases": [
+      "personal",
+      "solo",
+      "privacy"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 11 L12 3 L21 11 M5 10 V21 H19 V10"
+        }
+      ],
+      [
+        "circle",
+        {
+          "cx": 12,
+          "cy": 13,
+          "r": 1.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M9 19 Q9 16 12 16 Q15 16 15 19"
+        }
+      ]
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "category": "Planning",
+    "aliases": [
+      "message",
+      "chat",
+      "enquiry"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 4 H20 Q21 4 21 5 V15 Q21 16 20 16 H9 L4 21 V16 H4 Q3 16 3 15 V5 Q3 4 4 4Z M7 8 H17 M7 12 H14"
+        }
+      ]
+    ]
+  },
+  "booking": {
+    "label": "Booking",
+    "category": "Planning",
+    "aliases": [
+      "reserve",
+      "reservation",
+      "confirmed"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 3,
+          "y": 5,
+          "width": 18,
+          "height": 16,
+          "rx": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M7 3 V7 M17 3 V7 M3 10 H21 M8 16 L11 19 L17 13"
+        }
+      ]
+    ]
+  },
+  "wheelchair-access": {
+    "label": "Wheelchair access",
+    "category": "Access & care",
+    "aliases": [
+      "accessible",
+      "accessibility",
+      "mobility"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 13,
+          "cy": 4,
+          "r": 1.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M12 7 V13 H17 L20 19 M12 9 H17 M9 12 A5 5 0 1 0 15 19"
+        }
+      ]
+    ]
+  },
+  "step-free": {
+    "label": "Step-free route",
+    "category": "Access & care",
+    "aliases": [
+      "ramp",
+      "access",
+      "level"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 20 H21 M4 17 L18 8 V17 M5 7 H16 M13 4 L16 7 L13 10"
+        }
+      ]
+    ]
+  },
+  "parking": {
+    "label": "Parking",
+    "category": "Access & care",
+    "aliases": [
+      "car",
+      "vehicle",
+      "arrival"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 3,
+          "y": 3,
+          "width": 18,
+          "height": 18,
+          "rx": 3
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M9 18 V7 H13 A3.5 3.5 0 0 1 13 14 H9"
+        }
+      ]
+    ]
+  },
+  "first-aid": {
+    "label": "First aid",
+    "category": "Access & care",
+    "aliases": [
+      "medical",
+      "care",
+      "safety"
+    ],
+    "nodes": [
+      [
+        "rect",
+        {
+          "x": 3,
+          "y": 7,
+          "width": 18,
+          "height": 14,
+          "rx": 2
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M8 7 V4 H16 V7 M12 11 V17 M9 14 H15"
+        }
+      ]
+    ]
+  },
+  "quiet-zone": {
+    "label": "Quiet zone",
+    "category": "Access & care",
+    "aliases": [
+      "silence",
+      "peace",
+      "quiet"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 9 H8 L13 5 V19 L8 15 H4Z M18 9 L22 13 M22 9 L18 13"
+        }
+      ]
+    ]
+  },
+  "eco-care": {
+    "label": "Eco care",
+    "category": "Access & care",
+    "aliases": [
+      "sustainability",
+      "stewardship",
+      "environment"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 17 L8 15 Q10 15 12 17 H17 Q20 17 21 19 L13 22 L3 20 M12 14 V8 M12 10 Q6 10 6 4 Q12 4 12 10Z M12 8 Q12 2 18 3 Q18 8 12 8Z"
+        }
+      ]
+    ]
+  },
+  "search": {
+    "label": "Search",
+    "category": "Interface",
+    "aliases": [
+      "find",
+      "lookup"
+    ],
+    "nodes": [
+      [
+        "circle",
+        {
+          "cx": 10.5,
+          "cy": 10.5,
+          "r": 6.5
+        }
+      ],
+      [
+        "path",
+        {
+          "d": "M15.5 15.5 L21 21"
+        }
+      ]
+    ]
+  },
+  "menu": {
+    "label": "Menu",
+    "category": "Interface",
+    "aliases": [
+      "navigation",
+      "hamburger"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 6 H20 M4 12 H20 M4 18 H20"
+        }
+      ]
+    ]
+  },
+  "close": {
+    "label": "Close",
+    "category": "Interface",
+    "aliases": [
+      "dismiss",
+      "cancel"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M6 6 L18 18 M18 6 L6 18"
+        }
+      ]
+    ]
+  },
+  "arrow-right": {
+    "label": "Arrow right",
+    "category": "Interface",
+    "aliases": [
+      "next",
+      "forward",
+      "continue"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M3 12 H21 M14 5 L21 12 L14 19"
+        }
+      ]
+    ]
+  },
+  "chevron-down": {
+    "label": "Chevron down",
+    "category": "Interface",
+    "aliases": [
+      "expand",
+      "dropdown",
+      "more"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M5 9 L12 16 L19 9"
+        }
+      ]
+    ]
+  },
+  "check": {
+    "label": "Check",
+    "category": "Interface",
+    "aliases": [
+      "done",
+      "success",
+      "tick"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M4 12 L9 17 L20 6"
+        }
+      ]
+    ]
+  },
+  "download": {
+    "label": "Download",
+    "category": "Interface",
+    "aliases": [
+      "save",
+      "file"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M12 3 V16 M7 11 L12 16 L17 11 M4 17 V21 H20 V17"
+        }
+      ]
+    ]
+  },
+  "external-link": {
+    "label": "External link",
+    "category": "Interface",
+    "aliases": [
+      "open",
+      "new-tab"
+    ],
+    "nodes": [
+      [
+        "path",
+        {
+          "d": "M14 3 H21 V10 M21 3 L10 14 M10 4 H4 V20 H20 V14"
+        }
+      ]
+    ]
+  }
+}

@@ -1,42 +1,42 @@
 {
   "$schema": "schemas/project.schema.json",
   "schemaVersion": 1,
-  "name": null,
+  "name": "Natura",
   "template": {
     "repository": "theharithsa/app-launchpad-template",
-    "revision": null,
+    "revision": "f04c042a9e000f606982863518fa7bb9cfbb7d85",
     "version": "1.9.0"
   },
   "decisions": {
     "product": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "approved",
+      "value": "Official design standards of Aroha Retreat, seasonal typography and weather presentation guidance.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     },
     "stack": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "approved",
+      "value": "Existing dependency-light static HTML/CSS/ES modules with Node build/tests and browser-local drafts; inherited Python foundation tooling.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     },
     "hosting": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "approved",
+      "value": "Existing Firebase project/site aroha-retreat at /design/. User explicitly requested continued live publication.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     },
     "privacy": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "approved",
+      "value": "Public repository and public static standards approved in chat. No visitor geolocation, accounts, telemetry or Analytics; synthetic weather previews only.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     },
     "observability": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "not-applicable",
+      "value": "No approved Dynatrace tenant or browser tag exists. No telemetry is enabled; provider, deployment and GitHub check evidence remain local/source-owned.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     },
     "license": {
-      "status": "needs-user-input",
-      "value": null,
-      "approval": null
+      "status": "approved",
+      "value": "Aroha Retreat Restricted Use License for custom code/assets; MIT/OFL third-party exceptions retained.",
+      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
     }
   }
 }

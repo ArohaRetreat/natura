@@ -30,3 +30,5 @@ Replace arguments with the actual architecture. The command creates a planned se
 - [Policy ownership map](../docs/policy-map.md) routes cross-cutting rules.
 - [Synthetic examples](../examples/README.md) demonstrate completed shapes; they are not registered services or actual evidence.
 - Run `sh scripts/check.sh`. See [checks](../docs/testing.md) and [inventory](../docs/services.md).
+
+Official application: [Natura service](service-natura/SKILL.md), [continuation](service-natura/continuation.md).

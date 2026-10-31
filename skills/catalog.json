@@ -92,6 +92,18 @@
         "app-launchpad",
         "ian-xiaohei-illustrations"
       ]
+    },
+    {
+      "id": "service-natura",
+      "kind": "service",
+      "path": "skills/service-natura/SKILL.md",
+      "description": "Maintain the natura service; read its implementation and continuation context.",
+      "dependsOn": [
+        "project-implementation",
+        "project-testing",
+        "project-deployment",
+        "project-observability"
+      ]
     }
   ],
   "services": [
@@ -119,6 +131,34 @@
       ],
       "continuation": "skills/service-foundation-tooling/continuation.md",
       "lastReviewedRevision": "953717c787dd37d1500c04767f818f4e0a0faffd"
+    },
+    {
+      "id": "natura",
+      "skillId": "service-natura",
+      "sourcePaths": [
+        "src",
+        "public",
+        "config"
+      ],
+      "entrypoints": [
+        "src/index.html",
+        "src/app.js",
+        "scripts/build.mjs"
+      ],
+      "owner": "ArohaRetreat",
+      "status": "active",
+      "dependsOn": [],
+      "contracts": [
+        "src/model.js",
+        "src/seasonal.js",
+        "config/retreat-location.json"
+      ],
+      "testCommands": [
+        "npm test",
+        "npm run build"
+      ],
+      "continuation": "skills/service-natura/continuation.md",
+      "lastReviewedRevision": "bced2448dd77b25fb43133e0ef4be4e4c5828995"
     }
   ]
 }
