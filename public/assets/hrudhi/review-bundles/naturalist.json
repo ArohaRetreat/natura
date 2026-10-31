@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "chapterId": "naturalist",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/naturalist-curious.png",
@@ -591,7 +591,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -851,23 +851,28 @@
     },
     {
       "path": "videos/naturalist-garden-alpha.webm",
-      "sha256": "7164b5cc6c04050d37ae20b4f57279b722b7aa9f0ad0ac04ea4f4dae18a55383",
-      "bytes": 189577
+      "sha256": "f390423864278a82b7381aeb3ac15f5c10e82e8fc14c306f3fcb3b2978db2654",
+      "bytes": 96703
     },
     {
       "path": "videos/naturalist-garden-poster.png",
-      "sha256": "83fb8e7642cb088f31033945819c70e4bf7d4970f0ed56f1acb5ac2493f6162b",
-      "bytes": 94587
+      "sha256": "5b9afedf4ee0f3c3d163e794bd06abf33bd5d465af3947bb6a1a608ad456c63a",
+      "bytes": 266065
     },
     {
       "path": "videos/naturalist-garden.mp4",
-      "sha256": "d8216a4db392f24733189b8c3093fb4625ec38a007f06687f18b264c9d97f2e5",
-      "bytes": 149945
+      "sha256": "1f19f81c4ce8f845675a6643d0c0cdc0bd0b96319b3bc8adc37a680e92d4d9f7",
+      "bytes": 153525
     },
     {
       "path": "videos/naturalist-garden.vtt",
-      "sha256": "526d0880fc66545f002611bc9d8e181e7ae54c7da29ac46d4df2442c283551b3",
-      "bytes": 93
+      "sha256": "68d60ec9ef7746ee33d44d0b43ab33456a17944b8e8bf7de9e9126ed4bf2a389",
+      "bytes": 136
+    },
+    {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
     }
   ]
 }

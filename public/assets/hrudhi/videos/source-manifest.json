@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "identity": "hrudhi-original-v1",
+  "sourceRevision": "3f4884e522e98ce9dd731918b4deb71416a509b5",
+  "films": [
+    {
+      "id": "explorer-welcome",
+      "chapter": "explorer",
+      "season": "warm",
+      "reference": "references/explorer-warm.png",
+      "referenceSha256": "0ed91f383ccc69d340aeab53b168d9d783def4e6d5541b75b92a87d2cb0f4c3e",
+      "identity": "hrudhi-original-v1",
+      "representation": "unchanged-original-illustration",
+      "characterMotion": "none",
+      "sceneMotion": "leaves",
+      "renderBox": {
+        "x": 90,
+        "y": 40,
+        "width": 400,
+        "height": 600
+      },
+      "identityCheckRect": [
+        90,
+        40,
+        490,
+        640
+      ]
+    },
+    {
+      "id": "naturalist-garden",
+      "chapter": "naturalist",
+      "season": "monsoon",
+      "reference": "references/naturalist-monsoon.png",
+      "referenceSha256": "4cedd6d69203a795f7da4e61ee227a5c810a5bc705d541ab62603f4309d5113e",
+      "identity": "hrudhi-original-v1",
+      "representation": "unchanged-original-illustration",
+      "characterMotion": "none",
+      "sceneMotion": "rain",
+      "renderBox": {
+        "x": 90,
+        "y": 40,
+        "width": 400,
+        "height": 600
+      },
+      "identityCheckRect": [
+        90,
+        40,
+        490,
+        640
+      ]
+    },
+    {
+      "id": "storyteller-book",
+      "chapter": "storyteller",
+      "season": "cool",
+      "reference": "references/storyteller-cool.png",
+      "referenceSha256": "eb70dbbdf17917798f6d4c7da341b07f8518973a3380d91b85de8805af43123a",
+      "identity": "hrudhi-original-v1",
+      "representation": "unchanged-original-illustration",
+      "characterMotion": "none",
+      "sceneMotion": "lights",
+      "renderBox": {
+        "x": 90,
+        "y": 40,
+        "width": 400,
+        "height": 600
+      },
+      "identityCheckRect": [
+        90,
+        40,
+        490,
+        640
+      ]
+    },
+    {
+      "id": "pathfinder-walk",
+      "chapter": "pathfinder",
+      "season": "warm",
+      "reference": "references/pathfinder-warm.png",
+      "referenceSha256": "1cc2cafc741e76fff07e5379dce5da625d2794fb06eb2b6aa2aee8138968f4e5",
+      "identity": "hrudhi-original-v1",
+      "representation": "unchanged-original-illustration",
+      "characterMotion": "none",
+      "sceneMotion": "butterfly",
+      "renderBox": {
+        "x": 90,
+        "y": 40,
+        "width": 400,
+        "height": 600
+      },
+      "identityCheckRect": [
+        90,
+        40,
+        490,
+        640
+      ]
+    },
+    {
+      "id": "steward-canopy",
+      "chapter": "steward",
+      "season": "cool",
+      "reference": "references/steward-cool.png",
+      "referenceSha256": "ec132c527881020c266745851ddaffa75ce43575e8677416f4b7803c8adfce9c",
+      "identity": "hrudhi-original-v1",
+      "representation": "unchanged-original-illustration",
+      "characterMotion": "none",
+      "sceneMotion": "canopy",
+      "renderBox": {
+        "x": 90,
+        "y": 40,
+        "width": 400,
+        "height": 600
+      },
+      "identityCheckRect": [
+        90,
+        40,
+        490,
+        640
+      ]
+    }
+  ]
+}

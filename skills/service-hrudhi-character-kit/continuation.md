@@ -13,3 +13,7 @@ Revised all fifteen illustrated references and the vector eyes/smile. New design
 ## Identity correction / issue #9 / Natura 0.5.1 / kit 0.2.1
 
 The revised face was rejected; the explicit choice is to restore the original pre-revision identity. Exact original 15 PNG and 15 WebP masters plus the original rig source were restored from 3f4884e. Immutable identity-lock checks run before packaging/building. All raster, SVG and video derivatives are being rebuilt from that source. Retain the farm atlas and web-first asset/guidance features. No new face generation or portrait substitution is authorised. Actual checks and live deployment evidence follow issue #9.
+
+## Natura 0.5.2 / Hrudhi 0.2.2 / issue #11
+
+All five film scenes now embed exact immutable original PNGs; the character is still and only nature moves. Alpha WebM clips are still original-art overlays. No rig rendering in film generation. Source manifest plus pre-encoding exact-pixel and decoded H264 pixel comparisons validate the likeness. Original lock and 30 masters are unchanged. Actual checks and release evidence are recorded in release-evidence/natura-v0.5.2.json after execution.

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "chapterId": "storyteller",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/storyteller-curious.png",
@@ -591,7 +591,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -850,24 +850,29 @@
       "bytes": 11155
     },
     {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
+    },
+    {
       "path": "videos/storyteller-book-alpha.webm",
-      "sha256": "cb83ec64f65b4a6f74646b5cf503de247a0b3573426909748439465ac7120da7",
-      "bytes": 122364
+      "sha256": "79403e5c8d7aa4fad0f35436c0437fadca2711a443b4f07f4040302fa9be71ae",
+      "bytes": 96615
     },
     {
       "path": "videos/storyteller-book-poster.png",
-      "sha256": "217acd530f7a6e063e3cecad4650a340cdb38ee5efc8721327fdd6091755be52",
-      "bytes": 88697
+      "sha256": "2e2115886cc4d9748ada0c85d5d04e411eefd4e06241963e244a142adb0138b6",
+      "bytes": 244880
     },
     {
       "path": "videos/storyteller-book.mp4",
-      "sha256": "257c9478ba745106f1fa8cbfc0687f6ee2e6b9acde18d9933e6d5b9e21bca829",
-      "bytes": 126087
+      "sha256": "155d5480040c67943c42ae4c7edb7f23782e7dd59541da5548c9fb2a83ee0c68",
+      "bytes": 98383
     },
     {
       "path": "videos/storyteller-book.vtt",
-      "sha256": "af1babf46783c846f8e6ca149ccad9cd157da895ab795e340909117c8c704a25",
-      "bytes": 107
+      "sha256": "69b63503eea14325a20af0e9b203a51c61fae3875f172f507f19b0e574159c66",
+      "bytes": 133
     }
   ]
 }
