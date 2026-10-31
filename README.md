@@ -1,10 +1,10 @@
-# Natura v0.2.0
+# Natura v0.3.0
 
 Template version: **1.9.0**
 
 Official design standards of Aroha Retreat, with a working nature-inspired design application. Canonical deployment: https://aroha-retreat.web.app/design/.
 
-Includes separate English, Kannada and bilingual logo families; transparent icon-only and favicon assets; 48 service icons; two original botanical illustrations; four independently drawn motion studies; type, colour and component references; and a browser-local website builder.
+Includes separate English, Kannada and bilingual logo families; transparent icon-only and favicon assets; 48 service icons; two original botanical illustrations; twelve independently drawn motion studies; type, colour and component references; and a browser-local website builder.
 
 ## Develop
 
@@ -22,7 +22,7 @@ The provided Firebase web configuration is retained in `config/firebase.web.json
 
 ## Asset handoff
 
-`public/downloads/Natura-Design-Assets-v0.2.0.zip` is the complete current asset package. `public/docs/` contains the current field guide, motion field notes, retained identity handbook and corrected service icon PDFs. `Natura-Service-Icons-v0.2.0.zip` is a convenient icon-only subset, using approved v1.1 geometry. Botanical illustrations were generated specifically for this system with OpenAI image generation. PNG originals and web-optimized WebP files are included. Vector logos use SVG masters, with print and raster exports; no native proprietary Illustrator source is claimed.
+`public/downloads/Natura-Design-Assets-v0.3.0.zip` is the complete current asset package. `public/docs/` contains the current field guide, motion field notes, retained identity handbook and corrected service icon PDFs. `Natura-Service-Icons-v0.3.0.zip` is a convenient icon-only subset, using approved v1.1 geometry. Botanical illustrations were generated specifically for this system with OpenAI image generation. PNG originals and web-optimized WebP files are included. Vector logos use SVG masters, with print and raster exports; no native proprietary Illustrator source is claimed.
 
 Natura names the design application. Aroha Retreat names the retreat identity; its approved wording remains unchanged. Source ownership: `skills/service-natura/`. Repository: https://github.com/ArohaRetreat/natura. Template: theharithsa/app-launchpad-template v1.9.0 at f04c042a9e000f606982863518fa7bb9cfbb7d85. The previous Sites deployment is superseded; no new release is sent there.
 
@@ -33,3 +33,9 @@ The atmosphere atlas includes Cormorant Garamond Italic and Allura for limited h
 ## Restricted application licence
 
 Official design standards of Aroha Retreat. Custom application code, artwork and brand assets may be used only for authorised Aroha Retreat websites. Public visibility does not permit unrelated website use. See [LICENSE](LICENSE) and [third-party exceptions](THIRD-PARTY-NOTICES.md). Font, library and inherited template rights are retained under their original terms.
+
+## Living motion collection
+
+Natura 0.3.0 adds eight anatomy-specific studies: fern unfurling, dew gathering, flower opening, butterfly landing, shoreline tide, canopy wind, fireflies and mycelium. The original four remain available. The library has family filters and the same play/pause/seek/speed/reset controls. [Motion catalogue](public/docs/Natura-Motion-Catalogue.html) is the current complete reference; the older motion PDF documents the foundational four only.
+
+Weather now uses layered retreat landscapes, retaining the observed night palette in all conditions. The component workbench uses native controls with short state feedback and contextual notes. Experience selection is a design pattern, not a booking backend. Copy its HTML with the exported site CSS.
