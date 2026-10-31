@@ -1,0 +1,197 @@
+{
+  "version": "0.3.0",
+  "studies": [
+    {
+      "id": "leaf",
+      "title": "Leaf drift",
+      "duration": 3200,
+      "stages": [
+        "Release",
+        "Flutter",
+        "Drift",
+        "Settle"
+      ],
+      "description": "A leaf releases from its branch, turns in the breeze and comes to rest on the ground."
+    },
+    {
+      "id": "seed",
+      "title": "Seed germination",
+      "duration": 5200,
+      "stages": [
+        "Seed opens",
+        "Root emerges",
+        "Shoot rises",
+        "Leaves unfold"
+      ],
+      "description": "The shell separates, roots establish, a shoot rises and two cotyledons open in sequence."
+    },
+    {
+      "id": "water",
+      "title": "Water ripple",
+      "duration": 2600,
+      "stages": [
+        "Droplet falls",
+        "Surface impact",
+        "Ripples spread",
+        "Water stills"
+      ],
+      "description": "A falling droplet touches the surface and sends three widening ripples across the water."
+    },
+    {
+      "id": "path",
+      "title": "Trail journey",
+      "duration": 3600,
+      "stages": [
+        "Begin",
+        "Follow the bend",
+        "Find the ascent",
+        "Arrive"
+      ],
+      "description": "A trail is drawn through the landscape while a traveller follows its actual curved route."
+    },
+    {
+      "id": "fern",
+      "title": "Fern unfurling",
+      "duration": 4400,
+      "phaseMs": [
+        0,
+        650,
+        2300,
+        3500
+      ],
+      "stages": [
+        "Stem rises",
+        "Fronds loosen",
+        "Tip uncurls",
+        "Fronds rest"
+      ],
+      "description": "A coiled fern rises from the soil as paired leaflets loosen from the stem, working upward to the tip."
+    },
+    {
+      "id": "dew",
+      "title": "Dew gathering",
+      "duration": 4200,
+      "phaseMs": [
+        0,
+        700,
+        2300,
+        3300
+      ],
+      "stages": [
+        "Beads gather",
+        "Water coalesces",
+        "Drop releases",
+        "Pond receives"
+      ],
+      "description": "Small beads travel along a sloping leaf, join at its tip and release one drop into the pond below."
+    },
+    {
+      "id": "bloom",
+      "title": "Flower opening",
+      "duration": 4600,
+      "phaseMs": [
+        0,
+        650,
+        1700,
+        3300
+      ],
+      "stages": [
+        "Sepals part",
+        "Petals unfurl",
+        "Centre appears",
+        "Bloom settles"
+      ],
+      "description": "The outer sepals release the bud; overlapping petals open in sequence to reveal a pollen-rich centre."
+    },
+    {
+      "id": "butterfly",
+      "title": "Butterfly landing",
+      "duration": 4800,
+      "phaseMs": [
+        0,
+        1200,
+        3936,
+        4400
+      ],
+      "stages": [
+        "Approach",
+        "Wingbeats",
+        "Touch down",
+        "Wings rest"
+      ],
+      "description": "A butterfly follows a curved approach, beats its wings independently and folds them gently after landing."
+    },
+    {
+      "id": "tide",
+      "title": "Shoreline tide",
+      "duration": 5200,
+      "phaseMs": [
+        0,
+        1300,
+        2400,
+        3700
+      ],
+      "stages": [
+        "Water advances",
+        "Foam gathers",
+        "High water",
+        "Water retreats"
+      ],
+      "description": "A shallow wash advances over the sand, leaves a fine foam line and withdraws around the shoreline stones."
+    },
+    {
+      "id": "canopy",
+      "title": "Canopy in the wind",
+      "duration": 4800,
+      "phaseMs": [
+        0,
+        800,
+        1900,
+        3300
+      ],
+      "stages": [
+        "Gust arrives",
+        "Canopy bends",
+        "Leaves follow",
+        "Branches recover"
+      ],
+      "description": "A gust flexes the upper branches; leaves and grass respond with a delay and return as the breeze passes."
+    },
+    {
+      "id": "fireflies",
+      "title": "Fireflies at dusk",
+      "duration": 5800,
+      "phaseMs": [
+        0,
+        1100,
+        2400,
+        4500
+      ],
+      "stages": [
+        "Dusk arrives",
+        "First light",
+        "Quiet wandering",
+        "Lights linger"
+      ],
+      "description": "Fireflies drift on separate paths above the reeds, their soft light rising and fading at different moments."
+    },
+    {
+      "id": "mycelium",
+      "title": "Mycelium connections",
+      "duration": 5400,
+      "phaseMs": [
+        0,
+        700,
+        2400,
+        4600
+      ],
+      "stages": [
+        "Hyphae extend",
+        "Branches connect",
+        "Exchange travels",
+        "Network rests"
+      ],
+      "description": "Fine fungal threads branch beneath a fallen log; a nutrient pulse traces a connected path through the network."
+    }
+  ]
+}

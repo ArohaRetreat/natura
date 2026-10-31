@@ -1,6 +1,6 @@
 # Natura seasonal and weather standards
 
-Version 0.2.0 | Official design standards of Aroha Retreat
+Version 0.3.0 | Official design standards of Aroha Retreat
 
 ## Art direction: the atmosphere atlas
 
@@ -61,7 +61,7 @@ Before production, choose a weather provider with terms covering commercial retr
 
 Priority: unavailable/stale -> neutral; thunder codes or wind at least 40 km/h -> still neutral; fog -> mist; liquid precipitation -> rain; breeze at least 15 km/h -> leaf drift; cloud -> still cloud; clear -> sun or moon according to observed day/night. Snow/freezing codes fall back to still neutral; they are not re-labelled as rain.
 
-Animations are explanatory design studies, play once on explicit request, and never loop. Rain moves independent droplets; mist moves three bands; breeze turns separate leaves; sun rotates its rays slowly; night uses a very slow, low-contrast star-opacity change. Never flash lightning, simulate an emergency, shake the page or disguise storms as cheerful rain. This is not a weather warning or operational safety service. Availability and retreat safety decisions require a separate human-reviewed process.
+Animations are explanatory design studies, play once on explicit request, and never loop. Weather uses a layered retreat landscape: a cottage, pond, tree canopy, distant hills and foreground planting. Rain crosses the landscape and produces pond impacts and roof runoff. Mist passes at three depth levels. Breeze bends canopy joints and grass before carrying loose leaves. Sunlight includes slow cloud drift and a light/shadow treatment. Night retains a dark landscape, lit cottage windows, a moon reflection and softly drifting fireflies. Overcast clouds move slowly. The observed day/night flag applies to rain, mist and cloud scenes as well as clear skies. Never flash lightning, simulate an emergency, shake the page or disguise storms as cheerful rain. This is not a weather warning or operational safety service. Availability and retreat safety decisions require a separate human-reviewed process.
 
 For the future public retreat website, any optional first-visit atmosphere is confined to the hero illustration, lasts no more than six seconds and has an immediately available Stop motion control. No autoplay in the design atlas. Respect prefers-reduced-motion, a persistent visitor motion-off choice, hidden-tab cancellation and low-bandwidth/static fallback. A full static composition must communicate the same message. Keyboard-triggered explicit study playback works; routine navigation remains immediate.
 

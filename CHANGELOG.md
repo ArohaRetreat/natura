@@ -1,5 +1,14 @@
 # Changelog
 
+## Natura 0.3.0 - 2026-10-31
+
+- Expanded nature motion from four to twelve independently drawn studies with family filters, full playback controls and static reduced-motion states.
+- Rebuilt weather as layered retreat landscapes with canopy/grass response, rain impacts/runoff, depth-aware mist, daylight and night lighting.
+- Preserved the observed night palette across rain, mist, breeze and cloud conditions.
+- Reworked component previews into a native interaction workbench with selection, press, disclosure and focus feedback plus implementation notes.
+- Added a complete generated motion catalogue and transparent SVG exports.
+
+
 ## Natura 0.2.0 - 2026-10-31
 
 - Added the atmosphere atlas: expressive serif/calligraphic roles, independent season/weather previews and distinct sun, rain, mist, breeze and night studies.
