@@ -104,6 +104,18 @@
         "project-deployment",
         "project-observability"
       ]
+    },
+    {
+      "id": "service-hrudhi-character-kit",
+      "kind": "service",
+      "path": "skills/service-hrudhi-character-kit/SKILL.md",
+      "description": "Maintain the hrudhi-character-kit service; read its implementation and continuation context.",
+      "dependsOn": [
+        "project-implementation",
+        "project-testing",
+        "project-deployment",
+        "project-observability"
+      ]
     }
   ],
   "services": [
@@ -147,7 +159,9 @@
       ],
       "owner": "ArohaRetreat",
       "status": "active",
-      "dependsOn": [],
+      "dependsOn": [
+        "hrudhi-character-kit"
+      ],
       "contracts": [
         "src/model.js",
         "src/seasonal.js",
@@ -159,6 +173,33 @@
       ],
       "continuation": "skills/service-natura/continuation.md",
       "lastReviewedRevision": "51847d32d4a51a09214fa96bc2850ab9953f4795"
+    },
+    {
+      "id": "hrudhi-character-kit",
+      "skillId": "service-hrudhi-character-kit",
+      "sourcePaths": [
+        "src/hrudhi"
+      ],
+      "entrypoints": [
+        "src/hrudhi/studio.js",
+        "src/hrudhi/rig.js",
+        "src/hrudhi/policy.js",
+        "scripts/generate-hrudhi.mjs"
+      ],
+      "owner": "ArohaRetreat",
+      "status": "active",
+      "dependsOn": [],
+      "contracts": [
+        "docs/hrudhi/CONTRACT.md",
+        "src/hrudhi/definition.js",
+        "public/assets/hrudhi/manifest.json"
+      ],
+      "testCommands": [
+        "npm test",
+        "python3 scripts/verify-hrudhi.py"
+      ],
+      "continuation": "skills/service-hrudhi-character-kit/continuation.md",
+      "lastReviewedRevision": "a7182960bf78eb6895376006257c14047495b60c"
     }
   ]
 }

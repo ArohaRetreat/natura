@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "0.1.0",
+  "chapterId": "naturalist",
+  "status": "draft",
+  "files": [
+    {
+      "path": "definition.json",
+      "sha256": "c7dc6552d0dcd164f1ec8c777d3b4f264149d6caae44d7ecb1d5454f9a040ca8",
+      "bytes": 4100
+    },
+    {
+      "path": "expressions/naturalist-curious.png",
+      "sha256": "338b2951eb1763d639c7dcec19b112e46ada4de13f26a34d45637d5204b78cd9",
+      "bytes": 53617
+    },
+    {
+      "path": "expressions/naturalist-curious.svg",
+      "sha256": "e35e6cccf140ff3f36827b4e9aef49ae3387695d27b00c08bb8b0fa4f6985829",
+      "bytes": 3989
+    },
+    {
+      "path": "expressions/naturalist-delighted.png",
+      "sha256": "385b1d97b191c9772251361c8cb9c3545876d3b083a5bcd985c0fe89b12e6e14",
+      "bytes": 53730
+    },
+    {
+      "path": "expressions/naturalist-delighted.svg",
+      "sha256": "c1802f790481767f87bad91227c62f709d70859a28ccc10242d7e34c8b8e9014",
+      "bytes": 3989
+    },
+    {
+      "path": "expressions/naturalist-gentle.png",
+      "sha256": "0b171541647709d2db3fe0768c31fc6a93462b90d107391a4fc66c0ffaf89d7f",
+      "bytes": 53693
+    },
+    {
+      "path": "expressions/naturalist-gentle.svg",
+      "sha256": "c3fcc15c81079a488ad8518f47ee36dfc374727caa8c02d43ca063ab0c321934",
+      "bytes": 3989
+    },
+    {
+      "path": "expressions/naturalist-listening.png",
+      "sha256": "a8e7e698e4e4adfaba33a79266b75aec3aa5dca77a7620dc7c58b620c770c3a2",
+      "bytes": 52753
+    },
+    {
+      "path": "expressions/naturalist-listening.svg",
+      "sha256": "07a31e375bf300ddd0d970301ba30cbae871c751f4102617551ffa358a266cd7",
+      "bytes": 3907
+    },
+    {
+      "path": "expressions/naturalist-smile.png",
+      "sha256": "9978fcf4608bc23e737e85830d25fb0f939074a95f48f17d087c75d31659e1bf",
+      "bytes": 53199
+    },
+    {
+      "path": "expressions/naturalist-smile.svg",
+      "sha256": "8dd38bd0e7a03fe37d0515be8a2a8c8d723f7aed6ee0202d2d46a4fd41e6c881",
+      "bytes": 3888
+    },
+    {
+      "path": "expressions/naturalist-thoughtful.png",
+      "sha256": "f80d469ae6f42cefd001f907372c0cf1a2083b5cc4135ffeb870fae8203e1815",
+      "bytes": 52825
+    },
+    {
+      "path": "expressions/naturalist-thoughtful.svg",
+      "sha256": "331801d8717d76b92bd7891086afacd940023165c1f41af500f4d55e0d1118a4",
+      "bytes": 3907
+    },
+    {
+      "path": "motion/naturalist-cool-gardening.svg",
+      "sha256": "e884b37c9268738e81dcfee1a9dc42b20c86173dbdf8db6963c76f2a90b2f246",
+      "bytes": 17746
+    },
+    {
+      "path": "motion/naturalist-cool-gardening.webp",
+      "sha256": "ec1d6ec62ecced014e4275beeecb478ddaddb9cc8ec4a3800c4a1a880ef137b7",
+      "bytes": 595604
+    },
+    {
+      "path": "motion/naturalist-cool-pointing.svg",
+      "sha256": "3dbd9f5b49dd78f1952109a1c9a45c5fd36dca47f3d5e0962f0bbfbe71bfce5a",
+      "bytes": 16392
+    },
+    {
+      "path": "motion/naturalist-cool-pointing.webp",
+      "sha256": "2a2f58ed6a80b16bcccdef119678ceba0455da661ff3df4aa2db403af8f217b3",
+      "bytes": 478134
+    },
+    {
+      "path": "motion/naturalist-cool-resting.svg",
+      "sha256": "a50ccdeba7284adbb0c680cca1ac1123a45982bee331b5b8bd7e1fbb2ab08bb0",
+      "bytes": 15481
+    },
+    {
+      "path": "motion/naturalist-cool-resting.webp",
+      "sha256": "9be8af1efab15ed819051a6ac463dd0c54985ae7d94df9f49465759a4b3839e1",
+      "bytes": 474172
+    },
+    {
+      "path": "motion/naturalist-cool-sitting.svg",
+      "sha256": "ca1a43d8edca4abc1953a983ee6f959d08b1adb49e682b318bc04c3286e2c670",
+      "bytes": 15758
+    },
+    {
+      "path": "motion/naturalist-cool-sitting.webp",
+      "sha256": "2505026b0bc6f34f78871c944e571df4c388a3bc95de7912a89acca7e8f7f9e2",
+      "bytes": 446630
+    },
+    {
+      "path": "motion/naturalist-cool-storytelling.svg",
+      "sha256": "d50203cd19d53ece6c1cfd4d266506771f698b30e6efd26058d8fcc5483e78fe",
+      "bytes": 21544
+    },
+    {
+      "path": "motion/naturalist-cool-storytelling.webp",
+      "sha256": "ee82871fdc6d5a5542e5fe1e12147f716d7d91440442506224ab45834ecf72da",
+      "bytes": 700776
+    },
+    {
+      "path": "motion/naturalist-cool-talking.svg",
+      "sha256": "cfc5cec2ac32fba5f06562150ff61ce44db3c28aa52d87f7c313c85c8778cf67",
+      "bytes": 19879
+    },
+    {
+      "path": "motion/naturalist-cool-talking.webp",
+      "sha256": "aa7811e06c4f97dfa58b2604df2cb195e76684f36e0acc072f2be07b1fac43b0",
+      "bytes": 490792
+    },
+    {
+      "path": "motion/naturalist-cool-walking.svg",
+      "sha256": "2a19c1d43ff5cc9ba83d96349fe67b76e04da33bf38a14f60d6bd69f2c422072",
+      "bytes": 23265
+    },
+    {
+      "path": "motion/naturalist-cool-walking.webp",
+      "sha256": "f1c3fd92b8c346aa5dd68ecce6aa007d3eec817bf8c170d283027e6371dcf235",
+      "bytes": 419340
+    },
+    {
+      "path": "motion/naturalist-cool-waving.svg",
+      "sha256": "da8601e1fce6323f6ab9960a0a0dd6859c66f992eebfe39e4ae063c097a5e373",
+      "bytes": 16476
+    },
+    {
+      "path": "motion/naturalist-cool-waving.webp",
+      "sha256": "fc5a64943315bd60fe24c95f0a8016d8b84cbc0c5eb48886a21962cad4aa756f",
+      "bytes": 486738
+    },
+    {
+      "path": "motion/naturalist-monsoon-gardening.svg",
+      "sha256": "d42779c5a98e690c5f333a291931fac00fba7cd72151473a4c0b40e9a606945d",
+      "bytes": 18041
+    },
+    {
+      "path": "motion/naturalist-monsoon-gardening.webp",
+      "sha256": "9f21e37981cf9f9c0441c8b6fb4a1f04bba2c35fd679deaf5749b99426e029db",
+      "bytes": 579050
+    },
+    {
+      "path": "motion/naturalist-monsoon-pointing.svg",
+      "sha256": "6d8bd069153ce6a57baba166381951a741b80fab03c4c2b7337fc8f1ac944634",
+      "bytes": 17214
+    },
+    {
+      "path": "motion/naturalist-monsoon-pointing.webp",
+      "sha256": "3c1f9374f0bdddb3bcc75ba8e38bb90abef9f7bd0f0d15d26b9d907fcedb6aa5",
+      "bytes": 513354
+    },
+    {
+      "path": "motion/naturalist-monsoon-resting.svg",
+      "sha256": "97b1a1edb9e8bc5d5c9f861d1ee5b68a27c728bda93f0ef41210e1805f2b832e",
+      "bytes": 16285
+    },
+    {
+      "path": "motion/naturalist-monsoon-resting.webp",
+      "sha256": "c48482fda969a6f02746f2b988e9e7b9dc0090d2b7bd970e9aec98bbdbba475e",
+      "bytes": 509804
+    },
+    {
+      "path": "motion/naturalist-monsoon-sitting.svg",
+      "sha256": "117a47e726b0e4edc5ea9ccfe8f98c795f1da06b0e244ce9eb328229bd7364ec",
+      "bytes": 16035
+    },
+    {
+      "path": "motion/naturalist-monsoon-sitting.webp",
+      "sha256": "d0b0f73a03ddaa3d1ee975264ee06f938b6f9826a7c81bd41aa67fca1c4f060d",
+      "bytes": 437068
+    },
+    {
+      "path": "motion/naturalist-monsoon-storytelling.svg",
+      "sha256": "da4a123efdac714c9ba68a627298739c6528421dde37b438e36d21d333a8ab8d",
+      "bytes": 21920
+    },
+    {
+      "path": "motion/naturalist-monsoon-storytelling.webp",
+      "sha256": "06c3a6b091e1612108c091801ee3e23ccffdb61091588b983d228c97a9129884",
+      "bytes": 686800
+    },
+    {
+      "path": "motion/naturalist-monsoon-talking.svg",
+      "sha256": "6208a3195ada63ea76e3c1409bd25243c579a496f5f420ac2367c6d7895ac2d4",
+      "bytes": 20719
+    },
+    {
+      "path": "motion/naturalist-monsoon-talking.webp",
+      "sha256": "1daa73899b4f973e63f214635ddbf105528debb2bbe1fcc793d974349d403a74",
+      "bytes": 548104
+    },
+    {
+      "path": "motion/naturalist-monsoon-walking.svg",
+      "sha256": "b0fc7a213ceb8207c016baf88270a7bdb523093da5bd2c34e5e47a36ea2fce31",
+      "bytes": 22643
+    },
+    {
+      "path": "motion/naturalist-monsoon-walking.webp",
+      "sha256": "f873d0688685242689076e459cf9a84d97c69261b3d7bedb8eee414e9d412d50",
+      "bytes": 443080
+    },
+    {
+      "path": "motion/naturalist-monsoon-waving.svg",
+      "sha256": "0f8b423b44004745e7e6760c10a40efdfa35e40a2fea89a77cfa5694a1e678e5",
+      "bytes": 17298
+    },
+    {
+      "path": "motion/naturalist-monsoon-waving.webp",
+      "sha256": "934e70794544003d39e6fd1e85e3d7b5ea39048aaeb81bff91cac86ec9ee6fac",
+      "bytes": 524690
+    },
+    {
+      "path": "motion/naturalist-warm-gardening.svg",
+      "sha256": "5a25904315bcdd50835becc58927dd88485ea38c3837b4f16dcd1938d96fb19e",
+      "bytes": 17678
+    },
+    {
+      "path": "motion/naturalist-warm-gardening.webp",
+      "sha256": "3c35c7d8a1067d58cdbaf45d7f5fa23ad4cb6bd91829c9ea799311a4ebac62ab",
+      "bytes": 571636
+    },
+    {
+      "path": "motion/naturalist-warm-pointing.svg",
+      "sha256": "f764811c6220c9dd752b96a1a18a9c6c24ce759d2bd3183e157402722745a75f",
+      "bytes": 16324
+    },
+    {
+      "path": "motion/naturalist-warm-pointing.webp",
+      "sha256": "4683dad37467422042d4f88d7e8b14caa6e956c8fde29a413908d2ba2a291db0",
+      "bytes": 463208
+    },
+    {
+      "path": "motion/naturalist-warm-resting.svg",
+      "sha256": "2101dcb3834fc18cd3176f0456e5400f89ff0308da7d754ded8540cffa5d245f",
+      "bytes": 15413
+    },
+    {
+      "path": "motion/naturalist-warm-resting.webp",
+      "sha256": "cbc7f2fe83ca60c7dd8876ad5a9a32629fc773afa0327ca676c54b32eee49ac9",
+      "bytes": 457370
+    },
+    {
+      "path": "motion/naturalist-warm-sitting.svg",
+      "sha256": "da9595b4e2b1b229bde26809d89517a2d1f3e735dcb87a72238f1fb6a7e375c4",
+      "bytes": 15690
+    },
+    {
+      "path": "motion/naturalist-warm-sitting.webp",
+      "sha256": "cdf8b48ff45b0b43c28e11901a5cb930a29ed82a76d981a127ee041560e13b38",
+      "bytes": 429282
+    },
+    {
+      "path": "motion/naturalist-warm-storytelling.svg",
+      "sha256": "519949af421bb05fc45338bab518f39791aaa601582e053647f1e84c5862139e",
+      "bytes": 21476
+    },
+    {
+      "path": "motion/naturalist-warm-storytelling.webp",
+      "sha256": "511247a4bedbd4495045633d93dc7e3d8233c035387ee3a96aefbc08275cbdf8",
+      "bytes": 675424
+    },
+    {
+      "path": "motion/naturalist-warm-talking.svg",
+      "sha256": "d1a2b830239779252e0b0836a7ecebb092d4eb7fdf338f68eadf4d5fe208d5ff",
+      "bytes": 19811
+    },
+    {
+      "path": "motion/naturalist-warm-talking.webp",
+      "sha256": "3d832c98e6a0ca1d1d2e0720bbe4e03aebe2583034491fcff640bb67618049c7",
+      "bytes": 468260
+    },
+    {
+      "path": "motion/naturalist-warm-walking.svg",
+      "sha256": "9398b8e71624390bd112d45539f55de964fcead701204f2c7ee52a4e58ca2326",
+      "bytes": 23197
+    },
+    {
+      "path": "motion/naturalist-warm-walking.webp",
+      "sha256": "0b33eb1c67b521a390b059b48fbe94a9ab705158324b2c212b6105ec18dcf8fe",
+      "bytes": 401388
+    },
+    {
+      "path": "motion/naturalist-warm-waving.svg",
+      "sha256": "3e8b72a0d1ae1074c5433dbe1b7f8ac78848e88d021aeba8ef6f3f6deb35a16e",
+      "bytes": 16408
+    },
+    {
+      "path": "motion/naturalist-warm-waving.webp",
+      "sha256": "81aaa8315fe7e4f78cbb46f461d667e85e86dc2f85a4130c67b4c9a1ab4ab672",
+      "bytes": 471080
+    },
+    {
+      "path": "mouths/naturalist-A.png",
+      "sha256": "385b1d97b191c9772251361c8cb9c3545876d3b083a5bcd985c0fe89b12e6e14",
+      "bytes": 53730
+    },
+    {
+      "path": "mouths/naturalist-A.svg",
+      "sha256": "c1802f790481767f87bad91227c62f709d70859a28ccc10242d7e34c8b8e9014",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-E.png",
+      "sha256": "c61a12a7787a1a07aac12bea1a79948a0829cc5ec1680bc84657183731cbfce9",
+      "bytes": 53230
+    },
+    {
+      "path": "mouths/naturalist-E.svg",
+      "sha256": "d90bf26884d7a1867459987eb8f582bcbb03d535e448d9541a5cc1c43898f8a5",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-F.png",
+      "sha256": "19d2b0626c08c363ba5dfb7c01898e1e1af4119f9debeb4894b0d9a1891b2a7e",
+      "bytes": 52870
+    },
+    {
+      "path": "mouths/naturalist-F.svg",
+      "sha256": "7273aa058fab5873a75697f45c7f926a7cf65d98af7f759c2740f89503134ee1",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-L.png",
+      "sha256": "544bc2e1ec71a28e673f277b0524668739d3cb6a80f642db432e7b91656bc3b4",
+      "bytes": 53405
+    },
+    {
+      "path": "mouths/naturalist-L.svg",
+      "sha256": "17e812cf491954e8aff61d50841481b0507ba978892a39d27f3f6f2c9686ad4f",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-M.png",
+      "sha256": "1de6eba6c5a9f3d70e7b71bc11f1c3e2998e940529a0037173c3c9021fbb926e",
+      "bytes": 52834
+    },
+    {
+      "path": "mouths/naturalist-M.svg",
+      "sha256": "d6271d607b6e7899168d6f936782b620e5e0170ac42bebcb896525f4a892a2a3",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-O.png",
+      "sha256": "c8ee65e64adbd8b5749b7dd31110f75eb23ab561d397ac333b19c9b792952158",
+      "bytes": 53050
+    },
+    {
+      "path": "mouths/naturalist-O.svg",
+      "sha256": "6ae0417fc6351d41e5ed2e8aeb7b9f47e0a9595e0e1905e12e64180c8e92d544",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-rest.png",
+      "sha256": "0b171541647709d2db3fe0768c31fc6a93462b90d107391a4fc66c0ffaf89d7f",
+      "bytes": 53693
+    },
+    {
+      "path": "mouths/naturalist-rest.svg",
+      "sha256": "c3fcc15c81079a488ad8518f47ee36dfc374727caa8c02d43ca063ab0c321934",
+      "bytes": 3989
+    },
+    {
+      "path": "mouths/naturalist-U.png",
+      "sha256": "017741ce1f3363666702a4cfe9731ee2ffce6ac6c1115dd4bb3acbac68cacda2",
+      "bytes": 52868
+    },
+    {
+      "path": "mouths/naturalist-U.svg",
+      "sha256": "fc5d03c2355bbdb8820e14b8fbf44bc8b34f7c7b0216bd5c6456c8fa8e70a731",
+      "bytes": 3989
+    },
+    {
+      "path": "poses/naturalist-cool-gardening.png",
+      "sha256": "9062fca9ff03cfed4845386f30b0806941bdacd10e8448f68e120f76d731e9b5",
+      "bytes": 51071
+    },
+    {
+      "path": "poses/naturalist-cool-pointing.png",
+      "sha256": "f2da7f33294f7193f45f2aa0112d9c168fa13d5078f39bbc3256300d137f8365",
+      "bytes": 44484
+    },
+    {
+      "path": "poses/naturalist-cool-resting.png",
+      "sha256": "fed65360d50066aa8dc05a1e2ba010ed0b489e2243d5e45aa99abdabc80ab4ce",
+      "bytes": 44591
+    },
+    {
+      "path": "poses/naturalist-cool-sitting.png",
+      "sha256": "5f27ecac5aeee1a39a7929ca9b41dcf9f0924add4e2675fa0399c72ca2a0aa6d",
+      "bytes": 42804
+    },
+    {
+      "path": "poses/naturalist-cool-storytelling.png",
+      "sha256": "de77a872f60c5aa1bfc32b3a3261b21b7b74e6695d6b8ebfa41142c18960d621",
+      "bytes": 43527
+    },
+    {
+      "path": "poses/naturalist-cool-talking.png",
+      "sha256": "d4f5cf275bca1e1484d27c16af54488830c02ba36378b468195c0cff254e0858",
+      "bytes": 44049
+    },
+    {
+      "path": "poses/naturalist-cool-walking.png",
+      "sha256": "4c49f0f89e5bda52e1f4fa728ed120fb0290dcc2c330f1a7e0bcf06c32a4aa99",
+      "bytes": 47259
+    },
+    {
+      "path": "poses/naturalist-cool-waving.png",
+      "sha256": "e9ae77c642fac125b105e50ab4a1930bb61a2473a1a2411c34731d5dce560d3d",
+      "bytes": 44738
+    },
+    {
+      "path": "poses/naturalist-monsoon-gardening.png",
+      "sha256": "a222c9fa314eb43819f6392c6fa4289f4e56ddf5bad27c3272225bbc3529997b",
+      "bytes": 51187
+    },
+    {
+      "path": "poses/naturalist-monsoon-pointing.png",
+      "sha256": "186963cf3d368dfe7cece9f7dabdaf707c348f329185187905167e8b5b6fe9dc",
+      "bytes": 45814
+    },
+    {
+      "path": "poses/naturalist-monsoon-resting.png",
+      "sha256": "6456a215e3c7efe6c6b7e7d48cfa9b2aaaab7d65d5704d98f2eeca7e86e3a782",
+      "bytes": 46166
+    },
+    {
+      "path": "poses/naturalist-monsoon-sitting.png",
+      "sha256": "fc5c3a8c3841079c2bcc239917f8e3b63be32f00e387784bda360cb97c328d94",
+      "bytes": 42054
+    },
+    {
+      "path": "poses/naturalist-monsoon-storytelling.png",
+      "sha256": "48ef1ad304c92bff6cefbcf691e6db93e35888fc577754c5aeee9f92aaee2cb4",
+      "bytes": 42676
+    },
+    {
+      "path": "poses/naturalist-monsoon-talking.png",
+      "sha256": "c221af7686c60a211cad0bc9da95763762235594f02cc33e710643edc1036443",
+      "bytes": 45934
+    },
+    {
+      "path": "poses/naturalist-monsoon-walking.png",
+      "sha256": "edbba1ccf08441f30d3d0a968be1ac58dd324de736ca7ee41aff1e3bc891cbd6",
+      "bytes": 49639
+    },
+    {
+      "path": "poses/naturalist-monsoon-waving.png",
+      "sha256": "b3ac7b9089c1ea5079106b802b0a85f411b8ae0eeb54fa8718e2cfb074d4abab",
+      "bytes": 46163
+    },
+    {
+      "path": "poses/naturalist-warm-gardening.png",
+      "sha256": "a112a66a342f1e0015bb3f89cb6d8104f31ca714308308d309d900d667ec9dd4",
+      "bytes": 49391
+    },
+    {
+      "path": "poses/naturalist-warm-pointing.png",
+      "sha256": "063c3380635eda3e972a980af286b564883f96736d52a3f27243815fb2363ff6",
+      "bytes": 42672
+    },
+    {
+      "path": "poses/naturalist-warm-resting.png",
+      "sha256": "ca62d5b80812aa3cccd5801330fade2bc74caaae9e8802546b2013fe802b5d1d",
+      "bytes": 42835
+    },
+    {
+      "path": "poses/naturalist-warm-sitting.png",
+      "sha256": "6843c9446edde0a9929f109b7cea0cf248fff8f27aa7038450ac65373a7117b2",
+      "bytes": 41171
+    },
+    {
+      "path": "poses/naturalist-warm-storytelling.png",
+      "sha256": "fc5ebab2290731543df60f9db13c7bb45cd5d59a65b6e66df462380306fdb2d9",
+      "bytes": 42389
+    },
+    {
+      "path": "poses/naturalist-warm-talking.png",
+      "sha256": "c9fa15c19677438d79e94df9ac04b63d39e082d0fc53108dcd82cb440343c09c",
+      "bytes": 42119
+    },
+    {
+      "path": "poses/naturalist-warm-walking.png",
+      "sha256": "3731008ddbd9d157826242984ff7370450a4b866f663a22d69d295b4633a46d8",
+      "bytes": 45241
+    },
+    {
+      "path": "poses/naturalist-warm-waving.png",
+      "sha256": "f189a84ee85b4b404c6a19782c69f5b34320fa3ff3c535811e425e9e7d562768",
+      "bytes": 42856
+    },
+    {
+      "path": "references/naturalist-cool.png",
+      "sha256": "3f317d98e76b27e12e0d687fd899aa97f6f3183265152ac422332d270c32acd2",
+      "bytes": 2108175
+    },
+    {
+      "path": "references/naturalist-cool.webp",
+      "sha256": "b3c92adc709ff735708fb612ce35fd964fd3b23be2fb0593fb5c45ac77250136",
+      "bytes": 924366
+    },
+    {
+      "path": "references/naturalist-monsoon.png",
+      "sha256": "4cedd6d69203a795f7da4e61ee227a5c810a5bc705d541ab62603f4309d5113e",
+      "bytes": 2180610
+    },
+    {
+      "path": "references/naturalist-monsoon.webp",
+      "sha256": "2a99846e95267add3a3bdb61d79e849f0277b42f8b69da744e3b7524f6052ab7",
+      "bytes": 969736
+    },
+    {
+      "path": "references/naturalist-warm.png",
+      "sha256": "ac53d335a8609f799c31a294da7fa71d699a839bd434328b25601bec7b9349b4",
+      "bytes": 2047153
+    },
+    {
+      "path": "references/naturalist-warm.webp",
+      "sha256": "c976e93a5bfc47c4b38eac483ec7883b21597051cd1cb4f1113f71e6e3f71f6d",
+      "bytes": 836234
+    },
+    {
+      "path": "rigs/naturalist-cool.png",
+      "sha256": "76dbb806b58efd692961318f69d0440a4242567c5a3575c7ff3a3ca2f09508a1",
+      "bytes": 103036
+    },
+    {
+      "path": "rigs/naturalist-cool.svg",
+      "sha256": "af5374153f5b71fdc6d9773f47c0c9e13d00523bc9e262eecd62a4576b3a2881",
+      "bytes": 11057
+    },
+    {
+      "path": "rigs/naturalist-monsoon.png",
+      "sha256": "9cf1b684e4f14b59f3b15aedee52adf350b617471680b0cb27e771111ebddabe",
+      "bytes": 107683
+    },
+    {
+      "path": "rigs/naturalist-monsoon.svg",
+      "sha256": "9446abfb06d44f5e5517923726cde0a34e6c801018a635dca8fba2adc23cf9b0",
+      "bytes": 11758
+    },
+    {
+      "path": "rigs/naturalist-warm.png",
+      "sha256": "74be7f6e0a0661464bae404ac626c0e328372f11d1f2d2260aa6489c7e59ccbc",
+      "bytes": 98667
+    },
+    {
+      "path": "rigs/naturalist-warm.svg",
+      "sha256": "9b8f036e91638a64b0f13f2cf0fa09546e9f28277aa98a492513ca6d83bc3175",
+      "bytes": 10989
+    },
+    {
+      "path": "runtime/definition.js",
+      "sha256": "782a236370e9fc8d8b44210f7bdbf6adfec773559afd625825a3f1285f7a97dc",
+      "bytes": 2919
+    },
+    {
+      "path": "runtime/player.js",
+      "sha256": "bbea76f949ec47ce89ac8848b9ea325a849a0e490a7a77da55b71c4c0a3fd983",
+      "bytes": 3336
+    },
+    {
+      "path": "runtime/policy.js",
+      "sha256": "3e400623191126819e6d14129f7ae2a6e898c3371d69898ad12db856efcb213d",
+      "bytes": 4862
+    },
+    {
+      "path": "runtime/rig.js",
+      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
+      "bytes": 21916
+    },
+    {
+      "path": "timelines/naturalist-cool-gardening.json",
+      "sha256": "b57b0106fff65d6c14318e9d8d6b36074e6a8d88fdfe69c21b8f8eb12ea490a9",
+      "bytes": 1236
+    },
+    {
+      "path": "timelines/naturalist-cool-pointing.json",
+      "sha256": "ffec5b9a3902cff2358f6e52b7758457559c332c3142458de0bcab7a84402dfa",
+      "bytes": 1081
+    },
+    {
+      "path": "timelines/naturalist-cool-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/naturalist-cool-sitting.json",
+      "sha256": "cf3a33fb310b441c1ffe992522b9d51abc397dc10bb1aeddf516887d753e028a",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/naturalist-cool-storytelling.json",
+      "sha256": "34e6c5042ed5442112e0c099f89c1311af3e438dca4fe90d1ba49d95823cbeaf",
+      "bytes": 1609
+    },
+    {
+      "path": "timelines/naturalist-cool-talking.json",
+      "sha256": "66894628f50c3a2f902110522bde03d5b96b52549bbe52940865be90e3293fc0",
+      "bytes": 1457
+    },
+    {
+      "path": "timelines/naturalist-cool-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/naturalist-cool-waving.json",
+      "sha256": "d05a7f7c818be5a638b8688c4ef44f6c35c7e0e0fb9781255a06f1d3326f91f9",
+      "bytes": 1136
+    },
+    {
+      "path": "timelines/naturalist-monsoon-gardening.json",
+      "sha256": "b57b0106fff65d6c14318e9d8d6b36074e6a8d88fdfe69c21b8f8eb12ea490a9",
+      "bytes": 1236
+    },
+    {
+      "path": "timelines/naturalist-monsoon-pointing.json",
+      "sha256": "c7ee95cd6c9b48db6d2e532f20de64f651adc49531fab47222b0e76f96721b98",
+      "bytes": 1097
+    },
+    {
+      "path": "timelines/naturalist-monsoon-resting.json",
+      "sha256": "064bf2d9aa1b3d28925a7e51ee47a63d4d20694f94259d09761ab6b615675b17",
+      "bytes": 868
+    },
+    {
+      "path": "timelines/naturalist-monsoon-sitting.json",
+      "sha256": "cf3a33fb310b441c1ffe992522b9d51abc397dc10bb1aeddf516887d753e028a",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/naturalist-monsoon-storytelling.json",
+      "sha256": "34e6c5042ed5442112e0c099f89c1311af3e438dca4fe90d1ba49d95823cbeaf",
+      "bytes": 1609
+    },
+    {
+      "path": "timelines/naturalist-monsoon-talking.json",
+      "sha256": "51d2aa3df1f09729afce762db6015ed24704f82cdcd1cfb17b45f2555f289697",
+      "bytes": 1447
+    },
+    {
+      "path": "timelines/naturalist-monsoon-walking.json",
+      "sha256": "af6b8349a3dc32ae252c01da1eedac9b21aa6bc4df0dcd7258e53b6987d21f11",
+      "bytes": 2788
+    },
+    {
+      "path": "timelines/naturalist-monsoon-waving.json",
+      "sha256": "c7c2f36cca7171251076f6732fcc38651b0b509210c0852371bdb4555050f71c",
+      "bytes": 1152
+    },
+    {
+      "path": "timelines/naturalist-warm-gardening.json",
+      "sha256": "b57b0106fff65d6c14318e9d8d6b36074e6a8d88fdfe69c21b8f8eb12ea490a9",
+      "bytes": 1236
+    },
+    {
+      "path": "timelines/naturalist-warm-pointing.json",
+      "sha256": "ffec5b9a3902cff2358f6e52b7758457559c332c3142458de0bcab7a84402dfa",
+      "bytes": 1081
+    },
+    {
+      "path": "timelines/naturalist-warm-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/naturalist-warm-sitting.json",
+      "sha256": "cf3a33fb310b441c1ffe992522b9d51abc397dc10bb1aeddf516887d753e028a",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/naturalist-warm-storytelling.json",
+      "sha256": "34e6c5042ed5442112e0c099f89c1311af3e438dca4fe90d1ba49d95823cbeaf",
+      "bytes": 1609
+    },
+    {
+      "path": "timelines/naturalist-warm-talking.json",
+      "sha256": "66894628f50c3a2f902110522bde03d5b96b52549bbe52940865be90e3293fc0",
+      "bytes": 1457
+    },
+    {
+      "path": "timelines/naturalist-warm-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/naturalist-warm-waving.json",
+      "sha256": "d05a7f7c818be5a638b8688c4ef44f6c35c7e0e0fb9781255a06f1d3326f91f9",
+      "bytes": 1136
+    },
+    {
+      "path": "turnarounds/naturalist-cool-back.png",
+      "sha256": "91e8a12513f8a45658326cc7d729a5421c084874f8cc1d3ac7ea638aec9010af",
+      "bytes": 73961
+    },
+    {
+      "path": "turnarounds/naturalist-cool-back.svg",
+      "sha256": "b367f915fc1c1202069e85ce8d3c874d0d6a52b260404c723c11895ace32e88f",
+      "bytes": 7356
+    },
+    {
+      "path": "turnarounds/naturalist-cool-front.png",
+      "sha256": "17d870afdcdacbd338775ddf7ecd9567b007430a6863d00b466e1aa288cc3658",
+      "bytes": 103350
+    },
+    {
+      "path": "turnarounds/naturalist-cool-front.svg",
+      "sha256": "0ab59fe7f23f67224f3e4d0eae3a450edbeafb989412b4377666e92d0aca2213",
+      "bytes": 11014
+    },
+    {
+      "path": "turnarounds/naturalist-cool-profile.png",
+      "sha256": "e7b56c9838a521a1570a8c702202ea0a92484ea4c1629e96d7a373bcebaae30a",
+      "bytes": 96652
+    },
+    {
+      "path": "turnarounds/naturalist-cool-profile.svg",
+      "sha256": "f077196036e3e785ff25412247fbee508ba65103912e40fcbc5d86f675aba6b1",
+      "bytes": 10568
+    },
+    {
+      "path": "turnarounds/naturalist-cool-three-quarter.png",
+      "sha256": "76dbb806b58efd692961318f69d0440a4242567c5a3575c7ff3a3ca2f09508a1",
+      "bytes": 103036
+    },
+    {
+      "path": "turnarounds/naturalist-cool-three-quarter.svg",
+      "sha256": "af5374153f5b71fdc6d9773f47c0c9e13d00523bc9e262eecd62a4576b3a2881",
+      "bytes": 11057
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-back.png",
+      "sha256": "2e04d2420ebdaf7cb007d8ffe14d016d3ce8cf70e11cee7a44428ff150ea62f3",
+      "bytes": 76513
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-back.svg",
+      "sha256": "78ee8d31c27436fb0fe1b41f7f3917f4284d1a371b1cccac7c93811383b7f942",
+      "bytes": 8054
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-front.png",
+      "sha256": "d6592447bbcc8ac417b654e55e8d228f5b633e7cfc3799f02e8b8448c38a32b5",
+      "bytes": 107972
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-front.svg",
+      "sha256": "bec252d17dd765e1f83c4ba7a21e0d3a7116ed4a378058b81f40ca79a2dbcadb",
+      "bytes": 11715
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-profile.png",
+      "sha256": "a0fb4ac42f3cdbd74c04424ec09b4cc6541d0b7becd4a0d5be8b392ef207fdd7",
+      "bytes": 97646
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-profile.svg",
+      "sha256": "d67e8f59db575123a27a5da2f249f61b91d105724d715d1f0c6b065a0c6f9a9a",
+      "bytes": 11253
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-three-quarter.png",
+      "sha256": "9cf1b684e4f14b59f3b15aedee52adf350b617471680b0cb27e771111ebddabe",
+      "bytes": 107683
+    },
+    {
+      "path": "turnarounds/naturalist-monsoon-three-quarter.svg",
+      "sha256": "9446abfb06d44f5e5517923726cde0a34e6c801018a635dca8fba2adc23cf9b0",
+      "bytes": 11758
+    },
+    {
+      "path": "turnarounds/naturalist-warm-back.png",
+      "sha256": "d15e9369f132ccdfb6c7cd77ddd417e1b3f01da0857321f2800fc9260221224c",
+      "bytes": 69286
+    },
+    {
+      "path": "turnarounds/naturalist-warm-back.svg",
+      "sha256": "6298ed9fca00b39df11fae9a692b274ac42505dfee76018cdbae0ac2e1e918ed",
+      "bytes": 7288
+    },
+    {
+      "path": "turnarounds/naturalist-warm-front.png",
+      "sha256": "b4562249e8a4e155d1ccd4865581b021d8a8960d6ddb3d66c1fa52f2d51db520",
+      "bytes": 98943
+    },
+    {
+      "path": "turnarounds/naturalist-warm-front.svg",
+      "sha256": "ec566f60f4ceb0ddb7cd6d9a7a5c82cf10bf3f9f2585227903325f37cebb0eaa",
+      "bytes": 10946
+    },
+    {
+      "path": "turnarounds/naturalist-warm-profile.png",
+      "sha256": "768eced2bdf46e20a1cde806691bdd38eedb17eb5a07aa33588124b2b4fe152a",
+      "bytes": 93300
+    },
+    {
+      "path": "turnarounds/naturalist-warm-profile.svg",
+      "sha256": "1f00d3b40abceb7e30eac4e3a7e032423beb31d2d8e81a5d7b3f31133a8a9d31",
+      "bytes": 10500
+    },
+    {
+      "path": "turnarounds/naturalist-warm-three-quarter.png",
+      "sha256": "74be7f6e0a0661464bae404ac626c0e328372f11d1f2d2260aa6489c7e59ccbc",
+      "bytes": 98667
+    },
+    {
+      "path": "turnarounds/naturalist-warm-three-quarter.svg",
+      "sha256": "9b8f036e91638a64b0f13f2cf0fa09546e9f28277aa98a492513ca6d83bc3175",
+      "bytes": 10989
+    }
+  ]
+}

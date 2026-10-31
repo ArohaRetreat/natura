@@ -1,5 +1,13 @@
 # Changelog
 
+## Natura 0.4.0 - 2026-10-31
+
+- Add the Hrudhi draft character lab: five chapters for ages 5-17, 15 seasonal references and a separate editable vector rig.
+- Deliver 120 distinct age/season/action combinations with one-pass SVG/WebP playback, PNG studies, mouth shapes, timelines and hashed chapter review bundles.
+- Add reduced-motion controls, explicit playback, teardown and sample milestone eligibility evaluation.
+- Add the illustrated character bible, restricted-use download kit and planned admin/AI contract. All character designs remain draft; no AI, admin, audio or permanent visitor mascot is activated.
+
+
 ## Natura 0.3.0 - 2026-10-31
 
 - Expanded nature motion from four to twelve independently drawn studies with family filters, full playback controls and static reduced-motion states.
