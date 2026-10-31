@@ -20,3 +20,6 @@ public/downloads/Natura-Farm-Atlas-v*.zip
 
 # Unapproved character candidates stay local; never ship a rejected face/gait as a kit asset.
 review/hrudhi-performance/
+
+dist-preview/
+adobe/output/
