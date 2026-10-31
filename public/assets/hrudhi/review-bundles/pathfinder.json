@@ -1,592 +1,597 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.0",
+  "kitVersion": "0.2.1",
   "chapterId": "pathfinder",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "874eb43e3083adcb8f6149037bfc01e25f5ccef01b96eb8b8f6cdb0c7376d112",
+      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
       "bytes": 4100
     },
     {
       "path": "expressions/pathfinder-curious.png",
-      "sha256": "be4489028987428e8d7ffe7ad22ad875c4d2c65bc244b2205b2a1686c15e22f6",
-      "bytes": 54017
+      "sha256": "78db1040987cc613105ce084598e3808ab17991feb6dc7665b6dfc2ec984f293",
+      "bytes": 56149
     },
     {
       "path": "expressions/pathfinder-curious.svg",
-      "sha256": "f4bb4d32c6142eb264922bd68c014ee3a7f37f45adc1f9fafaf67ee4555fee71",
-      "bytes": 4266
+      "sha256": "84b20b14192f5215218d941babf18236fbe5d41ede6ade2fc757cda1fbf9bbee",
+      "bytes": 4288
     },
     {
       "path": "expressions/pathfinder-delighted.png",
-      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
-      "bytes": 54127
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
     },
     {
       "path": "expressions/pathfinder-delighted.svg",
-      "sha256": "14366526209fe1a411c628747ebdb8c0a7d6c3f4910e3a65c324e42b19cd8706",
-      "bytes": 4266
+      "sha256": "2c0cef8bb0e6694623e7d7a11fdda539b8af6914b901b4729f11c9dad94ab864",
+      "bytes": 4288
     },
     {
       "path": "expressions/pathfinder-gentle.png",
-      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
-      "bytes": 54092
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
     },
     {
       "path": "expressions/pathfinder-gentle.svg",
-      "sha256": "3efafacc374eb000d2317145430ed7276d0efa7681ad05124e241e7280d40918",
-      "bytes": 4266
+      "sha256": "da42008a6b1eb15dacbf913cacac3ba7fa8a003fd23bcce218e4a95cad33138a",
+      "bytes": 4288
     },
     {
       "path": "expressions/pathfinder-listening.png",
-      "sha256": "5281e47f38a6d4f69eb915e7a5b13249052adac5810aeae26083c990dcf91913",
-      "bytes": 53262
+      "sha256": "e407e99559214145991ad623c442dba543c728edf41d3cb2a91a5193aaa4acc2",
+      "bytes": 55397
     },
     {
       "path": "expressions/pathfinder-listening.svg",
-      "sha256": "5eab34592a7c1329ca59cb4e33a525958258191cb700a96ecc64bdde65008610",
-      "bytes": 4184
+      "sha256": "c823b69c4fd6aa438b7cffa3a463838f17a438dd27a26447e6713972072da1d3",
+      "bytes": 4206
     },
     {
       "path": "expressions/pathfinder-smile.png",
-      "sha256": "d66c429ba0a04ecd1d4987ca398d776c4955917f11bf7d9b4077c125fb9b0943",
-      "bytes": 53692
+      "sha256": "8c6d8ccdecbd2c9bdb39eff4d258c61ef09dbe29ea8caf9782c9512460624623",
+      "bytes": 55838
     },
     {
       "path": "expressions/pathfinder-smile.svg",
-      "sha256": "bc9a154f836dc34597c8369c148f16f8f952e08deab7ed8021e42ae7649abaf7",
-      "bytes": 4165
+      "sha256": "8b0eeec5faa6247699f3f3adc2d93554d8ccc9c076aeb1110e9c13e1c4449b28",
+      "bytes": 4187
     },
     {
       "path": "expressions/pathfinder-thoughtful.png",
-      "sha256": "0ef2252529836b3da735ae99fa2da0ab6565be851bb1bd5df64898a64f7eff3d",
-      "bytes": 53318
+      "sha256": "28ff927b8d8635795474fccd7db704b560a41cf6f9e3cb5452a0407beffc6ce5",
+      "bytes": 55404
     },
     {
       "path": "expressions/pathfinder-thoughtful.svg",
-      "sha256": "264a0820b4c289946ecb21759de9ba0f76efc35e23fe655f2a33def8e16cf494",
-      "bytes": 4184
+      "sha256": "2cc8d5c236d8996e56e3871a3b58383d915bcadcb83592665e637155638bb3eb",
+      "bytes": 4206
+    },
+    {
+      "path": "identity-lock.json",
+      "sha256": "9d931919283ad3165f735e27ae0530ac65fe0a47ef202b5fcbe51548b7fe1525",
+      "bytes": 3372
     },
     {
       "path": "motion/pathfinder-cool-gardening.svg",
-      "sha256": "a5b3ce97f91f7c13ea906e97494bb4acaee8eedaa616236e41fbfa382d39b003",
-      "bytes": 18032
+      "sha256": "d056d978c0d8ce4a1e38ad65343871135c62fc1114accbfb976e389f8f2f1fc1",
+      "bytes": 18054
     },
     {
       "path": "motion/pathfinder-cool-gardening.webp",
-      "sha256": "6b19d6181c7e88afbc842213fe3a81398c6ebcc13ef9d4aba5ed3bb01eca72af",
-      "bytes": 571930
+      "sha256": "c0ff763dce0a2d7b3988a150cdd22c6cc66fb11888bd042ad7353706e31b0abf",
+      "bytes": 576428
     },
     {
       "path": "motion/pathfinder-cool-pointing.svg",
-      "sha256": "b3f1c6f82c33622399f36dc6a4cba877a4bf489b94800f920445d5dd84249bb0",
-      "bytes": 16669
+      "sha256": "dc55d4fba323e24d05a84df476577f359b896fc29d99958140e6062bbdc30b73",
+      "bytes": 16691
     },
     {
       "path": "motion/pathfinder-cool-pointing.webp",
-      "sha256": "9ab98bedc129e1372f8f1b47f4889fddf1481da6f958f839ac7af68f3cc97186",
-      "bytes": 485596
+      "sha256": "2d5c31d9144152aec81537d8a841ba83a5ddb5da7b97822c19c630413e546f3e",
+      "bytes": 487954
     },
     {
       "path": "motion/pathfinder-cool-resting.svg",
-      "sha256": "1f8e4d878636ebc21aa653a030c1a23d06ab6b16a0d11b1f5058fc61e7bf6b43",
-      "bytes": 15754
+      "sha256": "257838aab4f1591b81ff62006d0489a692b5a15c1c58326c61048a4166f474b7",
+      "bytes": 15776
     },
     {
       "path": "motion/pathfinder-cool-resting.webp",
-      "sha256": "00b3a16ecf71c523d6b51f4ddd0b88db61a3d35e3f40407815f2b9882decf21c",
-      "bytes": 485886
+      "sha256": "7092c75fb364600dbb9f8ca605166cf9bc3bc70c780c9777534686ecca269651",
+      "bytes": 488360
     },
     {
       "path": "motion/pathfinder-cool-sitting.svg",
-      "sha256": "fae144d627360b9640cd77db86291bf8aa07f412b7f437db688bd42cd13d3a9f",
-      "bytes": 16033
+      "sha256": "d469f87ffdb24ba592e15de30233a173798c00726bb0bc77a9a6b1a7c743c246",
+      "bytes": 16055
     },
     {
       "path": "motion/pathfinder-cool-sitting.webp",
-      "sha256": "130cbd639d64e74301f5ea398222c562d35b7cbc4a4f6060f772d9c316c60f10",
-      "bytes": 437424
+      "sha256": "d423ba904c19349dbfdbd9c552b0c9b83d3020ab7e6896c06f066df1005b7675",
+      "bytes": 440044
     },
     {
       "path": "motion/pathfinder-cool-storytelling.svg",
-      "sha256": "2a4b8f4bab4cb4ea2c71ceafacdaf49ce2779c3407d698783900e4eec34e52f7",
-      "bytes": 21842
+      "sha256": "efe96cb1a9cd2dfd71cb94538530d100af75004b63c4a1a87274e81187120cac",
+      "bytes": 21864
     },
     {
       "path": "motion/pathfinder-cool-storytelling.webp",
-      "sha256": "b1609e26b582f91d2e97741700e5a00b59be6cd7365b44f1f2ca2e706fb4300d",
-      "bytes": 694412
+      "sha256": "8230efbba9c43ea3c9ab3a4e3569fbd3ed1a17e5daaca680feaee931e6fd2ee4",
+      "bytes": 699306
     },
     {
       "path": "motion/pathfinder-cool-talking.svg",
-      "sha256": "4a4fe10420aefbe177a98897b61c8a5d4b4a468ca3b81eaf47e75e8a5d70cb42",
-      "bytes": 20158
+      "sha256": "18f0b6ceab603fa2cf3a40724e72d46a10703c104cae6a9b7e8880ec38a15f8a",
+      "bytes": 20180
     },
     {
       "path": "motion/pathfinder-cool-talking.webp",
-      "sha256": "faee4f50ae78afddf88a20f3b8a9afd91a98bbd7b7b73b99b47fa74bfc4286f2",
-      "bytes": 473050
+      "sha256": "c7f532e1755bb410197c96b030d4569c013d96f1e67539a4091ea1577cbcb6eb",
+      "bytes": 476700
     },
     {
       "path": "motion/pathfinder-cool-walking.svg",
-      "sha256": "2f53fae078d439ccc228d3062ddedfe11727e3bf41332e8e1d06915e911eac2b",
-      "bytes": 23538
+      "sha256": "66edf8d7bc5095c9676b857d58f149eb6e0e5fa4e7b16b8cae562282a56c1eba",
+      "bytes": 23560
     },
     {
       "path": "motion/pathfinder-cool-walking.webp",
-      "sha256": "ba0d569206f441d71516a9f56e2e1a54dd00b0a7a4433a5c1cc6e4b62b31edc2",
-      "bytes": 424026
+      "sha256": "91c0ead45e0e5abb74e10f2b434cadcef3deac891e911bbec9235de81329e73b",
+      "bytes": 427078
     },
     {
       "path": "motion/pathfinder-cool-waving.svg",
-      "sha256": "1bfcb0884171cf55926e4d6cd4e2e66a183b8f11b91349764ade2e92cb479e4e",
-      "bytes": 16744
+      "sha256": "9c180cffa4511a1f9e7de7b56260c44e606fddb90a6d38f178c1340144050e9f",
+      "bytes": 16766
     },
     {
       "path": "motion/pathfinder-cool-waving.webp",
-      "sha256": "ab1eaff8e531c470f15aaebf96a15ef063ef25b1c4bcbb27aa88dbe91f25542c",
-      "bytes": 483334
+      "sha256": "dfdb4a93d9cf07f55619a851aed9d397c75287bf58b77e6a9950a7aade7fe85b",
+      "bytes": 486316
     },
     {
       "path": "motion/pathfinder-monsoon-gardening.svg",
-      "sha256": "e8a91ad881e4816e352c578defa19c3f88685b2e2a807b8e63d5015eb8823023",
-      "bytes": 18327
+      "sha256": "0d21df6b58cb0dc388dfae1d52fe1337438a80f3906cc14050f6500f0b5068a7",
+      "bytes": 18349
     },
     {
       "path": "motion/pathfinder-monsoon-gardening.webp",
-      "sha256": "ca7547c3a7bc840e3edb78e6ef8738b55a0e94b03ead6b6e1c05f0c8c9a40b91",
-      "bytes": 554878
+      "sha256": "371b56c7267b5b216497548f4623d8523fb2250e6164f19420434f7c450b9e93",
+      "bytes": 559152
     },
     {
       "path": "motion/pathfinder-monsoon-pointing.svg",
-      "sha256": "53c2e3bb0ecda4e19736b1839ea6444a16e24f8f6250a63a1752b96442dc2000",
-      "bytes": 17502
+      "sha256": "39b38e44f6e69e16bc44cfd7cc66f6a92030e586dc3d43a0db55f4547e1840d6",
+      "bytes": 17524
     },
     {
       "path": "motion/pathfinder-monsoon-pointing.webp",
-      "sha256": "0a4c7259b68fe66126e7e196922681b2a8d6f07f15c7992f3e278bd19cd60223",
-      "bytes": 535812
+      "sha256": "dcf2344d5a583f93aec83e863be8281af60f7e1ad467247b195d85b2fd1fda00",
+      "bytes": 539556
     },
     {
       "path": "motion/pathfinder-monsoon-resting.svg",
-      "sha256": "6eb1918a3f7343dc8a20fc333a4a4055a47141b2357e33f1f8988e3d25ea797b",
-      "bytes": 16569
+      "sha256": "96b50008242a559f0410301bb9d84950012b03008583f744e44c932df84b5482",
+      "bytes": 16591
     },
     {
       "path": "motion/pathfinder-monsoon-resting.webp",
-      "sha256": "ed1ac226babfd061cb4e625e3c04a708d178ece60c879c92066031c781d2f988",
-      "bytes": 534040
+      "sha256": "f3b49f3ba84978d9a52a51f233f8da3a84f84836ff9416737ef0e2dedbbbb35d",
+      "bytes": 536966
     },
     {
       "path": "motion/pathfinder-monsoon-sitting.svg",
-      "sha256": "e855add891f052aa017913b6a26550031dfe14c30657f6dbd72f570e6fc1e696",
-      "bytes": 16310
+      "sha256": "beff0df5d8e7f8115695008a2820a7433424f9a48e3709fca44b53d8f2a8a08c",
+      "bytes": 16332
     },
     {
       "path": "motion/pathfinder-monsoon-sitting.webp",
-      "sha256": "49210b72f860a7ed178c9deb8c8d10dddb8f4001f8e11ac621cb1655384f8f7b",
-      "bytes": 422318
+      "sha256": "9a6302e34264a042f0fe3c01a574f0a01276eb71a16f206c4923288a343efcd8",
+      "bytes": 425120
     },
     {
       "path": "motion/pathfinder-monsoon-storytelling.svg",
-      "sha256": "1eab13a4845256b32e7c73d84203da7eed60930ff54ab70af291891c97d1c828",
-      "bytes": 22218
+      "sha256": "eb819c5d579ebf3d43ecbca77113d496d6a04b847b8dae8a05b89553a3faf787",
+      "bytes": 22240
     },
     {
       "path": "motion/pathfinder-monsoon-storytelling.webp",
-      "sha256": "4d9d5e25972e5eb6233011c6f849a63f08cb13a54360415cfe11ba1eeaa46cb4",
-      "bytes": 673518
+      "sha256": "7468e0b760bcaa8dd19aba53d9c15202595daaa13a35d8bd7408dedf97ddb02e",
+      "bytes": 677976
     },
     {
       "path": "motion/pathfinder-monsoon-talking.svg",
-      "sha256": "5533d7722a2078fb7044a670ba017e40a662b1b53a5df746d1db6fc55e84b447",
-      "bytes": 21006
+      "sha256": "dcb6b07dec69043c3a3fd38b24186a9c3577496d86f914903e50ae76c21f4667",
+      "bytes": 21028
     },
     {
       "path": "motion/pathfinder-monsoon-talking.webp",
-      "sha256": "119700158e2a148f3e9c743bbdceb60413b80ddb47bc93193886dc1c2aff90fd",
-      "bytes": 558164
+      "sha256": "3727a3bea74e02818f512ae776e9f6e1fdc8744036e0864c6443a4ac7db5091b",
+      "bytes": 560808
     },
     {
       "path": "motion/pathfinder-monsoon-walking.svg",
-      "sha256": "b6c2a23332128e91b20d21bad18db42c833b8f8f7e3c7e910d28ebe4480d4fbb",
-      "bytes": 22927
+      "sha256": "8ed8a0e428058fdaac7e12536f6d5743089c722f09b3a4061b94db256730cbd4",
+      "bytes": 22949
     },
     {
       "path": "motion/pathfinder-monsoon-walking.webp",
-      "sha256": "0a4927d87924fd567ee0a8bf90d0c875fef0c59f7252fc9ee48905f8efdf3f7d",
-      "bytes": 462764
+      "sha256": "5ce9c5b6b89da25984246899e22deaff3d2685c827241922c8db08a4a132de64",
+      "bytes": 464562
     },
     {
       "path": "motion/pathfinder-monsoon-waving.svg",
-      "sha256": "9199eff71a781c0c0c6ad210003dd11709e4210876f2a18510f1fab514525188",
-      "bytes": 17577
+      "sha256": "b423ced0a238d689de63fbfd65219aed68aa8334b37206a2bc2c395398abb2c2",
+      "bytes": 17599
     },
     {
       "path": "motion/pathfinder-monsoon-waving.webp",
-      "sha256": "3c2717047309b37609703c95f501dd0f39479905a1052d3cd357bd92bf8c97f8",
-      "bytes": 535824
+      "sha256": "ba5221a80a25b2875fee9cf16425cf2f7d643beed47f3c9c328c4ba429026896",
+      "bytes": 538532
     },
     {
       "path": "motion/pathfinder-warm-gardening.svg",
-      "sha256": "f4f42dd42d9f5462707378bef4aa0b4e79cdf90ef5bf3e0c2a4260a147a32002",
-      "bytes": 17812
+      "sha256": "37a2f621382bccf28d9ece428da614d4440dda96eb7abd5be6008358495a6ec8",
+      "bytes": 17834
     },
     {
       "path": "motion/pathfinder-warm-gardening.webp",
-      "sha256": "02faa0f2e6256b3a2efcaa93d230642cb96f2d1545724feed093d7d26639dd94",
-      "bytes": 552602
+      "sha256": "b9de7a0abab7bc42f35c50273f2be85e9ce8c743ffb54245b826c2811e2cc405",
+      "bytes": 557522
     },
     {
       "path": "motion/pathfinder-warm-pointing.svg",
-      "sha256": "a5e58f55dbc210c74f2eb04de28dbbe1e804fc28a376c19622f8579f2e4265f8",
-      "bytes": 16449
+      "sha256": "6b593879139c3874837d5c50f86b24e56ac880ca9f7cdbd329c48f2022957a8b",
+      "bytes": 16471
     },
     {
       "path": "motion/pathfinder-warm-pointing.webp",
-      "sha256": "64231c860f2b57314f5db52dd1f43d402285f51bb26c0e53a3434e6c0c5b1ade",
-      "bytes": 462932
+      "sha256": "fe5becbdfe7a9ed60aad0c1c00b882bb6ffc472298f2d75891372f280f8ae3ec",
+      "bytes": 465902
     },
     {
       "path": "motion/pathfinder-warm-resting.svg",
-      "sha256": "68b2a993e7e79b2daf7dcb7f6ecd2dc083397d0e9d90885eb4617e8bf1028f77",
-      "bytes": 15534
+      "sha256": "8af9a17f025bdaa53ee944e83ac9b53d689099003edccee23625738421a14fa1",
+      "bytes": 15556
     },
     {
       "path": "motion/pathfinder-warm-resting.webp",
-      "sha256": "6395907877a458f9961fb51e4ff7d1f67c73b9ffd357096ea8e7415ad1392adb",
-      "bytes": 461132
+      "sha256": "2aa5d9bdc2b723386fc03db10a94e41e51eef037503e3c1e2d6a213479c0a45e",
+      "bytes": 463418
     },
     {
       "path": "motion/pathfinder-warm-sitting.svg",
-      "sha256": "a3704157aa3e47d6870e58f1ea435c2d0fb2a5ed72d80226a0ed3dc9c8a30b92",
-      "bytes": 15813
+      "sha256": "04c5b1c18cf34377ef910167e948c839675015a6baee6f01bbcfe1f3076e7ad4",
+      "bytes": 15835
     },
     {
       "path": "motion/pathfinder-warm-sitting.webp",
-      "sha256": "69cdae22ac6c40dd9627b4c130bd766a9fbff9ae1003bc81b66ba7eae4676bb5",
-      "bytes": 423196
+      "sha256": "62d7865ea24276f1c34f13b0700471b549c9501f123f38c0da5fbf0d52213592",
+      "bytes": 425872
     },
     {
       "path": "motion/pathfinder-warm-storytelling.svg",
-      "sha256": "168fcd33a50014e2fefeef8b3c29168c9969d854b858468d352f51b905b20591",
-      "bytes": 21622
+      "sha256": "5db8d1f012d57274f979c136c711f0107e9d6762ffa197d3afc029018eeb101e",
+      "bytes": 21644
     },
     {
       "path": "motion/pathfinder-warm-storytelling.webp",
-      "sha256": "f0a206ddb5fb8cc51db821324be00502a08bf0e3d52a598424b42620db3e2fb0",
-      "bytes": 675020
+      "sha256": "fb40c4ff38bacfbe011630f0a4dbbd10ba9180f7d0689b50c4625f19cfb528a9",
+      "bytes": 681104
     },
     {
       "path": "motion/pathfinder-warm-talking.svg",
-      "sha256": "65ca3fb7892ed4c4779526c15ef794c7e00b5435d2acf82280f77d82e57f5e59",
-      "bytes": 19938
+      "sha256": "50e7c7a81a8dd697649c71044ff58ed2a40305a0c512ef4969d51a7762144693",
+      "bytes": 19960
     },
     {
       "path": "motion/pathfinder-warm-talking.webp",
-      "sha256": "d6db93c6bc18dffa6cf16f307eba9355fdf0979c852a5d3b4a36e0dc37d41562",
-      "bytes": 455916
+      "sha256": "06da384c853968909f6769a7829b0024bf85944af9fd5266affd92a8fa313f28",
+      "bytes": 458968
     },
     {
       "path": "motion/pathfinder-warm-walking.svg",
-      "sha256": "d02897c63fb0535db5239f401e9c5c15b714f44dc137b003fd93c747acfc28fe",
-      "bytes": 23318
+      "sha256": "bc0dda9b4af24dfa810bd37d51ef4ed45de5a70ae735e0e533f55280f864e10c",
+      "bytes": 23340
     },
     {
       "path": "motion/pathfinder-warm-walking.webp",
-      "sha256": "196e30714a38871f7719c5b7b7825ef1eb137d9263268cc11f135ff052df67ff",
-      "bytes": 403816
+      "sha256": "8545f58adc6cdf58f0b24fad01b15552fdaddc4755c8828c3e5135850c6ffd09",
+      "bytes": 405874
     },
     {
       "path": "motion/pathfinder-warm-waving.svg",
-      "sha256": "b6a39db09b283b4e473c0bb666294de8f1374ad0319a01d6f71e2b4924505296",
-      "bytes": 16524
+      "sha256": "1fc7b84a7b3945063f089afae548e619014993eeaa1f31d91ef05c8d41523556",
+      "bytes": 16546
     },
     {
       "path": "motion/pathfinder-warm-waving.webp",
-      "sha256": "d6f50ba8461dfe17fcac5704880c96a8250d7f3b32c0658240423c0219912080",
-      "bytes": 462370
+      "sha256": "8f58dbf5b7ab48a9c21fdbcb520d304f331280736f67fa3928028b433e0b597a",
+      "bytes": 465396
     },
     {
       "path": "mouths/pathfinder-A.png",
-      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
-      "bytes": 54127
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
     },
     {
       "path": "mouths/pathfinder-A.svg",
-      "sha256": "14366526209fe1a411c628747ebdb8c0a7d6c3f4910e3a65c324e42b19cd8706",
-      "bytes": 4266
+      "sha256": "2c0cef8bb0e6694623e7d7a11fdda539b8af6914b901b4729f11c9dad94ab864",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-E.png",
-      "sha256": "cc2f8eca679bc9ab1136455a097cfa59b9228460a85a37d46f54bc3b24d89611",
-      "bytes": 53641
+      "sha256": "f83294edfbabef75090844529ee0aa7883d1396ed64c05cfce94cb04b10081d5",
+      "bytes": 55793
     },
     {
       "path": "mouths/pathfinder-E.svg",
-      "sha256": "78f61cfaed0437ca90d7494a5a8763842d1e7cd53e09f819a64ccab2391a612b",
-      "bytes": 4266
+      "sha256": "c277b787a6c996587adb83688c09f39f9d603f721593844a9a4e176cd74575d8",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-F.png",
-      "sha256": "85878b69cd77793a57b89d6e4d52b79c8a0aad8210e07737ce2d71a5ad8b0eb3",
-      "bytes": 53313
+      "sha256": "f68224082ede10aabbd9de03e774dbb21ba00389f95c0a439c3322cbfcaaaf83",
+      "bytes": 55447
     },
     {
       "path": "mouths/pathfinder-F.svg",
-      "sha256": "e5e4ab425ffec916dfac67e2b34e13bd29074ceffcb5a9a9fdab18cbd479ad9b",
-      "bytes": 4266
+      "sha256": "048125561aee7e0b9e7e6311589fa9ee4cbcd7758093490c9028e08f98127ec2",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-L.png",
-      "sha256": "327dc0638a3cc6ed65484d94daddaa3447fb7ec4f45c0e7db63d2ba551aff13e",
-      "bytes": 53762
+      "sha256": "da9e92ba092d0afdc30deefc04da6c4f291e37b7d7ae5ddef0084bb648443d4e",
+      "bytes": 55908
     },
     {
       "path": "mouths/pathfinder-L.svg",
-      "sha256": "0b4da4a3c916706628ef12b898dbf7aa73edfc5bf3ba8cd0a20f3d3562c55cc6",
-      "bytes": 4266
+      "sha256": "f7e7a1df81ec5b410dde8ae1078d42ca7f449499ea66e9919af4c0389b5e7c74",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-M.png",
-      "sha256": "b6b71aa660c046dc177b39d279099c1af270cb1421e71dbe7cb2cbd370694eac",
-      "bytes": 53268
+      "sha256": "151d422220b80d1f209e2229e711e4babb4fcf0e3b4c8539def10b0a520241bf",
+      "bytes": 55405
     },
     {
       "path": "mouths/pathfinder-M.svg",
-      "sha256": "2be7ff6e5559fb22aa78d80492ddffc890137d80703219061893f6bb63a5a572",
-      "bytes": 4266
+      "sha256": "0760b68cae18416b0045cb3471950b3a238cf380e111cf99ffe39f0666fcaabc",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-O.png",
-      "sha256": "bf864f908e2a432661bd34a6fc986c3b094cde0d59a615cdb84266793bd99e76",
-      "bytes": 53480
+      "sha256": "89ad6b56510c647ef4a7ceb360f8022c000cffa3dbd88782f3339374483c7e98",
+      "bytes": 55615
     },
     {
       "path": "mouths/pathfinder-O.svg",
-      "sha256": "fa5e8052f6e3fa13d5833e082780862b14b93c94e00d6d962734916b591e2780",
-      "bytes": 4266
+      "sha256": "f689ea782b3b095b8af727939a716bbbe987f2f3bb2157b2411b1043cce27115",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-rest.png",
-      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
-      "bytes": 54092
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
     },
     {
       "path": "mouths/pathfinder-rest.svg",
-      "sha256": "3efafacc374eb000d2317145430ed7276d0efa7681ad05124e241e7280d40918",
-      "bytes": 4266
+      "sha256": "da42008a6b1eb15dacbf913cacac3ba7fa8a003fd23bcce218e4a95cad33138a",
+      "bytes": 4288
     },
     {
       "path": "mouths/pathfinder-U.png",
-      "sha256": "8ba8bde4f40795c776aa0d21e0461b2173bbcb8e8ec436fbf0e715472f2ce2d6",
-      "bytes": 53256
+      "sha256": "3d70ddef3558f22d2c188874dab0c8b1443496fb59f56a4c5553640a836a5c16",
+      "bytes": 55383
     },
     {
       "path": "mouths/pathfinder-U.svg",
-      "sha256": "7353390b45edd1973196f615ca2a78951d84f755aaf04a75cebcd3cfb7871353",
-      "bytes": 4266
+      "sha256": "def94a3350ccc9f88fbb8d80b8ce2325e3991b45af62c0ff9a0a23e5ee45c25f",
+      "bytes": 4288
     },
     {
       "path": "poses/pathfinder-cool-gardening.png",
-      "sha256": "7eed29073c5526bb38b4bfb92d066e81916b7623597e39759988587c09176ac5",
-      "bytes": 49659
+      "sha256": "d79704d8fd1d91cc956c8e1eb7aba63ab3f48707df9d96aedf8ef6f032025198",
+      "bytes": 50411
     },
     {
       "path": "poses/pathfinder-cool-pointing.png",
-      "sha256": "7117785a4e0f0b5d5be7d23f73f0aa21ff60aedf6785bf17ddda55f837c7707a",
-      "bytes": 42535
+      "sha256": "477dca62b3d9bd5e21041324a8bb5938c448edf3dd9aaecb1fd356a9475f038e",
+      "bytes": 43163
     },
     {
       "path": "poses/pathfinder-cool-resting.png",
-      "sha256": "7664797beac4890422e2b661485dcc22cef641a58164db096d90047da6546310",
-      "bytes": 41970
+      "sha256": "da8378719287fd0720762789b5a7e99903786339eb8b9bf48e88b8c6d8ac1a5f",
+      "bytes": 42755
     },
     {
       "path": "poses/pathfinder-cool-sitting.png",
-      "sha256": "2e0cb330c761bb4263efa3ea4968651dafe2e55cc16afb7fed3194eff1f72f83",
-      "bytes": 40662
+      "sha256": "dadc3be0916f0a8828970a94b0fc9f65ef2953fb57ea0d89e92ed5a565e9fe7b",
+      "bytes": 41366
     },
     {
       "path": "poses/pathfinder-cool-storytelling.png",
-      "sha256": "9850184a10c41a770b578c568114028df9b46c0b65af474e32ee60f34348207e",
-      "bytes": 42578
+      "sha256": "52577989880446dcdaf66122eeb8d263a0df74f75fddc10c6f8cbf9d70981540",
+      "bytes": 43286
     },
     {
       "path": "poses/pathfinder-cool-talking.png",
-      "sha256": "1ec5a7698b8a2539287bdf3988adcc7522b75b515f74af0725e2e52e63809b71",
-      "bytes": 40298
+      "sha256": "edb82d802216a6656fb3d3351f2ef4792a6b1de6577d4ae84ed417bf54de6657",
+      "bytes": 40950
     },
     {
       "path": "poses/pathfinder-cool-walking.png",
-      "sha256": "5a91b9a01ba8bf75fa9b86010e840c978de0101901890da6806bcdd10c445193",
-      "bytes": 44454
+      "sha256": "856dd762740c548911c58c86a4cc085c31382e6d2bda97b523d3551c00e10e07",
+      "bytes": 45177
     },
     {
       "path": "poses/pathfinder-cool-waving.png",
-      "sha256": "d7c40bcbd80f9fed5b149681809580c983e7aac420ecef71b1f228f96d02abd9",
-      "bytes": 41855
+      "sha256": "1328f715443fc3d5a452b5f29d0c6d38ea10071627781f575c44caee549e95d1",
+      "bytes": 42659
     },
     {
       "path": "poses/pathfinder-monsoon-gardening.png",
-      "sha256": "c7bb3366113f4fbea820f2d10632348d072085d03f77694fadafe780c7cc3ff8",
-      "bytes": 49904
+      "sha256": "70919cbf0f42a495fc0a7c0fa8cbb24c4655e65a898c89ec4f87728785550916",
+      "bytes": 50676
     },
     {
       "path": "poses/pathfinder-monsoon-pointing.png",
-      "sha256": "f15e36a4f092f22f2903437e7819686477dabdbea3de86c0ccbaf59248c96b47",
-      "bytes": 45453
+      "sha256": "c519dc30283a7e151b70c56eb9f6b0a109f505fda3e7b39df3fabcc0443fb5fb",
+      "bytes": 46185
     },
     {
       "path": "poses/pathfinder-monsoon-resting.png",
-      "sha256": "a2b14c4ed2587dcc43e8aaceec3b8715d41c55be574bc8c969d45facd7abb8b0",
-      "bytes": 45152
+      "sha256": "746f1dc1d94dc280f84accff76c4d7e4c462898dc10262765819367d1ba1d6be",
+      "bytes": 45922
     },
     {
       "path": "poses/pathfinder-monsoon-sitting.png",
-      "sha256": "222f678de3c369b2aa38fcc4638a5ba58874128782dde95ad2b031478099bb26",
-      "bytes": 39825
+      "sha256": "85e454422b414bc68e8bc8cc5202baae378b9a34bb18174fddddcbeb0439d07b",
+      "bytes": 40435
     },
     {
       "path": "poses/pathfinder-monsoon-storytelling.png",
-      "sha256": "49e67683e9a6bbed2331951e690ee5e941efd513f4f733bc413aaae6ce5d2798",
-      "bytes": 41373
+      "sha256": "08ed28694bc271a84313c32470a66bb75cacd405535f9f40d324599015b9b29a",
+      "bytes": 42045
     },
     {
       "path": "poses/pathfinder-monsoon-talking.png",
-      "sha256": "6b2b163fdb1060a942f57848421d3a3d5d3a25a63f3467cfac8b0ded6ed1e0c8",
-      "bytes": 44491
+      "sha256": "c9a2bb22783450052a9f5e0a08f16d2f77347fcba5250120080795b9e2c35c9c",
+      "bytes": 45208
     },
     {
       "path": "poses/pathfinder-monsoon-walking.png",
-      "sha256": "2095a1fe57b15c3dfd33b66aefff18944c4bd2395422d288d75719ded766f475",
-      "bytes": 48228
+      "sha256": "d4ecc5f3c4bbfa856e27653a0ad2e1ffb1ea7c5333b2ea1f7ef094dc1f8df1d3",
+      "bytes": 48912
     },
     {
       "path": "poses/pathfinder-monsoon-waving.png",
-      "sha256": "3f2e690f030b45ae90b1618f8e02dce8d76581bd4a1e5610f71dba3f2b265286",
-      "bytes": 44957
+      "sha256": "eb9ba09cdcd652a1ea7bc5de13652157ba73cd01959a8dcc2cd05df1c152e0e9",
+      "bytes": 45773
     },
     {
       "path": "poses/pathfinder-warm-gardening.png",
-      "sha256": "1aa2c8ecb6b2795ecbe3d3157ccd8a4bc1ac5f1dbb92f5dd8f4eae7bb159192b",
-      "bytes": 48578
+      "sha256": "8260e81df44ca34801436838df3bd8f2a87d857c8944510dd2f686b040af6d35",
+      "bytes": 49335
     },
     {
       "path": "poses/pathfinder-warm-pointing.png",
-      "sha256": "2bb47b74fdb59f8a4017f7e3b81e592d793fa2ce25c03d338355ccf5c4bd5bf0",
-      "bytes": 40259
+      "sha256": "3c9de2bd55cc26652308e809e642ecba0d967ef4b0b1c68108b397bfcb9a4410",
+      "bytes": 40964
     },
     {
       "path": "poses/pathfinder-warm-resting.png",
-      "sha256": "c69199efea022b8a7c8781cee4b82634e8f87ceab4e2b64907f34a126197a144",
-      "bytes": 39820
+      "sha256": "7ea095e2e98826bc7dcfd78c85aa85f1e3494ef1362d1b513d7eeb35510ad3db",
+      "bytes": 40562
     },
     {
       "path": "poses/pathfinder-warm-sitting.png",
-      "sha256": "9ab22dfaaddc555d558ee4d4d7585b9080570b86aa6bfe49ba417a1cdd655e08",
-      "bytes": 39808
+      "sha256": "5ece5ea139f769e12db1b26fe42ecb6cd346329b227b3cfcbf3d3b5ec53c927e",
+      "bytes": 40435
     },
     {
       "path": "poses/pathfinder-warm-storytelling.png",
-      "sha256": "6f18f84c2b8bcf5f3f9fe15e5310a28cc879017a0d24a7aaf00f2f07757491c6",
-      "bytes": 41240
+      "sha256": "fb3c1d7288da03ce0462e491c551f8161203da0af40508bf9488b405af3f325c",
+      "bytes": 41902
     },
     {
       "path": "poses/pathfinder-warm-talking.png",
-      "sha256": "dd0b945cdc99b548ff8fca1f8a1f6cc92edb25afbf68d761a2c95e3abf77884f",
-      "bytes": 38967
+      "sha256": "c272676bd02539398117009882463bb2ae3451a64d519fad06e0876e152c10c2",
+      "bytes": 39666
     },
     {
       "path": "poses/pathfinder-warm-walking.png",
-      "sha256": "e124d572af37ac0c6146a568c6e8759b8c1d626558d24bc9301594b84879b1aa",
-      "bytes": 42247
+      "sha256": "c0469565821f65aff8687f6a4ce3ab84dbe823d4580c1f05b36990d821774eda",
+      "bytes": 43014
     },
     {
       "path": "poses/pathfinder-warm-waving.png",
-      "sha256": "78819fde315df8fb665598766376fcf28a419e1a89152172769e5efcbf5f2450",
-      "bytes": 39736
+      "sha256": "66e3cccd0e94d72c32310d5f88f2393e89096b521daf75bea4990a5944c805d5",
+      "bytes": 40525
     },
     {
       "path": "references/pathfinder-cool-preview.webp",
-      "sha256": "df746d6876950cc2c3bb750278935e4ee7c89e97ea8207523ef0ed279baa3203",
-      "bytes": 58268
+      "sha256": "eaeb8759925025434368ec9fd09e1bf1ace3f1a93ae7079448e6f17663b1b256",
+      "bytes": 57054
     },
     {
       "path": "references/pathfinder-cool.png",
-      "sha256": "42c3ddc7135b8fa94588a122f634708ef9ab57c17866081970cb6e8d3571552c",
-      "bytes": 1993328
+      "sha256": "9c9edd7e74a21594c118afef451675cdba3e0602f458b71f65525f1119421f7c",
+      "bytes": 1939709
     },
     {
       "path": "references/pathfinder-cool.webp",
-      "sha256": "a93f9886aa2c63ff03931ad8e5fa318acb4d938330e304d1b4a711891faa0aaf",
-      "bytes": 817398
+      "sha256": "205f24c5eeffc3325490456f07991f61517df537bd86565b1f6ec6bfc1386736",
+      "bytes": 781716
     },
     {
       "path": "references/pathfinder-monsoon-preview.webp",
-      "sha256": "60fa0490229fd6a64956d72827a219a1cc084dd3f9110fdfb40d974050a08fdb",
-      "bytes": 59512
+      "sha256": "35bf07c7d4488b70e62114de1e208d2412de58ffcda8da1cc04a1c5f3cecd0ee",
+      "bytes": 57430
     },
     {
       "path": "references/pathfinder-monsoon.png",
-      "sha256": "889f089afc1f50616ad53bff965dc5683ec957c58589072739cd14d16529b591",
-      "bytes": 2067671
+      "sha256": "553a9fec1fe6da1af47c2d8ab51896cbef458fa656d5b4f93f47921173ad048f",
+      "bytes": 1998173
     },
     {
       "path": "references/pathfinder-monsoon.webp",
-      "sha256": "0c97f5b965436859c05169556f981216d7a4766b3e38409e19aa979647f6c349",
-      "bytes": 873194
+      "sha256": "d5e2fb4206692812f59012293c162051fe65622782023087ade5858ce79433ef",
+      "bytes": 832566
     },
     {
       "path": "references/pathfinder-warm-preview.webp",
-      "sha256": "dd0d1b82bf173be28172d473971cd2a0f944246f3836fef0628fc6d16ed2a05c",
-      "bytes": 56576
+      "sha256": "5c8f3b4179fcb82a12e5fb4c8125535306449f45879dc3e0d6a40caae50fc00b",
+      "bytes": 54724
     },
     {
       "path": "references/pathfinder-warm.png",
-      "sha256": "b5b5df9c1e94d7f45ad6025f7a05f052089e78b0d6c8b76e1e61ebf69242099c",
-      "bytes": 1975737
+      "sha256": "1cc2cafc741e76fff07e5379dce5da625d2794fb06eb2b6aa2aee8138968f4e5",
+      "bytes": 1899382
     },
     {
       "path": "references/pathfinder-warm.webp",
-      "sha256": "4995ec5c9d1a7047ec3c1a0191d993cc63ebc5090912235ea679af9e58f124ad",
-      "bytes": 772184
+      "sha256": "036c395fdfb81602cc4af20977d99e2f1bcb3e7e9ebde329d6fdfc68f945f9b6",
+      "bytes": 744562
     },
     {
       "path": "rigs/pathfinder-cool.png",
-      "sha256": "08448868e59c76d51cd54c8d4d67027d6de761f8beb36f37ffb5f4c4cd46ddb1",
-      "bytes": 95972
+      "sha256": "d3436384140bdc877b098df1b5bdf7c0a8d5cfc062edc3af1a668e2ce5cef9f7",
+      "bytes": 97347
     },
     {
       "path": "rigs/pathfinder-cool.svg",
-      "sha256": "15d4fdd63da6f6dc932dc73f88447a10fe91eeb9d749db7223badf2ce12c50b1",
-      "bytes": 11330
+      "sha256": "8e07f2f40fa389654ba0f10d7a1aba2d5cb6cc2ab5858257f9275e13cc839846",
+      "bytes": 11352
     },
     {
       "path": "rigs/pathfinder-monsoon.png",
-      "sha256": "926cb5a9cd2a459edc9e092652d17503e1e4d91f6bdf2152f9ce1f3bf018ba44",
-      "bytes": 104183
+      "sha256": "48a0d4e50cda19d243c77aa6c3d43453907029b35e5b9e5b6740566573a22d7f",
+      "bytes": 105529
     },
     {
       "path": "rigs/pathfinder-monsoon.svg",
-      "sha256": "d8cec2297af8e7c89e3bd32d2dcb6846fdc7b3a0abf2a74dcde9401bc259784f",
-      "bytes": 12042
+      "sha256": "e968cab708601a1533ab6592b7ef7e9741866a66acc72f3a5a4ae4c0d7124d72",
+      "bytes": 12064
     },
     {
       "path": "rigs/pathfinder-warm.png",
-      "sha256": "70a11f14e45e9b9c799de9e76f0581df1fd248dc18814b99db35b4d176b82cb2",
-      "bytes": 92236
+      "sha256": "120b49293afbd37c4c37e6f2bdfbb2f05aa7f43599e2266dce7b223cc38915c5",
+      "bytes": 93588
     },
     {
       "path": "rigs/pathfinder-warm.svg",
-      "sha256": "8a6482a4f7589558f363e08cd84ddc3df6e179d6c6d087cb324c149283358f0d",
-      "bytes": 11110
+      "sha256": "dd56e5d16d2b4f0c024ff16c086654074202c879ad971d3cbb67d19152bba5f8",
+      "bytes": 11132
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "53a781ce53fad7f1da4f7441746687a775f4ba386ad5756760dbd9bbdd0d87e5",
+      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
       "bytes": 2919
     },
     {
@@ -601,8 +606,8 @@
     },
     {
       "path": "runtime/rig.js",
-      "sha256": "46a54f3db911bdd3e2d8253b9440434885a0fbce619b128726fa4274da0b3e34",
-      "bytes": 21905
+      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
+      "bytes": 21916
     },
     {
       "path": "timelines/pathfinder-cool-gardening.json",
@@ -736,33 +741,33 @@
     },
     {
       "path": "turnarounds/pathfinder-cool-front.png",
-      "sha256": "b86a393d2915b5f399975c1666bdc618e9b2a964e24bdec0fca42e38cdb314e3",
-      "bytes": 96179
+      "sha256": "433b7513dff524a696e5a9560ff67a9c5a2da91be5988d96c92f711a52b56d25",
+      "bytes": 97599
     },
     {
       "path": "turnarounds/pathfinder-cool-front.svg",
-      "sha256": "32dfba97d861f55fc72e274c002840b464a6af6d7588902a1847cf7b5b1389ef",
-      "bytes": 11287
+      "sha256": "26068d779dd83139416eaeef00182d02b244d579edd6b929885a6316577e5190",
+      "bytes": 11309
     },
     {
       "path": "turnarounds/pathfinder-cool-profile.png",
-      "sha256": "c55901b92342d55bd1b93181c523f945cc50653df4f27dfd0a64e6472b69151d",
-      "bytes": 96606
+      "sha256": "3282bddefb0af4700eb2d3361ccd86e8cab8d2e911eaf04b265dc0671fccc3d9",
+      "bytes": 97318
     },
     {
       "path": "turnarounds/pathfinder-cool-profile.svg",
-      "sha256": "2e48001f6ed7cdfbc2cece2ec082858754ac609a3f8a2d5fb1924ab263dbbebf",
-      "bytes": 10942
+      "sha256": "e9ffeb4387707d5d3dd9601a845a086221c2ec2164380160f8e2b1573ca201b0",
+      "bytes": 10953
     },
     {
       "path": "turnarounds/pathfinder-cool-three-quarter.png",
-      "sha256": "08448868e59c76d51cd54c8d4d67027d6de761f8beb36f37ffb5f4c4cd46ddb1",
-      "bytes": 95972
+      "sha256": "d3436384140bdc877b098df1b5bdf7c0a8d5cfc062edc3af1a668e2ce5cef9f7",
+      "bytes": 97347
     },
     {
       "path": "turnarounds/pathfinder-cool-three-quarter.svg",
-      "sha256": "15d4fdd63da6f6dc932dc73f88447a10fe91eeb9d749db7223badf2ce12c50b1",
-      "bytes": 11330
+      "sha256": "8e07f2f40fa389654ba0f10d7a1aba2d5cb6cc2ab5858257f9275e13cc839846",
+      "bytes": 11352
     },
     {
       "path": "turnarounds/pathfinder-monsoon-back.png",
@@ -776,33 +781,33 @@
     },
     {
       "path": "turnarounds/pathfinder-monsoon-front.png",
-      "sha256": "e658a86779f123801224b2f53b719831a8345064ae4c03588010a0a31beb5918",
-      "bytes": 104403
+      "sha256": "2fa31f3eb66b958efad396bf64cb16f9acb48edc830120172b93648ac7fc6080",
+      "bytes": 105767
     },
     {
       "path": "turnarounds/pathfinder-monsoon-front.svg",
-      "sha256": "5beb764d5899cd063d80215866c0ff3a0d5a2d5216494d321577d4d54e8f0f95",
-      "bytes": 11999
+      "sha256": "7c8893abbef689ae8ac687743a87aeb5f2a1ec229a98795e9d0093a8567d7514",
+      "bytes": 12021
     },
     {
       "path": "turnarounds/pathfinder-monsoon-profile.png",
-      "sha256": "632f77ed798b17a951db4973732b55df7a51aaa98172ab3bc53d2eff5f27ce4f",
-      "bytes": 102633
+      "sha256": "9668e6f48912536273c10151d2249e741040f63a046e72b68130617b822aa0b1",
+      "bytes": 103361
     },
     {
       "path": "turnarounds/pathfinder-monsoon-profile.svg",
-      "sha256": "0b5696333fe26cf998b974a419d0fae3d6b2317a2e1760dfe1940fb09bb289d7",
-      "bytes": 11599
+      "sha256": "2f47cf7f548be8a195646b16fd3dc2747a2d23a82ad2c9d3d37006ce86bbb7fa",
+      "bytes": 11610
     },
     {
       "path": "turnarounds/pathfinder-monsoon-three-quarter.png",
-      "sha256": "926cb5a9cd2a459edc9e092652d17503e1e4d91f6bdf2152f9ce1f3bf018ba44",
-      "bytes": 104183
+      "sha256": "48a0d4e50cda19d243c77aa6c3d43453907029b35e5b9e5b6740566573a22d7f",
+      "bytes": 105529
     },
     {
       "path": "turnarounds/pathfinder-monsoon-three-quarter.svg",
-      "sha256": "d8cec2297af8e7c89e3bd32d2dcb6846fdc7b3a0abf2a74dcde9401bc259784f",
-      "bytes": 12042
+      "sha256": "e968cab708601a1533ab6592b7ef7e9741866a66acc72f3a5a4ae4c0d7124d72",
+      "bytes": 12064
     },
     {
       "path": "turnarounds/pathfinder-warm-back.png",
@@ -816,48 +821,48 @@
     },
     {
       "path": "turnarounds/pathfinder-warm-front.png",
-      "sha256": "778e5186aa662942c7e96ab2509eccc031b98edc31ef40b2ddca5fdb823434c1",
-      "bytes": 92449
+      "sha256": "e8aa1c178dbfbf0afaeca0d28376484e0f0568ce18b74d87a00908c73ab4915e",
+      "bytes": 93815
     },
     {
       "path": "turnarounds/pathfinder-warm-front.svg",
-      "sha256": "1343874b074fe3923b30a58e21c641663ac480b1bc54476e2ccee4e9f4ea2750",
-      "bytes": 11067
+      "sha256": "9a5c742de8fd923248fad76b530fe12479d922c6eaf758c95e7c6028d2eb6029",
+      "bytes": 11089
     },
     {
       "path": "turnarounds/pathfinder-warm-profile.png",
-      "sha256": "3dc53449fa395c3c516a8b3dc40c0ee41346ba66ca7335d585702afb5548dd2c",
-      "bytes": 93348
+      "sha256": "e387a10f12367c0a4707c138706d776747c84a27da1f1483d6df487c500f4363",
+      "bytes": 93950
     },
     {
       "path": "turnarounds/pathfinder-warm-profile.svg",
-      "sha256": "583356695d0d9386416fb254e9c3400b885759fd0e39896a2c57bb8cb158545a",
-      "bytes": 10663
+      "sha256": "98a5bac88a8cb7c17a2925a3bb93b46077edea5c19f0d9ead537b432641d2cda",
+      "bytes": 10674
     },
     {
       "path": "turnarounds/pathfinder-warm-three-quarter.png",
-      "sha256": "70a11f14e45e9b9c799de9e76f0581df1fd248dc18814b99db35b4d176b82cb2",
-      "bytes": 92236
+      "sha256": "120b49293afbd37c4c37e6f2bdfbb2f05aa7f43599e2266dce7b223cc38915c5",
+      "bytes": 93588
     },
     {
       "path": "turnarounds/pathfinder-warm-three-quarter.svg",
-      "sha256": "8a6482a4f7589558f363e08cd84ddc3df6e179d6c6d087cb324c149283358f0d",
-      "bytes": 11110
+      "sha256": "dd56e5d16d2b4f0c024ff16c086654074202c879ad971d3cbb67d19152bba5f8",
+      "bytes": 11132
     },
     {
       "path": "videos/pathfinder-walk-alpha.webm",
-      "sha256": "e0739773853f21ad3addbfae8891aaf26d1954627f3460d6e48ed12d6d1a90b9",
-      "bytes": 212699
+      "sha256": "c2d724ed9ce229deefdb4483c4f05e5fdc3dcecc5237d251b248568bf8711241",
+      "bytes": 214188
     },
     {
       "path": "videos/pathfinder-walk-poster.png",
-      "sha256": "00a3e3e143c8680c05a694570ba2454952ee174bf6a51c2fef2b6aa464cb24ec",
-      "bytes": 89810
+      "sha256": "24801d2c72b89eb3a4dc9388e42196307a823ab4022d479774f1ab83544e79dd",
+      "bytes": 90541
     },
     {
       "path": "videos/pathfinder-walk.mp4",
-      "sha256": "4029a6b37f1e96a2a5fc31ff37506c97cc5a96f8c35d352c8af0d9ee882c6005",
-      "bytes": 312305
+      "sha256": "d5ea5893fed798be6906a015a2dea40426c93d0067d233255ccba8bb7076bd7d",
+      "bytes": 313969
     },
     {
       "path": "videos/pathfinder-walk.vtt",

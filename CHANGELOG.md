@@ -1,5 +1,12 @@
 # Changelog
 
+## Natura 0.5.1 - 2026-10-31
+
+- Restore the exact original Hrudhi face/reference masters and facial rig; withdraw the v0.2.0 face revision.
+- Rebuild character study and video exports from the original source, retaining the web-first libraries and farm atlas.
+- Pin the original identity hashes and fail packaging/builds when a reference master or facial-rig source is substituted.
+
+
 ## Natura 0.5.0 - 2026-10-31
 
 - Put the complete Hrudhi asset collection and readable character standards directly in the website, with age/wardrobe filters, pagination and individual downloads.

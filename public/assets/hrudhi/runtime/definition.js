@@ -1,4 +1,4 @@
-export const KIT_VERSION='0.2.0';
+export const KIT_VERSION='0.2.1';
 export const chapters=[
  {id:'explorer',label:'Little Explorer',minAge:5,maxAge:7,anchorAge:5,headY:135,head:58,shoulder:214,hip:338,upperLeg:78,lowerLeg:57,upperArm:61,forearm:53,width:48,hair:'bob',costume:'pinafore'},
  {id:'naturalist',label:'Growing Naturalist',minAge:8,maxAge:10,anchorAge:8,headY:122,head:54,shoulder:198,hip:327,upperLeg:85,lowerLeg:61,upperArm:68,forearm:59,width:47,hair:'half-tied',costume:'overalls'},

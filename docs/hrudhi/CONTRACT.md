@@ -1,4 +1,4 @@
-# Hrudhi character kit v0.2.0
+# Hrudhi character kit v0.2.1
 
 **Status: draft, family review pending.** Five illustrated age chapters cover ages 5-17. This is a fictional character design system, with no biographical claims. The Natura lab previews the kit; it does not activate a permanent visitor guide. No adult life stages are included.
 
@@ -81,7 +81,7 @@ Audit events: policy.updated, milestone.created, milestone.completed, review.rec
 
 Import `renderHrudhi` and `createHrudhiPlayer` from the ESM source. Insert the renderer into a trusted container, then create the player on that SVG. It supports play, pause, seek(0..1), setSpeed(0.5/1/1.5), progress and dispose. The player never autoplays, loops or fetches data. Respect operating-system reduced motion; provide still artwork and the same text information. Cancel on route exit, pause on tab hiding. Play stays disabled for reduced motion. Do not place the character over navigation, booking controls or reading content. Offer a persistent dismiss button and make any tour opt-in. Captions/transcripts and text navigation must work without the mascot, motion, audio or AI. Announce messages, not every animation frame. The character must never be the only way to complete a task.
 
-The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.0.
+The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.1.
 
 ## Review and release checklist
 
@@ -93,6 +93,10 @@ Custom assets and code are licensed only for authorised Aroha Retreat websites u
 
 All 15 wardrobes, 120 action combinations, 60 view studies, 30 expressions and 40 mouth shapes are browsable directly in Natura. Chapter and wardrobe filters and bounded pages make the full collection available without loading every large file at once. This full guide is also readable within the character lab. Downloads remain an optional handoff format.
 
-The revised facial direction uses more naturally proportioned almond eyes, medium dark brows, softly oval cheeks and a quiet smile. It is a fictional design proposal, not a portrait record or an age prediction. The illustrated references and vector rig remain distinct interpretations, all draft pending family review.
+The original pre-revision face is restored exactly from the first character kit. The reference masters and original facial-rig source are pinned in identity-lock.json. No independent face generation or seasonal facial redesign is authorised. This is a fictional character design, not a portrait record or an age prediction. The illustrated references and vector rig remain distinct interpretations, all draft pending family review.
 
 Five silent 1280x720, 24 fps vector films show welcome, gardening, storytelling, orchard walking and canopy guidance. MP4 files have a white illustrated scene. The separate isolated-character WebM files retain alpha. Captions describe actions; there is no spoken voice, narration or audio lip-sync. These are rendered from the editable joint rig, not AI animation of the painterly illustrations. Native video controls wait for an explicit play action, allow pause and seeking, and the lab pauses videos on route exit or tab hiding. A poster is shown until playback.
+
+## Identity continuity
+
+Identity source: hrudhi-original-v1, source revision 3f4884e522e98ce9dd731918b4deb71416a509b5. The 30 original PNG/WebP reference masters and original rig source are verified against pinned SHA-256 hashes. New clothes and motions must not substitute a different face. A new age chapter requires a reviewed continuation of the original identity; it is not permission to invent a new person. The painterly references and simplified vector structure remain distinct visual treatments; the vector study must not be passed off as an exact painted likeness. Any proposed production animation must be checked against the original master before adoption.

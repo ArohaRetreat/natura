@@ -1,592 +1,597 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.0",
+  "kitVersion": "0.2.1",
   "chapterId": "storyteller",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "874eb43e3083adcb8f6149037bfc01e25f5ccef01b96eb8b8f6cdb0c7376d112",
+      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
       "bytes": 4100
     },
     {
       "path": "expressions/storyteller-curious.png",
-      "sha256": "be4489028987428e8d7ffe7ad22ad875c4d2c65bc244b2205b2a1686c15e22f6",
-      "bytes": 54017
+      "sha256": "78db1040987cc613105ce084598e3808ab17991feb6dc7665b6dfc2ec984f293",
+      "bytes": 56149
     },
     {
       "path": "expressions/storyteller-curious.svg",
-      "sha256": "42990d3c60902c2d8492e09cda951a594427d0cbf0d76830b95a89c90df42bda",
-      "bytes": 4268
+      "sha256": "5782f9141b02b62d5182618af37a26215858d12358b652ec16940e8838fd461c",
+      "bytes": 4290
     },
     {
       "path": "expressions/storyteller-delighted.png",
-      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
-      "bytes": 54127
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
     },
     {
       "path": "expressions/storyteller-delighted.svg",
-      "sha256": "0f10a0ba3be8e214a7521175809ef481b403616cf1d7ce2cb1c70de009a23f52",
-      "bytes": 4268
+      "sha256": "ba4d1d6aecb8554a7823e48a6d250830daf3779370f7619fa8985336ba29749b",
+      "bytes": 4290
     },
     {
       "path": "expressions/storyteller-gentle.png",
-      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
-      "bytes": 54092
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
     },
     {
       "path": "expressions/storyteller-gentle.svg",
-      "sha256": "0fabe6eead160bcee536e653dc20cd219299c655c23b76d589a5510d18aab948",
-      "bytes": 4268
+      "sha256": "90ea44da7c9a71ff96bc3e468ee6dd9389ca7b2da6338121486189e91967d365",
+      "bytes": 4290
     },
     {
       "path": "expressions/storyteller-listening.png",
-      "sha256": "5281e47f38a6d4f69eb915e7a5b13249052adac5810aeae26083c990dcf91913",
-      "bytes": 53262
+      "sha256": "e407e99559214145991ad623c442dba543c728edf41d3cb2a91a5193aaa4acc2",
+      "bytes": 55397
     },
     {
       "path": "expressions/storyteller-listening.svg",
-      "sha256": "4ef5734f47de7b7511592bfca33ffbe57f30236f4e722f790b047e2d8cf69518",
-      "bytes": 4186
+      "sha256": "369194e0cdd01941cbadb6f64d02ed1f4ada81cb219a2f62e33dd5ed4a83450d",
+      "bytes": 4208
     },
     {
       "path": "expressions/storyteller-smile.png",
-      "sha256": "d66c429ba0a04ecd1d4987ca398d776c4955917f11bf7d9b4077c125fb9b0943",
-      "bytes": 53692
+      "sha256": "8c6d8ccdecbd2c9bdb39eff4d258c61ef09dbe29ea8caf9782c9512460624623",
+      "bytes": 55838
     },
     {
       "path": "expressions/storyteller-smile.svg",
-      "sha256": "a3ffacc024818b9eb079dc88538b0584e8af12b2520eabeffb0d69f2621380f3",
-      "bytes": 4167
+      "sha256": "75d43a6cd2b7f6966a9d408d3ab4f044c3e80af783af3b85569e5b16e98f2295",
+      "bytes": 4189
     },
     {
       "path": "expressions/storyteller-thoughtful.png",
-      "sha256": "0ef2252529836b3da735ae99fa2da0ab6565be851bb1bd5df64898a64f7eff3d",
-      "bytes": 53318
+      "sha256": "28ff927b8d8635795474fccd7db704b560a41cf6f9e3cb5452a0407beffc6ce5",
+      "bytes": 55404
     },
     {
       "path": "expressions/storyteller-thoughtful.svg",
-      "sha256": "3b2179cb8bc303eb4f39484211ffb109781c784dd56e1fe04c7360831faf1a40",
-      "bytes": 4186
+      "sha256": "aa119b6ab7f61dfa9bca3e13b06fcbd720564db6e89e7c0518e679deff8c897b",
+      "bytes": 4208
+    },
+    {
+      "path": "identity-lock.json",
+      "sha256": "9d931919283ad3165f735e27ae0530ac65fe0a47ef202b5fcbe51548b7fe1525",
+      "bytes": 3372
     },
     {
       "path": "motion/storyteller-cool-gardening.svg",
-      "sha256": "b22afca4435ea36f5b8d92f5d0ddcd187826319f0aa2524e1d2f7e08464ada37",
-      "bytes": 18081
+      "sha256": "0c3c6574d64731cf1764634ce30ad01e7f56bda48b61b392af35ec93494ed029",
+      "bytes": 18103
     },
     {
       "path": "motion/storyteller-cool-gardening.webp",
-      "sha256": "b996b45749a720fd8825edae5c5f5c81ad1728e0eac26f7354274b9adda1b7bf",
-      "bytes": 578586
+      "sha256": "40352e0abdab34072fa3f4eee007cda60201d0e1be8fff7bf1b3288a6264e150",
+      "bytes": 584528
     },
     {
       "path": "motion/storyteller-cool-pointing.svg",
-      "sha256": "ed8a410271ea81cedac5695dbdb8b2b5bc608aec02d189c3cc145fd197a8cca3",
-      "bytes": 16727
+      "sha256": "4dece7d86623b38e406a9af10fee433c5e909683fa89652d11bd7369abd3f373",
+      "bytes": 16749
     },
     {
       "path": "motion/storyteller-cool-pointing.webp",
-      "sha256": "b9501491088d05d9dc0319898ae92175e7732f49b49e94feaa3dcdb82fcf9299",
-      "bytes": 475344
+      "sha256": "67099115d5bd7a2f8d87bec7aab62d4de45aefb12a36a11168ecf631836da2f7",
+      "bytes": 479060
     },
     {
       "path": "motion/storyteller-cool-resting.svg",
-      "sha256": "b9d102c385a73d72025a516bad8336d9fda1c5dac07595cb92247793d8609886",
-      "bytes": 15806
+      "sha256": "fc95fa8223e9f8f03152baccd8ed4e19068a78e39eb88f3930754185baf99180",
+      "bytes": 15828
     },
     {
       "path": "motion/storyteller-cool-resting.webp",
-      "sha256": "f232899de069c91fd355bfd5941572ac19b98fa3a8566f46d36680c81a4c9b3f",
-      "bytes": 469990
+      "sha256": "4b36f9f62008b50ec4f9b77aff8570115c29cd0942be965290ea11299db33823",
+      "bytes": 474206
     },
     {
       "path": "motion/storyteller-cool-sitting.svg",
-      "sha256": "f129d97934d60ca408b649176e0536b68d1648caf50799df18b356a9d68d5fdc",
-      "bytes": 16079
+      "sha256": "71fcf4594b0e0b61dae8966f3f19b7f3793506de2f31d94875d76311bd2062b3",
+      "bytes": 16101
     },
     {
       "path": "motion/storyteller-cool-sitting.webp",
-      "sha256": "d7120b05394819ed54b14bbec5de6d0d4d6361ef0d2b7c61e82ff940c4abd7e2",
-      "bytes": 436466
+      "sha256": "7e1127a7c8019ae7018bdab99208542790a9be2c4aba53e1f21d350f234490a6",
+      "bytes": 441424
     },
     {
       "path": "motion/storyteller-cool-storytelling.svg",
-      "sha256": "cf29cf85671d8cf6dc1d45070fa3d11a7b1cc16bcc26868e03def353bde7147a",
-      "bytes": 21916
+      "sha256": "437be5633a07d463becd2e64ae1724e09c6957c905d5e4c90ec12235f85d362e",
+      "bytes": 21938
     },
     {
       "path": "motion/storyteller-cool-storytelling.webp",
-      "sha256": "cbdc4be2b48499c7ef8c4c2238721cfb8c9ca4fab587fd1856897ebe376bb35c",
-      "bytes": 691478
+      "sha256": "0371643bcb8ed3d808ce8467b1591806aa02e0aa580821dc67a6d4c8f027fb83",
+      "bytes": 697702
     },
     {
       "path": "motion/storyteller-cool-talking.svg",
-      "sha256": "3941e8b6ba27411a3bf218ead60572366a1f0f7f11e01678a88d5ba232ec2ccf",
-      "bytes": 20223
+      "sha256": "d194040a34cc640686af92ccbc3c77ba29bb64a20b3d03a1bb4cfd6ab878b226",
+      "bytes": 20245
     },
     {
       "path": "motion/storyteller-cool-talking.webp",
-      "sha256": "07ce794352de59d3016b14b7a55fb189835408d5ecf751493ec43aa2223dd8e5",
-      "bytes": 477918
+      "sha256": "bec76e5d6ae494588065c972a2a8ea8346275b3343259561a3883e7ca227e263",
+      "bytes": 482608
     },
     {
       "path": "motion/storyteller-cool-walking.svg",
-      "sha256": "36da6a4ad507535a51cbe8c7434aba258be13811f27c929b7b916a1b6ee83f75",
-      "bytes": 23620
+      "sha256": "38fb468668aa68be4b50bb8de2e0fb642117f36b523c0b7cbdc943c69e98e124",
+      "bytes": 23642
     },
     {
       "path": "motion/storyteller-cool-walking.webp",
-      "sha256": "da151f8ff5f66e6d6a711cb58b5c5e2a0758c36b78a0783e786f2507fa1e9ab4",
-      "bytes": 411882
+      "sha256": "dc72d52e93024cc897e4b8670395e456ae09f316a61658d79cb38fcc95b839a7",
+      "bytes": 414890
     },
     {
       "path": "motion/storyteller-cool-waving.svg",
-      "sha256": "8edbfa0563d88e47b06b4ba7e7f6eb972b7b5ca9b5854c9a64f51f58cac9cb36",
-      "bytes": 16794
+      "sha256": "a80dba1121d4840c9b48e4e31c9b0f240d63d1852fc61eb0153d17476eab672d",
+      "bytes": 16816
     },
     {
       "path": "motion/storyteller-cool-waving.webp",
-      "sha256": "dc10cb43ce31d0504e4a55ac79d977402071ed71d415e092fb91cc6d8320914f",
-      "bytes": 478576
+      "sha256": "723d02f632c0196fbc37ecb3f3dfc568d361d846f7e4f5df1529c348d2e0ea69",
+      "bytes": 483218
     },
     {
       "path": "motion/storyteller-monsoon-gardening.svg",
-      "sha256": "3880ebe65811c8a2044aef1cfeb10d6dcc54d07779d0341afb1e2652e4cf85dd",
-      "bytes": 18376
+      "sha256": "d0863092148e43a781551150876d5b8c3fffe2c72be64c8ddb4e76e8dba58bd7",
+      "bytes": 18398
     },
     {
       "path": "motion/storyteller-monsoon-gardening.webp",
-      "sha256": "4deba46bef56eec2d9d21fae8af5a6e5f2872ef4552d481903ef0ce31507c35b",
-      "bytes": 563916
+      "sha256": "eeddbd8fbbd3f5c2baebf9f82dcf5fbdcd7f8988d3d9d74586120a3d2efa0132",
+      "bytes": 570190
     },
     {
       "path": "motion/storyteller-monsoon-pointing.svg",
-      "sha256": "5fb58e25d852c9ea43f07aaf461c2746809aedc3ae43d04037e62067ffc99245",
-      "bytes": 17546
+      "sha256": "40791046a5c3fe27d64ae990b2034719baa9257c1cc7a19bd13a4c4c0b50b107",
+      "bytes": 17568
     },
     {
       "path": "motion/storyteller-monsoon-pointing.webp",
-      "sha256": "e21fa4a6cbbb4415ec07885430be220451f9af50bcba93eb47955a01a4cdf35e",
-      "bytes": 518850
+      "sha256": "37c512d7c5f4fb3aeece6b9b4363142cf3b0b6ee9b7f70ff986d7450e4ddd36a",
+      "bytes": 522456
     },
     {
       "path": "motion/storyteller-monsoon-resting.svg",
-      "sha256": "e88be8ccf910d3b4537f622dc29ccac93d9559d391a3318762c876cc9560c412",
-      "bytes": 16607
+      "sha256": "9dd53f095fc77df29417e46038655e7dc49180e0929b915f3a2ad670334bb10c",
+      "bytes": 16629
     },
     {
       "path": "motion/storyteller-monsoon-resting.webp",
-      "sha256": "3f4b842d27752c691dec32ee9834e9e0529ac21247b3433d31933380f58ddb09",
-      "bytes": 515542
+      "sha256": "4f02f32167716165d663d650d1efb536d7e443a1e2efbdb66370972436148a8b",
+      "bytes": 519538
     },
     {
       "path": "motion/storyteller-monsoon-sitting.svg",
-      "sha256": "0b33a128265fae4ba2d394592a5746dfddface3fd6874567ed0cdb6474b039fb",
-      "bytes": 16356
+      "sha256": "5c67bd1f043028802f341ea953bef3a2f519c35ac3bd7bdbe7fea63226965f10",
+      "bytes": 16378
     },
     {
       "path": "motion/storyteller-monsoon-sitting.webp",
-      "sha256": "348481358b3b6a11abe4fefa504e51994bcd53a2e72c46f838a087d7d83d59e6",
-      "bytes": 422382
+      "sha256": "9f26586687b09a150df7894d6280fe42609e2339b5bfba266d6b2c292d95d6e1",
+      "bytes": 427340
     },
     {
       "path": "motion/storyteller-monsoon-storytelling.svg",
-      "sha256": "4b76305f6a6267712347c291507b50630d5c430337059fde2f669e679f5d79f1",
-      "bytes": 22292
+      "sha256": "062760865f86dea05469f80bb8e9faa9d7961737ceb1fb813f9863afdd39baf0",
+      "bytes": 22314
     },
     {
       "path": "motion/storyteller-monsoon-storytelling.webp",
-      "sha256": "351c65e961fc0479c2ca11d0e856f6bc18df39fc19bcf9858b2f4882f0cdfb76",
-      "bytes": 668518
+      "sha256": "2d80af49243c223cc0f8b6395094814f5722b52b019860d41cc3724366d6a568",
+      "bytes": 674126
     },
     {
       "path": "motion/storyteller-monsoon-talking.svg",
-      "sha256": "e4058e0a433d31e129c08831e46285400d8c2e7eb9de0585d0887b5faa4eae79",
-      "bytes": 21066
+      "sha256": "780a0175d038401d6045aead185f3530e6652a04f90b21a9467c12277825832f",
+      "bytes": 21088
     },
     {
       "path": "motion/storyteller-monsoon-talking.webp",
-      "sha256": "39c60fd1ed908e61e623a47b5c958ca43b4cb654489a8b3be19d748c241086df",
-      "bytes": 547222
+      "sha256": "7da129723bc3a9aa3773af50a41118b73c58dd3706052bcfd7fc28eb63f055d5",
+      "bytes": 551606
     },
     {
       "path": "motion/storyteller-monsoon-walking.svg",
-      "sha256": "58340516f92a5d5a98072f46b72adb006c1a546fc4123ab090cd05407cc884d9",
-      "bytes": 22989
+      "sha256": "975a8d88476ca37654f3f7f4dc01c6049518cd2dd3f6a89b1b3d38b023686599",
+      "bytes": 23011
     },
     {
       "path": "motion/storyteller-monsoon-walking.webp",
-      "sha256": "67c64c5848a1598f531ee87c6658526d7ebf83a4ab3109525fd7fad9852b2d74",
-      "bytes": 443162
+      "sha256": "854cef0825f02d3f10b89a810ac13d18ea4a3cf920745fb79dbe0462d68855a3",
+      "bytes": 446266
     },
     {
       "path": "motion/storyteller-monsoon-waving.svg",
-      "sha256": "68ecc229645bbb49503252b5189d451361fdac0d4b637f183381351d9393c174",
-      "bytes": 17613
+      "sha256": "8ec09446b4a3092be9d182c2468016f3339175fa4d56e618184313335df32481",
+      "bytes": 17635
     },
     {
       "path": "motion/storyteller-monsoon-waving.webp",
-      "sha256": "24361df99587a771406a35b148b72d87552d49f2663284f964cc99de0fe58bce",
-      "bytes": 526072
+      "sha256": "f945d2755df2048e3a97c88096c5a1181938fca5170c6b83ccddf8d3d42fff02",
+      "bytes": 529906
     },
     {
       "path": "motion/storyteller-warm-gardening.svg",
-      "sha256": "3c00945faa776a95bc7a926043fd66f6dce57b5f0c1bbf0976a130afc6c09fad",
-      "bytes": 17861
+      "sha256": "2cf745782f323e401e63a5eba9b1c2e58cd96513551a841ec5e894b9361801bd",
+      "bytes": 17883
     },
     {
       "path": "motion/storyteller-warm-gardening.webp",
-      "sha256": "172cb6e7eafbc771a2cd536867937287fc62168f7c62aa89e5ee2e34df616ec9",
-      "bytes": 560284
+      "sha256": "594b74998dcc0ff6baddf274aa2f69125326858a741be9fdb728668c374d46a0",
+      "bytes": 566996
     },
     {
       "path": "motion/storyteller-warm-pointing.svg",
-      "sha256": "8e53327f69f1cd9cb153d5c9a6627334a706c21585446d90a228a57ed8d7834b",
-      "bytes": 16507
+      "sha256": "e7041406e002d4ceae94a9c102e2460d007b0dcac3e5678b61fab9b71860ba3b",
+      "bytes": 16529
     },
     {
       "path": "motion/storyteller-warm-pointing.webp",
-      "sha256": "b6104634ebec533e0b922359c538ec5195bf9c27715ade245a6d23f387890934",
-      "bytes": 453338
+      "sha256": "1bfa935cc811dae949ecd0b34929b5e03dea6d00fb233ccce1019d9c4d9efabe",
+      "bytes": 457466
     },
     {
       "path": "motion/storyteller-warm-resting.svg",
-      "sha256": "4e6c7d4d36c1382afb407ba0db614054c121491c960b3e44043405818ac43880",
-      "bytes": 15586
+      "sha256": "d852eb1edf90974f6e5a6e23851c36e272d42da15db981e73ce00747bbf9925a",
+      "bytes": 15608
     },
     {
       "path": "motion/storyteller-warm-resting.webp",
-      "sha256": "3dde7e4f65989239fa0ed2247daf3f93e8c2065d2cbbc9097309299a167fb478",
-      "bytes": 447442
+      "sha256": "ce9b8685178d2a5888fd60a0ad09123ce63895aadbcdd52b58958ab0f46e60e0",
+      "bytes": 451600
     },
     {
       "path": "motion/storyteller-warm-sitting.svg",
-      "sha256": "6b8c3b2487cf0639f84beea360f66bbc1375fd53480653418d5501eb7fcecf2a",
-      "bytes": 15859
+      "sha256": "14e149d4bcade89de825fd9503d069de0578f8f1e8364bfbec260d74bc02445a",
+      "bytes": 15881
     },
     {
       "path": "motion/storyteller-warm-sitting.webp",
-      "sha256": "163aeedb2e15517aa496e2be3ca218ae02743bbd3170ac452288855492769e23",
-      "bytes": 422216
+      "sha256": "1731ee62d913674445afcea268972a27fa0234a07e621a28541663d79454a234",
+      "bytes": 427622
     },
     {
       "path": "motion/storyteller-warm-storytelling.svg",
-      "sha256": "ff1c921ffdeb593e8ff94bcac024605335d75457d61a35d97d6aa7496ba0b7ec",
-      "bytes": 21696
+      "sha256": "133a88e7e4b4db8f1d6e2be189f2b7fc77c5f673c8dfc9af193d4135faedb0e3",
+      "bytes": 21718
     },
     {
       "path": "motion/storyteller-warm-storytelling.webp",
-      "sha256": "a7ac396773124e8065bfd324bbe4e4d936875c62fe5126f26a5d94c41900a319",
-      "bytes": 670080
+      "sha256": "7d6792d6e780045ee27680aef1b2c5e845b2a19366e1e4279d6fe248ad329293",
+      "bytes": 675344
     },
     {
       "path": "motion/storyteller-warm-talking.svg",
-      "sha256": "f5449fe15b300835fc4e87e6d303fd3f33c11177320055ff342699bd3b9c4140",
-      "bytes": 20003
+      "sha256": "690e5530f60b9780badc63ec8a8e749ea5fb4e353b40341ef8d96d2cce06ab2f",
+      "bytes": 20025
     },
     {
       "path": "motion/storyteller-warm-talking.webp",
-      "sha256": "fefdf93dd6b66147a4f1f71fc42a0a75dbdcb5a14a8a7c1604d4825041a5ce8a",
-      "bytes": 458518
+      "sha256": "f04f6f0c379d8eef76e600f5fd45df70a2cd6c2f3f15b7cf5c6a0717050dd047",
+      "bytes": 463544
     },
     {
       "path": "motion/storyteller-warm-walking.svg",
-      "sha256": "be5cb138263c63728630a04af01ad08d5b8394b2c4ce3eef9f9cc1fb75d07ca8",
-      "bytes": 23400
+      "sha256": "4ae104170f2900c8e172b7e9b18903840262820a0347c8038090e1cdccdb73fd",
+      "bytes": 23422
     },
     {
       "path": "motion/storyteller-warm-walking.webp",
-      "sha256": "015d56ea4b96cd174801aa3a9501c964ee8acc278c5dffaf4801925bd7db5f1e",
-      "bytes": 393184
+      "sha256": "247176e11b1d96e870674cbcb6842fe2fee551699c930f0309611cae12e2c515",
+      "bytes": 396674
     },
     {
       "path": "motion/storyteller-warm-waving.svg",
-      "sha256": "3b13fa081bf742cf4401bc8b24e47c515b80e63dee2067d75deb640377650340",
-      "bytes": 16574
+      "sha256": "5843b2a19e46160841afa32df2ab957310e09371432911065de9fb9dc4568aff",
+      "bytes": 16596
     },
     {
       "path": "motion/storyteller-warm-waving.webp",
-      "sha256": "1046f9a76d9e2f452bd12d582d31deca58091f66f6da61b587de7828034baf0e",
-      "bytes": 457488
+      "sha256": "6dcfddd8510c57844000ad4641e895702986e2d9e5c32680d6dfe1df7ee46336",
+      "bytes": 461672
     },
     {
       "path": "mouths/storyteller-A.png",
-      "sha256": "c5ca97c515657daf8a8c9a569fc8b55a88e746c06477b9d1b20f8e035bcd0384",
-      "bytes": 54127
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
     },
     {
       "path": "mouths/storyteller-A.svg",
-      "sha256": "0f10a0ba3be8e214a7521175809ef481b403616cf1d7ce2cb1c70de009a23f52",
-      "bytes": 4268
+      "sha256": "ba4d1d6aecb8554a7823e48a6d250830daf3779370f7619fa8985336ba29749b",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-E.png",
-      "sha256": "cc2f8eca679bc9ab1136455a097cfa59b9228460a85a37d46f54bc3b24d89611",
-      "bytes": 53641
+      "sha256": "f83294edfbabef75090844529ee0aa7883d1396ed64c05cfce94cb04b10081d5",
+      "bytes": 55793
     },
     {
       "path": "mouths/storyteller-E.svg",
-      "sha256": "da8022707842828dd3c53c6060a9567ac93a455b28de7b7729fa273758c56b41",
-      "bytes": 4268
+      "sha256": "9521694deb3e7d11fdc78477247c8cc10b1f1d3e14e2d49f3881358ff34b31b1",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-F.png",
-      "sha256": "85878b69cd77793a57b89d6e4d52b79c8a0aad8210e07737ce2d71a5ad8b0eb3",
-      "bytes": 53313
+      "sha256": "f68224082ede10aabbd9de03e774dbb21ba00389f95c0a439c3322cbfcaaaf83",
+      "bytes": 55447
     },
     {
       "path": "mouths/storyteller-F.svg",
-      "sha256": "a521027099508c66c499170bbeb019ca0607e01f2bbdad5dc85b8ae6f4f48481",
-      "bytes": 4268
+      "sha256": "3bd4f521737b58973f1a26db59dcd83359c8b8d42aaa06a614558b6059b00643",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-L.png",
-      "sha256": "327dc0638a3cc6ed65484d94daddaa3447fb7ec4f45c0e7db63d2ba551aff13e",
-      "bytes": 53762
+      "sha256": "da9e92ba092d0afdc30deefc04da6c4f291e37b7d7ae5ddef0084bb648443d4e",
+      "bytes": 55908
     },
     {
       "path": "mouths/storyteller-L.svg",
-      "sha256": "adead6735c8f4a7b0e5a85ea13ef3235627da8d5160865c987505bde1b0886fe",
-      "bytes": 4268
+      "sha256": "61da9fc9135f565bccda725f7fae4a7a7acd32327b44abcb7f22451018b0b49f",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-M.png",
-      "sha256": "b6b71aa660c046dc177b39d279099c1af270cb1421e71dbe7cb2cbd370694eac",
-      "bytes": 53268
+      "sha256": "151d422220b80d1f209e2229e711e4babb4fcf0e3b4c8539def10b0a520241bf",
+      "bytes": 55405
     },
     {
       "path": "mouths/storyteller-M.svg",
-      "sha256": "23e0268d2a68093b83303bebe99e9b7694cf1adb4ff568050a186f7ffc958d3e",
-      "bytes": 4268
+      "sha256": "72fddd97151c0e46e1d89a810119d38e60a978cc43732d268c63248c55e2c43a",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-O.png",
-      "sha256": "bf864f908e2a432661bd34a6fc986c3b094cde0d59a615cdb84266793bd99e76",
-      "bytes": 53480
+      "sha256": "89ad6b56510c647ef4a7ceb360f8022c000cffa3dbd88782f3339374483c7e98",
+      "bytes": 55615
     },
     {
       "path": "mouths/storyteller-O.svg",
-      "sha256": "faa2a683a66d23fddce3c680c1d5ae5113545b5a3adde65e5eeec3ba92201dcf",
-      "bytes": 4268
+      "sha256": "4d786d21f2bf5ecf3e03b3e4e1243d316dcfc3e41413de69f4b83363881f1cb7",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-rest.png",
-      "sha256": "9e4fb74f0413868d0b4a819e90c7c6ef5588d1fe9477a27ac52510197da7ebaf",
-      "bytes": 54092
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
     },
     {
       "path": "mouths/storyteller-rest.svg",
-      "sha256": "0fabe6eead160bcee536e653dc20cd219299c655c23b76d589a5510d18aab948",
-      "bytes": 4268
+      "sha256": "90ea44da7c9a71ff96bc3e468ee6dd9389ca7b2da6338121486189e91967d365",
+      "bytes": 4290
     },
     {
       "path": "mouths/storyteller-U.png",
-      "sha256": "8ba8bde4f40795c776aa0d21e0461b2173bbcb8e8ec436fbf0e715472f2ce2d6",
-      "bytes": 53256
+      "sha256": "3d70ddef3558f22d2c188874dab0c8b1443496fb59f56a4c5553640a836a5c16",
+      "bytes": 55383
     },
     {
       "path": "mouths/storyteller-U.svg",
-      "sha256": "9ebae53080d7fe22e30b3384b929b726eab83c9685d61361d3e1fc289baf6274",
-      "bytes": 4268
+      "sha256": "2acffb80ebdbc844ea00af64f44befa640f01566127670fc6d2d5ee70891fadd",
+      "bytes": 4290
     },
     {
       "path": "poses/storyteller-cool-gardening.png",
-      "sha256": "6379ccac83c53235f0458eb37608ae5ec70db9d945f8f177768249918b2f6b4b",
-      "bytes": 50291
+      "sha256": "89597de605a9771ceb226daebe3b25a6e0fdbd4340813c3a30137c6349679569",
+      "bytes": 51007
     },
     {
       "path": "poses/storyteller-cool-pointing.png",
-      "sha256": "f929bb0339dfdb659865c31e465f28d4ef678c0870bf42a6269a1d71fbd8aaea",
-      "bytes": 44386
+      "sha256": "a8eb47b15973c9b49ef7e92adcaac08619f5c6f90020ad1c690caedb575dd44c",
+      "bytes": 45243
     },
     {
       "path": "poses/storyteller-cool-resting.png",
-      "sha256": "586668e6d1246c9d3c1b14aad2da1a97e3f9633d15d1a56957688563d23e2c10",
-      "bytes": 44020
+      "sha256": "6bedcaea4b04da0c059fb991faa8dc04ce3a26ce6822f2bffc7834eadaeb4e7a",
+      "bytes": 44757
     },
     {
       "path": "poses/storyteller-cool-sitting.png",
-      "sha256": "011451e5cc316fa6ed5d1a00691efd6939c2983b1661944ad1179c8dd3b22ea6",
-      "bytes": 42138
+      "sha256": "7ba46400069533be598bda6323b3d2e29810b84e27e82c2df87dbd6e108cca7c",
+      "bytes": 42902
     },
     {
       "path": "poses/storyteller-cool-storytelling.png",
-      "sha256": "10155f3d3964f90ff0b7df960e6cc88306cee6f5867d35b59ec5fb926a3cb740",
-      "bytes": 43350
+      "sha256": "6a0af44eb63edc14b32fa57049a91051ba28857bff5df60f0091782affe1c339",
+      "bytes": 44208
     },
     {
       "path": "poses/storyteller-cool-talking.png",
-      "sha256": "04be2f4a1b79fa4301389300887b9461c759da926c9ecc8b39838b2dd644d10e",
-      "bytes": 42499
+      "sha256": "1aad77dbc731646e0be56e5d395476ef2d684cc5a67df86783d778d1f1493f10",
+      "bytes": 43139
     },
     {
       "path": "poses/storyteller-cool-walking.png",
-      "sha256": "dc295df9d7c336b307b0c9ce27beb6905d29643fecd0115affd95fbd4859a6ae",
-      "bytes": 46516
+      "sha256": "e8d2a71d470860abcff20eed1705c44cea2d3cce1e194fd4f5d930a6a8678619",
+      "bytes": 47338
     },
     {
       "path": "poses/storyteller-cool-waving.png",
-      "sha256": "dd01d2c5237c197c1dd979ce4e0eb8897141c24f5387473058767883e31c9181",
-      "bytes": 44485
+      "sha256": "6fa0ecdcd0ed3f56e0a09e734334e7202a7fc19fce30e6cb566038574d61279f",
+      "bytes": 45259
     },
     {
       "path": "poses/storyteller-monsoon-gardening.png",
-      "sha256": "203bd2e66249d5838a8c4ceda4ca6abfd884e964147ddcd241958dab97b09ec9",
-      "bytes": 50823
+      "sha256": "4eeccf25458b28cb14a9221fbec71fc695881552aaae1c676b1903e858b43d34",
+      "bytes": 51558
     },
     {
       "path": "poses/storyteller-monsoon-pointing.png",
-      "sha256": "3f05e42f0e51d7df6292065fac379db45d8535b84058b8c4621b749c0832742e",
-      "bytes": 46771
+      "sha256": "6cf4fd93263f9784209cfeac8ecc9e9bc69248a915b8097a6551833f1d7aa42e",
+      "bytes": 47618
     },
     {
       "path": "poses/storyteller-monsoon-resting.png",
-      "sha256": "d7abe8408b7b3971d08b5b4dae224214f850354361776395cf1c18d9c6411768",
-      "bytes": 46625
+      "sha256": "89ae9fbf14ae7b337ca939879b180764374d92648e140d3e13a32f2344428ad0",
+      "bytes": 47437
     },
     {
       "path": "poses/storyteller-monsoon-sitting.png",
-      "sha256": "b5f25677cb1505907fb2a240e1ca3cd61283533b3e860e5fb2d82033b3112197",
-      "bytes": 41310
+      "sha256": "90d183f40941b5eb1826437b8143e0ecaec95b14e1d8e9b47125ea29fe4636d9",
+      "bytes": 42121
     },
     {
       "path": "poses/storyteller-monsoon-storytelling.png",
-      "sha256": "010b81c1d70677ebd0703b6176881c4f6e8e9ee1a28d2aaebbe83f00a427b50a",
-      "bytes": 42383
+      "sha256": "8803e1a038961f40982dbe287781fb419017b276524878e78eefd60c68be4489",
+      "bytes": 43252
     },
     {
       "path": "poses/storyteller-monsoon-talking.png",
-      "sha256": "788d1d678184ecb2069c96285f09c4f0c90cd7d413e58e87ae6faac241ab8f5e",
-      "bytes": 46319
+      "sha256": "354cc5e305f1f7d8f35209af74bb0f29b16476b5d2649027c56726ac2a9a17dc",
+      "bytes": 47079
     },
     {
       "path": "poses/storyteller-monsoon-walking.png",
-      "sha256": "f576f15caa354446df72fbf418bb69f379a0d28f672873daab32b5f72ac41004",
-      "bytes": 49630
+      "sha256": "948fa9d915bc47f035ce1e8aa1fd13a67ca3b35b8f0d316e080ec432906afd13",
+      "bytes": 50518
     },
     {
       "path": "poses/storyteller-monsoon-waving.png",
-      "sha256": "26699845484dc1cf1aded351953c431fe090e791bec019e939fc461acd718043",
-      "bytes": 47007
+      "sha256": "438eed05a2eea6bacd49c81077712f12a214398d9818c272225a101f7047f4bc",
+      "bytes": 47784
     },
     {
       "path": "poses/storyteller-warm-gardening.png",
-      "sha256": "122050b1a44dd944006d92985586a9d706a074913e513ecc353707ffc4f88c4e",
-      "bytes": 49258
+      "sha256": "3f5945a5d992bf6dcdcbe79b248b9f5109246dea0e4ee6e685158ca285e61916",
+      "bytes": 49983
     },
     {
       "path": "poses/storyteller-warm-pointing.png",
-      "sha256": "90567007ebe4d5d657122b2846e703e412f82c7c075e59556308e1bc826888f2",
-      "bytes": 42360
+      "sha256": "7f9b3d587eae11b5a86bbcce5cf05c2094715442c003bccd9c3ce0b5cb202430",
+      "bytes": 43106
     },
     {
       "path": "poses/storyteller-warm-resting.png",
-      "sha256": "4ca4c74f09017bcf5de2563e7b537b7ae8369ea691f0a6460809bfa1a11a63ca",
-      "bytes": 41822
+      "sha256": "788167ff1370f5df77379b72b7f442f1c0bc419d0f4c146412b064f3819da7fc",
+      "bytes": 42676
     },
     {
       "path": "poses/storyteller-warm-sitting.png",
-      "sha256": "0da5daaafe2d54f15a3fcdc318e1fc5ff2f3c1d915964d81293f9564aa791e27",
-      "bytes": 41165
+      "sha256": "746151e4f3c55a8df03a293f8db1219f729b119203bf80c133aa1533f368945e",
+      "bytes": 41990
     },
     {
       "path": "poses/storyteller-warm-storytelling.png",
-      "sha256": "53c8401279a9e4bf1f5ff2e2aaceb29b79702aea5db1bc3288f57d26932f45ae",
-      "bytes": 42295
+      "sha256": "a3c24b64dac48a2b0b6aa4701d6b6fb3195d13603e9b3d67b4c936727dd9ae22",
+      "bytes": 43171
     },
     {
       "path": "poses/storyteller-warm-talking.png",
-      "sha256": "7385468d1ab01be352cddbcd8057447bc69182a193d08f3963a02f7a2e73e4d7",
-      "bytes": 40917
+      "sha256": "be3a33f8c6eca1260bf617db403e654a989f3411ddd510a6981e147ce3230bbb",
+      "bytes": 41650
     },
     {
       "path": "poses/storyteller-warm-walking.png",
-      "sha256": "563df3294876eb203f8a99363c28d851b37191564c49841173b26c38f331b671",
-      "bytes": 44334
+      "sha256": "fc67af76001ae6c381d0f0d4d52bb9c614819f2ed56a07fa734b116cb4497d6f",
+      "bytes": 45209
     },
     {
       "path": "poses/storyteller-warm-waving.png",
-      "sha256": "063b8cf3f38a4a980b1c801a86873d208d91d1f918720609d970a141d5457e8b",
-      "bytes": 42329
+      "sha256": "6a1ae95f77d7c0b2b1f9a019e1453210bcd58b915859f869445b9f93341495a0",
+      "bytes": 43059
     },
     {
       "path": "references/storyteller-cool-preview.webp",
-      "sha256": "f8fe4a7b7249794297e69e0cc7e207fcadf85afab727180b1d82a360554f1838",
-      "bytes": 68792
+      "sha256": "a65abd16aaf8076ab77af62dcb1441a4cf99052fa17c2044c13d2d28eb38c7d5",
+      "bytes": 66970
     },
     {
       "path": "references/storyteller-cool.png",
-      "sha256": "9652195e5e3b578e80882a9489e5c95761186883e3e22b4bdd4d997776f05535",
-      "bytes": 2104426
+      "sha256": "eb70dbbdf17917798f6d4c7da341b07f8518973a3380d91b85de8805af43123a",
+      "bytes": 2090744
     },
     {
       "path": "references/storyteller-cool.webp",
-      "sha256": "585e1b92c75aa10eda92cffadb1042e99552875de042920457d7c03addcee8e5",
-      "bytes": 902380
+      "sha256": "9f81f21e80384c0006dafac558fa1f55719ec5c8f36fd0d48bdd167930dde527",
+      "bytes": 886392
     },
     {
       "path": "references/storyteller-monsoon-preview.webp",
-      "sha256": "6f6189427422937b1b5897e87bad3c5bd1fc2260268172cb8c96a7bbe73f13fa",
-      "bytes": 67514
+      "sha256": "d48fe96a8f144732598dcfc90242a04072e9d4bcf0b01f7b055590a11a12c930",
+      "bytes": 64094
     },
     {
       "path": "references/storyteller-monsoon.png",
-      "sha256": "52b89fb3b5bdcd0a94fb7eb78f1bc1e32c3efd7b493561b7405ba2b3ccdaa6dd",
-      "bytes": 2138706
+      "sha256": "150108ca43caaf724ed72e14a20d4f1df86800608d13f6672b663d5afbb5c95e",
+      "bytes": 2076496
     },
     {
       "path": "references/storyteller-monsoon.webp",
-      "sha256": "69f4ee55b208b286cbd926e29c0abe9b9595afb17358be84e88dbd7b1f362875",
-      "bytes": 938184
+      "sha256": "822481c53c9be275edbc983c775f8589db7d8bb193bd74445d5748ed8ab0b506",
+      "bytes": 888064
     },
     {
       "path": "references/storyteller-warm-preview.webp",
-      "sha256": "d083a3ec0b2f74d01504f6a3fbd138081f79a1301de3199e43405a8e017607e4",
-      "bytes": 65496
+      "sha256": "c29e6505bd1118f881cad15b18c264bb53739ddb0d0efa254445116ae209dc0e",
+      "bytes": 63906
     },
     {
       "path": "references/storyteller-warm.png",
-      "sha256": "4ec108351f70a45ac0e1178e7538b3238a8b1ecefa08644e91c91feaf947da21",
-      "bytes": 2100025
+      "sha256": "9cf4f2dc3fa33c959c2451b1625b3cc265ce786727572dee4ba1d3782bb44398",
+      "bytes": 2046264
     },
     {
       "path": "references/storyteller-warm.webp",
-      "sha256": "9acb34dd21ab1af7570e8216ca9316837569dff59cdea58b814fb74383599769",
-      "bytes": 860960
+      "sha256": "e9a63d0fceb8824d902b729065973d2dc3799d2f0a1413805f1f6355b9b296d5",
+      "bytes": 822336
     },
     {
       "path": "rigs/storyteller-cool.png",
-      "sha256": "486dbce6a32746b925f907c99d124fc837b123871df40afab7c3778564619664",
-      "bytes": 101866
+      "sha256": "689bceb7275a63cd1620c345d00177063d501be17847802f3e8235b1e7a8e268",
+      "bytes": 103362
     },
     {
       "path": "rigs/storyteller-cool.svg",
-      "sha256": "085b55790625a9c0b85c6b2f88ed2820ad48762ff3c6992730bc43ae69623b54",
-      "bytes": 11353
+      "sha256": "2b9d12b1bf6b4299fccbd1c9fc5dc0f1f88ac52ddf76d8858027f7bb25af7fe8",
+      "bytes": 11375
     },
     {
       "path": "rigs/storyteller-monsoon.png",
-      "sha256": "5c83f893f329885274450141984001dbfcdc6ceee33145dd0fe5ceede62c24b3",
-      "bytes": 108151
+      "sha256": "fa3f60e95955618c67e871bbd752a013b4237c24e4c0a1693da346508e4eeeba",
+      "bytes": 109606
     },
     {
       "path": "rigs/storyteller-monsoon.svg",
-      "sha256": "14c4bce8979128a133dbf832b20fc3489419bac6a3512535ed74f4e906d869b1",
-      "bytes": 12052
+      "sha256": "cba35a1a9df1e5dc9d3bc49546f53b67c96052a5bb56a79648ab1e671e78da82",
+      "bytes": 12074
     },
     {
       "path": "rigs/storyteller-warm.png",
-      "sha256": "a3e3521611b971fa0a6fd69758bcfe9486a37743608faf70954891aecab19eeb",
-      "bytes": 97373
+      "sha256": "b8dfcd53057a1836bb5d6e666cbb9a4071ae9a070fbd4634869865474a340690",
+      "bytes": 98888
     },
     {
       "path": "rigs/storyteller-warm.svg",
-      "sha256": "c1978cb4bce77b6736ac48af2c2be954fbc605138640061b8fdd76d0f9026ed4",
-      "bytes": 11133
+      "sha256": "b718557ba1bc647fdb9365c9904b72090f95a84511f4b31678b9dfbffea034d0",
+      "bytes": 11155
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "53a781ce53fad7f1da4f7441746687a775f4ba386ad5756760dbd9bbdd0d87e5",
+      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
       "bytes": 2919
     },
     {
@@ -601,8 +606,8 @@
     },
     {
       "path": "runtime/rig.js",
-      "sha256": "46a54f3db911bdd3e2d8253b9440434885a0fbce619b128726fa4274da0b3e34",
-      "bytes": 21905
+      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
+      "bytes": 21916
     },
     {
       "path": "timelines/storyteller-cool-gardening.json",
@@ -736,33 +741,33 @@
     },
     {
       "path": "turnarounds/storyteller-cool-front.png",
-      "sha256": "dda592b19a334f88248cc075ba09a23790fe488b0f6a3add3224d8f86a08003c",
-      "bytes": 102138
+      "sha256": "a5a7737ce126250224ab7d6217f2d65588642be3e5f82bbb0a7758872fc64550",
+      "bytes": 103642
     },
     {
       "path": "turnarounds/storyteller-cool-front.svg",
-      "sha256": "bf61024e0ce947b5b5848a69e90590967bdc281d5e76c07cdc4a0415597597a7",
-      "bytes": 11310
+      "sha256": "b6410c320890350f3e03ae2f3fa1db296af7de6af227a771f4ff6a289a716e6b",
+      "bytes": 11332
     },
     {
       "path": "turnarounds/storyteller-cool-profile.png",
-      "sha256": "c0f6ab1819418df298f8ec6016088b77bebd2d9afee656928f96e4765763b500",
-      "bytes": 98285
+      "sha256": "1f067922077efe85ed201287a8c0538435050ae9c4b2405a68d3e87c8adb5c1b",
+      "bytes": 99060
     },
     {
       "path": "turnarounds/storyteller-cool-profile.svg",
-      "sha256": "322ec16fc398d62fcceb86fdd9c6dac150a3e763db6ea91ef652e41bb93c3b9c",
-      "bytes": 10875
+      "sha256": "9c872d8e066b38699b0c69a02cb1ff31ec64989930b401faf6d96f50d8231997",
+      "bytes": 10886
     },
     {
       "path": "turnarounds/storyteller-cool-three-quarter.png",
-      "sha256": "486dbce6a32746b925f907c99d124fc837b123871df40afab7c3778564619664",
-      "bytes": 101866
+      "sha256": "689bceb7275a63cd1620c345d00177063d501be17847802f3e8235b1e7a8e268",
+      "bytes": 103362
     },
     {
       "path": "turnarounds/storyteller-cool-three-quarter.svg",
-      "sha256": "085b55790625a9c0b85c6b2f88ed2820ad48762ff3c6992730bc43ae69623b54",
-      "bytes": 11353
+      "sha256": "2b9d12b1bf6b4299fccbd1c9fc5dc0f1f88ac52ddf76d8858027f7bb25af7fe8",
+      "bytes": 11375
     },
     {
       "path": "turnarounds/storyteller-monsoon-back.png",
@@ -776,33 +781,33 @@
     },
     {
       "path": "turnarounds/storyteller-monsoon-front.png",
-      "sha256": "6fb25c57d1d124acbce2362e8860bb0c638548449902120c0bb11355e23bea73",
-      "bytes": 108410
+      "sha256": "10bb32bc25ecb4d917acd55b9e92fde49c1d468884ee04490b063e542b90b270",
+      "bytes": 109865
     },
     {
       "path": "turnarounds/storyteller-monsoon-front.svg",
-      "sha256": "9aa03f14f62b746b88423ef4d89a2cfc0c69056c7f32f3e3c1a71f282dff6694",
-      "bytes": 12009
+      "sha256": "f9cff4433e7d146f7e40010bea3246f4936f5a63f0de3998109070e0d8bd1f1c",
+      "bytes": 12031
     },
     {
       "path": "turnarounds/storyteller-monsoon-profile.png",
-      "sha256": "1a8387138b967c5c8a5fc309b832ce7b55596f0f43ca5e385c1a95f0c6d9fe40",
-      "bytes": 103271
+      "sha256": "6be4180d557b446147af4d90e80e57ff51c98d05a4db3b61b3565ef9747f0be5",
+      "bytes": 104069
     },
     {
       "path": "turnarounds/storyteller-monsoon-profile.svg",
-      "sha256": "f9a24a1a66893bbd48db1e290390c588805918ebbf2f895feb8c58b2429f85bb",
-      "bytes": 11558
+      "sha256": "c7f5d5e7e8b2d4c116af00d2a2f5edc78b0d3af56e2965f35a885db0efed7242",
+      "bytes": 11569
     },
     {
       "path": "turnarounds/storyteller-monsoon-three-quarter.png",
-      "sha256": "5c83f893f329885274450141984001dbfcdc6ceee33145dd0fe5ceede62c24b3",
-      "bytes": 108151
+      "sha256": "fa3f60e95955618c67e871bbd752a013b4237c24e4c0a1693da346508e4eeeba",
+      "bytes": 109606
     },
     {
       "path": "turnarounds/storyteller-monsoon-three-quarter.svg",
-      "sha256": "14c4bce8979128a133dbf832b20fc3489419bac6a3512535ed74f4e906d869b1",
-      "bytes": 12052
+      "sha256": "cba35a1a9df1e5dc9d3bc49546f53b67c96052a5bb56a79648ab1e671e78da82",
+      "bytes": 12074
     },
     {
       "path": "turnarounds/storyteller-warm-back.png",
@@ -816,48 +821,48 @@
     },
     {
       "path": "turnarounds/storyteller-warm-front.png",
-      "sha256": "d3dfa7d8f8f8f15ec3a48b37f4186c8564ed1240b2edec6af069dc8c3ad71d5b",
-      "bytes": 97654
+      "sha256": "f081b7c0b82c1de7db3a43e21b7dbd838764e4f6d37dd193fc371840f64cfa33",
+      "bytes": 99169
     },
     {
       "path": "turnarounds/storyteller-warm-front.svg",
-      "sha256": "82f2529485b251471132e717a241267ed917e73226ddc77d52456ddff7d02836",
-      "bytes": 11090
+      "sha256": "3599a8d210322f6527619a00588e9d1dd458da54a7c40e6075cd6adf1c498e02",
+      "bytes": 11112
     },
     {
       "path": "turnarounds/storyteller-warm-profile.png",
-      "sha256": "bf5f7993759484878902497031733b9e1dde4f8b4307ff04140f1afb2db404b9",
-      "bytes": 95133
+      "sha256": "e9f89ff29ea41646d51db05802be82eed45ddf69c2cc138e84b00f716cd38fb9",
+      "bytes": 95758
     },
     {
       "path": "turnarounds/storyteller-warm-profile.svg",
-      "sha256": "027a199d8c514aace42c6426d0567ff3cbd50c549c0fdbba0316bff36c70e9b8",
-      "bytes": 10635
+      "sha256": "aff1a5770ba5794df36f82e0c61c8b4c1ca8c0b3dc72190babef368b069fc95c",
+      "bytes": 10646
     },
     {
       "path": "turnarounds/storyteller-warm-three-quarter.png",
-      "sha256": "a3e3521611b971fa0a6fd69758bcfe9486a37743608faf70954891aecab19eeb",
-      "bytes": 97373
+      "sha256": "b8dfcd53057a1836bb5d6e666cbb9a4071ae9a070fbd4634869865474a340690",
+      "bytes": 98888
     },
     {
       "path": "turnarounds/storyteller-warm-three-quarter.svg",
-      "sha256": "c1978cb4bce77b6736ac48af2c2be954fbc605138640061b8fdd76d0f9026ed4",
-      "bytes": 11133
+      "sha256": "b718557ba1bc647fdb9365c9904b72090f95a84511f4b31678b9dfbffea034d0",
+      "bytes": 11155
     },
     {
       "path": "videos/storyteller-book-alpha.webm",
-      "sha256": "f71162565661c11173af38275a4fa49d8f296a32d2057b36ba9f7a410bfa19f9",
-      "bytes": 120941
+      "sha256": "cb83ec64f65b4a6f74646b5cf503de247a0b3573426909748439465ac7120da7",
+      "bytes": 122364
     },
     {
       "path": "videos/storyteller-book-poster.png",
-      "sha256": "491f86b340c7601067c0992fb0f9663c335facec6b0afeb1d34c960e396594d3",
-      "bytes": 87911
+      "sha256": "217acd530f7a6e063e3cecad4650a340cdb38ee5efc8721327fdd6091755be52",
+      "bytes": 88697
     },
     {
       "path": "videos/storyteller-book.mp4",
-      "sha256": "adb48001c1d0539974403c0b9e46d572cab622f2b080b0bc7870bd0f857a8e0f",
-      "bytes": 124763
+      "sha256": "257c9478ba745106f1fa8cbfc0687f6ee2e6b9acde18d9933e6d5b9e21bca829",
+      "bytes": 126087
     },
     {
       "path": "videos/storyteller-book.vtt",

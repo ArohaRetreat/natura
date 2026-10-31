@@ -1,3 +1,4 @@
+import {verifyOriginalIdentity} from './verify-hrudhi-identity.mjs';
 import {basename} from 'node:path';
 import {renderWebGuides} from './render-web-guides.mjs';
 import {spawnSync} from 'node:child_process';
@@ -7,6 +8,7 @@ import {mkdir,cp,copyFile,readFile,rm,writeFile} from 'node:fs/promises';
 import {sceneSvg,sceneDefinitions} from '../src/nature-scenes.js';
 const revision=spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim();
 const root=new URL('../',import.meta.url),dist=new URL('dist/',root),target=new URL('design/',dist);
+await verifyOriginalIdentity();
 const kitZip=spawnSync('python3',['scripts/zip-hrudhi.py'],{cwd:root,stdio:'inherit'});if(kitZip.status!==0)throw Error('Hrudhi distribution packaging failed');
 const farmZip=spawnSync('python3',['scripts/zip-farm-atlas.py'],{cwd:root,stdio:'inherit'});if(farmZip.status!==0)throw Error('Farm atlas packaging failed');
 await renderWebGuides();await renderSeasonGuide();await renderMotionCatalogue();
@@ -19,5 +21,5 @@ const icons=JSON.parse(await readFile(new URL('public/data/icons.json',root),'ut
 for(const language of ['english','kannada','bilingual'])for(const layout of ['full','primary','horizontal','wordmark'])for(const mode of ['colour','forest','black','white'])for(const ext of ['svg','pdf'])await readFile(new URL(`public/assets/logos/${language}/aroha-${layout}-${mode}.${ext}`,root));
 await copyFile(new URL('LICENSE',root),new URL('LICENSE.txt',target));
 await copyFile(new URL('config/retreat-location.json',root),new URL('data/retreat-location.json',target));
-await writeFile(new URL('release.json',target),JSON.stringify({name:'Natura',version:'0.5.0',revision,hrudhiKitVersion:'0.2.0',farmAtlasVersion:'0.1.0',hrudhiReview:'draft',basePath:'/design/',scenes:Object.keys(sceneDefinitions)}));
-console.log('Built Natura v0.5.0 at /design/: 144 icons, 2 core illustrations, 8 animal references, 12 independent nature timelines and layered weather; Hrudhi draft kit with 120 action combinations.');
+await writeFile(new URL('release.json',target),JSON.stringify({name:'Natura',version:'0.5.1',revision,hrudhiKitVersion:'0.2.1',farmAtlasVersion:'0.1.0',hrudhiReview:'draft',basePath:'/design/',scenes:Object.keys(sceneDefinitions)}));
+console.log('Built Natura v0.5.1 at /design/: 144 icons, 2 core illustrations, 8 animal references, 12 independent nature timelines and layered weather; Hrudhi draft kit with 120 action combinations.');
