@@ -9,3 +9,7 @@ The seven-page character bible is rendered with Source Sans 3 and Lora, includes
 ## Kit v0.2.0 / Natura v0.5.0 / issue #7
 
 Revised all fifteen illustrated references and the vector eyes/smile. New designs remain fictional proposals pending family review; private photo/path/history are excluded from public artifacts. Added a web library for all age/wardrobe/action/view/expression/mouth studies and the complete guide, with filtering/pagination and per-asset downloads. Added five silent vector scene MP4s, isolated alpha WebM clips, posters and action captions. Runway requires reconnection; no painterly AI film or cloned voice is claimed. Updated assets change chapter digests; old approvals cannot carry forward. New local checks and release evidence are recorded separately after packaging.
+
+## Identity correction / issue #9 / Natura 0.5.1 / kit 0.2.1
+
+The revised face was rejected; the explicit choice is to restore the original pre-revision identity. Exact original 15 PNG and 15 WebP masters plus the original rig source were restored from 3f4884e. Immutable identity-lock checks run before packaging/building. All raster, SVG and video derivatives are being rebuilt from that source. Retain the farm atlas and web-first asset/guidance features. No new face generation or portrait substitution is authorised. Actual checks and live deployment evidence follow issue #9.

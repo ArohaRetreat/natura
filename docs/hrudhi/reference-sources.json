@@ -1,92 +1,77 @@
 {
-  "steward-warm": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+  "explorer-warm": {
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "steward-warm.png",
-    "revision": "0.2.0"
+    "file": "explorer-warm.png"
   },
   "naturalist-warm": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "naturalist-warm.png",
-    "revision": "0.2.0"
-  },
-  "explorer-warm": {
-    "source": "AI-generated fictional revised character reference; imagegen",
-    "status": "draft",
-    "file": "explorer-warm.png",
-    "revision": "0.2.0"
+    "file": "naturalist-warm.png"
   },
   "storyteller-warm": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "storyteller-warm.png",
-    "revision": "0.2.0"
+    "file": "storyteller-warm.png"
   },
   "pathfinder-warm": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "pathfinder-warm.png",
-    "revision": "0.2.0"
-  },
-  "steward-cool": {
-    "source": "AI-generated fictional revised character reference; imagegen",
-    "status": "draft",
-    "file": "steward-cool.png",
-    "revision": "0.2.0"
-  },
-  "steward-monsoon": {
-    "source": "AI-generated fictional revised character reference; imagegen",
-    "status": "draft",
-    "file": "steward-monsoon.png",
-    "revision": "0.2.0"
-  },
-  "naturalist-monsoon": {
-    "source": "AI-generated fictional revised character reference; imagegen",
-    "status": "draft",
-    "file": "naturalist-monsoon.png",
-    "revision": "0.2.0"
-  },
-  "naturalist-cool": {
-    "source": "AI-generated fictional revised character reference; imagegen",
-    "status": "draft",
-    "file": "naturalist-cool.png",
-    "revision": "0.2.0"
+    "file": "pathfinder-warm.png"
   },
   "explorer-monsoon": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "explorer-monsoon.png",
-    "revision": "0.2.0"
+    "file": "explorer-monsoon.png"
   },
   "explorer-cool": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "explorer-cool.png",
-    "revision": "0.2.0"
+    "file": "explorer-cool.png"
+  },
+  "steward-warm": {
+    "source": "AI-generated fictional character reference; imagegen",
+    "status": "draft",
+    "file": "steward-warm.png"
+  },
+  "naturalist-monsoon": {
+    "source": "AI-generated fictional character reference; imagegen",
+    "status": "draft",
+    "file": "naturalist-monsoon.png"
+  },
+  "naturalist-cool": {
+    "source": "AI-generated fictional character reference; imagegen",
+    "status": "draft",
+    "file": "naturalist-cool.png"
   },
   "storyteller-monsoon": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "storyteller-monsoon.png",
-    "revision": "0.2.0"
+    "file": "storyteller-monsoon.png"
   },
   "storyteller-cool": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "storyteller-cool.png",
-    "revision": "0.2.0"
+    "file": "storyteller-cool.png"
   },
   "pathfinder-monsoon": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "pathfinder-monsoon.png",
-    "revision": "0.2.0"
+    "file": "pathfinder-monsoon.png"
+  },
+  "steward-monsoon": {
+    "source": "AI-generated fictional character reference; imagegen",
+    "status": "draft",
+    "file": "steward-monsoon.png"
   },
   "pathfinder-cool": {
-    "source": "AI-generated fictional revised character reference; imagegen",
+    "source": "AI-generated fictional character reference; imagegen",
     "status": "draft",
-    "file": "pathfinder-cool.png",
-    "revision": "0.2.0"
+    "file": "pathfinder-cool.png"
+  },
+  "steward-cool": {
+    "source": "AI-generated fictional character reference; imagegen",
+    "status": "draft",
+    "file": "steward-cool.png"
   }
 }

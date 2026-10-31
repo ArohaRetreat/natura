@@ -250,7 +250,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.0."
+          "text": "The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.1."
         }
       ]
     },
@@ -276,11 +276,20 @@
         },
         {
           "type": "paragraph",
-          "text": "The revised facial direction uses more naturally proportioned almond eyes, medium dark brows, softly oval cheeks and a quiet smile. It is a fictional design proposal, not a portrait record or an age prediction. The illustrated references and vector rig remain distinct interpretations, all draft pending family review."
+          "text": "The original pre-revision face is restored exactly from the first character kit. The reference masters and original facial-rig source are pinned in identity-lock.json. No independent face generation or seasonal facial redesign is authorised. This is a fictional character design, not a portrait record or an age prediction. The illustrated references and vector rig remain distinct interpretations, all draft pending family review."
         },
         {
           "type": "paragraph",
           "text": "Five silent 1280x720, 24 fps vector films show welcome, gardening, storytelling, orchard walking and canopy guidance. MP4 files have a white illustrated scene. The separate isolated-character WebM files retain alpha. Captions describe actions; there is no spoken voice, narration or audio lip-sync. These are rendered from the editable joint rig, not AI animation of the painterly illustrations. Native video controls wait for an explicit play action, allow pause and seeking, and the lab pauses videos on route exit or tab hiding. A poster is shown until playback."
+        }
+      ]
+    },
+    {
+      "heading": "Identity continuity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Identity source: hrudhi-original-v1, source revision 3f4884e522e98ce9dd731918b4deb71416a509b5. The 30 original PNG/WebP reference masters and original rig source are verified against pinned SHA-256 hashes. New clothes and motions must not substitute a different face. A new age chapter requires a reviewed continuation of the original identity; it is not permission to invent a new person. The painterly references and simplified vector structure remain distinct visual treatments; the vector study must not be passed off as an exact painted likeness. Any proposed production animation must be checked against the original master before adoption."
         }
       ]
     }

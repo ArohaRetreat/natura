@@ -1,4 +1,4 @@
-# Hrudhi draft character kit v0.2.0
+# Hrudhi draft character kit v0.2.1
 
 Family review pending. Aroha Retreat website use only. This does not activate a permanent visitor mascot.
 
@@ -29,3 +29,5 @@ SVG artboards: 320x520; static character PNGs: 640x1040; animated WebP previews:
 Fonts included for the HTML bible are Source Sans 3 and Lora, under their OFL notices. Keep third-party licences. The root restricted licence applies to custom code/art, including this example. See the official source repository https://github.com/ArohaRetreat/natura for reproducible generators, tests and release evidence.
 
 The website now includes the entire browsable asset library and readable character guide. Five silent MP4 scene films, five isolated alpha WebM clips, PNG posters and action-caption VTT files are supplied under assets/hrudhi/videos/. These animate the simplified vector interpretation; painterly references remain flattened illustrations.
+
+Identity correction: the exact original reference masters and original facial rig are restored and pinned by identity-lock.json. No new face generation is authorised for seasons, poses or animation. Validate the identity lock before packaging.
