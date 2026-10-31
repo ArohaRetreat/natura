@@ -17,3 +17,6 @@ public/assets/hrudhi/.video-frames/
 public/assets/hrudhi/.video-jobs.json
 public/assets/farm-atlas/.frames/
 public/downloads/Natura-Farm-Atlas-v*.zip
+
+# Unapproved character candidates stay local; never ship a rejected face/gait as a kit asset.
+review/hrudhi-performance/

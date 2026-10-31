@@ -17,3 +17,7 @@ The revised face was rejected; the explicit choice is to restore the original pr
 ## Natura 0.5.2 / Hrudhi 0.2.2 / issue #11
 
 All five film scenes now embed exact immutable original PNGs; the character is still and only nature moves. Alpha WebM clips are still original-art overlays. No rig rendering in film generation. Source manifest plus pre-encoding exact-pixel and decoded H264 pixel comparisons validate the likeness. Original lock and 30 masters are unchanged. Actual checks and release evidence are recorded in release-evidence/natura-v0.5.2.json after execution.
+
+## Uniformity rejection / issue #13
+
+The 0.5.2 correction is insufficient: the 120 actions and all technical rigs/facial/view studies use a visibly different simplified character; chapter cards are static; original-art films have no character performance. Read docs/hrudhi/PERFORMANCE-RECOVERY.md. Do not describe these counts as a complete consistent animation kit, or hide the issue by removing collections. Preserve immutable original masters. A first original-referenced eight-action pose sheet is preproduction only, not completed animations; inspect likeness before scaling to all chapters/seasons. Runway reauthentication is required for its performance-video tools. Actual draft/review/delivery evidence follows issue #13.
