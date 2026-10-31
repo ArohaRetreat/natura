@@ -1,0 +1,20 @@
+---
+name: service-hrudhi-character-kit
+description: Maintain Hrudhi's draft age, seasonal wardrobe, vector motion and milestone policy kit.
+---
+
+# Hrudhi character kit
+
+Owner: ArohaRetreat. Source `src/hrudhi/`; lab at Natura `#hrudhi`. Read [contract](../../docs/hrudhi/CONTRACT.md), [integration](../../docs/hrudhi/INTEGRATION.md), [continuation](continuation.md) and manifest `public/assets/hrudhi/manifest.json`.
+
+Five proposed age bands cover 5-17, three wardrobes and eight action studies = 120 combinations. All art is draft, family review pending. Do not activate the permanent visitor guide or describe the kit as family-approved. Do not publish private family history, photographs, invented biography or a child's cloned voice. Preserve consistent complexion, hair/leaf clip, eyes, satchel and age-appropriate styling.
+
+Detailed generated references are flattened PNG/WebP. The working jointed SVG rig is a simplified interpretation, not a layered/rigged copy of those paintings. SVG/PNG view, expression and mouth studies are stylised drafts. Eight actions move different joints/props. Speech is a silent sample mouth sequence; no voice or true lip-sync. No 3D/proprietary animation source is claimed.
+
+`definition.js` owns scope; `rig.js` owns anatomy/IK/rendering/numeric timelines; `player.js` owns explicit one-pass WAAPI and animated SVG export; `policy.js` owns bounded pure eligibility; `studio.js` owns lab UI/disposal and labelled simulation. No model, admin/auth/database/weather backend exists. Never turn browser simulation controls into authority. `resolveGrowth` requires current revision, verified completed milestones, matching installed chapter hashes, approved review version, and an eligible structured recommendation. Default one-step advancement; explicit skip policy and publication-review mode remain admin choices. Permanent withdrawal hides unapproved current character; backend must enforce authenticated transaction and next-session pinning.
+
+Generation: `node scripts/generate-hrudhi.mjs`, then `DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib .asset-venv/bin/python scripts/render-hrudhi.py` (Python with CairoSVG/Pillow; macOS Cairo path as needed). It creates temporary ignored frames. PDF/HTML generation: `scripts/render-hrudhi-bible.py` uses ReportLab/Pillow and Source Sans 3/Lora; inspect every rendered page. Read the PDF skill and run its required authoring marker before new PDF authoring. `npm run package:hrudhi` binds runtime/asset hashes and creates the ZIP after rendering is complete. Font OFL and custom Aroha-only licence travel with the kit.
+
+Tests: `npm test`; `python3 scripts/verify-hrudhi.py` with Pillow. Validate actual file hashes, XML, alpha, loop count and 120 outputs; inspect representative frames and real browser behavior when browser tools are available. Never claim browser verification from CPU frame rendering. Native player waits for Play, pauses/disposes on hiding/route exit, supports reduced motion and never loops. Do not animate essential navigation or cover booking controls. No telemetry destination is configured; source/build/GitHub/Firebase evidence is separate from runtime interaction acceptance.
+
+Deployment: Natura Firebase site `aroha-retreat`, `/design/` only; preserve future unrelated root files. Merge through issue-linked PR with actual head checks. Rollback app with a tested prior immutable artifact; never fabricate/restore family approval. Any asset/runtime change invalidates matching chapter bundle review. Update manifest, ZIP, version, service continuation and changelog together.

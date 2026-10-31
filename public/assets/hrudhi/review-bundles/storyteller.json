@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "0.1.0",
+  "chapterId": "storyteller",
+  "status": "draft",
+  "files": [
+    {
+      "path": "definition.json",
+      "sha256": "c7dc6552d0dcd164f1ec8c777d3b4f264149d6caae44d7ecb1d5454f9a040ca8",
+      "bytes": 4100
+    },
+    {
+      "path": "expressions/storyteller-curious.png",
+      "sha256": "78db1040987cc613105ce084598e3808ab17991feb6dc7665b6dfc2ec984f293",
+      "bytes": 56149
+    },
+    {
+      "path": "expressions/storyteller-curious.svg",
+      "sha256": "5782f9141b02b62d5182618af37a26215858d12358b652ec16940e8838fd461c",
+      "bytes": 4290
+    },
+    {
+      "path": "expressions/storyteller-delighted.png",
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
+    },
+    {
+      "path": "expressions/storyteller-delighted.svg",
+      "sha256": "ba4d1d6aecb8554a7823e48a6d250830daf3779370f7619fa8985336ba29749b",
+      "bytes": 4290
+    },
+    {
+      "path": "expressions/storyteller-gentle.png",
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
+    },
+    {
+      "path": "expressions/storyteller-gentle.svg",
+      "sha256": "90ea44da7c9a71ff96bc3e468ee6dd9389ca7b2da6338121486189e91967d365",
+      "bytes": 4290
+    },
+    {
+      "path": "expressions/storyteller-listening.png",
+      "sha256": "e407e99559214145991ad623c442dba543c728edf41d3cb2a91a5193aaa4acc2",
+      "bytes": 55397
+    },
+    {
+      "path": "expressions/storyteller-listening.svg",
+      "sha256": "369194e0cdd01941cbadb6f64d02ed1f4ada81cb219a2f62e33dd5ed4a83450d",
+      "bytes": 4208
+    },
+    {
+      "path": "expressions/storyteller-smile.png",
+      "sha256": "8c6d8ccdecbd2c9bdb39eff4d258c61ef09dbe29ea8caf9782c9512460624623",
+      "bytes": 55838
+    },
+    {
+      "path": "expressions/storyteller-smile.svg",
+      "sha256": "75d43a6cd2b7f6966a9d408d3ab4f044c3e80af783af3b85569e5b16e98f2295",
+      "bytes": 4189
+    },
+    {
+      "path": "expressions/storyteller-thoughtful.png",
+      "sha256": "28ff927b8d8635795474fccd7db704b560a41cf6f9e3cb5452a0407beffc6ce5",
+      "bytes": 55404
+    },
+    {
+      "path": "expressions/storyteller-thoughtful.svg",
+      "sha256": "aa119b6ab7f61dfa9bca3e13b06fcbd720564db6e89e7c0518e679deff8c897b",
+      "bytes": 4208
+    },
+    {
+      "path": "motion/storyteller-cool-gardening.svg",
+      "sha256": "0c3c6574d64731cf1764634ce30ad01e7f56bda48b61b392af35ec93494ed029",
+      "bytes": 18103
+    },
+    {
+      "path": "motion/storyteller-cool-gardening.webp",
+      "sha256": "40352e0abdab34072fa3f4eee007cda60201d0e1be8fff7bf1b3288a6264e150",
+      "bytes": 584528
+    },
+    {
+      "path": "motion/storyteller-cool-pointing.svg",
+      "sha256": "4dece7d86623b38e406a9af10fee433c5e909683fa89652d11bd7369abd3f373",
+      "bytes": 16749
+    },
+    {
+      "path": "motion/storyteller-cool-pointing.webp",
+      "sha256": "67099115d5bd7a2f8d87bec7aab62d4de45aefb12a36a11168ecf631836da2f7",
+      "bytes": 479060
+    },
+    {
+      "path": "motion/storyteller-cool-resting.svg",
+      "sha256": "fc95fa8223e9f8f03152baccd8ed4e19068a78e39eb88f3930754185baf99180",
+      "bytes": 15828
+    },
+    {
+      "path": "motion/storyteller-cool-resting.webp",
+      "sha256": "4b36f9f62008b50ec4f9b77aff8570115c29cd0942be965290ea11299db33823",
+      "bytes": 474206
+    },
+    {
+      "path": "motion/storyteller-cool-sitting.svg",
+      "sha256": "71fcf4594b0e0b61dae8966f3f19b7f3793506de2f31d94875d76311bd2062b3",
+      "bytes": 16101
+    },
+    {
+      "path": "motion/storyteller-cool-sitting.webp",
+      "sha256": "7e1127a7c8019ae7018bdab99208542790a9be2c4aba53e1f21d350f234490a6",
+      "bytes": 441424
+    },
+    {
+      "path": "motion/storyteller-cool-storytelling.svg",
+      "sha256": "437be5633a07d463becd2e64ae1724e09c6957c905d5e4c90ec12235f85d362e",
+      "bytes": 21938
+    },
+    {
+      "path": "motion/storyteller-cool-storytelling.webp",
+      "sha256": "0371643bcb8ed3d808ce8467b1591806aa02e0aa580821dc67a6d4c8f027fb83",
+      "bytes": 697702
+    },
+    {
+      "path": "motion/storyteller-cool-talking.svg",
+      "sha256": "d194040a34cc640686af92ccbc3c77ba29bb64a20b3d03a1bb4cfd6ab878b226",
+      "bytes": 20245
+    },
+    {
+      "path": "motion/storyteller-cool-talking.webp",
+      "sha256": "bec76e5d6ae494588065c972a2a8ea8346275b3343259561a3883e7ca227e263",
+      "bytes": 482608
+    },
+    {
+      "path": "motion/storyteller-cool-walking.svg",
+      "sha256": "38fb468668aa68be4b50bb8de2e0fb642117f36b523c0b7cbdc943c69e98e124",
+      "bytes": 23642
+    },
+    {
+      "path": "motion/storyteller-cool-walking.webp",
+      "sha256": "dc72d52e93024cc897e4b8670395e456ae09f316a61658d79cb38fcc95b839a7",
+      "bytes": 414890
+    },
+    {
+      "path": "motion/storyteller-cool-waving.svg",
+      "sha256": "a80dba1121d4840c9b48e4e31c9b0f240d63d1852fc61eb0153d17476eab672d",
+      "bytes": 16816
+    },
+    {
+      "path": "motion/storyteller-cool-waving.webp",
+      "sha256": "723d02f632c0196fbc37ecb3f3dfc568d361d846f7e4f5df1529c348d2e0ea69",
+      "bytes": 483218
+    },
+    {
+      "path": "motion/storyteller-monsoon-gardening.svg",
+      "sha256": "d0863092148e43a781551150876d5b8c3fffe2c72be64c8ddb4e76e8dba58bd7",
+      "bytes": 18398
+    },
+    {
+      "path": "motion/storyteller-monsoon-gardening.webp",
+      "sha256": "eeddbd8fbbd3f5c2baebf9f82dcf5fbdcd7f8988d3d9d74586120a3d2efa0132",
+      "bytes": 570190
+    },
+    {
+      "path": "motion/storyteller-monsoon-pointing.svg",
+      "sha256": "40791046a5c3fe27d64ae990b2034719baa9257c1cc7a19bd13a4c4c0b50b107",
+      "bytes": 17568
+    },
+    {
+      "path": "motion/storyteller-monsoon-pointing.webp",
+      "sha256": "37c512d7c5f4fb3aeece6b9b4363142cf3b0b6ee9b7f70ff986d7450e4ddd36a",
+      "bytes": 522456
+    },
+    {
+      "path": "motion/storyteller-monsoon-resting.svg",
+      "sha256": "9dd53f095fc77df29417e46038655e7dc49180e0929b915f3a2ad670334bb10c",
+      "bytes": 16629
+    },
+    {
+      "path": "motion/storyteller-monsoon-resting.webp",
+      "sha256": "4f02f32167716165d663d650d1efb536d7e443a1e2efbdb66370972436148a8b",
+      "bytes": 519538
+    },
+    {
+      "path": "motion/storyteller-monsoon-sitting.svg",
+      "sha256": "5c67bd1f043028802f341ea953bef3a2f519c35ac3bd7bdbe7fea63226965f10",
+      "bytes": 16378
+    },
+    {
+      "path": "motion/storyteller-monsoon-sitting.webp",
+      "sha256": "9f26586687b09a150df7894d6280fe42609e2339b5bfba266d6b2c292d95d6e1",
+      "bytes": 427340
+    },
+    {
+      "path": "motion/storyteller-monsoon-storytelling.svg",
+      "sha256": "062760865f86dea05469f80bb8e9faa9d7961737ceb1fb813f9863afdd39baf0",
+      "bytes": 22314
+    },
+    {
+      "path": "motion/storyteller-monsoon-storytelling.webp",
+      "sha256": "2d80af49243c223cc0f8b6395094814f5722b52b019860d41cc3724366d6a568",
+      "bytes": 674126
+    },
+    {
+      "path": "motion/storyteller-monsoon-talking.svg",
+      "sha256": "780a0175d038401d6045aead185f3530e6652a04f90b21a9467c12277825832f",
+      "bytes": 21088
+    },
+    {
+      "path": "motion/storyteller-monsoon-talking.webp",
+      "sha256": "7da129723bc3a9aa3773af50a41118b73c58dd3706052bcfd7fc28eb63f055d5",
+      "bytes": 551606
+    },
+    {
+      "path": "motion/storyteller-monsoon-walking.svg",
+      "sha256": "975a8d88476ca37654f3f7f4dc01c6049518cd2dd3f6a89b1b3d38b023686599",
+      "bytes": 23011
+    },
+    {
+      "path": "motion/storyteller-monsoon-walking.webp",
+      "sha256": "854cef0825f02d3f10b89a810ac13d18ea4a3cf920745fb79dbe0462d68855a3",
+      "bytes": 446266
+    },
+    {
+      "path": "motion/storyteller-monsoon-waving.svg",
+      "sha256": "8ec09446b4a3092be9d182c2468016f3339175fa4d56e618184313335df32481",
+      "bytes": 17635
+    },
+    {
+      "path": "motion/storyteller-monsoon-waving.webp",
+      "sha256": "f945d2755df2048e3a97c88096c5a1181938fca5170c6b83ccddf8d3d42fff02",
+      "bytes": 529906
+    },
+    {
+      "path": "motion/storyteller-warm-gardening.svg",
+      "sha256": "2cf745782f323e401e63a5eba9b1c2e58cd96513551a841ec5e894b9361801bd",
+      "bytes": 17883
+    },
+    {
+      "path": "motion/storyteller-warm-gardening.webp",
+      "sha256": "594b74998dcc0ff6baddf274aa2f69125326858a741be9fdb728668c374d46a0",
+      "bytes": 566996
+    },
+    {
+      "path": "motion/storyteller-warm-pointing.svg",
+      "sha256": "e7041406e002d4ceae94a9c102e2460d007b0dcac3e5678b61fab9b71860ba3b",
+      "bytes": 16529
+    },
+    {
+      "path": "motion/storyteller-warm-pointing.webp",
+      "sha256": "1bfa935cc811dae949ecd0b34929b5e03dea6d00fb233ccce1019d9c4d9efabe",
+      "bytes": 457466
+    },
+    {
+      "path": "motion/storyteller-warm-resting.svg",
+      "sha256": "d852eb1edf90974f6e5a6e23851c36e272d42da15db981e73ce00747bbf9925a",
+      "bytes": 15608
+    },
+    {
+      "path": "motion/storyteller-warm-resting.webp",
+      "sha256": "ce9b8685178d2a5888fd60a0ad09123ce63895aadbcdd52b58958ab0f46e60e0",
+      "bytes": 451600
+    },
+    {
+      "path": "motion/storyteller-warm-sitting.svg",
+      "sha256": "14e149d4bcade89de825fd9503d069de0578f8f1e8364bfbec260d74bc02445a",
+      "bytes": 15881
+    },
+    {
+      "path": "motion/storyteller-warm-sitting.webp",
+      "sha256": "1731ee62d913674445afcea268972a27fa0234a07e621a28541663d79454a234",
+      "bytes": 427622
+    },
+    {
+      "path": "motion/storyteller-warm-storytelling.svg",
+      "sha256": "133a88e7e4b4db8f1d6e2be189f2b7fc77c5f673c8dfc9af193d4135faedb0e3",
+      "bytes": 21718
+    },
+    {
+      "path": "motion/storyteller-warm-storytelling.webp",
+      "sha256": "7d6792d6e780045ee27680aef1b2c5e845b2a19366e1e4279d6fe248ad329293",
+      "bytes": 675344
+    },
+    {
+      "path": "motion/storyteller-warm-talking.svg",
+      "sha256": "690e5530f60b9780badc63ec8a8e749ea5fb4e353b40341ef8d96d2cce06ab2f",
+      "bytes": 20025
+    },
+    {
+      "path": "motion/storyteller-warm-talking.webp",
+      "sha256": "f04f6f0c379d8eef76e600f5fd45df70a2cd6c2f3f15b7cf5c6a0717050dd047",
+      "bytes": 463544
+    },
+    {
+      "path": "motion/storyteller-warm-walking.svg",
+      "sha256": "4ae104170f2900c8e172b7e9b18903840262820a0347c8038090e1cdccdb73fd",
+      "bytes": 23422
+    },
+    {
+      "path": "motion/storyteller-warm-walking.webp",
+      "sha256": "247176e11b1d96e870674cbcb6842fe2fee551699c930f0309611cae12e2c515",
+      "bytes": 396674
+    },
+    {
+      "path": "motion/storyteller-warm-waving.svg",
+      "sha256": "5843b2a19e46160841afa32df2ab957310e09371432911065de9fb9dc4568aff",
+      "bytes": 16596
+    },
+    {
+      "path": "motion/storyteller-warm-waving.webp",
+      "sha256": "6dcfddd8510c57844000ad4641e895702986e2d9e5c32680d6dfe1df7ee46336",
+      "bytes": 461672
+    },
+    {
+      "path": "mouths/storyteller-A.png",
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
+    },
+    {
+      "path": "mouths/storyteller-A.svg",
+      "sha256": "ba4d1d6aecb8554a7823e48a6d250830daf3779370f7619fa8985336ba29749b",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-E.png",
+      "sha256": "f83294edfbabef75090844529ee0aa7883d1396ed64c05cfce94cb04b10081d5",
+      "bytes": 55793
+    },
+    {
+      "path": "mouths/storyteller-E.svg",
+      "sha256": "9521694deb3e7d11fdc78477247c8cc10b1f1d3e14e2d49f3881358ff34b31b1",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-F.png",
+      "sha256": "f68224082ede10aabbd9de03e774dbb21ba00389f95c0a439c3322cbfcaaaf83",
+      "bytes": 55447
+    },
+    {
+      "path": "mouths/storyteller-F.svg",
+      "sha256": "3bd4f521737b58973f1a26db59dcd83359c8b8d42aaa06a614558b6059b00643",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-L.png",
+      "sha256": "da9e92ba092d0afdc30deefc04da6c4f291e37b7d7ae5ddef0084bb648443d4e",
+      "bytes": 55908
+    },
+    {
+      "path": "mouths/storyteller-L.svg",
+      "sha256": "61da9fc9135f565bccda725f7fae4a7a7acd32327b44abcb7f22451018b0b49f",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-M.png",
+      "sha256": "151d422220b80d1f209e2229e711e4babb4fcf0e3b4c8539def10b0a520241bf",
+      "bytes": 55405
+    },
+    {
+      "path": "mouths/storyteller-M.svg",
+      "sha256": "72fddd97151c0e46e1d89a810119d38e60a978cc43732d268c63248c55e2c43a",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-O.png",
+      "sha256": "89ad6b56510c647ef4a7ceb360f8022c000cffa3dbd88782f3339374483c7e98",
+      "bytes": 55615
+    },
+    {
+      "path": "mouths/storyteller-O.svg",
+      "sha256": "4d786d21f2bf5ecf3e03b3e4e1243d316dcfc3e41413de69f4b83363881f1cb7",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-rest.png",
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
+    },
+    {
+      "path": "mouths/storyteller-rest.svg",
+      "sha256": "90ea44da7c9a71ff96bc3e468ee6dd9389ca7b2da6338121486189e91967d365",
+      "bytes": 4290
+    },
+    {
+      "path": "mouths/storyteller-U.png",
+      "sha256": "3d70ddef3558f22d2c188874dab0c8b1443496fb59f56a4c5553640a836a5c16",
+      "bytes": 55383
+    },
+    {
+      "path": "mouths/storyteller-U.svg",
+      "sha256": "2acffb80ebdbc844ea00af64f44befa640f01566127670fc6d2d5ee70891fadd",
+      "bytes": 4290
+    },
+    {
+      "path": "poses/storyteller-cool-gardening.png",
+      "sha256": "89597de605a9771ceb226daebe3b25a6e0fdbd4340813c3a30137c6349679569",
+      "bytes": 51007
+    },
+    {
+      "path": "poses/storyteller-cool-pointing.png",
+      "sha256": "a8eb47b15973c9b49ef7e92adcaac08619f5c6f90020ad1c690caedb575dd44c",
+      "bytes": 45243
+    },
+    {
+      "path": "poses/storyteller-cool-resting.png",
+      "sha256": "6bedcaea4b04da0c059fb991faa8dc04ce3a26ce6822f2bffc7834eadaeb4e7a",
+      "bytes": 44757
+    },
+    {
+      "path": "poses/storyteller-cool-sitting.png",
+      "sha256": "7ba46400069533be598bda6323b3d2e29810b84e27e82c2df87dbd6e108cca7c",
+      "bytes": 42902
+    },
+    {
+      "path": "poses/storyteller-cool-storytelling.png",
+      "sha256": "6a0af44eb63edc14b32fa57049a91051ba28857bff5df60f0091782affe1c339",
+      "bytes": 44208
+    },
+    {
+      "path": "poses/storyteller-cool-talking.png",
+      "sha256": "1aad77dbc731646e0be56e5d395476ef2d684cc5a67df86783d778d1f1493f10",
+      "bytes": 43139
+    },
+    {
+      "path": "poses/storyteller-cool-walking.png",
+      "sha256": "e8d2a71d470860abcff20eed1705c44cea2d3cce1e194fd4f5d930a6a8678619",
+      "bytes": 47338
+    },
+    {
+      "path": "poses/storyteller-cool-waving.png",
+      "sha256": "6fa0ecdcd0ed3f56e0a09e734334e7202a7fc19fce30e6cb566038574d61279f",
+      "bytes": 45259
+    },
+    {
+      "path": "poses/storyteller-monsoon-gardening.png",
+      "sha256": "4eeccf25458b28cb14a9221fbec71fc695881552aaae1c676b1903e858b43d34",
+      "bytes": 51558
+    },
+    {
+      "path": "poses/storyteller-monsoon-pointing.png",
+      "sha256": "6cf4fd93263f9784209cfeac8ecc9e9bc69248a915b8097a6551833f1d7aa42e",
+      "bytes": 47618
+    },
+    {
+      "path": "poses/storyteller-monsoon-resting.png",
+      "sha256": "89ae9fbf14ae7b337ca939879b180764374d92648e140d3e13a32f2344428ad0",
+      "bytes": 47437
+    },
+    {
+      "path": "poses/storyteller-monsoon-sitting.png",
+      "sha256": "90d183f40941b5eb1826437b8143e0ecaec95b14e1d8e9b47125ea29fe4636d9",
+      "bytes": 42121
+    },
+    {
+      "path": "poses/storyteller-monsoon-storytelling.png",
+      "sha256": "8803e1a038961f40982dbe287781fb419017b276524878e78eefd60c68be4489",
+      "bytes": 43252
+    },
+    {
+      "path": "poses/storyteller-monsoon-talking.png",
+      "sha256": "354cc5e305f1f7d8f35209af74bb0f29b16476b5d2649027c56726ac2a9a17dc",
+      "bytes": 47079
+    },
+    {
+      "path": "poses/storyteller-monsoon-walking.png",
+      "sha256": "948fa9d915bc47f035ce1e8aa1fd13a67ca3b35b8f0d316e080ec432906afd13",
+      "bytes": 50518
+    },
+    {
+      "path": "poses/storyteller-monsoon-waving.png",
+      "sha256": "438eed05a2eea6bacd49c81077712f12a214398d9818c272225a101f7047f4bc",
+      "bytes": 47784
+    },
+    {
+      "path": "poses/storyteller-warm-gardening.png",
+      "sha256": "3f5945a5d992bf6dcdcbe79b248b9f5109246dea0e4ee6e685158ca285e61916",
+      "bytes": 49983
+    },
+    {
+      "path": "poses/storyteller-warm-pointing.png",
+      "sha256": "7f9b3d587eae11b5a86bbcce5cf05c2094715442c003bccd9c3ce0b5cb202430",
+      "bytes": 43106
+    },
+    {
+      "path": "poses/storyteller-warm-resting.png",
+      "sha256": "788167ff1370f5df77379b72b7f442f1c0bc419d0f4c146412b064f3819da7fc",
+      "bytes": 42676
+    },
+    {
+      "path": "poses/storyteller-warm-sitting.png",
+      "sha256": "746151e4f3c55a8df03a293f8db1219f729b119203bf80c133aa1533f368945e",
+      "bytes": 41990
+    },
+    {
+      "path": "poses/storyteller-warm-storytelling.png",
+      "sha256": "a3c24b64dac48a2b0b6aa4701d6b6fb3195d13603e9b3d67b4c936727dd9ae22",
+      "bytes": 43171
+    },
+    {
+      "path": "poses/storyteller-warm-talking.png",
+      "sha256": "be3a33f8c6eca1260bf617db403e654a989f3411ddd510a6981e147ce3230bbb",
+      "bytes": 41650
+    },
+    {
+      "path": "poses/storyteller-warm-walking.png",
+      "sha256": "fc67af76001ae6c381d0f0d4d52bb9c614819f2ed56a07fa734b116cb4497d6f",
+      "bytes": 45209
+    },
+    {
+      "path": "poses/storyteller-warm-waving.png",
+      "sha256": "6a1ae95f77d7c0b2b1f9a019e1453210bcd58b915859f869445b9f93341495a0",
+      "bytes": 43059
+    },
+    {
+      "path": "references/storyteller-cool.png",
+      "sha256": "eb70dbbdf17917798f6d4c7da341b07f8518973a3380d91b85de8805af43123a",
+      "bytes": 2090744
+    },
+    {
+      "path": "references/storyteller-cool.webp",
+      "sha256": "9f81f21e80384c0006dafac558fa1f55719ec5c8f36fd0d48bdd167930dde527",
+      "bytes": 886392
+    },
+    {
+      "path": "references/storyteller-monsoon.png",
+      "sha256": "150108ca43caaf724ed72e14a20d4f1df86800608d13f6672b663d5afbb5c95e",
+      "bytes": 2076496
+    },
+    {
+      "path": "references/storyteller-monsoon.webp",
+      "sha256": "822481c53c9be275edbc983c775f8589db7d8bb193bd74445d5748ed8ab0b506",
+      "bytes": 888064
+    },
+    {
+      "path": "references/storyteller-warm.png",
+      "sha256": "9cf4f2dc3fa33c959c2451b1625b3cc265ce786727572dee4ba1d3782bb44398",
+      "bytes": 2046264
+    },
+    {
+      "path": "references/storyteller-warm.webp",
+      "sha256": "e9a63d0fceb8824d902b729065973d2dc3799d2f0a1413805f1f6355b9b296d5",
+      "bytes": 822336
+    },
+    {
+      "path": "rigs/storyteller-cool.png",
+      "sha256": "689bceb7275a63cd1620c345d00177063d501be17847802f3e8235b1e7a8e268",
+      "bytes": 103362
+    },
+    {
+      "path": "rigs/storyteller-cool.svg",
+      "sha256": "2b9d12b1bf6b4299fccbd1c9fc5dc0f1f88ac52ddf76d8858027f7bb25af7fe8",
+      "bytes": 11375
+    },
+    {
+      "path": "rigs/storyteller-monsoon.png",
+      "sha256": "fa3f60e95955618c67e871bbd752a013b4237c24e4c0a1693da346508e4eeeba",
+      "bytes": 109606
+    },
+    {
+      "path": "rigs/storyteller-monsoon.svg",
+      "sha256": "cba35a1a9df1e5dc9d3bc49546f53b67c96052a5bb56a79648ab1e671e78da82",
+      "bytes": 12074
+    },
+    {
+      "path": "rigs/storyteller-warm.png",
+      "sha256": "b8dfcd53057a1836bb5d6e666cbb9a4071ae9a070fbd4634869865474a340690",
+      "bytes": 98888
+    },
+    {
+      "path": "rigs/storyteller-warm.svg",
+      "sha256": "b718557ba1bc647fdb9365c9904b72090f95a84511f4b31678b9dfbffea034d0",
+      "bytes": 11155
+    },
+    {
+      "path": "runtime/definition.js",
+      "sha256": "782a236370e9fc8d8b44210f7bdbf6adfec773559afd625825a3f1285f7a97dc",
+      "bytes": 2919
+    },
+    {
+      "path": "runtime/player.js",
+      "sha256": "bbea76f949ec47ce89ac8848b9ea325a849a0e490a7a77da55b71c4c0a3fd983",
+      "bytes": 3336
+    },
+    {
+      "path": "runtime/policy.js",
+      "sha256": "3e400623191126819e6d14129f7ae2a6e898c3371d69898ad12db856efcb213d",
+      "bytes": 4862
+    },
+    {
+      "path": "runtime/rig.js",
+      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
+      "bytes": 21916
+    },
+    {
+      "path": "timelines/storyteller-cool-gardening.json",
+      "sha256": "aa432e7c49bf2f1182c3fbef5f82d98fbade077d85c2bd92273834ec3c176928",
+      "bytes": 1224
+    },
+    {
+      "path": "timelines/storyteller-cool-pointing.json",
+      "sha256": "6ae1789f623a1c56da615a070ceeb50529f284d3d7c7596921151ad0db532ae1",
+      "bytes": 1083
+    },
+    {
+      "path": "timelines/storyteller-cool-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/storyteller-cool-sitting.json",
+      "sha256": "09d7c8d34ead936740e99948dc9347d0764b395392cefd770a6a3296f09fdac3",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/storyteller-cool-storytelling.json",
+      "sha256": "b0ec097a06d2b72afd9a0f9bd5439e5233e84e2adbc4b3bebf555a2a627e6b2d",
+      "bytes": 1624
+    },
+    {
+      "path": "timelines/storyteller-cool-talking.json",
+      "sha256": "d2c13f93fc2085889f898e5d913494a5a7a48159c8779e09cb73734f514561ed",
+      "bytes": 1450
+    },
+    {
+      "path": "timelines/storyteller-cool-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/storyteller-cool-waving.json",
+      "sha256": "17558227f82609cfc8df17eebb8fe56bd24178a52639b2981d6e633f3910f8f2",
+      "bytes": 1125
+    },
+    {
+      "path": "timelines/storyteller-monsoon-gardening.json",
+      "sha256": "aa432e7c49bf2f1182c3fbef5f82d98fbade077d85c2bd92273834ec3c176928",
+      "bytes": 1224
+    },
+    {
+      "path": "timelines/storyteller-monsoon-pointing.json",
+      "sha256": "32bfadf21ea9c1aa0667dc8338193bf33c73ea42a245d0a73d414afb7b09d717",
+      "bytes": 1098
+    },
+    {
+      "path": "timelines/storyteller-monsoon-resting.json",
+      "sha256": "89c95e48e09b54c4a69b7b1d0d5975e085fb4f54be8a6c8202d1a9aabdbfd23d",
+      "bytes": 867
+    },
+    {
+      "path": "timelines/storyteller-monsoon-sitting.json",
+      "sha256": "09d7c8d34ead936740e99948dc9347d0764b395392cefd770a6a3296f09fdac3",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/storyteller-monsoon-storytelling.json",
+      "sha256": "b0ec097a06d2b72afd9a0f9bd5439e5233e84e2adbc4b3bebf555a2a627e6b2d",
+      "bytes": 1624
+    },
+    {
+      "path": "timelines/storyteller-monsoon-talking.json",
+      "sha256": "765fe21efdb5330b667be9fe55d840593f8faab1dc7f553437ca8c66b1904548",
+      "bytes": 1441
+    },
+    {
+      "path": "timelines/storyteller-monsoon-walking.json",
+      "sha256": "30859d5808d98f07f7f49b6ee4893b5c8c977cd595d309dae7f6774e5027a762",
+      "bytes": 2787
+    },
+    {
+      "path": "timelines/storyteller-monsoon-waving.json",
+      "sha256": "0088e51aa6647dc82f8446547706ae8d1f378e3a4ae72f2bf3f4e0ffcd371054",
+      "bytes": 1140
+    },
+    {
+      "path": "timelines/storyteller-warm-gardening.json",
+      "sha256": "aa432e7c49bf2f1182c3fbef5f82d98fbade077d85c2bd92273834ec3c176928",
+      "bytes": 1224
+    },
+    {
+      "path": "timelines/storyteller-warm-pointing.json",
+      "sha256": "6ae1789f623a1c56da615a070ceeb50529f284d3d7c7596921151ad0db532ae1",
+      "bytes": 1083
+    },
+    {
+      "path": "timelines/storyteller-warm-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/storyteller-warm-sitting.json",
+      "sha256": "09d7c8d34ead936740e99948dc9347d0764b395392cefd770a6a3296f09fdac3",
+      "bytes": 972
+    },
+    {
+      "path": "timelines/storyteller-warm-storytelling.json",
+      "sha256": "b0ec097a06d2b72afd9a0f9bd5439e5233e84e2adbc4b3bebf555a2a627e6b2d",
+      "bytes": 1624
+    },
+    {
+      "path": "timelines/storyteller-warm-talking.json",
+      "sha256": "d2c13f93fc2085889f898e5d913494a5a7a48159c8779e09cb73734f514561ed",
+      "bytes": 1450
+    },
+    {
+      "path": "timelines/storyteller-warm-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/storyteller-warm-waving.json",
+      "sha256": "17558227f82609cfc8df17eebb8fe56bd24178a52639b2981d6e633f3910f8f2",
+      "bytes": 1125
+    },
+    {
+      "path": "turnarounds/storyteller-cool-back.png",
+      "sha256": "5c2a8f85aa16cb32b8605e8df70f915a05ab7e145fe9a286789524f499d04fff",
+      "bytes": 77232
+    },
+    {
+      "path": "turnarounds/storyteller-cool-back.svg",
+      "sha256": "4a4855f6c2f48807e9e431da450114617c3fcfeb6d549cefccbe614c43528037",
+      "bytes": 7673
+    },
+    {
+      "path": "turnarounds/storyteller-cool-front.png",
+      "sha256": "a5a7737ce126250224ab7d6217f2d65588642be3e5f82bbb0a7758872fc64550",
+      "bytes": 103642
+    },
+    {
+      "path": "turnarounds/storyteller-cool-front.svg",
+      "sha256": "b6410c320890350f3e03ae2f3fa1db296af7de6af227a771f4ff6a289a716e6b",
+      "bytes": 11332
+    },
+    {
+      "path": "turnarounds/storyteller-cool-profile.png",
+      "sha256": "1f067922077efe85ed201287a8c0538435050ae9c4b2405a68d3e87c8adb5c1b",
+      "bytes": 99060
+    },
+    {
+      "path": "turnarounds/storyteller-cool-profile.svg",
+      "sha256": "9c872d8e066b38699b0c69a02cb1ff31ec64989930b401faf6d96f50d8231997",
+      "bytes": 10886
+    },
+    {
+      "path": "turnarounds/storyteller-cool-three-quarter.png",
+      "sha256": "689bceb7275a63cd1620c345d00177063d501be17847802f3e8235b1e7a8e268",
+      "bytes": 103362
+    },
+    {
+      "path": "turnarounds/storyteller-cool-three-quarter.svg",
+      "sha256": "2b9d12b1bf6b4299fccbd1c9fc5dc0f1f88ac52ddf76d8858027f7bb25af7fe8",
+      "bytes": 11375
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-back.png",
+      "sha256": "b41af093592153643909235e593202c59d98a8bc73cdf60cbe100eeb25f0914d",
+      "bytes": 81531
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-back.svg",
+      "sha256": "4f1680faf2edceff5bc95fba5b9abcbb4a0e489cb4085b9a89b1150b8f3812e2",
+      "bytes": 8369
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-front.png",
+      "sha256": "10bb32bc25ecb4d917acd55b9e92fde49c1d468884ee04490b063e542b90b270",
+      "bytes": 109865
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-front.svg",
+      "sha256": "f9cff4433e7d146f7e40010bea3246f4936f5a63f0de3998109070e0d8bd1f1c",
+      "bytes": 12031
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-profile.png",
+      "sha256": "6be4180d557b446147af4d90e80e57ff51c98d05a4db3b61b3565ef9747f0be5",
+      "bytes": 104069
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-profile.svg",
+      "sha256": "c7f5d5e7e8b2d4c116af00d2a2f5edc78b0d3af56e2965f35a885db0efed7242",
+      "bytes": 11569
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-three-quarter.png",
+      "sha256": "fa3f60e95955618c67e871bbd752a013b4237c24e4c0a1693da346508e4eeeba",
+      "bytes": 109606
+    },
+    {
+      "path": "turnarounds/storyteller-monsoon-three-quarter.svg",
+      "sha256": "cba35a1a9df1e5dc9d3bc49546f53b67c96052a5bb56a79648ab1e671e78da82",
+      "bytes": 12074
+    },
+    {
+      "path": "turnarounds/storyteller-warm-back.png",
+      "sha256": "2fbb5daf45acaad83540b872aa1d3c4b23c2c94526f253e2062bcc41cd79d8ff",
+      "bytes": 72392
+    },
+    {
+      "path": "turnarounds/storyteller-warm-back.svg",
+      "sha256": "a808e4c5c0836419d9d5d38855453c92c185e21200e49a8eb74828a2a81e7b55",
+      "bytes": 7453
+    },
+    {
+      "path": "turnarounds/storyteller-warm-front.png",
+      "sha256": "f081b7c0b82c1de7db3a43e21b7dbd838764e4f6d37dd193fc371840f64cfa33",
+      "bytes": 99169
+    },
+    {
+      "path": "turnarounds/storyteller-warm-front.svg",
+      "sha256": "3599a8d210322f6527619a00588e9d1dd458da54a7c40e6075cd6adf1c498e02",
+      "bytes": 11112
+    },
+    {
+      "path": "turnarounds/storyteller-warm-profile.png",
+      "sha256": "e9f89ff29ea41646d51db05802be82eed45ddf69c2cc138e84b00f716cd38fb9",
+      "bytes": 95758
+    },
+    {
+      "path": "turnarounds/storyteller-warm-profile.svg",
+      "sha256": "aff1a5770ba5794df36f82e0c61c8b4c1ca8c0b3dc72190babef368b069fc95c",
+      "bytes": 10646
+    },
+    {
+      "path": "turnarounds/storyteller-warm-three-quarter.png",
+      "sha256": "b8dfcd53057a1836bb5d6e666cbb9a4071ae9a070fbd4634869865474a340690",
+      "bytes": 98888
+    },
+    {
+      "path": "turnarounds/storyteller-warm-three-quarter.svg",
+      "sha256": "b718557ba1bc647fdb9365c9904b72090f95a84511f4b31678b9dfbffea034d0",
+      "bytes": 11155
+    }
+  ]
+}

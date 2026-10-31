@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "0.1.0",
+  "chapterId": "pathfinder",
+  "status": "draft",
+  "files": [
+    {
+      "path": "definition.json",
+      "sha256": "c7dc6552d0dcd164f1ec8c777d3b4f264149d6caae44d7ecb1d5454f9a040ca8",
+      "bytes": 4100
+    },
+    {
+      "path": "expressions/pathfinder-curious.png",
+      "sha256": "78db1040987cc613105ce084598e3808ab17991feb6dc7665b6dfc2ec984f293",
+      "bytes": 56149
+    },
+    {
+      "path": "expressions/pathfinder-curious.svg",
+      "sha256": "84b20b14192f5215218d941babf18236fbe5d41ede6ade2fc757cda1fbf9bbee",
+      "bytes": 4288
+    },
+    {
+      "path": "expressions/pathfinder-delighted.png",
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
+    },
+    {
+      "path": "expressions/pathfinder-delighted.svg",
+      "sha256": "2c0cef8bb0e6694623e7d7a11fdda539b8af6914b901b4729f11c9dad94ab864",
+      "bytes": 4288
+    },
+    {
+      "path": "expressions/pathfinder-gentle.png",
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
+    },
+    {
+      "path": "expressions/pathfinder-gentle.svg",
+      "sha256": "da42008a6b1eb15dacbf913cacac3ba7fa8a003fd23bcce218e4a95cad33138a",
+      "bytes": 4288
+    },
+    {
+      "path": "expressions/pathfinder-listening.png",
+      "sha256": "e407e99559214145991ad623c442dba543c728edf41d3cb2a91a5193aaa4acc2",
+      "bytes": 55397
+    },
+    {
+      "path": "expressions/pathfinder-listening.svg",
+      "sha256": "c823b69c4fd6aa438b7cffa3a463838f17a438dd27a26447e6713972072da1d3",
+      "bytes": 4206
+    },
+    {
+      "path": "expressions/pathfinder-smile.png",
+      "sha256": "8c6d8ccdecbd2c9bdb39eff4d258c61ef09dbe29ea8caf9782c9512460624623",
+      "bytes": 55838
+    },
+    {
+      "path": "expressions/pathfinder-smile.svg",
+      "sha256": "8b0eeec5faa6247699f3f3adc2d93554d8ccc9c076aeb1110e9c13e1c4449b28",
+      "bytes": 4187
+    },
+    {
+      "path": "expressions/pathfinder-thoughtful.png",
+      "sha256": "28ff927b8d8635795474fccd7db704b560a41cf6f9e3cb5452a0407beffc6ce5",
+      "bytes": 55404
+    },
+    {
+      "path": "expressions/pathfinder-thoughtful.svg",
+      "sha256": "2cc8d5c236d8996e56e3871a3b58383d915bcadcb83592665e637155638bb3eb",
+      "bytes": 4206
+    },
+    {
+      "path": "motion/pathfinder-cool-gardening.svg",
+      "sha256": "d056d978c0d8ce4a1e38ad65343871135c62fc1114accbfb976e389f8f2f1fc1",
+      "bytes": 18054
+    },
+    {
+      "path": "motion/pathfinder-cool-gardening.webp",
+      "sha256": "c0ff763dce0a2d7b3988a150cdd22c6cc66fb11888bd042ad7353706e31b0abf",
+      "bytes": 576428
+    },
+    {
+      "path": "motion/pathfinder-cool-pointing.svg",
+      "sha256": "dc55d4fba323e24d05a84df476577f359b896fc29d99958140e6062bbdc30b73",
+      "bytes": 16691
+    },
+    {
+      "path": "motion/pathfinder-cool-pointing.webp",
+      "sha256": "2d5c31d9144152aec81537d8a841ba83a5ddb5da7b97822c19c630413e546f3e",
+      "bytes": 487954
+    },
+    {
+      "path": "motion/pathfinder-cool-resting.svg",
+      "sha256": "257838aab4f1591b81ff62006d0489a692b5a15c1c58326c61048a4166f474b7",
+      "bytes": 15776
+    },
+    {
+      "path": "motion/pathfinder-cool-resting.webp",
+      "sha256": "7092c75fb364600dbb9f8ca605166cf9bc3bc70c780c9777534686ecca269651",
+      "bytes": 488360
+    },
+    {
+      "path": "motion/pathfinder-cool-sitting.svg",
+      "sha256": "d469f87ffdb24ba592e15de30233a173798c00726bb0bc77a9a6b1a7c743c246",
+      "bytes": 16055
+    },
+    {
+      "path": "motion/pathfinder-cool-sitting.webp",
+      "sha256": "d423ba904c19349dbfdbd9c552b0c9b83d3020ab7e6896c06f066df1005b7675",
+      "bytes": 440044
+    },
+    {
+      "path": "motion/pathfinder-cool-storytelling.svg",
+      "sha256": "efe96cb1a9cd2dfd71cb94538530d100af75004b63c4a1a87274e81187120cac",
+      "bytes": 21864
+    },
+    {
+      "path": "motion/pathfinder-cool-storytelling.webp",
+      "sha256": "8230efbba9c43ea3c9ab3a4e3569fbd3ed1a17e5daaca680feaee931e6fd2ee4",
+      "bytes": 699306
+    },
+    {
+      "path": "motion/pathfinder-cool-talking.svg",
+      "sha256": "18f0b6ceab603fa2cf3a40724e72d46a10703c104cae6a9b7e8880ec38a15f8a",
+      "bytes": 20180
+    },
+    {
+      "path": "motion/pathfinder-cool-talking.webp",
+      "sha256": "c7f532e1755bb410197c96b030d4569c013d96f1e67539a4091ea1577cbcb6eb",
+      "bytes": 476700
+    },
+    {
+      "path": "motion/pathfinder-cool-walking.svg",
+      "sha256": "66edf8d7bc5095c9676b857d58f149eb6e0e5fa4e7b16b8cae562282a56c1eba",
+      "bytes": 23560
+    },
+    {
+      "path": "motion/pathfinder-cool-walking.webp",
+      "sha256": "91c0ead45e0e5abb74e10f2b434cadcef3deac891e911bbec9235de81329e73b",
+      "bytes": 427078
+    },
+    {
+      "path": "motion/pathfinder-cool-waving.svg",
+      "sha256": "9c180cffa4511a1f9e7de7b56260c44e606fddb90a6d38f178c1340144050e9f",
+      "bytes": 16766
+    },
+    {
+      "path": "motion/pathfinder-cool-waving.webp",
+      "sha256": "dfdb4a93d9cf07f55619a851aed9d397c75287bf58b77e6a9950a7aade7fe85b",
+      "bytes": 486316
+    },
+    {
+      "path": "motion/pathfinder-monsoon-gardening.svg",
+      "sha256": "0d21df6b58cb0dc388dfae1d52fe1337438a80f3906cc14050f6500f0b5068a7",
+      "bytes": 18349
+    },
+    {
+      "path": "motion/pathfinder-monsoon-gardening.webp",
+      "sha256": "371b56c7267b5b216497548f4623d8523fb2250e6164f19420434f7c450b9e93",
+      "bytes": 559152
+    },
+    {
+      "path": "motion/pathfinder-monsoon-pointing.svg",
+      "sha256": "39b38e44f6e69e16bc44cfd7cc66f6a92030e586dc3d43a0db55f4547e1840d6",
+      "bytes": 17524
+    },
+    {
+      "path": "motion/pathfinder-monsoon-pointing.webp",
+      "sha256": "dcf2344d5a583f93aec83e863be8281af60f7e1ad467247b195d85b2fd1fda00",
+      "bytes": 539556
+    },
+    {
+      "path": "motion/pathfinder-monsoon-resting.svg",
+      "sha256": "96b50008242a559f0410301bb9d84950012b03008583f744e44c932df84b5482",
+      "bytes": 16591
+    },
+    {
+      "path": "motion/pathfinder-monsoon-resting.webp",
+      "sha256": "f3b49f3ba84978d9a52a51f233f8da3a84f84836ff9416737ef0e2dedbbbb35d",
+      "bytes": 536966
+    },
+    {
+      "path": "motion/pathfinder-monsoon-sitting.svg",
+      "sha256": "beff0df5d8e7f8115695008a2820a7433424f9a48e3709fca44b53d8f2a8a08c",
+      "bytes": 16332
+    },
+    {
+      "path": "motion/pathfinder-monsoon-sitting.webp",
+      "sha256": "9a6302e34264a042f0fe3c01a574f0a01276eb71a16f206c4923288a343efcd8",
+      "bytes": 425120
+    },
+    {
+      "path": "motion/pathfinder-monsoon-storytelling.svg",
+      "sha256": "eb819c5d579ebf3d43ecbca77113d496d6a04b847b8dae8a05b89553a3faf787",
+      "bytes": 22240
+    },
+    {
+      "path": "motion/pathfinder-monsoon-storytelling.webp",
+      "sha256": "7468e0b760bcaa8dd19aba53d9c15202595daaa13a35d8bd7408dedf97ddb02e",
+      "bytes": 677976
+    },
+    {
+      "path": "motion/pathfinder-monsoon-talking.svg",
+      "sha256": "dcb6b07dec69043c3a3fd38b24186a9c3577496d86f914903e50ae76c21f4667",
+      "bytes": 21028
+    },
+    {
+      "path": "motion/pathfinder-monsoon-talking.webp",
+      "sha256": "3727a3bea74e02818f512ae776e9f6e1fdc8744036e0864c6443a4ac7db5091b",
+      "bytes": 560808
+    },
+    {
+      "path": "motion/pathfinder-monsoon-walking.svg",
+      "sha256": "8ed8a0e428058fdaac7e12536f6d5743089c722f09b3a4061b94db256730cbd4",
+      "bytes": 22949
+    },
+    {
+      "path": "motion/pathfinder-monsoon-walking.webp",
+      "sha256": "5ce9c5b6b89da25984246899e22deaff3d2685c827241922c8db08a4a132de64",
+      "bytes": 464562
+    },
+    {
+      "path": "motion/pathfinder-monsoon-waving.svg",
+      "sha256": "b423ced0a238d689de63fbfd65219aed68aa8334b37206a2bc2c395398abb2c2",
+      "bytes": 17599
+    },
+    {
+      "path": "motion/pathfinder-monsoon-waving.webp",
+      "sha256": "ba5221a80a25b2875fee9cf16425cf2f7d643beed47f3c9c328c4ba429026896",
+      "bytes": 538532
+    },
+    {
+      "path": "motion/pathfinder-warm-gardening.svg",
+      "sha256": "37a2f621382bccf28d9ece428da614d4440dda96eb7abd5be6008358495a6ec8",
+      "bytes": 17834
+    },
+    {
+      "path": "motion/pathfinder-warm-gardening.webp",
+      "sha256": "b9de7a0abab7bc42f35c50273f2be85e9ce8c743ffb54245b826c2811e2cc405",
+      "bytes": 557522
+    },
+    {
+      "path": "motion/pathfinder-warm-pointing.svg",
+      "sha256": "6b593879139c3874837d5c50f86b24e56ac880ca9f7cdbd329c48f2022957a8b",
+      "bytes": 16471
+    },
+    {
+      "path": "motion/pathfinder-warm-pointing.webp",
+      "sha256": "fe5becbdfe7a9ed60aad0c1c00b882bb6ffc472298f2d75891372f280f8ae3ec",
+      "bytes": 465902
+    },
+    {
+      "path": "motion/pathfinder-warm-resting.svg",
+      "sha256": "8af9a17f025bdaa53ee944e83ac9b53d689099003edccee23625738421a14fa1",
+      "bytes": 15556
+    },
+    {
+      "path": "motion/pathfinder-warm-resting.webp",
+      "sha256": "2aa5d9bdc2b723386fc03db10a94e41e51eef037503e3c1e2d6a213479c0a45e",
+      "bytes": 463418
+    },
+    {
+      "path": "motion/pathfinder-warm-sitting.svg",
+      "sha256": "04c5b1c18cf34377ef910167e948c839675015a6baee6f01bbcfe1f3076e7ad4",
+      "bytes": 15835
+    },
+    {
+      "path": "motion/pathfinder-warm-sitting.webp",
+      "sha256": "62d7865ea24276f1c34f13b0700471b549c9501f123f38c0da5fbf0d52213592",
+      "bytes": 425872
+    },
+    {
+      "path": "motion/pathfinder-warm-storytelling.svg",
+      "sha256": "5db8d1f012d57274f979c136c711f0107e9d6762ffa197d3afc029018eeb101e",
+      "bytes": 21644
+    },
+    {
+      "path": "motion/pathfinder-warm-storytelling.webp",
+      "sha256": "fb40c4ff38bacfbe011630f0a4dbbd10ba9180f7d0689b50c4625f19cfb528a9",
+      "bytes": 681104
+    },
+    {
+      "path": "motion/pathfinder-warm-talking.svg",
+      "sha256": "50e7c7a81a8dd697649c71044ff58ed2a40305a0c512ef4969d51a7762144693",
+      "bytes": 19960
+    },
+    {
+      "path": "motion/pathfinder-warm-talking.webp",
+      "sha256": "06da384c853968909f6769a7829b0024bf85944af9fd5266affd92a8fa313f28",
+      "bytes": 458968
+    },
+    {
+      "path": "motion/pathfinder-warm-walking.svg",
+      "sha256": "bc0dda9b4af24dfa810bd37d51ef4ed45de5a70ae735e0e533f55280f864e10c",
+      "bytes": 23340
+    },
+    {
+      "path": "motion/pathfinder-warm-walking.webp",
+      "sha256": "8545f58adc6cdf58f0b24fad01b15552fdaddc4755c8828c3e5135850c6ffd09",
+      "bytes": 405874
+    },
+    {
+      "path": "motion/pathfinder-warm-waving.svg",
+      "sha256": "1fc7b84a7b3945063f089afae548e619014993eeaa1f31d91ef05c8d41523556",
+      "bytes": 16546
+    },
+    {
+      "path": "motion/pathfinder-warm-waving.webp",
+      "sha256": "8f58dbf5b7ab48a9c21fdbcb520d304f331280736f67fa3928028b433e0b597a",
+      "bytes": 465396
+    },
+    {
+      "path": "mouths/pathfinder-A.png",
+      "sha256": "5249ef73f9943300815b66261d6baf97a7b4b58df9483d2c7c0a775ab5805414",
+      "bytes": 56270
+    },
+    {
+      "path": "mouths/pathfinder-A.svg",
+      "sha256": "2c0cef8bb0e6694623e7d7a11fdda539b8af6914b901b4729f11c9dad94ab864",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-E.png",
+      "sha256": "f83294edfbabef75090844529ee0aa7883d1396ed64c05cfce94cb04b10081d5",
+      "bytes": 55793
+    },
+    {
+      "path": "mouths/pathfinder-E.svg",
+      "sha256": "c277b787a6c996587adb83688c09f39f9d603f721593844a9a4e176cd74575d8",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-F.png",
+      "sha256": "f68224082ede10aabbd9de03e774dbb21ba00389f95c0a439c3322cbfcaaaf83",
+      "bytes": 55447
+    },
+    {
+      "path": "mouths/pathfinder-F.svg",
+      "sha256": "048125561aee7e0b9e7e6311589fa9ee4cbcd7758093490c9028e08f98127ec2",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-L.png",
+      "sha256": "da9e92ba092d0afdc30deefc04da6c4f291e37b7d7ae5ddef0084bb648443d4e",
+      "bytes": 55908
+    },
+    {
+      "path": "mouths/pathfinder-L.svg",
+      "sha256": "f7e7a1df81ec5b410dde8ae1078d42ca7f449499ea66e9919af4c0389b5e7c74",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-M.png",
+      "sha256": "151d422220b80d1f209e2229e711e4babb4fcf0e3b4c8539def10b0a520241bf",
+      "bytes": 55405
+    },
+    {
+      "path": "mouths/pathfinder-M.svg",
+      "sha256": "0760b68cae18416b0045cb3471950b3a238cf380e111cf99ffe39f0666fcaabc",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-O.png",
+      "sha256": "89ad6b56510c647ef4a7ceb360f8022c000cffa3dbd88782f3339374483c7e98",
+      "bytes": 55615
+    },
+    {
+      "path": "mouths/pathfinder-O.svg",
+      "sha256": "f689ea782b3b095b8af727939a716bbbe987f2f3bb2157b2411b1043cce27115",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-rest.png",
+      "sha256": "a3d212b59bce6b7c761dc03597a8a2a85f163c92c44b538d22bbe464f552230a",
+      "bytes": 56223
+    },
+    {
+      "path": "mouths/pathfinder-rest.svg",
+      "sha256": "da42008a6b1eb15dacbf913cacac3ba7fa8a003fd23bcce218e4a95cad33138a",
+      "bytes": 4288
+    },
+    {
+      "path": "mouths/pathfinder-U.png",
+      "sha256": "3d70ddef3558f22d2c188874dab0c8b1443496fb59f56a4c5553640a836a5c16",
+      "bytes": 55383
+    },
+    {
+      "path": "mouths/pathfinder-U.svg",
+      "sha256": "def94a3350ccc9f88fbb8d80b8ce2325e3991b45af62c0ff9a0a23e5ee45c25f",
+      "bytes": 4288
+    },
+    {
+      "path": "poses/pathfinder-cool-gardening.png",
+      "sha256": "d79704d8fd1d91cc956c8e1eb7aba63ab3f48707df9d96aedf8ef6f032025198",
+      "bytes": 50411
+    },
+    {
+      "path": "poses/pathfinder-cool-pointing.png",
+      "sha256": "477dca62b3d9bd5e21041324a8bb5938c448edf3dd9aaecb1fd356a9475f038e",
+      "bytes": 43163
+    },
+    {
+      "path": "poses/pathfinder-cool-resting.png",
+      "sha256": "da8378719287fd0720762789b5a7e99903786339eb8b9bf48e88b8c6d8ac1a5f",
+      "bytes": 42755
+    },
+    {
+      "path": "poses/pathfinder-cool-sitting.png",
+      "sha256": "dadc3be0916f0a8828970a94b0fc9f65ef2953fb57ea0d89e92ed5a565e9fe7b",
+      "bytes": 41366
+    },
+    {
+      "path": "poses/pathfinder-cool-storytelling.png",
+      "sha256": "52577989880446dcdaf66122eeb8d263a0df74f75fddc10c6f8cbf9d70981540",
+      "bytes": 43286
+    },
+    {
+      "path": "poses/pathfinder-cool-talking.png",
+      "sha256": "edb82d802216a6656fb3d3351f2ef4792a6b1de6577d4ae84ed417bf54de6657",
+      "bytes": 40950
+    },
+    {
+      "path": "poses/pathfinder-cool-walking.png",
+      "sha256": "856dd762740c548911c58c86a4cc085c31382e6d2bda97b523d3551c00e10e07",
+      "bytes": 45177
+    },
+    {
+      "path": "poses/pathfinder-cool-waving.png",
+      "sha256": "1328f715443fc3d5a452b5f29d0c6d38ea10071627781f575c44caee549e95d1",
+      "bytes": 42659
+    },
+    {
+      "path": "poses/pathfinder-monsoon-gardening.png",
+      "sha256": "70919cbf0f42a495fc0a7c0fa8cbb24c4655e65a898c89ec4f87728785550916",
+      "bytes": 50676
+    },
+    {
+      "path": "poses/pathfinder-monsoon-pointing.png",
+      "sha256": "c519dc30283a7e151b70c56eb9f6b0a109f505fda3e7b39df3fabcc0443fb5fb",
+      "bytes": 46185
+    },
+    {
+      "path": "poses/pathfinder-monsoon-resting.png",
+      "sha256": "746f1dc1d94dc280f84accff76c4d7e4c462898dc10262765819367d1ba1d6be",
+      "bytes": 45922
+    },
+    {
+      "path": "poses/pathfinder-monsoon-sitting.png",
+      "sha256": "85e454422b414bc68e8bc8cc5202baae378b9a34bb18174fddddcbeb0439d07b",
+      "bytes": 40435
+    },
+    {
+      "path": "poses/pathfinder-monsoon-storytelling.png",
+      "sha256": "08ed28694bc271a84313c32470a66bb75cacd405535f9f40d324599015b9b29a",
+      "bytes": 42045
+    },
+    {
+      "path": "poses/pathfinder-monsoon-talking.png",
+      "sha256": "c9a2bb22783450052a9f5e0a08f16d2f77347fcba5250120080795b9e2c35c9c",
+      "bytes": 45208
+    },
+    {
+      "path": "poses/pathfinder-monsoon-walking.png",
+      "sha256": "d4ecc5f3c4bbfa856e27653a0ad2e1ffb1ea7c5333b2ea1f7ef094dc1f8df1d3",
+      "bytes": 48912
+    },
+    {
+      "path": "poses/pathfinder-monsoon-waving.png",
+      "sha256": "eb9ba09cdcd652a1ea7bc5de13652157ba73cd01959a8dcc2cd05df1c152e0e9",
+      "bytes": 45773
+    },
+    {
+      "path": "poses/pathfinder-warm-gardening.png",
+      "sha256": "8260e81df44ca34801436838df3bd8f2a87d857c8944510dd2f686b040af6d35",
+      "bytes": 49335
+    },
+    {
+      "path": "poses/pathfinder-warm-pointing.png",
+      "sha256": "3c9de2bd55cc26652308e809e642ecba0d967ef4b0b1c68108b397bfcb9a4410",
+      "bytes": 40964
+    },
+    {
+      "path": "poses/pathfinder-warm-resting.png",
+      "sha256": "7ea095e2e98826bc7dcfd78c85aa85f1e3494ef1362d1b513d7eeb35510ad3db",
+      "bytes": 40562
+    },
+    {
+      "path": "poses/pathfinder-warm-sitting.png",
+      "sha256": "5ece5ea139f769e12db1b26fe42ecb6cd346329b227b3cfcbf3d3b5ec53c927e",
+      "bytes": 40435
+    },
+    {
+      "path": "poses/pathfinder-warm-storytelling.png",
+      "sha256": "fb3c1d7288da03ce0462e491c551f8161203da0af40508bf9488b405af3f325c",
+      "bytes": 41902
+    },
+    {
+      "path": "poses/pathfinder-warm-talking.png",
+      "sha256": "c272676bd02539398117009882463bb2ae3451a64d519fad06e0876e152c10c2",
+      "bytes": 39666
+    },
+    {
+      "path": "poses/pathfinder-warm-walking.png",
+      "sha256": "c0469565821f65aff8687f6a4ce3ab84dbe823d4580c1f05b36990d821774eda",
+      "bytes": 43014
+    },
+    {
+      "path": "poses/pathfinder-warm-waving.png",
+      "sha256": "66e3cccd0e94d72c32310d5f88f2393e89096b521daf75bea4990a5944c805d5",
+      "bytes": 40525
+    },
+    {
+      "path": "references/pathfinder-cool.png",
+      "sha256": "9c9edd7e74a21594c118afef451675cdba3e0602f458b71f65525f1119421f7c",
+      "bytes": 1939709
+    },
+    {
+      "path": "references/pathfinder-cool.webp",
+      "sha256": "205f24c5eeffc3325490456f07991f61517df537bd86565b1f6ec6bfc1386736",
+      "bytes": 781716
+    },
+    {
+      "path": "references/pathfinder-monsoon.png",
+      "sha256": "553a9fec1fe6da1af47c2d8ab51896cbef458fa656d5b4f93f47921173ad048f",
+      "bytes": 1998173
+    },
+    {
+      "path": "references/pathfinder-monsoon.webp",
+      "sha256": "d5e2fb4206692812f59012293c162051fe65622782023087ade5858ce79433ef",
+      "bytes": 832566
+    },
+    {
+      "path": "references/pathfinder-warm.png",
+      "sha256": "1cc2cafc741e76fff07e5379dce5da625d2794fb06eb2b6aa2aee8138968f4e5",
+      "bytes": 1899382
+    },
+    {
+      "path": "references/pathfinder-warm.webp",
+      "sha256": "036c395fdfb81602cc4af20977d99e2f1bcb3e7e9ebde329d6fdfc68f945f9b6",
+      "bytes": 744562
+    },
+    {
+      "path": "rigs/pathfinder-cool.png",
+      "sha256": "d3436384140bdc877b098df1b5bdf7c0a8d5cfc062edc3af1a668e2ce5cef9f7",
+      "bytes": 97347
+    },
+    {
+      "path": "rigs/pathfinder-cool.svg",
+      "sha256": "8e07f2f40fa389654ba0f10d7a1aba2d5cb6cc2ab5858257f9275e13cc839846",
+      "bytes": 11352
+    },
+    {
+      "path": "rigs/pathfinder-monsoon.png",
+      "sha256": "48a0d4e50cda19d243c77aa6c3d43453907029b35e5b9e5b6740566573a22d7f",
+      "bytes": 105529
+    },
+    {
+      "path": "rigs/pathfinder-monsoon.svg",
+      "sha256": "e968cab708601a1533ab6592b7ef7e9741866a66acc72f3a5a4ae4c0d7124d72",
+      "bytes": 12064
+    },
+    {
+      "path": "rigs/pathfinder-warm.png",
+      "sha256": "120b49293afbd37c4c37e6f2bdfbb2f05aa7f43599e2266dce7b223cc38915c5",
+      "bytes": 93588
+    },
+    {
+      "path": "rigs/pathfinder-warm.svg",
+      "sha256": "dd56e5d16d2b4f0c024ff16c086654074202c879ad971d3cbb67d19152bba5f8",
+      "bytes": 11132
+    },
+    {
+      "path": "runtime/definition.js",
+      "sha256": "782a236370e9fc8d8b44210f7bdbf6adfec773559afd625825a3f1285f7a97dc",
+      "bytes": 2919
+    },
+    {
+      "path": "runtime/player.js",
+      "sha256": "bbea76f949ec47ce89ac8848b9ea325a849a0e490a7a77da55b71c4c0a3fd983",
+      "bytes": 3336
+    },
+    {
+      "path": "runtime/policy.js",
+      "sha256": "3e400623191126819e6d14129f7ae2a6e898c3371d69898ad12db856efcb213d",
+      "bytes": 4862
+    },
+    {
+      "path": "runtime/rig.js",
+      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
+      "bytes": 21916
+    },
+    {
+      "path": "timelines/pathfinder-cool-gardening.json",
+      "sha256": "055f21e7243f84d84aed3d5c7a9016d0d89b9fc7276b7a0c01402a6b3d2fd7c1",
+      "bytes": 1235
+    },
+    {
+      "path": "timelines/pathfinder-cool-pointing.json",
+      "sha256": "37fbf54195d5f8d3bd7521810d6a90da6372b6697fa41d8486d79c555c0efb0f",
+      "bytes": 1083
+    },
+    {
+      "path": "timelines/pathfinder-cool-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/pathfinder-cool-sitting.json",
+      "sha256": "f149d36310501f9182f6657370d8690169e4e6ace18baae72a738247dd60a916",
+      "bytes": 973
+    },
+    {
+      "path": "timelines/pathfinder-cool-storytelling.json",
+      "sha256": "43d6d43ef6ca4f64a0f15e0364ab2bcd65f7c93157d7557df38ea109f9fa5146",
+      "bytes": 1629
+    },
+    {
+      "path": "timelines/pathfinder-cool-talking.json",
+      "sha256": "722eda1a281f26c48480882efc06fd8b288565d05ec013c31ab4ee917e580463",
+      "bytes": 1458
+    },
+    {
+      "path": "timelines/pathfinder-cool-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/pathfinder-cool-waving.json",
+      "sha256": "7b6b40bdc5a7c74ec5bead4ade7e6bd07c860faefc33bd6270c34a4fda639374",
+      "bytes": 1132
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-gardening.json",
+      "sha256": "055f21e7243f84d84aed3d5c7a9016d0d89b9fc7276b7a0c01402a6b3d2fd7c1",
+      "bytes": 1235
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-pointing.json",
+      "sha256": "0f2e8111639206cfbc33ecd4cb38cb2241e98a689c75c7a2b23bb4f5a68117de",
+      "bytes": 1110
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-resting.json",
+      "sha256": "310420b64e6aa79dddc05fdfd892e0c7bf648f547a9aef0d128026987b1ca56e",
+      "bytes": 879
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-sitting.json",
+      "sha256": "f149d36310501f9182f6657370d8690169e4e6ace18baae72a738247dd60a916",
+      "bytes": 973
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-storytelling.json",
+      "sha256": "43d6d43ef6ca4f64a0f15e0364ab2bcd65f7c93157d7557df38ea109f9fa5146",
+      "bytes": 1629
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-talking.json",
+      "sha256": "7833842d6180c2ef76332a63acd86266edd37b99f935efb4f21706acf8c6a016",
+      "bytes": 1458
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-walking.json",
+      "sha256": "588b094f7c08fc08599247f9cf3981348ddf9c13023009fa7511b8fb580d5f26",
+      "bytes": 2799
+    },
+    {
+      "path": "timelines/pathfinder-monsoon-waving.json",
+      "sha256": "e22a14c1f0ecb5c55c686536b7259f02e332c5ebe27ebd23c898a2f99acb21a3",
+      "bytes": 1159
+    },
+    {
+      "path": "timelines/pathfinder-warm-gardening.json",
+      "sha256": "055f21e7243f84d84aed3d5c7a9016d0d89b9fc7276b7a0c01402a6b3d2fd7c1",
+      "bytes": 1235
+    },
+    {
+      "path": "timelines/pathfinder-warm-pointing.json",
+      "sha256": "37fbf54195d5f8d3bd7521810d6a90da6372b6697fa41d8486d79c555c0efb0f",
+      "bytes": 1083
+    },
+    {
+      "path": "timelines/pathfinder-warm-resting.json",
+      "sha256": "ae142da3b7c8a194c6f29bf63dc60bc0d90ba7b9ef8882b05ce782e00dcc008f",
+      "bytes": 852
+    },
+    {
+      "path": "timelines/pathfinder-warm-sitting.json",
+      "sha256": "f149d36310501f9182f6657370d8690169e4e6ace18baae72a738247dd60a916",
+      "bytes": 973
+    },
+    {
+      "path": "timelines/pathfinder-warm-storytelling.json",
+      "sha256": "43d6d43ef6ca4f64a0f15e0364ab2bcd65f7c93157d7557df38ea109f9fa5146",
+      "bytes": 1629
+    },
+    {
+      "path": "timelines/pathfinder-warm-talking.json",
+      "sha256": "722eda1a281f26c48480882efc06fd8b288565d05ec013c31ab4ee917e580463",
+      "bytes": 1458
+    },
+    {
+      "path": "timelines/pathfinder-warm-walking.json",
+      "sha256": "6055e98321b3792c01047cae1779114d6aa4646cbd807e621c06e326b518f8c0",
+      "bytes": 3208
+    },
+    {
+      "path": "timelines/pathfinder-warm-waving.json",
+      "sha256": "7b6b40bdc5a7c74ec5bead4ade7e6bd07c860faefc33bd6270c34a4fda639374",
+      "bytes": 1132
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-back.png",
+      "sha256": "a4ce58ea826cb8e0b36ddd52140396ad4c7d41734b330590a22a376d6f5ed42e",
+      "bytes": 78483
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-back.svg",
+      "sha256": "34d182f83341325ff140cb2eb538c7e56d987e3681426bb367b2b9c2566c56de",
+      "bytes": 7650
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-front.png",
+      "sha256": "433b7513dff524a696e5a9560ff67a9c5a2da91be5988d96c92f711a52b56d25",
+      "bytes": 97599
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-front.svg",
+      "sha256": "26068d779dd83139416eaeef00182d02b244d579edd6b929885a6316577e5190",
+      "bytes": 11309
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-profile.png",
+      "sha256": "3282bddefb0af4700eb2d3361ccd86e8cab8d2e911eaf04b265dc0671fccc3d9",
+      "bytes": 97318
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-profile.svg",
+      "sha256": "e9ffeb4387707d5d3dd9601a845a086221c2ec2164380160f8e2b1573ca201b0",
+      "bytes": 10953
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-three-quarter.png",
+      "sha256": "d3436384140bdc877b098df1b5bdf7c0a8d5cfc062edc3af1a668e2ce5cef9f7",
+      "bytes": 97347
+    },
+    {
+      "path": "turnarounds/pathfinder-cool-three-quarter.svg",
+      "sha256": "8e07f2f40fa389654ba0f10d7a1aba2d5cb6cc2ab5858257f9275e13cc839846",
+      "bytes": 11352
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-back.png",
+      "sha256": "20c3d4febcd62b3328662200aea4dcd44f608f8c4f3987b1fce400cb439fc23e",
+      "bytes": 83946
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-back.svg",
+      "sha256": "6d77cf57a63cb45e7980d9098602afd02e7e978d548df5d28b6da10939e92087",
+      "bytes": 8359
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-front.png",
+      "sha256": "2fa31f3eb66b958efad396bf64cb16f9acb48edc830120172b93648ac7fc6080",
+      "bytes": 105767
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-front.svg",
+      "sha256": "7c8893abbef689ae8ac687743a87aeb5f2a1ec229a98795e9d0093a8567d7514",
+      "bytes": 12021
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-profile.png",
+      "sha256": "9668e6f48912536273c10151d2249e741040f63a046e72b68130617b822aa0b1",
+      "bytes": 103361
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-profile.svg",
+      "sha256": "2f47cf7f548be8a195646b16fd3dc2747a2d23a82ad2c9d3d37006ce86bbb7fa",
+      "bytes": 11610
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-three-quarter.png",
+      "sha256": "48a0d4e50cda19d243c77aa6c3d43453907029b35e5b9e5b6740566573a22d7f",
+      "bytes": 105529
+    },
+    {
+      "path": "turnarounds/pathfinder-monsoon-three-quarter.svg",
+      "sha256": "e968cab708601a1533ab6592b7ef7e9741866a66acc72f3a5a4ae4c0d7124d72",
+      "bytes": 12064
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-back.png",
+      "sha256": "9379e87280ba18402c5ddd4b202a0782c1b904158336b240e6cd2ebb4605a741",
+      "bytes": 73483
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-back.svg",
+      "sha256": "42cba9ef39df318ff5f80d37d9f9ce976f3633c44ce155ba053c5f569f8efab8",
+      "bytes": 7430
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-front.png",
+      "sha256": "e8aa1c178dbfbf0afaeca0d28376484e0f0568ce18b74d87a00908c73ab4915e",
+      "bytes": 93815
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-front.svg",
+      "sha256": "9a5c742de8fd923248fad76b530fe12479d922c6eaf758c95e7c6028d2eb6029",
+      "bytes": 11089
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-profile.png",
+      "sha256": "e387a10f12367c0a4707c138706d776747c84a27da1f1483d6df487c500f4363",
+      "bytes": 93950
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-profile.svg",
+      "sha256": "98a5bac88a8cb7c17a2925a3bb93b46077edea5c19f0d9ead537b432641d2cda",
+      "bytes": 10674
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-three-quarter.png",
+      "sha256": "120b49293afbd37c4c37e6f2bdfbb2f05aa7f43599e2266dce7b223cc38915c5",
+      "bytes": 93588
+    },
+    {
+      "path": "turnarounds/pathfinder-warm-three-quarter.svg",
+      "sha256": "dd56e5d16d2b4f0c024ff16c086654074202c879ad971d3cbb67d19152bba5f8",
+      "bytes": 11132
+    }
+  ]
+}

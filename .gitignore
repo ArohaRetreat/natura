@@ -8,3 +8,8 @@ firebase-debug.log
 release/
 
 tmp/
+
+.asset-venv/
+public/assets/hrudhi/.frames/
+public/assets/hrudhi/.animation-jobs.json
+public/downloads/Hrudhi-Character-Kit-v0.1.0.zip

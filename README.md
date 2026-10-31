@@ -1,4 +1,4 @@
-# Natura v0.3.0
+# Natura v0.4.0
 
 Template version: **1.9.0**
 
@@ -39,3 +39,11 @@ Official design standards of Aroha Retreat. Custom application code, artwork and
 Natura 0.3.0 adds eight anatomy-specific studies: fern unfurling, dew gathering, flower opening, butterfly landing, shoreline tide, canopy wind, fireflies and mycelium. The original four remain available. The library has family filters and the same play/pause/seek/speed/reset controls. [Motion catalogue](public/docs/Natura-Motion-Catalogue.html) is the current complete reference; the older motion PDF documents the foundational four only.
 
 Weather now uses layered retreat landscapes, retaining the observed night palette in all conditions. The component workbench uses native controls with short state feedback and contextual notes. Experience selection is a design pattern, not a booking backend. Copy its HTML with the exported site CSS.
+
+## Hrudhi draft character kit
+
+[Character lab](https://aroha-retreat.web.app/design/#hrudhi): five proposed age chapters covering 5-17, three wardrobes and eight actions (120 combinations). Detailed PNG/WebP references are separate from the working simplified SVG rig. All remain draft, family review pending. No permanent visitor guide, voice, AI model or admin backend is activated.
+
+[Character bible and integration contract](docs/hrudhi/CONTRACT.md) documents asset formats, motion anatomy, accessibility, milestone governance and the planned API. Download `public/downloads/Hrudhi-Character-Kit-v0.1.0.zip` for all artwork, runtime source, timelines, hashes and seven-page PDF/HTML bible. Core identity asset pack v0.3.0 remains retained; Hrudhi ships as its own versioned kit.
+
+Generate vector/frame sources with `node scripts/generate-hrudhi.mjs`, raster previews with `scripts/render-hrudhi.py` (CairoSVG/Pillow), and documentation with `scripts/render-hrudhi-bible.py` (ReportLab/Pillow). Read the owning service skill before regeneration. Finish with `npm run package:hrudhi`, `npm test`, `npm run build` and `scripts/verify-hrudhi.py`. Tests do not claim browser layout or actual AI/backend acceptance.
