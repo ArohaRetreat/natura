@@ -1,7 +1,9 @@
 from pathlib import Path
 from zipfile import ZipFile,ZIP_DEFLATED
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'public/downloads/Hrudhi-Character-Kit-v0.1.0.zip'
+import json
+version=json.loads((ROOT/'public/assets/hrudhi/definition.json').read_text())['kitVersion']
+OUT=ROOT/f'public/downloads/Hrudhi-Character-Kit-v{version}.zip'
 with ZipFile(OUT,'w',ZIP_DEFLATED,compresslevel=6) as z:
  for folder in ['public/assets/hrudhi','public/docs/hrudhi']:
   for p in sorted((ROOT/folder).rglob('*')):

@@ -1,5 +1,14 @@
 # Changelog
 
+## Natura 0.5.0 - 2026-10-31
+
+- Put the complete Hrudhi asset collection and readable character standards directly in the website, with age/wardrobe filters, pagination and individual downloads.
+- Revise the fictional face proposal across all 15 references and the editable rig; all remain draft and private reference photographs remain excluded.
+- Add five silent 24 fps vector films, isolated transparent WebM clips, posters and captions. Native video playback is explicit and pauses on tab hiding/route exit.
+- Add 96 coherent farm/nature icons, 16 articulated animal studies, eight illustrated animal references and a searchable farm atlas with on-page usage guidelines. Main icon library/page builder now support 144 icons.
+- Preserve owner-supplied tree/variety counts without inventing a species inventory. Retain core identity assets and Aroha-only custom-material licensing.
+
+
 ## Natura 0.4.0 - 2026-10-31
 
 - Add the Hrudhi draft character lab: five chapters for ages 5-17, 15 seasonal references and a separate editable vector rig.

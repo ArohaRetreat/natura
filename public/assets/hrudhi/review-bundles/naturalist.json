@@ -1,577 +1,592 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.1.0",
+  "kitVersion": "0.2.0",
   "chapterId": "naturalist",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "c7dc6552d0dcd164f1ec8c777d3b4f264149d6caae44d7ecb1d5454f9a040ca8",
+      "sha256": "874eb43e3083adcb8f6149037bfc01e25f5ccef01b96eb8b8f6cdb0c7376d112",
       "bytes": 4100
     },
     {
       "path": "expressions/naturalist-curious.png",
-      "sha256": "338b2951eb1763d639c7dcec19b112e46ada4de13f26a34d45637d5204b78cd9",
-      "bytes": 53617
+      "sha256": "cc550d339a6738cc47129f09be3f3ce9602fe38379fb2a3524eccad16418eb04",
+      "bytes": 51448
     },
     {
       "path": "expressions/naturalist-curious.svg",
-      "sha256": "e35e6cccf140ff3f36827b4e9aef49ae3387695d27b00c08bb8b0fa4f6985829",
-      "bytes": 3989
+      "sha256": "534fccc68822721112206a8a32598b5153d4f11ce6ad062553f8bcdcb90b2338",
+      "bytes": 3967
     },
     {
       "path": "expressions/naturalist-delighted.png",
-      "sha256": "385b1d97b191c9772251361c8cb9c3545876d3b083a5bcd985c0fe89b12e6e14",
-      "bytes": 53730
+      "sha256": "8d079c54b6ffca36efb8729f95f19e5b5802ec7fdf93ebefe86dc6acf1e5cb98",
+      "bytes": 51550
     },
     {
       "path": "expressions/naturalist-delighted.svg",
-      "sha256": "c1802f790481767f87bad91227c62f709d70859a28ccc10242d7e34c8b8e9014",
-      "bytes": 3989
+      "sha256": "a1e2aeae5d31f67bd0a544c7ba1ddca0cb6610c5d395db000c2ecd1aecc3e7a6",
+      "bytes": 3967
     },
     {
       "path": "expressions/naturalist-gentle.png",
-      "sha256": "0b171541647709d2db3fe0768c31fc6a93462b90d107391a4fc66c0ffaf89d7f",
-      "bytes": 53693
+      "sha256": "d722d931d7111d891ab1f231cc66651eaa0c070e0df814cbef17d8e046b4db62",
+      "bytes": 51520
     },
     {
       "path": "expressions/naturalist-gentle.svg",
-      "sha256": "c3fcc15c81079a488ad8518f47ee36dfc374727caa8c02d43ca063ab0c321934",
-      "bytes": 3989
+      "sha256": "d228be55f3f3ed984e7755fdd51af1211ee101749b3f0f95ef33d600a34861b4",
+      "bytes": 3967
     },
     {
       "path": "expressions/naturalist-listening.png",
-      "sha256": "a8e7e698e4e4adfaba33a79266b75aec3aa5dca77a7620dc7c58b620c770c3a2",
-      "bytes": 52753
+      "sha256": "d337583c4cb44221a24d467541c6e08f921e8cc7c5c5f6a023dd110917200e2f",
+      "bytes": 50656
     },
     {
       "path": "expressions/naturalist-listening.svg",
-      "sha256": "07a31e375bf300ddd0d970301ba30cbae871c751f4102617551ffa358a266cd7",
-      "bytes": 3907
+      "sha256": "f312b1abbde5ab08c7df21118caba5fed3d75675d9359f09ea1d4af685134096",
+      "bytes": 3885
     },
     {
       "path": "expressions/naturalist-smile.png",
-      "sha256": "9978fcf4608bc23e737e85830d25fb0f939074a95f48f17d087c75d31659e1bf",
-      "bytes": 53199
+      "sha256": "c085bfc66f970836f5af81d2fe23f44189818be481cbe2367d0ad2665c8bc09b",
+      "bytes": 51053
     },
     {
       "path": "expressions/naturalist-smile.svg",
-      "sha256": "8dd38bd0e7a03fe37d0515be8a2a8c8d723f7aed6ee0202d2d46a4fd41e6c881",
-      "bytes": 3888
+      "sha256": "80568e855ddb159222795ea223b67731ff0c35331faf6911ab1468ac62440505",
+      "bytes": 3866
     },
     {
       "path": "expressions/naturalist-thoughtful.png",
-      "sha256": "f80d469ae6f42cefd001f907372c0cf1a2083b5cc4135ffeb870fae8203e1815",
-      "bytes": 52825
+      "sha256": "07676699a8e5d5370f09844a23de3ca2ba62d4bd8072191b80b283e90d75c7ea",
+      "bytes": 50773
     },
     {
       "path": "expressions/naturalist-thoughtful.svg",
-      "sha256": "331801d8717d76b92bd7891086afacd940023165c1f41af500f4d55e0d1118a4",
-      "bytes": 3907
+      "sha256": "65ef466895e3458d611a5f497779d5aa01a5b10ffbe7ae417f93cc621dff14df",
+      "bytes": 3885
     },
     {
       "path": "motion/naturalist-cool-gardening.svg",
-      "sha256": "e884b37c9268738e81dcfee1a9dc42b20c86173dbdf8db6963c76f2a90b2f246",
-      "bytes": 17746
+      "sha256": "8d3b2857a59a42f3bad69f6b05c24c8b0cc7c3b5a67dae89a23063996ace8b27",
+      "bytes": 17724
     },
     {
       "path": "motion/naturalist-cool-gardening.webp",
-      "sha256": "ec1d6ec62ecced014e4275beeecb478ddaddb9cc8ec4a3800c4a1a880ef137b7",
-      "bytes": 595604
+      "sha256": "ff20c7bbf48ccaab9154aaf151beddd83eff6547af5842d01d8b39a2c950850b",
+      "bytes": 588554
     },
     {
       "path": "motion/naturalist-cool-pointing.svg",
-      "sha256": "3dbd9f5b49dd78f1952109a1c9a45c5fd36dca47f3d5e0962f0bbfbe71bfce5a",
-      "bytes": 16392
+      "sha256": "eb88408834265d045b09005afe3fb0ed3f02a8a7e60199e3c36875de27cdd338",
+      "bytes": 16370
     },
     {
       "path": "motion/naturalist-cool-pointing.webp",
-      "sha256": "2a2f58ed6a80b16bcccdef119678ceba0455da661ff3df4aa2db403af8f217b3",
-      "bytes": 478134
+      "sha256": "873a8739c5719a9f875d94d4a46cb246497940bdc50271640b10b850919322c1",
+      "bytes": 474050
     },
     {
       "path": "motion/naturalist-cool-resting.svg",
-      "sha256": "a50ccdeba7284adbb0c680cca1ac1123a45982bee331b5b8bd7e1fbb2ab08bb0",
-      "bytes": 15481
+      "sha256": "eaf75103e20cee878d7b76942edb4dde279a277ae85c8eb178905fcb6d456a78",
+      "bytes": 15459
     },
     {
       "path": "motion/naturalist-cool-resting.webp",
-      "sha256": "9be8af1efab15ed819051a6ac463dd0c54985ae7d94df9f49465759a4b3839e1",
-      "bytes": 474172
+      "sha256": "e99b6244d547d11f66681a3ba07154b8c972c49e423cabc9ff93a4d23f4b4b3b",
+      "bytes": 470732
     },
     {
       "path": "motion/naturalist-cool-sitting.svg",
-      "sha256": "ca1a43d8edca4abc1953a983ee6f959d08b1adb49e682b318bc04c3286e2c670",
-      "bytes": 15758
+      "sha256": "c2958e968fa993f000fa327f600e3e0ff136c6551385cf0a472d26d32b050d59",
+      "bytes": 15736
     },
     {
       "path": "motion/naturalist-cool-sitting.webp",
-      "sha256": "2505026b0bc6f34f78871c944e571df4c388a3bc95de7912a89acca7e8f7f9e2",
-      "bytes": 446630
+      "sha256": "3a8f2ff1f63e8b7ba0ff4d40e30f55cb6429e171c646cb4c89cdc9aa3183fc71",
+      "bytes": 441700
     },
     {
       "path": "motion/naturalist-cool-storytelling.svg",
-      "sha256": "d50203cd19d53ece6c1cfd4d266506771f698b30e6efd26058d8fcc5483e78fe",
-      "bytes": 21544
+      "sha256": "2a27d732fe59515fbd4dca1b571487e77590ec8cec562cee78d34638d6f49255",
+      "bytes": 21522
     },
     {
       "path": "motion/naturalist-cool-storytelling.webp",
-      "sha256": "ee82871fdc6d5a5542e5fe1e12147f716d7d91440442506224ab45834ecf72da",
-      "bytes": 700776
+      "sha256": "eb0e4210ac33c96fa148d1a47c40791c150bda5615e331a6cef09a27569bb16e",
+      "bytes": 693692
     },
     {
       "path": "motion/naturalist-cool-talking.svg",
-      "sha256": "cfc5cec2ac32fba5f06562150ff61ce44db3c28aa52d87f7c313c85c8778cf67",
-      "bytes": 19879
+      "sha256": "184c860798f421794fde5d280e8c3775c748bfce31e32505f9d063b0df2dd7e8",
+      "bytes": 19857
     },
     {
       "path": "motion/naturalist-cool-talking.webp",
-      "sha256": "aa7811e06c4f97dfa58b2604df2cb195e76684f36e0acc072f2be07b1fac43b0",
-      "bytes": 490792
+      "sha256": "7447dbe3793a8c6af00d96b094e93b538807d60fc31787c504138a31b4cbe38e",
+      "bytes": 486140
     },
     {
       "path": "motion/naturalist-cool-walking.svg",
-      "sha256": "2a19c1d43ff5cc9ba83d96349fe67b76e04da33bf38a14f60d6bd69f2c422072",
-      "bytes": 23265
+      "sha256": "b0bbcae9c2f29a2011005d440456b3a4a5702cd80e0dcf441e90d58132ab87bb",
+      "bytes": 23243
     },
     {
       "path": "motion/naturalist-cool-walking.webp",
-      "sha256": "f1c3fd92b8c346aa5dd68ecce6aa007d3eec817bf8c170d283027e6371dcf235",
-      "bytes": 419340
+      "sha256": "3c1174b1d2f152eb5d1725bfbf68778f8e475644a98f7d22fef6436009865729",
+      "bytes": 415008
     },
     {
       "path": "motion/naturalist-cool-waving.svg",
-      "sha256": "da8601e1fce6323f6ab9960a0a0dd6859c66f992eebfe39e4ae063c097a5e373",
-      "bytes": 16476
+      "sha256": "31e5cf54f9e5aafb52fb91f7b5fb6477372b83ec1df514e5bc80c87ddef20950",
+      "bytes": 16454
     },
     {
       "path": "motion/naturalist-cool-waving.webp",
-      "sha256": "fc5a64943315bd60fe24c95f0a8016d8b84cbc0c5eb48886a21962cad4aa756f",
-      "bytes": 486738
+      "sha256": "401a69a9d9e9fc35c115a9b80b1f90c7af92dfe9833b97931daea685ef2d5120",
+      "bytes": 482254
     },
     {
       "path": "motion/naturalist-monsoon-gardening.svg",
-      "sha256": "d42779c5a98e690c5f333a291931fac00fba7cd72151473a4c0b40e9a606945d",
-      "bytes": 18041
+      "sha256": "de9ab19095d7d95e4848e3bc0bb51755cac61ca8fd2ec17024d86ab7ddda053c",
+      "bytes": 18019
     },
     {
       "path": "motion/naturalist-monsoon-gardening.webp",
-      "sha256": "9f21e37981cf9f9c0441c8b6fb4a1f04bba2c35fd679deaf5749b99426e029db",
-      "bytes": 579050
+      "sha256": "a502ee88f96300760ec26fe72f8b4e52f022b07e1ad31aeffcf9e123ce651959",
+      "bytes": 571792
     },
     {
       "path": "motion/naturalist-monsoon-pointing.svg",
-      "sha256": "6d8bd069153ce6a57baba166381951a741b80fab03c4c2b7337fc8f1ac944634",
-      "bytes": 17214
+      "sha256": "3c48e28fc715a037cb0de37a223f454f8214392d1df46109d4ff72ad2be637d0",
+      "bytes": 17192
     },
     {
       "path": "motion/naturalist-monsoon-pointing.webp",
-      "sha256": "3c1f9374f0bdddb3bcc75ba8e38bb90abef9f7bd0f0d15d26b9d907fcedb6aa5",
-      "bytes": 513354
+      "sha256": "e7bed9641d1257bc21e5eeca4c6ecbbba014317e5fc0375cf3aede10251e48ee",
+      "bytes": 508100
     },
     {
       "path": "motion/naturalist-monsoon-resting.svg",
-      "sha256": "97b1a1edb9e8bc5d5c9f861d1ee5b68a27c728bda93f0ef41210e1805f2b832e",
-      "bytes": 16285
+      "sha256": "7bb0d420e47412081dfbbd0ec45dd8d19d00b076102fa258d1bc0c4790f29b30",
+      "bytes": 16263
     },
     {
       "path": "motion/naturalist-monsoon-resting.webp",
-      "sha256": "c48482fda969a6f02746f2b988e9e7b9dc0090d2b7bd970e9aec98bbdbba475e",
-      "bytes": 509804
+      "sha256": "1aa7ed5ef1c70fcb0b39adfba44cafcd9633e504a45a5f5f73672dd59b8eebf5",
+      "bytes": 505968
     },
     {
       "path": "motion/naturalist-monsoon-sitting.svg",
-      "sha256": "117a47e726b0e4edc5ea9ccfe8f98c795f1da06b0e244ce9eb328229bd7364ec",
-      "bytes": 16035
+      "sha256": "10012d81c3728919c6c87a20d4ec109d70647b4053616d1dd13dfdb136cf2d3e",
+      "bytes": 16013
     },
     {
       "path": "motion/naturalist-monsoon-sitting.webp",
-      "sha256": "d0b0f73a03ddaa3d1ee975264ee06f938b6f9826a7c81bd41aa67fca1c4f060d",
-      "bytes": 437068
+      "sha256": "746e5d41d76697800718fe37873bec7cb550512b866315bc2a200d48d86424c7",
+      "bytes": 431880
     },
     {
       "path": "motion/naturalist-monsoon-storytelling.svg",
-      "sha256": "da4a123efdac714c9ba68a627298739c6528421dde37b438e36d21d333a8ab8d",
-      "bytes": 21920
+      "sha256": "acaf242f2061fa3f31e16fb0b7e1e97595a3fbb534d06eabe1a05ae512a54cd8",
+      "bytes": 21898
     },
     {
       "path": "motion/naturalist-monsoon-storytelling.webp",
-      "sha256": "06c3a6b091e1612108c091801ee3e23ccffdb61091588b983d228c97a9129884",
-      "bytes": 686800
+      "sha256": "e1a404689d3b9710e6940aab9f7bad3c5f1be993a9c81df13bf547edb5e514d5",
+      "bytes": 678352
     },
     {
       "path": "motion/naturalist-monsoon-talking.svg",
-      "sha256": "6208a3195ada63ea76e3c1409bd25243c579a496f5f420ac2367c6d7895ac2d4",
-      "bytes": 20719
+      "sha256": "a84d3db47e07342b70b9b3782fc5ab7d3a48408e7c4aaab371fde7770591c199",
+      "bytes": 20697
     },
     {
       "path": "motion/naturalist-monsoon-talking.webp",
-      "sha256": "1daa73899b4f973e63f214635ddbf105528debb2bbe1fcc793d974349d403a74",
-      "bytes": 548104
+      "sha256": "8e239c209e9338176f3057e5fbbce313413fefdd532cb976db78559c15f08b53",
+      "bytes": 542768
     },
     {
       "path": "motion/naturalist-monsoon-walking.svg",
-      "sha256": "b0fc7a213ceb8207c016baf88270a7bdb523093da5bd2c34e5e47a36ea2fce31",
-      "bytes": 22643
+      "sha256": "b3ee8bda8940e03a64bd8591a4fc880801407182a48c51b2893272917e3c2fdf",
+      "bytes": 22621
     },
     {
       "path": "motion/naturalist-monsoon-walking.webp",
-      "sha256": "f873d0688685242689076e459cf9a84d97c69261b3d7bedb8eee414e9d412d50",
-      "bytes": 443080
+      "sha256": "2d5850abd1d1df608a3b5b4bda429fbfd63c5486b727f38ff635418a2ad45aec",
+      "bytes": 440278
     },
     {
       "path": "motion/naturalist-monsoon-waving.svg",
-      "sha256": "0f8b423b44004745e7e6760c10a40efdfa35e40a2fea89a77cfa5694a1e678e5",
-      "bytes": 17298
+      "sha256": "6b96b32b49707cc2f1ada4e419f25a07b95ea78f25767b165ed0363924a3f742",
+      "bytes": 17276
     },
     {
       "path": "motion/naturalist-monsoon-waving.webp",
-      "sha256": "934e70794544003d39e6fd1e85e3d7b5ea39048aaeb81bff91cac86ec9ee6fac",
-      "bytes": 524690
+      "sha256": "2d49197e1b116c1e5e9510a65074962e249ca54fa73b817dc7f71fb153dabb4d",
+      "bytes": 520418
     },
     {
       "path": "motion/naturalist-warm-gardening.svg",
-      "sha256": "5a25904315bcdd50835becc58927dd88485ea38c3837b4f16dcd1938d96fb19e",
-      "bytes": 17678
+      "sha256": "115de56fb510ab3b9434a4a2b149d1e583f3ca9c848a98f6fa0454dbd05231b6",
+      "bytes": 17656
     },
     {
       "path": "motion/naturalist-warm-gardening.webp",
-      "sha256": "3c35c7d8a1067d58cdbaf45d7f5fa23ad4cb6bd91829c9ea799311a4ebac62ab",
-      "bytes": 571636
+      "sha256": "231045f0a6a25eff9ad9dc486660e7af2ff7134bd6970b8bf2a07ea5f9a7a427",
+      "bytes": 565424
     },
     {
       "path": "motion/naturalist-warm-pointing.svg",
-      "sha256": "f764811c6220c9dd752b96a1a18a9c6c24ce759d2bd3183e157402722745a75f",
-      "bytes": 16324
+      "sha256": "14f3c191f2755d53dea208dbe32aeff2f3f6a29ecf084f7e4b9e7d8108ac6c22",
+      "bytes": 16302
     },
     {
       "path": "motion/naturalist-warm-pointing.webp",
-      "sha256": "4683dad37467422042d4f88d7e8b14caa6e956c8fde29a413908d2ba2a291db0",
-      "bytes": 463208
+      "sha256": "7d6b70eb44bd9a833950708c63a66bfd73f00087ae537bfe42cf939624992f37",
+      "bytes": 459684
     },
     {
       "path": "motion/naturalist-warm-resting.svg",
-      "sha256": "2101dcb3834fc18cd3176f0456e5400f89ff0308da7d754ded8540cffa5d245f",
-      "bytes": 15413
+      "sha256": "4e1ccbd67bf720c0109f8ba3935d85eec8936cb9e72fd0a06043955b2d474234",
+      "bytes": 15391
     },
     {
       "path": "motion/naturalist-warm-resting.webp",
-      "sha256": "cbc7f2fe83ca60c7dd8876ad5a9a32629fc773afa0327ca676c54b32eee49ac9",
-      "bytes": 457370
+      "sha256": "5731f6f16b790d65c306aad296e3f2e67c80bd0b152ebfdd9816418726715784",
+      "bytes": 453998
     },
     {
       "path": "motion/naturalist-warm-sitting.svg",
-      "sha256": "da9595b4e2b1b229bde26809d89517a2d1f3e735dcb87a72238f1fb6a7e375c4",
-      "bytes": 15690
+      "sha256": "fe8f450bc7018fae5afd856f5c6b6b93f650c1fbd8b9e3b3e551138d8479c8fe",
+      "bytes": 15668
     },
     {
       "path": "motion/naturalist-warm-sitting.webp",
-      "sha256": "cdf8b48ff45b0b43c28e11901a5cb930a29ed82a76d981a127ee041560e13b38",
-      "bytes": 429282
+      "sha256": "057a5e81f9ec2ade5af308e9db2fb18bdcef1444594e9242e0dafbde046bacb7",
+      "bytes": 424088
     },
     {
       "path": "motion/naturalist-warm-storytelling.svg",
-      "sha256": "519949af421bb05fc45338bab518f39791aaa601582e053647f1e84c5862139e",
-      "bytes": 21476
+      "sha256": "18e5286880924bf31234abaa36c70178ec68f14454965dc7bf86780fd72789e7",
+      "bytes": 21454
     },
     {
       "path": "motion/naturalist-warm-storytelling.webp",
-      "sha256": "511247a4bedbd4495045633d93dc7e3d8233c035387ee3a96aefbc08275cbdf8",
-      "bytes": 675424
+      "sha256": "08dbe5a22070606b83f44d1f2e1508f51ee79b6c50b3ddee55e514900e680938",
+      "bytes": 668248
     },
     {
       "path": "motion/naturalist-warm-talking.svg",
-      "sha256": "d1a2b830239779252e0b0836a7ecebb092d4eb7fdf338f68eadf4d5fe208d5ff",
-      "bytes": 19811
+      "sha256": "3993d97bce753c5d89cb5fbaea4355469246e28abeda1a7a51d90d35f2da5b83",
+      "bytes": 19789
     },
     {
       "path": "motion/naturalist-warm-talking.webp",
-      "sha256": "3d832c98e6a0ca1d1d2e0720bbe4e03aebe2583034491fcff640bb67618049c7",
-      "bytes": 468260
+      "sha256": "504369dcd529922dba6d172eb0e0b75e4b5dbd51d6d791eac07bca733e0f5fe4",
+      "bytes": 462938
     },
     {
       "path": "motion/naturalist-warm-walking.svg",
-      "sha256": "9398b8e71624390bd112d45539f55de964fcead701204f2c7ee52a4e58ca2326",
-      "bytes": 23197
+      "sha256": "46e8509b5eb84d7fa922301d458d47ff99ae17bfab549d29d738423c7530cf7e",
+      "bytes": 23175
     },
     {
       "path": "motion/naturalist-warm-walking.webp",
-      "sha256": "0b33eb1c67b521a390b059b48fbe94a9ab705158324b2c212b6105ec18dcf8fe",
-      "bytes": 401388
+      "sha256": "dab9c9b565282c2f983f8c2bafee05e1241a43c705dabd4a3c43d57fd2a691b5",
+      "bytes": 397634
     },
     {
       "path": "motion/naturalist-warm-waving.svg",
-      "sha256": "3e8b72a0d1ae1074c5433dbe1b7f8ac78848e88d021aeba8ef6f3f6deb35a16e",
-      "bytes": 16408
+      "sha256": "c2ec8dd75c52cb5474340033b2c5cb7421fcabd0e5e3cd7865ad7aa0923addb4",
+      "bytes": 16386
     },
     {
       "path": "motion/naturalist-warm-waving.webp",
-      "sha256": "81aaa8315fe7e4f78cbb46f461d667e85e86dc2f85a4130c67b4c9a1ab4ab672",
-      "bytes": 471080
+      "sha256": "734567b47484d297e5f6954613d22343d84a796737018da86e419418cd04d1ae",
+      "bytes": 466352
     },
     {
       "path": "mouths/naturalist-A.png",
-      "sha256": "385b1d97b191c9772251361c8cb9c3545876d3b083a5bcd985c0fe89b12e6e14",
-      "bytes": 53730
+      "sha256": "8d079c54b6ffca36efb8729f95f19e5b5802ec7fdf93ebefe86dc6acf1e5cb98",
+      "bytes": 51550
     },
     {
       "path": "mouths/naturalist-A.svg",
-      "sha256": "c1802f790481767f87bad91227c62f709d70859a28ccc10242d7e34c8b8e9014",
-      "bytes": 3989
+      "sha256": "a1e2aeae5d31f67bd0a544c7ba1ddca0cb6610c5d395db000c2ecd1aecc3e7a6",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-E.png",
-      "sha256": "c61a12a7787a1a07aac12bea1a79948a0829cc5ec1680bc84657183731cbfce9",
-      "bytes": 53230
+      "sha256": "6821be2766df4b31c63a71da880fd9da6cb6028c9099d2e9692d793c8c6fe8a7",
+      "bytes": 51079
     },
     {
       "path": "mouths/naturalist-E.svg",
-      "sha256": "d90bf26884d7a1867459987eb8f582bcbb03d535e448d9541a5cc1c43898f8a5",
-      "bytes": 3989
+      "sha256": "2e4608c7062b38ed9889b65ea326c66a0f404af530a02b71afb320bbfe540b34",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-F.png",
-      "sha256": "19d2b0626c08c363ba5dfb7c01898e1e1af4119f9debeb4894b0d9a1891b2a7e",
-      "bytes": 52870
+      "sha256": "4d792da4ef89486a89fbdf6721edd37f604a1ae82eb5ea7465573df06c74f8b4",
+      "bytes": 50764
     },
     {
       "path": "mouths/naturalist-F.svg",
-      "sha256": "7273aa058fab5873a75697f45c7f926a7cf65d98af7f759c2740f89503134ee1",
-      "bytes": 3989
+      "sha256": "fdd8a9286dd9c45de9b6c8437873902af44e299c9ad0c452a47191b23f65f745",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-L.png",
-      "sha256": "544bc2e1ec71a28e673f277b0524668739d3cb6a80f642db432e7b91656bc3b4",
-      "bytes": 53405
+      "sha256": "358c19970d847b2d7bdacefff53c23934cf4a17e38040c4335ccbce41be25828",
+      "bytes": 51253
     },
     {
       "path": "mouths/naturalist-L.svg",
-      "sha256": "17e812cf491954e8aff61d50841481b0507ba978892a39d27f3f6f2c9686ad4f",
-      "bytes": 3989
+      "sha256": "1823c41ee2a60e72cfe9030ea0ced03fb21086448aec4ee007fee1832408b1ab",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-M.png",
-      "sha256": "1de6eba6c5a9f3d70e7b71bc11f1c3e2998e940529a0037173c3c9021fbb926e",
-      "bytes": 52834
+      "sha256": "e7f13c96b457f0523c83308709228cec0f8208a72be80fd0f028854e6559a84e",
+      "bytes": 50731
     },
     {
       "path": "mouths/naturalist-M.svg",
-      "sha256": "d6271d607b6e7899168d6f936782b620e5e0170ac42bebcb896525f4a892a2a3",
-      "bytes": 3989
+      "sha256": "5cbb6be291d6f0f32133fc0627fa0f3db833457b127b35284b84d067187a8b4a",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-O.png",
-      "sha256": "c8ee65e64adbd8b5749b7dd31110f75eb23ab561d397ac333b19c9b792952158",
-      "bytes": 53050
+      "sha256": "c21c661dc21433126ff013faa9dc7c7dfd1500e1638f37977f08a96026229f62",
+      "bytes": 50948
     },
     {
       "path": "mouths/naturalist-O.svg",
-      "sha256": "6ae0417fc6351d41e5ed2e8aeb7b9f47e0a9595e0e1905e12e64180c8e92d544",
-      "bytes": 3989
+      "sha256": "40ec5170ac06fe3d49b091db3f782e57be1a662f6cab34b8e0168d5bca361a91",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-rest.png",
-      "sha256": "0b171541647709d2db3fe0768c31fc6a93462b90d107391a4fc66c0ffaf89d7f",
-      "bytes": 53693
+      "sha256": "d722d931d7111d891ab1f231cc66651eaa0c070e0df814cbef17d8e046b4db62",
+      "bytes": 51520
     },
     {
       "path": "mouths/naturalist-rest.svg",
-      "sha256": "c3fcc15c81079a488ad8518f47ee36dfc374727caa8c02d43ca063ab0c321934",
-      "bytes": 3989
+      "sha256": "d228be55f3f3ed984e7755fdd51af1211ee101749b3f0f95ef33d600a34861b4",
+      "bytes": 3967
     },
     {
       "path": "mouths/naturalist-U.png",
-      "sha256": "017741ce1f3363666702a4cfe9731ee2ffce6ac6c1115dd4bb3acbac68cacda2",
-      "bytes": 52868
+      "sha256": "2892a6ed07b3fb06d07acee1ecf605316da460d6e190cc0b4ac5dc3f3b5bc449",
+      "bytes": 50779
     },
     {
       "path": "mouths/naturalist-U.svg",
-      "sha256": "fc5d03c2355bbdb8820e14b8fbf44bc8b34f7c7b0216bd5c6456c8fa8e70a731",
-      "bytes": 3989
+      "sha256": "b2596efd7c5303b897856e1dca7fad2b369f9feb812fd463f207c018d2929f29",
+      "bytes": 3967
     },
     {
       "path": "poses/naturalist-cool-gardening.png",
-      "sha256": "9062fca9ff03cfed4845386f30b0806941bdacd10e8448f68e120f76d731e9b5",
-      "bytes": 51071
+      "sha256": "375a0ac06a8c21d5d8c719d95d35fade9b8d8bdfc92cd8be1e011e09263c3b58",
+      "bytes": 50288
     },
     {
       "path": "poses/naturalist-cool-pointing.png",
-      "sha256": "f2da7f33294f7193f45f2aa0112d9c168fa13d5078f39bbc3256300d137f8365",
-      "bytes": 44484
+      "sha256": "6fb5ebf217244521836da144fa0e0b2d6385665c4743cc0ddc8709f9b8be70d4",
+      "bytes": 43740
     },
     {
       "path": "poses/naturalist-cool-resting.png",
-      "sha256": "fed65360d50066aa8dc05a1e2ba010ed0b489e2243d5e45aa99abdabc80ab4ce",
-      "bytes": 44591
+      "sha256": "001bbbb88b255ee55cce78b0fe549aafb06852aeb76fcb5df68f9e7b3fcfa866",
+      "bytes": 43824
     },
     {
       "path": "poses/naturalist-cool-sitting.png",
-      "sha256": "5f27ecac5aeee1a39a7929ca9b41dcf9f0924add4e2675fa0399c72ca2a0aa6d",
-      "bytes": 42804
+      "sha256": "a258807c53887a227228dbbcfe0ab397fef936990f0960041a8e914dbee6d9a7",
+      "bytes": 41951
     },
     {
       "path": "poses/naturalist-cool-storytelling.png",
-      "sha256": "de77a872f60c5aa1bfc32b3a3261b21b7b74e6695d6b8ebfa41142c18960d621",
-      "bytes": 43527
+      "sha256": "fc084146238afea3aa8f430a8f0b75c7d22454ed6f4726a3bd64c5eef44d2799",
+      "bytes": 42679
     },
     {
       "path": "poses/naturalist-cool-talking.png",
-      "sha256": "d4f5cf275bca1e1484d27c16af54488830c02ba36378b468195c0cff254e0858",
-      "bytes": 44049
+      "sha256": "255e3e78124d4a1840360f35cd97b1328bfded9a492c815a676f35613a5fa37a",
+      "bytes": 43334
     },
     {
       "path": "poses/naturalist-cool-walking.png",
-      "sha256": "4c49f0f89e5bda52e1f4fa728ed120fb0290dcc2c330f1a7e0bcf06c32a4aa99",
-      "bytes": 47259
+      "sha256": "3fd842d46319f2d891e1c0a1299821de275737c31cebbd1c792e6c38d435c4f5",
+      "bytes": 46406
     },
     {
       "path": "poses/naturalist-cool-waving.png",
-      "sha256": "e9ae77c642fac125b105e50ab4a1930bb61a2473a1a2411c34731d5dce560d3d",
-      "bytes": 44738
+      "sha256": "dea28c957275b124b91d976a370b3a2cad0a6286f8b669171e28502ea68d8d4c",
+      "bytes": 44030
     },
     {
       "path": "poses/naturalist-monsoon-gardening.png",
-      "sha256": "a222c9fa314eb43819f6392c6fa4289f4e56ddf5bad27c3272225bbc3529997b",
-      "bytes": 51187
+      "sha256": "bd274594abce48e5e4e8cb83764f608642491b7104e834be67d21d3390c78eb6",
+      "bytes": 50384
     },
     {
       "path": "poses/naturalist-monsoon-pointing.png",
-      "sha256": "186963cf3d368dfe7cece9f7dabdaf707c348f329185187905167e8b5b6fe9dc",
-      "bytes": 45814
+      "sha256": "c774190444ca1c1832c45521d8bbedf90d587906d839ce368044b0bcfa0e6947",
+      "bytes": 44954
     },
     {
       "path": "poses/naturalist-monsoon-resting.png",
-      "sha256": "6456a215e3c7efe6c6b7e7d48cfa9b2aaaab7d65d5704d98f2eeca7e86e3a782",
-      "bytes": 46166
+      "sha256": "274a3eeabf3117a9400973382cb2c6396f3cc06e9a86b59c369b96fda98cdbc6",
+      "bytes": 45282
     },
     {
       "path": "poses/naturalist-monsoon-sitting.png",
-      "sha256": "fc5c3a8c3841079c2bcc239917f8e3b63be32f00e387784bda360cb97c328d94",
-      "bytes": 42054
+      "sha256": "3f1863df75bab939a3863f76dc8f7e5bdb16e050be954e93cd87d20462492b1a",
+      "bytes": 41164
     },
     {
       "path": "poses/naturalist-monsoon-storytelling.png",
-      "sha256": "48ef1ad304c92bff6cefbcf691e6db93e35888fc577754c5aeee9f92aaee2cb4",
-      "bytes": 42676
+      "sha256": "0d0ab4623602947521088fd29cf373d49c21ea2056fd95b0d15c3f9cec0fb899",
+      "bytes": 41844
     },
     {
       "path": "poses/naturalist-monsoon-talking.png",
-      "sha256": "c221af7686c60a211cad0bc9da95763762235594f02cc33e710643edc1036443",
-      "bytes": 45934
+      "sha256": "9cf20c59a79ad0073d837a57c3de3f2cdceb4dbef233d412edd3e2efd4a8aea4",
+      "bytes": 45159
     },
     {
       "path": "poses/naturalist-monsoon-walking.png",
-      "sha256": "edbba1ccf08441f30d3d0a968be1ac58dd324de736ca7ee41aff1e3bc891cbd6",
-      "bytes": 49639
+      "sha256": "c0f0dc937793fdb2ed37afb1d0f5bf800059e21b8977e71238556312e585a268",
+      "bytes": 48797
     },
     {
       "path": "poses/naturalist-monsoon-waving.png",
-      "sha256": "b3ac7b9089c1ea5079106b802b0a85f411b8ae0eeb54fa8718e2cfb074d4abab",
-      "bytes": 46163
+      "sha256": "c5f282c9a85b9fe8df421fe7a8b1877a7307fc10c87dcd40390c0c9a26b13cef",
+      "bytes": 45374
     },
     {
       "path": "poses/naturalist-warm-gardening.png",
-      "sha256": "a112a66a342f1e0015bb3f89cb6d8104f31ca714308308d309d900d667ec9dd4",
-      "bytes": 49391
+      "sha256": "5ebdbdb57accea4b2a44a8b999471577d97662ea8af5f76a1fc9af40184d8a62",
+      "bytes": 48613
     },
     {
       "path": "poses/naturalist-warm-pointing.png",
-      "sha256": "063c3380635eda3e972a980af286b564883f96736d52a3f27243815fb2363ff6",
-      "bytes": 42672
+      "sha256": "7dcf335ecadaf16f3753405be32d12001c3cbacbf4fd585863d3a8dfdeb90214",
+      "bytes": 41835
     },
     {
       "path": "poses/naturalist-warm-resting.png",
-      "sha256": "ca62d5b80812aa3cccd5801330fade2bc74caaae9e8802546b2013fe802b5d1d",
-      "bytes": 42835
+      "sha256": "bb4d85bb81a7c9c2aa1a803b302d5fe3aa483db8a1af965cf870652d1c137906",
+      "bytes": 41970
     },
     {
       "path": "poses/naturalist-warm-sitting.png",
-      "sha256": "6843c9446edde0a9929f109b7cea0cf248fff8f27aa7038450ac65373a7117b2",
-      "bytes": 41171
+      "sha256": "8efa78ef31d4f4686a764cb2eaef200cf05621e495c6d68d0aad80c758f01498",
+      "bytes": 40380
     },
     {
       "path": "poses/naturalist-warm-storytelling.png",
-      "sha256": "fc5ebab2290731543df60f9db13c7bb45cd5d59a65b6e66df462380306fdb2d9",
-      "bytes": 42389
+      "sha256": "054af4ee0fc2e355c1cce200781ac968e6f68b2e0cc9c064c96d3997b4c90f75",
+      "bytes": 41519
     },
     {
       "path": "poses/naturalist-warm-talking.png",
-      "sha256": "c9fa15c19677438d79e94df9ac04b63d39e082d0fc53108dcd82cb440343c09c",
-      "bytes": 42119
+      "sha256": "71e32f42c8237d4299f75e04dc4d553c126eb22526bdf04ab5451b490881f359",
+      "bytes": 41254
     },
     {
       "path": "poses/naturalist-warm-walking.png",
-      "sha256": "3731008ddbd9d157826242984ff7370450a4b866f663a22d69d295b4633a46d8",
-      "bytes": 45241
+      "sha256": "f59e2828019d322f79709e14dd965a5fc7947108194742e64934763abd2e0911",
+      "bytes": 44348
     },
     {
       "path": "poses/naturalist-warm-waving.png",
-      "sha256": "f189a84ee85b4b404c6a19782c69f5b34320fa3ff3c535811e425e9e7d562768",
-      "bytes": 42856
+      "sha256": "5b35b3a7841a7bb7c7b217f8779aca294d040b585ef4a9f9b623fad96d7e8cf9",
+      "bytes": 42069
+    },
+    {
+      "path": "references/naturalist-cool-preview.webp",
+      "sha256": "31303601dbb6cb1688a545029bbf8c21c0f10472c755568188845cc500a1508d",
+      "bytes": 71864
     },
     {
       "path": "references/naturalist-cool.png",
-      "sha256": "3f317d98e76b27e12e0d687fd899aa97f6f3183265152ac422332d270c32acd2",
-      "bytes": 2108175
+      "sha256": "c25edc7e67a365560ea913bd6652b3c77fb2948eb773a141f011c4e3b88bd131",
+      "bytes": 2181853
     },
     {
       "path": "references/naturalist-cool.webp",
-      "sha256": "b3c92adc709ff735708fb612ce35fd964fd3b23be2fb0593fb5c45ac77250136",
-      "bytes": 924366
+      "sha256": "e4686fe91bdd9554d7720fb812a0b0ccf16a573ab5d98fd0f3c335bc67249d70",
+      "bytes": 983464
+    },
+    {
+      "path": "references/naturalist-monsoon-preview.webp",
+      "sha256": "cf85068aa21624ee26d4f5338c1bb2d7514af71d0472ea337aa9d8aacf3f0dbe",
+      "bytes": 70970
     },
     {
       "path": "references/naturalist-monsoon.png",
-      "sha256": "4cedd6d69203a795f7da4e61ee227a5c810a5bc705d541ab62603f4309d5113e",
-      "bytes": 2180610
+      "sha256": "59b6eb4eb863876ae58211356d2b443e3fde8119dc1c15d6bf31f1bfbdad64d0",
+      "bytes": 2239185
     },
     {
       "path": "references/naturalist-monsoon.webp",
-      "sha256": "2a99846e95267add3a3bdb61d79e849f0277b42f8b69da744e3b7524f6052ab7",
-      "bytes": 969736
+      "sha256": "10aa8c68e9441d449a7a83c8af4bca8fb11da6ae5d8cd8cc6b96776a63f614ab",
+      "bytes": 1011286
+    },
+    {
+      "path": "references/naturalist-warm-preview.webp",
+      "sha256": "849531e5affd804738c1d76f139bed94791e250f1c17d774612b0c06f9ad4044",
+      "bytes": 66816
     },
     {
       "path": "references/naturalist-warm.png",
-      "sha256": "ac53d335a8609f799c31a294da7fa71d699a839bd434328b25601bec7b9349b4",
-      "bytes": 2047153
+      "sha256": "42568b75f11c22cb86371a6dfb38fcaf74cc6d877a227f3116ed43994e2c069f",
+      "bytes": 2150050
     },
     {
       "path": "references/naturalist-warm.webp",
-      "sha256": "c976e93a5bfc47c4b38eac483ec7883b21597051cd1cb4f1113f71e6e3f71f6d",
-      "bytes": 836234
+      "sha256": "d82f7e80dc37a61bfeccd1b1ba29bca7d60ad838abcb78fbf1ae381712667b53",
+      "bytes": 891110
     },
     {
       "path": "rigs/naturalist-cool.png",
-      "sha256": "76dbb806b58efd692961318f69d0440a4242567c5a3575c7ff3a3ca2f09508a1",
-      "bytes": 103036
+      "sha256": "fc9ff401f2e316e20b7ba7469271d3af94be528a7951d4e05589b2434058f2d6",
+      "bytes": 101365
     },
     {
       "path": "rigs/naturalist-cool.svg",
-      "sha256": "af5374153f5b71fdc6d9773f47c0c9e13d00523bc9e262eecd62a4576b3a2881",
-      "bytes": 11057
+      "sha256": "5a9dee8bc12477e754c9c47ba4fa86789083ef3b32e4c20f4fdca13b025e2dbb",
+      "bytes": 11035
     },
     {
       "path": "rigs/naturalist-monsoon.png",
-      "sha256": "9cf1b684e4f14b59f3b15aedee52adf350b617471680b0cb27e771111ebddabe",
-      "bytes": 107683
+      "sha256": "9d98a7344d55f537a960d35b95a669ca47d0dc721bd4a35c617e7f9ae56f07ca",
+      "bytes": 106070
     },
     {
       "path": "rigs/naturalist-monsoon.svg",
-      "sha256": "9446abfb06d44f5e5517923726cde0a34e6c801018a635dca8fba2adc23cf9b0",
-      "bytes": 11758
+      "sha256": "1a3190be9a3284a5ad6e5f29f9cb9defebe31add5f8abbb94e7ba5cef884b9d5",
+      "bytes": 11736
     },
     {
       "path": "rigs/naturalist-warm.png",
-      "sha256": "74be7f6e0a0661464bae404ac626c0e328372f11d1f2d2260aa6489c7e59ccbc",
-      "bytes": 98667
+      "sha256": "e85c89c3f7526bd27a646a466b53536c580acbd47d6279d750945117090ce1c4",
+      "bytes": 97100
     },
     {
       "path": "rigs/naturalist-warm.svg",
-      "sha256": "9b8f036e91638a64b0f13f2cf0fa09546e9f28277aa98a492513ca6d83bc3175",
-      "bytes": 10989
+      "sha256": "2763ed6ce17a1fb8b24a22a60d7274020eae8fd3a44f370524e5afc0905eb6c9",
+      "bytes": 10967
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "782a236370e9fc8d8b44210f7bdbf6adfec773559afd625825a3f1285f7a97dc",
+      "sha256": "53a781ce53fad7f1da4f7441746687a775f4ba386ad5756760dbd9bbdd0d87e5",
       "bytes": 2919
     },
     {
@@ -586,8 +601,8 @@
     },
     {
       "path": "runtime/rig.js",
-      "sha256": "fe9a29db89541fd403359b6e07668b2d1456153cd3565afa4b62e42243428be9",
-      "bytes": 21916
+      "sha256": "46a54f3db911bdd3e2d8253b9440434885a0fbce619b128726fa4274da0b3e34",
+      "bytes": 21905
     },
     {
       "path": "timelines/naturalist-cool-gardening.json",
@@ -721,33 +736,33 @@
     },
     {
       "path": "turnarounds/naturalist-cool-front.png",
-      "sha256": "17d870afdcdacbd338775ddf7ecd9567b007430a6863d00b466e1aa288cc3658",
-      "bytes": 103350
+      "sha256": "e3b9de64cdf5f86960fb4efacfe459d736dfe0b569d6e985f1f30c8ef2562646",
+      "bytes": 101769
     },
     {
       "path": "turnarounds/naturalist-cool-front.svg",
-      "sha256": "0ab59fe7f23f67224f3e4d0eae3a450edbeafb989412b4377666e92d0aca2213",
-      "bytes": 11014
+      "sha256": "d707956b197dd7be70edc3afa46adc34e0ab2c06dd126cd5545813615f635021",
+      "bytes": 10992
     },
     {
       "path": "turnarounds/naturalist-cool-profile.png",
-      "sha256": "e7b56c9838a521a1570a8c702202ea0a92484ea4c1629e96d7a373bcebaae30a",
-      "bytes": 96652
+      "sha256": "61516bc0170335028155100b754518e5fd6ef47ec968f3af68a27e63e46617dd",
+      "bytes": 95926
     },
     {
       "path": "turnarounds/naturalist-cool-profile.svg",
-      "sha256": "f077196036e3e785ff25412247fbee508ba65103912e40fcbc5d86f675aba6b1",
-      "bytes": 10568
+      "sha256": "1a94c5b563572467e84dbbaef54c3c88f30c8246a4c5ea737e37c068944bdf4a",
+      "bytes": 10557
     },
     {
       "path": "turnarounds/naturalist-cool-three-quarter.png",
-      "sha256": "76dbb806b58efd692961318f69d0440a4242567c5a3575c7ff3a3ca2f09508a1",
-      "bytes": 103036
+      "sha256": "fc9ff401f2e316e20b7ba7469271d3af94be528a7951d4e05589b2434058f2d6",
+      "bytes": 101365
     },
     {
       "path": "turnarounds/naturalist-cool-three-quarter.svg",
-      "sha256": "af5374153f5b71fdc6d9773f47c0c9e13d00523bc9e262eecd62a4576b3a2881",
-      "bytes": 11057
+      "sha256": "5a9dee8bc12477e754c9c47ba4fa86789083ef3b32e4c20f4fdca13b025e2dbb",
+      "bytes": 11035
     },
     {
       "path": "turnarounds/naturalist-monsoon-back.png",
@@ -761,33 +776,33 @@
     },
     {
       "path": "turnarounds/naturalist-monsoon-front.png",
-      "sha256": "d6592447bbcc8ac417b654e55e8d228f5b633e7cfc3799f02e8b8448c38a32b5",
-      "bytes": 107972
+      "sha256": "56f0a8871e5e13fdc7561c2e8b7597f9b2e418f01adc5a543ab8c8f013cc125a",
+      "bytes": 106454
     },
     {
       "path": "turnarounds/naturalist-monsoon-front.svg",
-      "sha256": "bec252d17dd765e1f83c4ba7a21e0d3a7116ed4a378058b81f40ca79a2dbcadb",
-      "bytes": 11715
+      "sha256": "88f0ce83f1cd8a04efb907c42be08241e05a5e5cadd626d069fa955ab16246cd",
+      "bytes": 11693
     },
     {
       "path": "turnarounds/naturalist-monsoon-profile.png",
-      "sha256": "a0fb4ac42f3cdbd74c04424ec09b4cc6541d0b7becd4a0d5be8b392ef207fdd7",
-      "bytes": 97646
+      "sha256": "2cb2aa7723303d8d7db7b782b623e3c2a1a88e8f06d552efab7c90c4bddc44b2",
+      "bytes": 96866
     },
     {
       "path": "turnarounds/naturalist-monsoon-profile.svg",
-      "sha256": "d67e8f59db575123a27a5da2f249f61b91d105724d715d1f0c6b065a0c6f9a9a",
-      "bytes": 11253
+      "sha256": "318f576eb9428c5f3492afb99bea61c8617a4db32c04d32e622f7201eed140ec",
+      "bytes": 11242
     },
     {
       "path": "turnarounds/naturalist-monsoon-three-quarter.png",
-      "sha256": "9cf1b684e4f14b59f3b15aedee52adf350b617471680b0cb27e771111ebddabe",
-      "bytes": 107683
+      "sha256": "9d98a7344d55f537a960d35b95a669ca47d0dc721bd4a35c617e7f9ae56f07ca",
+      "bytes": 106070
     },
     {
       "path": "turnarounds/naturalist-monsoon-three-quarter.svg",
-      "sha256": "9446abfb06d44f5e5517923726cde0a34e6c801018a635dca8fba2adc23cf9b0",
-      "bytes": 11758
+      "sha256": "1a3190be9a3284a5ad6e5f29f9cb9defebe31add5f8abbb94e7ba5cef884b9d5",
+      "bytes": 11736
     },
     {
       "path": "turnarounds/naturalist-warm-back.png",
@@ -801,33 +816,53 @@
     },
     {
       "path": "turnarounds/naturalist-warm-front.png",
-      "sha256": "b4562249e8a4e155d1ccd4865581b021d8a8960d6ddb3d66c1fa52f2d51db520",
-      "bytes": 98943
+      "sha256": "48ab0cffbba63d3e6440f4b67529b9e93ca5ad6f852b51ccd4ef80c1860c9356",
+      "bytes": 97496
     },
     {
       "path": "turnarounds/naturalist-warm-front.svg",
-      "sha256": "ec566f60f4ceb0ddb7cd6d9a7a5c82cf10bf3f9f2585227903325f37cebb0eaa",
-      "bytes": 10946
+      "sha256": "865a42bc843e39679ab62fdf2443f126cbb44a9549119893d20332c9fca8c216",
+      "bytes": 10924
     },
     {
       "path": "turnarounds/naturalist-warm-profile.png",
-      "sha256": "768eced2bdf46e20a1cde806691bdd38eedb17eb5a07aa33588124b2b4fe152a",
-      "bytes": 93300
+      "sha256": "5beedc3143690997a44631dcafb0a43ada8477e438f2416b9c11f96c1adf70fa",
+      "bytes": 92536
     },
     {
       "path": "turnarounds/naturalist-warm-profile.svg",
-      "sha256": "1f00d3b40abceb7e30eac4e3a7e032423beb31d2d8e81a5d7b3f31133a8a9d31",
-      "bytes": 10500
+      "sha256": "b1b807f10bec3e620ce5d9cae9b49f96e0cba64e6c16c8b1f34b0e378cabf7d3",
+      "bytes": 10489
     },
     {
       "path": "turnarounds/naturalist-warm-three-quarter.png",
-      "sha256": "74be7f6e0a0661464bae404ac626c0e328372f11d1f2d2260aa6489c7e59ccbc",
-      "bytes": 98667
+      "sha256": "e85c89c3f7526bd27a646a466b53536c580acbd47d6279d750945117090ce1c4",
+      "bytes": 97100
     },
     {
       "path": "turnarounds/naturalist-warm-three-quarter.svg",
-      "sha256": "9b8f036e91638a64b0f13f2cf0fa09546e9f28277aa98a492513ca6d83bc3175",
-      "bytes": 10989
+      "sha256": "2763ed6ce17a1fb8b24a22a60d7274020eae8fd3a44f370524e5afc0905eb6c9",
+      "bytes": 10967
+    },
+    {
+      "path": "videos/naturalist-garden-alpha.webm",
+      "sha256": "2809e37c66d8f47aaf9f8260d89c67d0f61f770e2a4f01e168e57ec08fbf0210",
+      "bytes": 186484
+    },
+    {
+      "path": "videos/naturalist-garden-poster.png",
+      "sha256": "dcf99f70089b09e53af199fbfa7fa003d0e0a0db393638f2b50f70bbdf86c603",
+      "bytes": 93676
+    },
+    {
+      "path": "videos/naturalist-garden.mp4",
+      "sha256": "1483253dd5ea20b51705f4473f69b65d5f57ca38ad4c3a9243e6f9887288eb3a",
+      "bytes": 148730
+    },
+    {
+      "path": "videos/naturalist-garden.vtt",
+      "sha256": "526d0880fc66545f002611bc9d8e181e7ae54c7da29ac46d4df2442c283551b3",
+      "bytes": 93
     }
   ]
 }

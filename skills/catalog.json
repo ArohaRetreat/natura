@@ -116,6 +116,18 @@
         "project-deployment",
         "project-observability"
       ]
+    },
+    {
+      "id": "service-farm-atlas",
+      "kind": "service",
+      "path": "skills/service-farm-atlas/SKILL.md",
+      "description": "Maintain the farm-atlas service; read its implementation and continuation context.",
+      "dependsOn": [
+        "project-implementation",
+        "project-testing",
+        "project-deployment",
+        "project-observability"
+      ]
     }
   ],
   "services": [
@@ -160,7 +172,8 @@
       "owner": "ArohaRetreat",
       "status": "active",
       "dependsOn": [
-        "hrudhi-character-kit"
+        "hrudhi-character-kit",
+        "farm-atlas"
       ],
       "contracts": [
         "src/model.js",
@@ -200,6 +213,32 @@
       ],
       "continuation": "skills/service-hrudhi-character-kit/continuation.md",
       "lastReviewedRevision": "a7182960bf78eb6895376006257c14047495b60c"
+    },
+    {
+      "id": "farm-atlas",
+      "skillId": "service-farm-atlas",
+      "sourcePaths": [
+        "src/farm-atlas"
+      ],
+      "entrypoints": [
+        "src/farm-atlas/studio.js",
+        "src/farm-atlas/icons.js",
+        "src/farm-atlas/animals.js"
+      ],
+      "owner": "ArohaRetreat",
+      "status": "active",
+      "dependsOn": [],
+      "contracts": [
+        "docs/farm-atlas/CONTRACT.md",
+        "public/assets/farm-atlas/catalogue.json",
+        "public/assets/farm-atlas/manifest.json"
+      ],
+      "testCommands": [
+        "npm test",
+        "python3 scripts/verify-farm-media.py"
+      ],
+      "continuation": "skills/service-farm-atlas/continuation.md",
+      "lastReviewedRevision": "3f4884e522e98ce9dd731918b4deb71416a509b5"
     }
   ]
 }

@@ -9,7 +9,7 @@ def main():
  for f in m['files']:
   p=ROOT/f['path'];assert digest(p)==f['sha256'],p;assert p.stat().st_size==f['bytes'];counts[p.suffix]=counts.get(p.suffix,0)+1
   if p.suffix=='.svg':ET.parse(p)
-  if p.suffix in ['.png','.webp']:
+  if p.suffix in ['.png','.webp'] and not f['path'].startswith('videos/'):
    im=Image.open(p);assert 'A' in im.getbands(),p;assert im.getchannel('A').getpixel((0,0))==0,p
    if f['path'].startswith('motion/') and p.suffix=='.webp':
     assert im.size==(192,312);assert im.n_frames>20;assert im.info['loop']==1;animated+=1
