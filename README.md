@@ -1,13 +1,25 @@
-# Aroha Design Studio
+# Natura v0.1.0
 
-A working design-system application for Aroha Retreat. Includes an identity explorer, searchable icon kit, type and colour references, controlled motion demonstrations, component previews, corrected PDF downloads, and a browser-local website builder.
+A nature-inspired design application for Aroha Retreat. Canonical deployment: https://aroha-retreat.web.app/design/.
 
-Run `npm run build`, `npm test`, then `npm run dev`. Open http://127.0.0.1:8770. No dependency installation is needed for normal builds: fflate 0.8.3 is vendored with its MIT licence. Fonts are bundled with OFL licences.
+Includes separate English, Kannada and bilingual logo families; transparent icon-only and favicon assets; 48 service icons; two original botanical illustrations; four independently drawn motion studies; type, colour and component references; and a browser-local website builder.
 
-The page builder saves the last valid version-1 document in localStorage on the current browser/origin. JSON import/export is the portable backup path. A static website ZIP contains editable HTML/CSS, the selected logo, four local font families and licences. It provides a draft contact email link; no booking backend, payment system or enquiry submission service is claimed. Service content must be checked before publishing a retreat website.
+## Develop
 
-Draft JSON is capped at 100 KB, 16 sections and 8 service cards. Unknown fields are projected out, content is escaped, IDs are unique and section/icon types are allowlisted. The preview iframe allows same-origin fonts but no scripts. No customer account, database, data upload or tracking integration is configured.
+Node 20+ and Python 3 are sufficient for the application. Run `npm test`, `npm run build`, then `npm run dev`. Open http://127.0.0.1:8770/design/. No dependency installation is needed for normal builds; fflate 0.8.3 is vendored with its MIT licence. Fonts are bundled with OFL licences. The PDF regeneration script needs reportlab, svglib and pymupdf and the included static fonts.
 
-Hosted access is owner-private through Sites. No public GitHub repository, app-launchpad-template adoption or CI workflow is claimed; owner/repository/visibility selection is pending. Source ownership and continuation: skills/design-studio/.
+The page builder supports up to 16 sections, 8 service cards and 100 KB JSON imports. User text is escaped and section types are allowlisted. Drafts remain in localStorage for this browser/origin; export JSON before moving to another origin. Website ZIPs contain HTML, CSS, local logo, chosen illustrations, fonts, licences and draft JSON. Confirm service content and contacts before publishing. Booking, payments and enquiry submission require separate implementation.
 
-PDF correction: v1.1 centres every icon and caption within the same gallery cell, regularises contact-sheet column widths, and uses consistent baselines. Original v1 downloads remain preserved in the parent brand folder.
+## Firebase Hosting
+
+Project and default site: `aroha-retreat`. Build output: `dist/design/`. `/design` redirects to `/design/`; only that route has an app rewrite. `npm run deploy` uses an already authenticated official Firebase CLI. Install Firebase CLI from its official npm package if needed, or set `FIREBASE_CLI_PATH` to its CLI JavaScript entry point. No authentication token is included in source.
+
+This site was empty before Natura's first deployment. Hosting publishes the entire `dist` directory: if a root website is added later, preserve its build output and configuration before the next release. Never deploy a design-only manifest over unrelated root content.
+
+The provided Firebase web configuration is retained in `config/firebase.web.json` for future application integration. Analytics is not initialized. No database, backend, accounts or telemetry are configured. This is a public static design workspace; do not add confidential documents to public assets.
+
+## Asset handoff
+
+`public/downloads/Natura-Design-Assets-v0.1.0.zip` is the complete current asset package. `public/docs/` contains the current field guide, motion field notes, retained identity handbook and corrected service icon PDFs. `Natura-Service-Icons-v0.1.0.zip` is a convenient icon-only subset, using approved v1.1 geometry. Botanical illustrations were generated specifically for this system with OpenAI image generation. PNG originals and web-optimized WebP files are included. Vector logos use SVG masters, with print and raster exports; no native proprietary Illustrator source is claimed.
+
+Natura names the design application. Aroha Retreat names the retreat identity; its approved wording remains unchanged. Source ownership: `skills/design-studio/`. No GitHub push or CI run is claimed. The previous Sites deployment is superseded; no new release is sent there.

@@ -2,3 +2,9 @@ dist/
 node_modules/
 .DS_Store
 *.tar.gz
+
+.firebase/
+firebase-debug.log
+release/
+
+tmp/

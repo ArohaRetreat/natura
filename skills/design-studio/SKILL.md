@@ -1,9 +1,11 @@
-# Aroha Design Studio
+# Natura design workspace
 
-Owns the static design-system application, browser-local page builder, reusable site renderer, and asset exports. Source: src/. Public licensed assets: public/. Build: node scripts/build.mjs. Tests: node --test tests/*.test.mjs. Preview: python3 -m http.server 8770 --directory dist.
+Owns the Natura static design application for Aroha Retreat. Source: src/. Licensed public assets: public/. Build: npm run build. Tests: npm test. Preview: npm run dev at http://127.0.0.1:8770/design/.
 
-Data contract: version 1 browser-local page document; allowlisted section types, bounded text, valid icon names, at most 16 sections, unique IDs. Imports are bounded JSON and never execute markup. User text is escaped into exported HTML. No server API, authentication implementation, database or migrations are needed. Sites supplies owner-private access to the hosted application.
+Data contract: version 1 browser-local page document, allowlisted sections, bounded text, known icon names, unique IDs, at most 16 sections. Story artwork is icon, landscape or growth. User text is escaped. Rendering/export share site-renderer.js. Review schema compatibility and tests when changing imports.
 
-Browser storage is personal to this origin and device, persists until reset/clearing site storage, and supports JSON export/import. No connector calls, AI generation, third-party tracking or outbound draft upload. Drafts do not sync across devices. No Dynatrace tenant has been selected; observability is pending and no telemetry is sent.
+Drafts remain personal to the browser/origin and do not sync. JSON import/export is the portable backup. No customer API, accounts, database or tracking. No telemetry tenant selected.
 
-Source rendering and exports share src/site-renderer.js. Changes to the document contract require tests and schema version review. Preserve all existing brand packs. Fonts are OFL; fflate is MIT. Publish through the Sites skill using the existing .openai/hosting.json identity and audience. No public GitHub repository or template adoption is claimed; that ownership choice remains pending.
+Firebase project/site: aroha-retreat. Deploy dist with npm run deploy using official CLI authentication. The app is at /design/; never overwrite future unrelated root content. Do not publish back to Sites. Fonts are OFL; fflate is MIT. Keep the current complete asset pack, transparent icons and approved logo wording. Superseded exports may be removed only after replacements are verified.
+
+Nature scenes must animate distinct physical parts, never substitute whole-icon transforms for germination or ripples. No autoplay/loops; allow explicit keyboard playback; reduced motion shows final composition. Dispose owned animations on route exit and reset on hidden tab. Update continuation and changelog with substantive changes.
