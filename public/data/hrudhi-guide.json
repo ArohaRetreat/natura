@@ -250,7 +250,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.1."
+          "text": "The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.2."
         }
       ]
     },
@@ -280,7 +280,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Five silent 1280x720, 24 fps vector films show welcome, gardening, storytelling, orchard walking and canopy guidance. MP4 files have a white illustrated scene. The separate isolated-character WebM files retain alpha. Captions describe actions; there is no spoken voice, narration or audio lip-sync. These are rendered from the editable joint rig, not AI animation of the painterly illustrations. Native video controls wait for an explicit play action, allow pause and seeking, and the lab pauses videos on route exit or tab hiding. A poster is shown until playback."
+          "text": "Five silent 1280x720, 24 fps original-art films show the unchanged illustrated Hrudhi beside leaves, rain, grove lights, a butterfly and canopy light. The character remains still; only the surrounding nature scene moves. These films do not show character walking, talking or articulated performance. The MP4s have a white scene; the alpha WebM files contain the still original artwork for compositing. Every film records its exact source PNG and SHA-256 from the immutable original identity lock. Pixel checks verify that character regions match the original illustration before encoding and after decoding the MP4. There is no alternate vector-character renderer in the film pipeline. Native video controls wait for explicit playback, allow pause/seeking and pause on route exit/tab hiding. Future performance animation requires a layered rig built from this same original artwork, preserving its face."
         }
       ]
     },

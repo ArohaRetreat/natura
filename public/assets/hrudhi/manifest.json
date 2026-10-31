@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "status": "draft",
   "review": "Family review pending",
   "license": "Aroha Retreat Restricted Use License",
@@ -54,8 +54,8 @@
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/explorer-curious.png",
@@ -2939,7 +2939,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -4159,103 +4159,108 @@
     },
     {
       "path": "videos/explorer-welcome-alpha.webm",
-      "sha256": "501ffc47f927f896180e3daca628ba2c20f5c8ef53b649731650fb8bb2fcd790",
-      "bytes": 108634
+      "sha256": "28bd2ada2aea4b0de14451db89678835c9c7fa0e48ba0a09e546fd3894d4b43a",
+      "bytes": 91945
     },
     {
       "path": "videos/explorer-welcome-poster.png",
-      "sha256": "fe86a23671dcf95c402524b6f131169a894d504d89ce6b00d7029db8085168d4",
-      "bytes": 84182
+      "sha256": "5f16ab14bdfd4115abd3481e9752f732bc346aefda975b88fcf919743cb5f9e5",
+      "bytes": 232196
     },
     {
       "path": "videos/explorer-welcome.mp4",
-      "sha256": "5bb5b4f98037b0862b0ac37fc3c43f2e890b448e345484d1aa0b094097b28d09",
-      "bytes": 101327
+      "sha256": "0649114d4ff2a01c1b4ab100959aba1470ee7d65d5fe23a4e33c4f6c2a83c11d",
+      "bytes": 126217
     },
     {
       "path": "videos/explorer-welcome.vtt",
-      "sha256": "9cb4d631a5efb7ad56e8bcbc383014e15c93b720c70af966965ff17f0947a32a",
-      "bytes": 110
+      "sha256": "816c3433543711d4666f54060b60e8b6fe524fd9f552f97e0a83eab60704f85a",
+      "bytes": 121
     },
     {
       "path": "videos/naturalist-garden-alpha.webm",
-      "sha256": "7164b5cc6c04050d37ae20b4f57279b722b7aa9f0ad0ac04ea4f4dae18a55383",
-      "bytes": 189577
+      "sha256": "f390423864278a82b7381aeb3ac15f5c10e82e8fc14c306f3fcb3b2978db2654",
+      "bytes": 96703
     },
     {
       "path": "videos/naturalist-garden-poster.png",
-      "sha256": "83fb8e7642cb088f31033945819c70e4bf7d4970f0ed56f1acb5ac2493f6162b",
-      "bytes": 94587
+      "sha256": "5b9afedf4ee0f3c3d163e794bd06abf33bd5d465af3947bb6a1a608ad456c63a",
+      "bytes": 266065
     },
     {
       "path": "videos/naturalist-garden.mp4",
-      "sha256": "d8216a4db392f24733189b8c3093fb4625ec38a007f06687f18b264c9d97f2e5",
-      "bytes": 149945
+      "sha256": "1f19f81c4ce8f845675a6643d0c0cdc0bd0b96319b3bc8adc37a680e92d4d9f7",
+      "bytes": 153525
     },
     {
       "path": "videos/naturalist-garden.vtt",
-      "sha256": "526d0880fc66545f002611bc9d8e181e7ae54c7da29ac46d4df2442c283551b3",
-      "bytes": 93
+      "sha256": "68d60ec9ef7746ee33d44d0b43ab33456a17944b8e8bf7de9e9126ed4bf2a389",
+      "bytes": 136
     },
     {
       "path": "videos/pathfinder-walk-alpha.webm",
-      "sha256": "c2d724ed9ce229deefdb4483c4f05e5fdc3dcecc5237d251b248568bf8711241",
-      "bytes": 214188
+      "sha256": "009a6cabe58b9014f97542390979e5fa685d8054764d3cb71ce5da0f37804b05",
+      "bytes": 81817
     },
     {
       "path": "videos/pathfinder-walk-poster.png",
-      "sha256": "24801d2c72b89eb3a4dc9388e42196307a823ab4022d479774f1ab83544e79dd",
-      "bytes": 90541
+      "sha256": "cce45885c27599c7d512b193e8b9e75dafdf7d5e53671e3c6429ca2484c4da2a",
+      "bytes": 214799
     },
     {
       "path": "videos/pathfinder-walk.mp4",
-      "sha256": "d5ea5893fed798be6906a015a2dea40426c93d0067d233255ccba8bb7076bd7d",
-      "bytes": 313969
+      "sha256": "c3db080ee537cc6a21ed3fc7022ed19cb81ccd282493639321d37938e676799a",
+      "bytes": 122030
     },
     {
       "path": "videos/pathfinder-walk.vtt",
-      "sha256": "ce434616be72045bd094edbac815fee30fcaaa26113f37046663b9b089b57cbb",
-      "bytes": 118
+      "sha256": "4963fc08d865fc6f532f1e2794fcad598666191685319e24968ff2c97ef9ebba",
+      "bytes": 125
+    },
+    {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
     },
     {
       "path": "videos/steward-canopy-alpha.webm",
-      "sha256": "8a720a95aeadcc1a1dab1452c7b53728e9cf763286500931b3348741a00f186f",
-      "bytes": 114497
+      "sha256": "18fbe354de130f63322fb6ae540c2eed89f2ec02bfd5e54e7c0bcabaa85df940",
+      "bytes": 94207
     },
     {
       "path": "videos/steward-canopy-poster.png",
-      "sha256": "d7157890b8925a3a90ed812f07b13b3e448871f0c0cd427c381a1ce703ea7a9c",
-      "bytes": 86553
+      "sha256": "54756a83030e1c053da0ea98907fdaace1411dba51d0463f783a0a1efbb33bc7",
+      "bytes": 247202
     },
     {
       "path": "videos/steward-canopy.mp4",
-      "sha256": "4d0f55f48fadbf29e0fc49c1900d174b46113495f09b49436202500f8940a28b",
-      "bytes": 104885
+      "sha256": "5e304bb98b942bdb3167b72cdc3bdf5ce9c1e48ba4a5aa3c6c8dfa43d92ee98d",
+      "bytes": 130288
     },
     {
       "path": "videos/steward-canopy.vtt",
-      "sha256": "b9df0d4122c669067e7e6e70ca3e6a851f47c14de7f0e4aaea2fee72651aeb3c",
-      "bytes": 99
+      "sha256": "cf4f764bc625f4008a196f5fb77f38c05ce12d5c89d0e0c86a16ad511515757b",
+      "bytes": 130
     },
     {
       "path": "videos/storyteller-book-alpha.webm",
-      "sha256": "cb83ec64f65b4a6f74646b5cf503de247a0b3573426909748439465ac7120da7",
-      "bytes": 122364
+      "sha256": "79403e5c8d7aa4fad0f35436c0437fadca2711a443b4f07f4040302fa9be71ae",
+      "bytes": 96615
     },
     {
       "path": "videos/storyteller-book-poster.png",
-      "sha256": "217acd530f7a6e063e3cecad4650a340cdb38ee5efc8721327fdd6091755be52",
-      "bytes": 88697
+      "sha256": "2e2115886cc4d9748ada0c85d5d04e411eefd4e06241963e244a142adb0138b6",
+      "bytes": 244880
     },
     {
       "path": "videos/storyteller-book.mp4",
-      "sha256": "257c9478ba745106f1fa8cbfc0687f6ee2e6b9acde18d9933e6d5b9e21bca829",
-      "bytes": 126087
+      "sha256": "155d5480040c67943c42ae4c7edb7f23782e7dd59541da5548c9fb2a83ee0c68",
+      "bytes": 98383
     },
     {
       "path": "videos/storyteller-book.vtt",
-      "sha256": "af1babf46783c846f8e6ca149ccad9cd157da895ab795e340909117c8c704a25",
-      "bytes": 107
+      "sha256": "69b63503eea14325a20af0e9b203a51c61fae3875f172f507f19b0e574159c66",
+      "bytes": 133
     }
   ],
   "chapterBundles": [
@@ -4263,36 +4268,36 @@
       "chapterId": "explorer",
       "status": "draft",
       "path": "review-bundles/explorer.json",
-      "sha256": "c803a9bc2f50f97ceb6be68e4f3e8146ab2697a57b9f1b02b7e52919731783bf",
-      "members": 173
+      "sha256": "ac8950963b04278adcc1d30e3864a84b691fccf13e2274dd632f6c9899d5b7dc",
+      "members": 174
     },
     {
       "chapterId": "naturalist",
       "status": "draft",
       "path": "review-bundles/naturalist.json",
-      "sha256": "19794679b02af5b423d31abd675a4c12a05e740e548d691287edfc0e58aca2d0",
-      "members": 173
+      "sha256": "be4d52fdfac06cc542cbaf1b4959dc9621dffeaaf65ded6a57349eca2dfbb591",
+      "members": 174
     },
     {
       "chapterId": "storyteller",
       "status": "draft",
       "path": "review-bundles/storyteller.json",
-      "sha256": "a92f4089ac65742483c40fbeab6bbe7cc07c57a86fd37927ff66961761ddec04",
-      "members": 173
+      "sha256": "abd9640b347b4ff94baf71cf9749c9ec58698721afc62653250f835d87c903bc",
+      "members": 174
     },
     {
       "chapterId": "pathfinder",
       "status": "draft",
       "path": "review-bundles/pathfinder.json",
-      "sha256": "38ae0582fc042603965549b2f04fe4f9308c2c18990c0ea574935dc0621a059a",
-      "members": 173
+      "sha256": "10b4e77cd84888e667c93e919bb87bcf7547042ed2b40f539a1e7b6b2aabed27",
+      "members": 174
     },
     {
       "chapterId": "steward",
       "status": "draft",
       "path": "review-bundles/steward.json",
-      "sha256": "d25f8e394217372a57d92868fdc775cf2ea903ab2feadecc4a15dd5d14c53784",
-      "members": 173
+      "sha256": "79ec82da4d7181de116adfa30518f80e7e2055a416f2c016f14179583856431c",
+      "members": 174
     }
   ]
 }

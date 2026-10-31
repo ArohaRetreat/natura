@@ -211,7 +211,8 @@
       "testCommands": [
         "npm test",
         "python3 scripts/verify-hrudhi.py",
-        "node scripts/verify-hrudhi-identity.mjs"
+        "node scripts/verify-hrudhi-identity.mjs",
+        "node --input-type=module -e \"import {verifyFilmSources} from './scripts/verify-film-sources.mjs'; await verifyFilmSources()\""
       ],
       "continuation": "skills/service-hrudhi-character-kit/continuation.md",
       "lastReviewedRevision": "a7182960bf78eb6895376006257c14047495b60c"

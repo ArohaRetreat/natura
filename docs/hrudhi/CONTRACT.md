@@ -1,4 +1,4 @@
-# Hrudhi character kit v0.2.1
+# Hrudhi character kit v0.2.2
 
 **Status: draft, family review pending.** Five illustrated age chapters cover ages 5-17. This is a fictional character design system, with no biographical claims. The Natura lab previews the kit; it does not activate a permanent visitor guide. No adult life stages are included.
 
@@ -81,7 +81,7 @@ Audit events: policy.updated, milestone.created, milestone.completed, review.rec
 
 Import `renderHrudhi` and `createHrudhiPlayer` from the ESM source. Insert the renderer into a trusted container, then create the player on that SVG. It supports play, pause, seek(0..1), setSpeed(0.5/1/1.5), progress and dispose. The player never autoplays, loops or fetches data. Respect operating-system reduced motion; provide still artwork and the same text information. Cancel on route exit, pause on tab hiding. Play stays disabled for reduced motion. Do not place the character over navigation, booking controls or reading content. Offer a persistent dismiss button and make any tour opt-in. Captions/transcripts and text navigation must work without the mascot, motion, audio or AI. Announce messages, not every animation frame. The character must never be the only way to complete a task.
 
-The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.1.
+The Natura demo uses explicit Play controls and a sample policy evaluator. Its “simulate approval” checkbox is not an approval record. Permanent activation requires actual family review, art/rig consistency review and the future backend gates. No exact painterly animation fidelity, full tour flow, real weather feed or voice system is claimed in v0.2.2.
 
 ## Review and release checklist
 
@@ -95,7 +95,7 @@ All 15 wardrobes, 120 action combinations, 60 view studies, 30 expressions and 4
 
 The original pre-revision face is restored exactly from the first character kit. The reference masters and original facial-rig source are pinned in identity-lock.json. No independent face generation or seasonal facial redesign is authorised. This is a fictional character design, not a portrait record or an age prediction. The illustrated references and vector rig remain distinct interpretations, all draft pending family review.
 
-Five silent 1280x720, 24 fps vector films show welcome, gardening, storytelling, orchard walking and canopy guidance. MP4 files have a white illustrated scene. The separate isolated-character WebM files retain alpha. Captions describe actions; there is no spoken voice, narration or audio lip-sync. These are rendered from the editable joint rig, not AI animation of the painterly illustrations. Native video controls wait for an explicit play action, allow pause and seeking, and the lab pauses videos on route exit or tab hiding. A poster is shown until playback.
+Five silent 1280x720, 24 fps original-art films show the unchanged illustrated Hrudhi beside leaves, rain, grove lights, a butterfly and canopy light. The character remains still; only the surrounding nature scene moves. These films do not show character walking, talking or articulated performance. The MP4s have a white scene; the alpha WebM files contain the still original artwork for compositing. Every film records its exact source PNG and SHA-256 from the immutable original identity lock. Pixel checks verify that character regions match the original illustration before encoding and after decoding the MP4. There is no alternate vector-character renderer in the film pipeline. Native video controls wait for explicit playback, allow pause/seeking and pause on route exit/tab hiding. Future performance animation requires a layered rig built from this same original artwork, preserving its face.
 
 ## Identity continuity
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## Natura 0.5.2 - 2026-10-31
+
+- Keep mobile navigation visible while scrolling, including safe-area spacing and phone landscape. The drawer scrolls independently, locks background scroll, traps keyboard focus and restores the page position on dismissal.
+- Replace all five incorrect-character MP4s with exact original-art scenes. Hrudhi stays still; distinct surrounding nature moves. Replace alpha clips with transparent still original-art overlays.
+- Add source provenance, immutable original-master checks and decoded MP4 pixel comparisons. Label the separate vector workbench as a technical motion schematic.
+- Release character kit 0.2.2 with updated website guidance, PDF and downloads. Original identity masters and farm atlas remain unchanged.
+
 ## Natura 0.5.1 - 2026-10-31
 
 - Restore the exact original Hrudhi face/reference masters and facial rig; withdraw the v0.2.0 face revision.

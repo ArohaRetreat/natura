@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "chapterId": "steward",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/steward-curious.png",
@@ -591,7 +591,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -850,24 +850,29 @@
       "bytes": 11107
     },
     {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
+    },
+    {
       "path": "videos/steward-canopy-alpha.webm",
-      "sha256": "8a720a95aeadcc1a1dab1452c7b53728e9cf763286500931b3348741a00f186f",
-      "bytes": 114497
+      "sha256": "18fbe354de130f63322fb6ae540c2eed89f2ec02bfd5e54e7c0bcabaa85df940",
+      "bytes": 94207
     },
     {
       "path": "videos/steward-canopy-poster.png",
-      "sha256": "d7157890b8925a3a90ed812f07b13b3e448871f0c0cd427c381a1ce703ea7a9c",
-      "bytes": 86553
+      "sha256": "54756a83030e1c053da0ea98907fdaace1411dba51d0463f783a0a1efbb33bc7",
+      "bytes": 247202
     },
     {
       "path": "videos/steward-canopy.mp4",
-      "sha256": "4d0f55f48fadbf29e0fc49c1900d174b46113495f09b49436202500f8940a28b",
-      "bytes": 104885
+      "sha256": "5e304bb98b942bdb3167b72cdc3bdf5ce9c1e48ba4a5aa3c6c8dfa43d92ee98d",
+      "bytes": 130288
     },
     {
       "path": "videos/steward-canopy.vtt",
-      "sha256": "b9df0d4122c669067e7e6e70ca3e6a851f47c14de7f0e4aaea2fee72651aeb3c",
-      "bytes": 99
+      "sha256": "cf4f764bc625f4008a196f5fb77f38c05ce12d5c89d0e0c86a16ad511515757b",
+      "bytes": 130
     }
   ]
 }

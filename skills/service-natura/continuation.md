@@ -25,3 +25,7 @@ Added the separate #hrudhi character lab and owning service skill, five proposed
 ## Natura v0.5.0 / issue #7
 
 Web-first Hrudhi v0.2.0 library now exposes every wardrobe/action/view/expression/mouth collection and the full readable guide, plus five silent vector scene films and isolated alpha clips. Face revisions remain fictional/draft and private source references are excluded. New farm atlas v0.1.0 supplies 96 icons, 16 animal rigs/studies and eight painted references; main service library/page builder have 144 icons. Read both owning service skills. Local checks: 43 app tests, 21 foundation tests, decoded/hash/alpha verification of 840 character and 669 farm assets, five media pairs, seven PDF page inspections and mounted DOM checks with mocked animation API. Browser layout/native playback acceptance remains unverified. Complete ZIPs are generated; obsolete character download removed only after replacement verification. Actual PR, CI, Firebase and workspace-sync results follow issue #7/release evidence rather than this preparation note.
+
+## Natura 0.5.2 / Hrudhi 0.2.2 / issue #11
+
+Mobile header/drawer fix at 900px, independent drawer scrolling, scroll restoration, focus trap and route/resize cleanup. Isolated Chrome viewport checks are emulation, not physical hardware acceptance. Actual checks and release evidence are recorded in release-evidence/natura-v0.5.2.json after execution.

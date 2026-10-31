@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "chapterId": "pathfinder",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/pathfinder-curious.png",
@@ -591,7 +591,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -851,23 +851,28 @@
     },
     {
       "path": "videos/pathfinder-walk-alpha.webm",
-      "sha256": "c2d724ed9ce229deefdb4483c4f05e5fdc3dcecc5237d251b248568bf8711241",
-      "bytes": 214188
+      "sha256": "009a6cabe58b9014f97542390979e5fa685d8054764d3cb71ce5da0f37804b05",
+      "bytes": 81817
     },
     {
       "path": "videos/pathfinder-walk-poster.png",
-      "sha256": "24801d2c72b89eb3a4dc9388e42196307a823ab4022d479774f1ab83544e79dd",
-      "bytes": 90541
+      "sha256": "cce45885c27599c7d512b193e8b9e75dafdf7d5e53671e3c6429ca2484c4da2a",
+      "bytes": 214799
     },
     {
       "path": "videos/pathfinder-walk.mp4",
-      "sha256": "d5ea5893fed798be6906a015a2dea40426c93d0067d233255ccba8bb7076bd7d",
-      "bytes": 313969
+      "sha256": "c3db080ee537cc6a21ed3fc7022ed19cb81ccd282493639321d37938e676799a",
+      "bytes": 122030
     },
     {
       "path": "videos/pathfinder-walk.vtt",
-      "sha256": "ce434616be72045bd094edbac815fee30fcaaa26113f37046663b9b089b57cbb",
-      "bytes": 118
+      "sha256": "4963fc08d865fc6f532f1e2794fcad598666191685319e24968ff2c97ef9ebba",
+      "bytes": 125
+    },
+    {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
     }
   ]
 }

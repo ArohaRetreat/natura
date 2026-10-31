@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "kitVersion": "0.2.1",
+  "kitVersion": "0.2.2",
   "chapterId": "explorer",
   "status": "draft",
   "files": [
     {
       "path": "definition.json",
-      "sha256": "cc4821fa4d9c4975c9c4087b36e81fa4ea352d3ea8874f6a3e7dd95cfe13be02",
-      "bytes": 4100
+      "sha256": "844ae691da938e8ae0514807656f05cf2ca7136cca9c25dbb884f27f34d905fd",
+      "bytes": 4101
     },
     {
       "path": "expressions/explorer-curious.png",
@@ -591,7 +591,7 @@
     },
     {
       "path": "runtime/definition.js",
-      "sha256": "6fe80409e54f49f709fcce7d7a7da250fc00c829af12992b21af7443e016849c",
+      "sha256": "189be2bfc2998b13e8a72272def2c301579569a05ee4303ba7cd2bd77488fcbf",
       "bytes": 2919
     },
     {
@@ -851,23 +851,28 @@
     },
     {
       "path": "videos/explorer-welcome-alpha.webm",
-      "sha256": "501ffc47f927f896180e3daca628ba2c20f5c8ef53b649731650fb8bb2fcd790",
-      "bytes": 108634
+      "sha256": "28bd2ada2aea4b0de14451db89678835c9c7fa0e48ba0a09e546fd3894d4b43a",
+      "bytes": 91945
     },
     {
       "path": "videos/explorer-welcome-poster.png",
-      "sha256": "fe86a23671dcf95c402524b6f131169a894d504d89ce6b00d7029db8085168d4",
-      "bytes": 84182
+      "sha256": "5f16ab14bdfd4115abd3481e9752f732bc346aefda975b88fcf919743cb5f9e5",
+      "bytes": 232196
     },
     {
       "path": "videos/explorer-welcome.mp4",
-      "sha256": "5bb5b4f98037b0862b0ac37fc3c43f2e890b448e345484d1aa0b094097b28d09",
-      "bytes": 101327
+      "sha256": "0649114d4ff2a01c1b4ab100959aba1470ee7d65d5fe23a4e33c4f6c2a83c11d",
+      "bytes": 126217
     },
     {
       "path": "videos/explorer-welcome.vtt",
-      "sha256": "9cb4d631a5efb7ad56e8bcbc383014e15c93b720c70af966965ff17f0947a32a",
-      "bytes": 110
+      "sha256": "816c3433543711d4666f54060b60e8b6fe524fd9f552f97e0a83eab60704f85a",
+      "bytes": 121
+    },
+    {
+      "path": "videos/source-manifest.json",
+      "sha256": "0ec13da9059278dbc867432e2612116e4670ae0140e599c132126f6e5890159e",
+      "bytes": 3154
     }
   ]
 }
