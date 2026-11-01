@@ -21,6 +21,9 @@ const content = JSON.parse(
 content.tour = JSON.parse(
   await readFile(new URL("../../website/tour-content.json", import.meta.url)),
 );
+content.tour.nature = JSON.parse(
+  await readFile(new URL("../../website/nature-content.json", import.meta.url)),
+);
 async function google(email, verified = true) {
   const jwt = [
     Buffer.from(JSON.stringify({ alg: "none", typ: "JWT" })).toString(

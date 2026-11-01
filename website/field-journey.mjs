@@ -1,3 +1,4 @@
+import { createBotanicalMotion, orbitPose } from "./botanical-motion.mjs";
 import { tourContent } from "./field-render.mjs";
 const clamp = (n) => Math.max(0, Math.min(1, Number.isFinite(n) ? n : 0));
 export function routeState(progress, count) {
@@ -41,6 +42,9 @@ export function createFieldJourney(
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const lowData = navigator.connection?.saveData === true;
   const motion = !simple && !reduced && c.theme.motion;
+  const botanical = createBotanicalMotion(root, motion, () => request());
+  const panels = [...root.querySelectorAll("[data-orbit-panel]")];
+  const filmHome = frame?.parentElement;
   if (section) {
     section.classList.toggle("is-simple", !motion);
     section.style.height = motion
@@ -96,6 +100,7 @@ export function createFieldJourney(
     });
   }
   function playback() {
+    botanical.paused(document.hidden || dialog.open);
     if (!film?.getAttribute("src")) return;
     const play =
       !paused &&
@@ -186,6 +191,10 @@ export function createFieldJourney(
       i === tour.stops.length - 1
         ? "TAKE YOUR TIME. STAY A WHILE."
         : "SCROLL TO WANDER";
+    if (panels[i] && frame) {
+      panels[i].append(frame);
+      panels.forEach((p, n) => p.classList.toggle("is-active", n === i));
+    }
     film.pause();
     film.removeAttribute("src");
     film.load();
@@ -212,6 +221,7 @@ export function createFieldJourney(
       s = section?.getBoundingClientRect();
     const light = h.bottom < 90 && (!s || s.top > 90 || s.bottom < 90);
     header.classList.toggle("on-paper", light);
+    botanical.paint(h);
     if (motion && h.bottom > 0)
       heroImage.style.transform = `translate3d(0,${Math.min(180, -h.top * 0.13)}px,0) scale(${1 + clamp(-h.top / innerHeight) * 0.035})`;
     if (!stage || !motion) return;
@@ -225,6 +235,24 @@ export function createFieldJourney(
     const state = routeState(progress, tour.stops.length);
     setStop(state.index);
     const local = state.local;
+    const center = progress * tour.stops.length - 0.4;
+    const radius =
+      innerWidth < 700 ? innerWidth * 0.88 : Math.min(1100, innerWidth * 0.45);
+    panels.forEach((panel, i) => {
+      const p = orbitPose(i, center, {
+        radius,
+        step: innerWidth < 700 ? 52 : 40,
+      });
+      panel.style.transform = `translate3d(${p.x}px,0,${p.z}px) rotateY(${-p.angle}deg)`;
+      panel.style.opacity = p.visible
+        ? String(Math.max(0.18, 1 - Math.abs(p.angle) / 130))
+        : "0";
+      panel.style.visibility = p.visible ? "visible" : "hidden";
+      panel.style.zIndex = String(100 - Math.round(Math.abs(p.angle)));
+      const pic = panel.querySelector("[data-orbit-src]");
+      if (p.visible && pic && !pic.getAttribute("src"))
+        pic.src = pic.dataset.orbitSrc;
+    });
     image.style.transform = `translate3d(${px * 10}px,${py * 7 - local * 12}px,0) scale(${1.035 + local * 0.055})`;
     // Only this visual moves. Text and controls stay still for reading.
     visual.style.transform = `perspective(1800px) rotateY(${px * 0.45}deg)`;
@@ -237,9 +265,9 @@ export function createFieldJourney(
       `scaleX(${progress})`;
     playback();
   }
-  const request = () => {
+  function request() {
     if (!raf && !dead) raf = requestAnimationFrame(paint);
-  };
+  }
   listen(window, "scroll", request, { passive: true });
   listen(window, "resize", request);
   listen(document, "visibilitychange", playback);
@@ -324,6 +352,8 @@ export function createFieldJourney(
     destroy() {
       dead = true;
       cancelAnimationFrame(raf);
+      botanical.destroy();
+      if (frame && filmHome) filmHome.append(frame);
       listeners.forEach((fn) => fn());
       observer?.disconnect();
       mediaObserver?.disconnect();

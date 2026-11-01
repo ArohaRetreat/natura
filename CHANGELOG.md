@@ -1,3 +1,10 @@
+# Aroha website 0.6.0 (preview)
+
+- Add Natura’s seed-to-sprout welcome with skip, reduced-motion bypass, bounded fallback and tab-hide cleanup.
+- Turn real farm photographs into a reversible, native-scroll revolving gallery; active films travel with their panels while reading and navigation stay fixed.
+- Add original transparent palm and rooted seedling artwork, a pointer-responsive shaped hero photograph, moving leaf layers, botanical photo petals and explanatory farm statistics.
+- Expose optional validated nature settings in the host studio; retain all 35 photographs, 21 films and the full real-farm route. Production backend rollout remains separate.
+
 # Aroha website 0.5.0 (preview)
 
 - **Real farm tour** — replace the procedural public entry with moving photographic viewpoints, a host-described route map, readable destination navigation and an interactive tree-house interior sequence.

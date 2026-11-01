@@ -1,3 +1,9 @@
+import {
+  natureContent,
+  heroGarden,
+  natureStory,
+  orbitGallery,
+} from "./nature-render.mjs";
 import defaultTour from "./tour-content.json" with { type: "json" };
 export function tourContent(c) {
   if (c.tour) return c.tour;
@@ -21,7 +27,8 @@ export function tourContent(c) {
 const arrow = '<span aria-hidden="true">↗</span>';
 export function renderFieldSite(c, { esc, lines, picture, money }) {
   const tour = tourContent(c),
-    hero = c.hero;
+    hero = c.hero,
+    nature = natureContent(tour);
   const sections = new Map(
     c.sections.filter((x) => x.visible).map((x) => [x.id, x]),
   );
@@ -33,7 +40,7 @@ export function renderFieldSite(c, { esc, lines, picture, money }) {
     journey: () =>
       !tour.stops.length
         ? `<section class="field-section" id="journey"><h2>${esc(tour.title)}</h2><p>${esc(tour.description)}</p></section>`
-        : `<section class="field-tour-section" id="journey" aria-label="Walk through Aroha"><div class="field-tour-stage"><div class="tour-visual" id="tour-visual">${picture(tour.stops[0]?.image || hero.image, tour.stops[0]?.imageAlt || hero.imageAlt, "tour-scene-image", false)}</div><div class="tour-film-frame" hidden><video id="tour-film" muted playsinline loop preload="none" aria-label="Silent film of this part of the farm"></video><span class="film-caption">MOVING MOMENTS / AROHA</span></div><div class="tour-vignette" aria-hidden="true"></div><div class="tour-top"><div><span class="eyebrow">${esc(tour.eyebrow)}</span><button class="tour-view-toggle" data-simple-view>Simple view</button></div><button class="tour-map-button" data-farm-map>Explore the farm map <span aria-hidden="true">⌁</span></button></div><div class="tour-reading"><p class="eyebrow" id="tour-index">01 / ${String(tour.stops.length).padStart(2, "0")} — ${esc(tour.stops[0]?.name || "Aroha")}</p><h2 id="tour-title">${esc(tour.stops[0]?.title || tour.title)}</h2><p id="tour-description">${esc(tour.stops[0]?.description || tour.description)}</p><p class="tour-context" id="tour-context">${esc(tour.stops[0]?.detail || "")}</p><div class="tour-reading-actions"><button id="tour-walk" class="field-light-link" hidden>Step inside <span aria-hidden="true">↗</span></button><button id="tour-discover" class="field-light-link">Discover this place ${arrow}</button><button id="tour-play" class="tour-play" aria-pressed="false">Pause film <span aria-hidden="true">Ⅱ</span></button></div></div><div class="tour-location-card"><span class="eyebrow">YOU ARE HERE</span><strong id="tour-place-name">${esc(tour.stops[0]?.name || "Aroha")}</strong><svg class="tour-mini-map" viewBox="0 0 100 100" aria-hidden="true"><path d="M48 90 C45 78 35 74 46 66 S62 60 48 52 S62 43 55 29 S40 20 48 13"/><path class="map-branch" d="M46 80L81 82M48 52L32 51M48 52L40 60M55 47L68 43M48 20L22 22"/>${tour.stops
+        : `<section class="field-tour-section" id="journey" aria-label="Walk through Aroha"><div class="field-tour-stage"><div class="tour-visual" id="tour-visual">${picture(tour.stops[0]?.image || hero.image, tour.stops[0]?.imageAlt || hero.imageAlt, "tour-scene-image", false)}</div><div class="tour-film-frame" hidden><video id="tour-film" muted playsinline loop preload="none" aria-label="Silent film of this part of the farm"></video><span class="film-caption">MOVING MOMENTS / AROHA</span></div><div class="tour-vignette" aria-hidden="true"></div>${orbitGallery(tour, { esc, picture })}<div class="tour-top"><div><span class="eyebrow">${esc(tour.eyebrow)}</span><button class="tour-view-toggle" data-simple-view>Simple view</button></div><button class="tour-map-button" data-farm-map>Explore the farm map <span aria-hidden="true">⌁</span></button></div><div class="tour-reading"><p class="eyebrow" id="tour-index">01 / ${String(tour.stops.length).padStart(2, "0")} — ${esc(tour.stops[0]?.name || "Aroha")}</p><h2 id="tour-title">${esc(tour.stops[0]?.title || tour.title)}</h2><p id="tour-description">${esc(tour.stops[0]?.description || tour.description)}</p><p class="tour-context" id="tour-context">${esc(tour.stops[0]?.detail || "")}</p><div class="tour-reading-actions"><button id="tour-walk" class="field-light-link" hidden>Step inside <span aria-hidden="true">↗</span></button><button id="tour-discover" class="field-light-link">Discover this place ${arrow}</button><button id="tour-play" class="tour-play" aria-pressed="false">Pause film <span aria-hidden="true">Ⅱ</span></button></div></div><div class="tour-location-card"><span class="eyebrow">YOU ARE HERE</span><strong id="tour-place-name">${esc(tour.stops[0]?.name || "Aroha")}</strong><svg class="tour-mini-map" viewBox="0 0 100 100" aria-hidden="true"><path d="M48 90 C45 78 35 74 46 66 S62 60 48 52 S62 43 55 29 S40 20 48 13"/><path class="map-branch" d="M46 80L81 82M48 52L32 51M48 52L40 60M55 47L68 43M48 20L22 22"/>${tour.stops
             .filter((s) => s.onMap !== false)
             .map(
               (s, i) =>
@@ -63,7 +70,12 @@ export function renderFieldSite(c, { esc, lines, picture, money }) {
     .map(([id, label]) => `<a href="#${id}">${label}</a>`)
     .join(
       "",
-    )}</nav><div><button id="view-toggle" aria-pressed="false">Simple view</button><button class="field-header-enquire" data-enquire="">Plan a visit ${arrow}</button></div></header><main id="main"><section id="home" class="field-hero"><div class="field-hero-visual">${picture(hero.image, hero.imageAlt, "", true, hero.mobileImage)}</div><div class="field-hero-shade" aria-hidden="true"></div><div class="field-hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1>${lines(hero.title)}</h1><p>${esc(hero.description)}</p><a href="${sections.has("journey") ? "#journey" : "#intro"}" id="start-journey" class="field-enter"><span class="enter-orbit" aria-hidden="true">↗</span>${esc(hero.primaryLabel)}</a></div><div class="field-hero-foot"><span lang="kn">${esc(c.brand.welcomeKannada)}</span><span>${esc(c.brand.tagline)}</span><a href="#intro">SCROLL TO SLOW DOWN <span aria-hidden="true">↓</span></a></div></section><section id="intro" class="field-section field-intro"><div><p class="eyebrow">${esc(c.intro.eyebrow)}</p><span lang="kn">${esc(c.brand.kannada)}</span>${picture(c.intro.image, c.intro.imageAlt, "field-intro-photo")}</div><h2>${lines(c.intro.title)}</h2><div class="field-intro-copy"><p>${esc(c.intro.description)}</p><span>${esc(c.brand.welcome)}</span></div></section>${c.sections
+    )}</nav><div><button id="view-toggle" aria-pressed="false">Simple view</button><button class="field-header-enquire" data-enquire="">Plan a visit ${arrow}</button></div></header><main id="main"><section id="home" class="field-hero"><div class="field-hero-visual">${picture(hero.image, hero.imageAlt, "", true, hero.mobileImage)}</div><div class="field-hero-shade" aria-hidden="true"></div>${heroGarden(c, nature, { esc, picture })}<div class="field-hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1>${hero.title
+    .split("\n")
+    .map((t) => `<span class="hero-line"><span>${esc(t)}</span></span>`)
+    .join(
+      "",
+    )}</h1><p>${esc(hero.description)}</p><a href="${sections.has("journey") ? "#journey" : "#intro"}" id="start-journey" class="field-enter"><span class="enter-orbit" aria-hidden="true">↗</span>${esc(hero.primaryLabel)}</a></div><div class="field-hero-foot"><span lang="kn">${esc(c.brand.welcomeKannada)}</span><span>${esc(c.brand.tagline)}</span><a href="#intro">SCROLL TO SLOW DOWN <span aria-hidden="true">↓</span></a></div></section><section id="intro" class="field-section field-intro"><div><p class="eyebrow">${esc(c.intro.eyebrow)}</p><span lang="kn">${esc(c.brand.kannada)}</span>${picture(c.intro.image, c.intro.imageAlt, "field-intro-photo")}</div><h2>${lines(c.intro.title)}</h2><div class="field-intro-copy"><p>${esc(c.intro.description)}</p><span>${esc(c.brand.welcome)}</span></div></section>${natureStory(nature, { esc, lines, picture })}${c.sections
     .filter((x) => x.visible)
     .map((x) => content[x.id]?.() || "")
     .join(

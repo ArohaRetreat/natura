@@ -119,7 +119,12 @@ export function videoUrl(v) {
   throw new DomainError("INVALID_VIDEO_URL");
 }
 export function validateTour(t) {
-  obj(t, ["eyebrow", "title", "description", "mapNote", "stops", "media"]);
+  obj(
+    t,
+    ["eyebrow", "title", "description", "mapNote", "stops", "media"],
+    ["nature"],
+  );
+  if (t.nature !== undefined) validateNature(t.nature);
   for (const key of ["eyebrow", "title", "description", "mapNote"])
     text(t[key], 1500);
   arr(t.stops, 20, (s) => {
@@ -192,6 +197,34 @@ export function validateTour(t) {
       throw new DomainError("INVALID_TOUR_REFERENCE");
   }
   return t;
+}
+export function validateNature(n) {
+  obj(n, [
+    "enabled",
+    "welcome",
+    "welcomeTitle",
+    "welcomeLabel",
+    "leafImage",
+    "plantImage",
+    "eyebrow",
+    "title",
+    "description",
+    "items",
+  ]);
+  bool(n.enabled);
+  bool(n.welcome);
+  for (const k of ["welcomeTitle", "welcomeLabel", "eyebrow", "title"])
+    text(n[k], 240);
+  text(n.description, 2000);
+  imageUrl(n.leafImage);
+  imageUrl(n.plantImage);
+  arr(n.items, 5, (x) => {
+    obj(x, ["value", "name", "description"]);
+    text(x.value, 80);
+    text(x.name, 150);
+    text(x.description, 1200);
+  });
+  return n;
 }
 function image(v) {
   imageUrl(v.image);

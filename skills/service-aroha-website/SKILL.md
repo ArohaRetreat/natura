@@ -5,7 +5,7 @@ description: Maintain Aroha Retreat's photographic film tour and host content st
 
 # Aroha website and host studio
 
-Owner: ArohaRetreat. Source: website/. Entries: site.mjs, admin.mjs, render.mjs; field-render.mjs owns the public layout and map; field-journey.mjs owns native scrolling and playback; field.css owns its design. Earlier spatial/cinematic renderers remain in source for comparison. Build: npm run build:website; full shared Hosting build: npm run build. Website version 0.5.0 is independent of Natura 0.6.0. Read [plan](../../docs/website-plan.md), [API](../../docs/api/aroha-v1.md), [observability](../../docs/website-observability.md) and [continuation](continuation.md).
+Owner: ArohaRetreat. Source: website/. Entries: site.mjs, admin.mjs, render.mjs; field-render.mjs owns the public layout and map; field-journey.mjs owns native scrolling and playback; field.css owns its design. Earlier spatial/cinematic renderers remain in source for comparison. Build: npm run build:website; full shared Hosting build: npm run build. Website version 0.6.0 is independent of Natura 0.6.0. Read [plan](../../docs/website-plan.md), [API](../../docs/api/aroha-v1.md), [observability](../../docs/website-observability.md) and [continuation](continuation.md).
 
 The enquiry-led public website has a photographic film tour and a document fallback, Simple View, cottages, experiences, packages, gallery and practical information. WhatsApp receives a guest-reviewed enquiry; there is no payment, inventory check, room hold or booking confirmation. Preserve Natura identity/fonts and Hrudhi. Do not fabricate property geometry or label an unrelated photograph as a particular room.
 
@@ -22,3 +22,5 @@ Firebase routes: /, /admin/, /api/v1 and preserved /design/. Shared releases mus
 Read [spatial direction](../../docs/website-spatial-direction.md) before changing the camera or scene. No scroll interception. Preserve native vertical touch scrolling, scene disposal on replacement, pause on modal/hidden/offscreen, section position when toggling views, and a readable fallback after context loss. Scene graphics are interpretations, never a surveyed map or authentic room interior.
 
 Current public entry uses field-render.mjs / field-journey.mjs / field.css and the optional validated tour contract. Read [film direction](../../docs/website-film-direction.md). Preserve all supplied photo/video journal coverage and native playback/motion fallbacks. See continuation for the production schema/rule prerequisite.
+
+The living layer uses nature-render.mjs, botanical-motion.mjs, welcome.mjs and living.css. Read docs/website-living-direction.md before editing. The sprout is Natura’s shared germination drawing; generated botanical art is decorative and never a claimed exact farm specimen. Preserve bounded welcome cleanup, native reversible panel motion, fixed reading controls, deferred image sources and a single active film.

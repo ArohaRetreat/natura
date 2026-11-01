@@ -1,3 +1,5 @@
+import { startWelcome } from "./welcome.mjs";
+import { natureContent } from "./nature-render.mjs";
 import initial from "./content.json";
 import { preference, setPreference } from "./preferences.mjs";
 import { renderSite, esc, picture, money } from "./render.mjs";
@@ -317,9 +319,13 @@ function bind() {
   };
 }
 render();
+const finishWelcome = startWelcome(root, natureContent(tourContent(content)), {
+  enabled: !simple && content.theme.motion && !preview,
+});
 initializeMonitoring();
 motion.addEventListener("change", (e) => {
   if (e.matches) {
+    finishWelcome();
     simple = true;
     render();
   }
@@ -371,10 +377,15 @@ async function watchContent() {
   );
 }
 window.addEventListener("pageshow", (e) => {
-  if (e.persisted && !preview) watchContent();
+  if (e.persisted) {
+    // pagehide disposed motion/media; a restored document needs fresh controllers.
+    render();
+    if (!preview) watchContent();
+  }
 });
 window.addEventListener("pagehide", () => {
   subscriptionGeneration++;
+  finishWelcome();
   unsubscribe?.();
   journey?.destroy();
 });

@@ -1,3 +1,4 @@
+import natureDefaults from "./nature-content.json";
 import { tourContent } from "./field-render.mjs";
 import defaultTour from "./tour-content.json";
 import defaults from "./content.json";
@@ -165,9 +166,14 @@ function field(value, path, key) {
   const videoField = key === "src" && path.startsWith("tour.media.");
   const imageField =
     key === "image" ||
-    ["mobileImage", "worldImage", "eveningImage", "foregroundImage"].includes(
-      key,
-    ) ||
+    [
+      "mobileImage",
+      "worldImage",
+      "eveningImage",
+      "foregroundImage",
+      "leafImage",
+      "plantImage",
+    ].includes(key) ||
     (path.startsWith("cottages.") && path.includes(".images."));
   return `<label class="field">${esc(label)}${["description", "detail", "answer", "message", "note", "priceNote", "inclusions"].includes(key) || String(value).includes("\n") ? `<textarea rows="3" data-path="${esc(path)}" ${disabled}>${esc(value)}</textarea>` : `<input type="${typeof value === "number" ? "number" : key === "email" ? "email" : key === "mapUrl" ? "url" : "text"}" data-path="${esc(path)}" value="${esc(value)}" ${typeof value === "number" ? 'min="0" step="1"' : ""} ${disabled}>`}</label>${videoField ? `<div class="media-field">${value ? `<video controls muted playsinline preload="none" src="${esc(value)}"></video>` : ""}${disabled ? "" : `<label class="upload-button">Upload web video<input type="file" accept="video/mp4,video/webm" data-upload="${esc(path)}" data-media-type="video"></label>`}<small>Public immediately after upload. MP4 or WebM, under 40 MB. Upload an edited web version; originals stay on your device.</small></div>` : ""}${imageField ? `<div class="media-field">${value ? `<img src="${esc(value)}" alt="Selected photograph preview" loading="lazy">` : ""}${disabled ? "" : `<label class="upload-button">Upload photograph<input type="file" accept="image/jpeg,image/png,image/webp,image/avif" data-upload="${esc(path)}"></label>`}<small>Website media is public immediately after upload. JPEG, PNG, WebP or AVIF; under 10 MB. Originals stay on your device.</small></div>` : ""}`;
 }
@@ -377,6 +383,8 @@ function renderEditor() {
       draft = validateContent(JSON.parse(await file.text()));
       draft.hero = { ...defaults.hero, ...draft.hero };
       if (!draft.tour) draft.tour = structuredClone(tourContent(draft));
+      if (!draft.tour.nature)
+        draft.tour.nature = structuredClone(natureDefaults);
       dirty = true;
       shell();
       notice("Backup loaded into the editor. Review before saving.");
@@ -425,6 +433,7 @@ async function load() {
   const r = await api("/draft");
   draft = structuredClone(r.draft?.content || defaults);
   if (!draft.tour) draft.tour = structuredClone(tourContent(draft));
+  if (!draft.tour.nature) draft.tour.nature = structuredClone(natureDefaults);
   draft.hero = { ...defaults.hero, ...draft.hero };
   version = r.draft?.version || 0;
   dirty = false;
