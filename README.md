@@ -1,4 +1,4 @@
-# Natura v0.6.0
+# Natura v0.6.1
 
 
 **Website source moved:** the public retreat website, host studio and Firebase API are maintained in [ArohaRetreat/website](https://github.com/ArohaRetreat/website). This repository owns Natura design standards, Hrudhi and the farm atlas. See [repository ownership](docs/website-repository-handoff.md).
