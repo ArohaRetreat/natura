@@ -37,3 +37,7 @@ User authorised production deployment with Hrudhi kept alpha. Release candidate:
 ## Website repository boundary — 1 November 2026
 
 The website, host studio and API now belong to https://github.com/ArohaRetreat/website. Natura main never included the website feature PR. Read docs/website-repository-handoff.md. Natura exports dist/design; it no longer deploys the shared Firebase site directly, since that would remove the root website. Composition and guarded Hosting deployment belong to the website repo. Existing production/preview releases are unchanged by the source move.
+
+## Profile-picture downloads / issue #20
+
+Natura 0.6.1 adds #profile-pictures inside Logos, with three crop-safe 2048px PNGs under public/assets/logos/profile and direct standalone SVG/favicon links. Forest green uses #163E2D with the existing white symbol; no path thickening or logo redesign. Hrudhi remains alpha. Production publication must preserve the currently live website through shared Hosting composition; do not invoke the guarded Natura-only deploy command.

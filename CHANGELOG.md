@@ -1,5 +1,10 @@
 # Changelog
 
+## Natura 0.6.1 - 2026-11-01
+
+- Add a standalone symbol/profile-picture gallery to Logos with 2048px PNG downloads: white, transparent, and forest green with the existing white symbol.
+- Include direct full-colour/white SVG and favicon symbol downloads; preserve official geometry and crop-safe padding. Hrudhi stays 0.3.0-alpha.1.
+
 ## [Unreleased]
 
 - Move website ownership/tracking to ArohaRetreat/website; keep Natura main focused on the design system.
