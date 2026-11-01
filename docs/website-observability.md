@@ -1,0 +1,15 @@
+# Aroha observability
+
+India CS was verified through the connected Dynatrace tool as environment `bos01241` at `https://indiacs.apps.dynatrace.com`. User-selected ingestion alias: `https://indiacs.live.dynatrace.com`. No Aroha entity was found during initial read-only discovery. Hooks are not ingestion evidence.
+
+The API always emits safe structured runtime logs with operation/status/duration/request ID. Mutation transactions create durable `aroha_audit` records. Audits remain in Firestore: automatic BizEvent delivery/replay and GitHub/Actions lifecycle export are not configured in this release.
+
+`functions/telemetry.mjs` optionally exports real request and semantic Firestore transaction spans, correlated logs, request counters and duration histograms using HTTP/protobuf. Resource: aroha-api, namespace aroha-retreat, version 0.1.0, production/emulator environment, asia-south2, actual runtime revision. W3C trace context is extracted without baggage. This does not establish browser linkage or visibility inside Google's managed database.
+
+Metric labels are bounded route and HTTP status class. Logs/spans include operation, request ID and normalized error type. Quota, timeout, unavailable and contention errors remain distinct. Exclude enquiry text, names, phones, emails, raw URLs/bodies/tokens and free-text exceptions. Queues/batches/timeouts are bounded. Export failure cannot reverse a content commit. Flush diagnostics identify failed signals without credentials or provider response bodies.
+
+OTLP base `/api/v2/otlp` has separate `/v1/traces`, `/v1/logs`, `/v1/metrics`. Set a fresh server-only Secret Manager DYNATRACE_PLATFORM_TOKEN, enable DT_EXPORT_ENABLED=true and redeploy. Never copy a chat/history token into source, builds, issues or reports. Verify required scopes and successful/partial-rejection responses independently for each signal.
+
+Browser monitoring defaults off. The footer privacy control opts in or withdraws. Put only the approved public RUM script URL in ignored `config/website-runtime.json` as `{rumScriptUrl:"https://js-cdn.dynatrace.com/..."}` and rebuild. Application provisioning, domain matching and custom-property declarations remain pending. No Analytics, replay or user identification is enabled. Semantic events are client-observed: journey start/stop, cottage open, enquiry prepared, admin save/publish/access action. WhatsApp preparation is not receipt or booking confirmation.
+
+The synthetic collector test verifies three protobuf exports, bounded metric labels, semantic spans, auth transport and private-text exclusion. Emulator integration verifies transactional content/access and rules denials. These are local evidence only. Before claiming live monitoring, configure secrets/tag, redeploy, check ingestion responses, query the exact service/version in the tenant and verify a real consented browser session and cross-signal linkage. Tenant reachability is verified; ingestion/searchability/linkage are not.

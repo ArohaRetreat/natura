@@ -1,5 +1,10 @@
 dist/
 node_modules/
+functions/node_modules/
+.dependency-staging/
+functions/.env*
+.env*
+config/website-runtime.json
 .DS_Store
 *.tar.gz
 

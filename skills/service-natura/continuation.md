@@ -33,3 +33,7 @@ Mobile header/drawer fix at 900px, independent drawer scrolling, scroll restorat
 ## Authorised alpha release / 2026-11-01
 
 User authorised production deployment with Hrudhi kept alpha. Release candidate: Natura 0.6.0, Hrudhi 0.3.0-alpha.1. Current original-art studio and four native study 05 expressions/PSD/puppet are included; rejected mouth experiments are excluded. Native rig/performance and family review remain open under issue #13. Build, current-head CI, merge, Firebase deployment and live verification must be recorded separately; no completion claim for the full character kit.
+
+## Aroha website integration
+
+The new Aroha website is prepared at `/` with its host studio at `/admin/`. Historical root-404 statements above describe earlier Natura releases. Shared builds and deployments must retain `/design/`, original Hrudhi identity and existing asset contracts. Read service-aroha-website/continuation.md and issue #16 for the current website release state.

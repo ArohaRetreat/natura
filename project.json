@@ -10,28 +10,28 @@
   "decisions": {
     "product": {
       "status": "approved",
-      "value": "Official design standards of Aroha Retreat, seasonal typography and weather presentation guidance.",
-      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
+      "value": "Official Natura standards at /design/ plus an enquiry-led Aroha Retreat website and host content/access studio at / and /admin/.",
+      "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "stack": {
       "status": "approved",
-      "value": "Existing dependency-light static HTML/CSS/ES modules with Node build/tests and browser-local drafts; inherited Python foundation tooling.",
-      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
+      "value": "Static pre-rendered HTML/ES modules with Firebase browser SDK, esbuild, Firestore content, Google Auth, Storage media and a Node 22 Firebase Functions v2 API.",
+      "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "hosting": {
       "status": "approved",
-      "value": "Existing Firebase project/site aroha-retreat at /design/. User explicitly requested continued live publication.",
-      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
+      "value": "Existing Firebase aroha-retreat project/site, root public website and /admin/ with /design/ preserved; API and media in asia-south2.",
+      "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "privacy": {
       "status": "approved",
-      "value": "Public repository and public static standards approved in chat. No visitor geolocation, accounts, telemetry or Analytics; synthetic weather previews only.",
-      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
+      "value": "Public retreat content and approved photographs; private admin drafts/membership, verified Google invitation access, WhatsApp enquiries without database storage. Optional monitoring consent; no Analytics or session replay.",
+      "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "observability": {
-      "status": "not-applicable",
-      "value": "No approved Dynatrace tenant or browser tag exists. No telemetry is enabled; provider, deployment and GitHub check evidence remain local/source-owned.",
-      "approval": "User request and visibility/location reply, 2026-10-31; existing static-app and Firebase decisions retained."
+      "status": "approved",
+      "value": "India CS Dynatrace tenant selected by user. Safe API logs, optional OTLP traces/logs/metrics and consent-controlled browser hooks. Fresh server secret and public RUM tag remain pending; no tenant-ingestion claim.",
+      "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "license": {
       "status": "approved",

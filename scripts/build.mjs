@@ -9,3 +9,4 @@ Object.assign(release,{version:'0.6.0',hrudhiKitVersion:'0.3.0-alpha.1',hrudhiRe
 await writeFile(new URL('release.json',target),JSON.stringify(release));
 const required=['hrudhi/NATIVE-STUDIES.html','assets/hrudhi/native-studies/Hrudhi-explorer-warm-expression-study-v5.psd','assets/hrudhi/native-studies/Hrudhi-Original-Feature-Study-v5.puppet','downloads/Hrudhi-Original-Art-Alpha.zip'];for(const name of required)await readFile(new URL(name,target));
 console.log('Built Natura 0.6.0 with Hrudhi 0.3.0-alpha.1 at /design/.');
+await import('./build-website.mjs');

@@ -33,10 +33,10 @@ class FoundationTests(unittest.TestCase):
         for name in ('src', 'config'):
             shutil.copytree(ROOT / name, root / name, dirs_exist_ok=True)
         (root / 'public').mkdir(exist_ok=True)
-        # Copy declared file contracts without copying large artwork into governance fixtures.
+        # Copy declared contracts/entrypoints without copying large artwork or dependencies.
         catalog = json.loads((ROOT / 'skills/catalog.json').read_text())
         for service in catalog.get('services', []):
-            for name in service.get('contracts', []):
+            for name in (*service.get('contracts', []), *service.get('entrypoints', [])):
                 source, target = ROOT / name, root / name
                 if source.is_file() and not target.exists():
                     target.parent.mkdir(parents=True, exist_ok=True)

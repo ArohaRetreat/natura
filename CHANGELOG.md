@@ -1,3 +1,10 @@
+# Aroha website 0.1.0 (prepared)
+
+- Add the photographic retreat website, edited media and separate mobile hero crop.
+- Add the Firebase host studio with versioned drafts/publication, history, invitations and role controls.
+- Preserve Natura at /design/ in the shared build and Hosting configuration.
+- Add rules/API and protobuf telemetry verification; monitoring activation remains separately configured.
+
 # Changelog
 
 ## Natura 0.6.0 / Hrudhi 0.3.0-alpha.1 - 2026-11-01

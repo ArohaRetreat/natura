@@ -32,3 +32,5 @@ Replace arguments with the actual architecture. The command creates a planned se
 - Run `sh scripts/check.sh`. See [checks](../docs/testing.md) and [inventory](../docs/services.md).
 
 Official application: [Natura service](service-natura/SKILL.md), [continuation](service-natura/continuation.md).
+
+Aroha services: [Website and host studio](service-aroha-website/SKILL.md) and [Firebase API](service-aroha-api/SKILL.md).

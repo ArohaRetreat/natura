@@ -8,7 +8,7 @@ Includes separate English, Kannada and bilingual logo families; transparent icon
 
 ## Develop
 
-Node 20+ and Python 3 are sufficient for the application. Run `npm test`, `npm run build`, then `npm run dev`. Open http://127.0.0.1:8770/design/. No dependency installation is needed for normal builds; fflate 0.8.3 is vendored with its MIT licence. Fonts are bundled with OFL licences. The PDF regeneration script needs reportlab, svglib and pymupdf and the included static fonts.
+Node 20+ and Python 3 are sufficient for the application. Run `npm test`, `npm run build`, then `npm run dev`. Open http://127.0.0.1:8770/design/. Run `npm ci` for the website build dependencies; fflate 0.8.3 is vendored with its MIT licence. Fonts are bundled with OFL licences. The PDF regeneration script needs reportlab, svglib and pymupdf and the included static fonts.
 
 The page builder supports up to 16 sections, 8 service cards and 100 KB JSON imports. User text is escaped and section types are allowlisted. Drafts remain in localStorage for this browser/origin; export JSON before moving to another origin. Website ZIPs contain HTML, CSS, local logo, chosen illustrations, fonts, licences and draft JSON. Confirm service content and contacts before publishing. Booking, payments and enquiry submission require separate implementation.
 
@@ -18,7 +18,7 @@ Project and default site: `aroha-retreat`. Build output: `dist/design/`. `/desig
 
 This site was empty before Natura's first deployment. Hosting publishes the entire `dist` directory: if a root website is added later, preserve its build output and configuration before the next release. Never deploy a design-only manifest over unrelated root content.
 
-The provided Firebase web configuration is retained in `config/firebase.web.json` for future application integration. Analytics is not initialized. No database, backend, accounts or telemetry are configured. This is a public static design workspace; do not add confidential documents to public assets.
+The provided Firebase web configuration is retained in `config/firebase.web.json` for future application integration. Analytics is not initialized. Natura remains a public static workspace. The root Aroha website adds a separate Firebase-backed host studio; see the website section below. This is a public static design workspace; do not add confidential documents to public assets.
 
 ## Asset handoff
 
@@ -59,3 +59,11 @@ Identity continuity is enforced by `public/assets/hrudhi/identity-lock.json` and
 Mobile navigation uses a fixed safe-area header, independently scrolling drawer, focus containment and scroll restoration. Browser regression checks cover 320–1280 CSS px, short landscape, route selection and resize. These checks emulate touch in isolated Chrome; physical-device acceptance remains separate.
 
 Hrudhi is **0.3.0-alpha.1**: original-art cutout actions plus four native Photoshop studies. Native performance and family review remain incomplete. `npm run build` builds the production alpha distribution; `node scripts/build-original-preview.mjs` builds a local preview. Original masters remain immutable.
+
+## Aroha public website and host studio (0.1.0)
+
+The shared build now includes the enquiry-led retreat website at `/`, the Google-authenticated host studio at `/admin/`, and a validated Firebase Functions API at `/api/v1/`. Natura remains at `/design/`. Never deploy a design-only output over the shared site. `npm run build:website` builds the root site while retaining an existing design output; `npm run build` builds both.
+
+Run `npm ci`, `npm ci --prefix functions`, `npm run test:website`, then the documented emulator tests. Production uses Firestore and Cloud Storage in asia-south2 and requires Blaze. Owner identities are supplied via ignored runtime env; Google sign-in alone does not grant editing access. Invitations are copied/shared by administrators and do not send email. Content edits persist as private drafts and require an explicit versioned publication.
+
+See [website plan](docs/website-plan.md), [API contract](docs/api/aroha-v1.md), [photography](docs/website-photography.md), and [observability boundaries](docs/website-observability.md). Initial copy/tariffs follow owner-supplied material and remain editable. No availability, payment, room hold or instant confirmation is implemented.
