@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+- Move website ownership/tracking to ArohaRetreat/website; keep Natura main focused on the design system.
+- Disable design-only deployment to the shared Firebase Hosting site; consume Natura exports through the website's guarded composition instead.
+
+
 ## Natura 0.6.0 / Hrudhi 0.3.0-alpha.1 - 2026-11-01
 
 - Publish the original-art character studio and 120 prototype cutout action combinations, replacing the visibly different simplified character in the current web distribution.

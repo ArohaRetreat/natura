@@ -1,5 +1,8 @@
 # Natura v0.6.0
 
+
+**Website source moved:** the public retreat website, host studio and Firebase API are maintained in [ArohaRetreat/website](https://github.com/ArohaRetreat/website). This repository owns Natura design standards, Hrudhi and the farm atlas. See [repository ownership](docs/website-repository-handoff.md).
+
 Template version: **1.9.0**
 
 Official design standards of Aroha Retreat, with a working nature-inspired design application. Canonical deployment: https://aroha-retreat.web.app/design/.
