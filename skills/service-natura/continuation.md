@@ -29,3 +29,7 @@ Web-first Hrudhi v0.2.0 library now exposes every wardrobe/action/view/expressio
 ## Natura 0.5.2 / Hrudhi 0.2.2 / issue #11
 
 Mobile header/drawer fix at 900px, independent drawer scrolling, scroll restoration, focus trap and route/resize cleanup. Isolated Chrome viewport checks are emulation, not physical hardware acceptance. Actual checks and release evidence are recorded in release-evidence/natura-v0.5.2.json after execution.
+
+## Authorised alpha release / 2026-11-01
+
+User authorised production deployment with Hrudhi kept alpha. Release candidate: Natura 0.6.0, Hrudhi 0.3.0-alpha.1. Current original-art studio and four native study 05 expressions/PSD/puppet are included; rejected mouth experiments are excluded. Native rig/performance and family review remain open under issue #13. Build, current-head CI, merge, Firebase deployment and live verification must be recorded separately; no completion claim for the full character kit.

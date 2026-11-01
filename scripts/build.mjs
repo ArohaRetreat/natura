@@ -1,26 +1,11 @@
-import {verifyFilmSources} from './verify-film-sources.mjs';
-import {verifyOriginalIdentity} from './verify-hrudhi-identity.mjs';
-import {basename} from 'node:path';
-import {renderWebGuides} from './render-web-guides.mjs';
+import './build-original-preview.mjs';
+import {cp,rm,readFile,writeFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {renderMotionCatalogue} from './render-motion-catalogue.mjs';
-import {renderSeasonGuide} from './render-season-guide.mjs';
-import {mkdir,cp,copyFile,readFile,rm,writeFile} from 'node:fs/promises';
-import {sceneSvg,sceneDefinitions} from '../src/nature-scenes.js';
-const revision=spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim();
-const root=new URL('../',import.meta.url),dist=new URL('dist/',root),target=new URL('design/',dist);
-await verifyOriginalIdentity();await verifyFilmSources();
-const kitZip=spawnSync('python3',['scripts/zip-hrudhi.py'],{cwd:root,stdio:'inherit'});if(kitZip.status!==0)throw Error('Hrudhi distribution packaging failed');
-const farmZip=spawnSync('python3',['scripts/zip-farm-atlas.py'],{cwd:root,stdio:'inherit'});if(farmZip.status!==0)throw Error('Farm atlas packaging failed');
-await renderWebGuides();await renderSeasonGuide();await renderMotionCatalogue();
-await rm(dist,{recursive:true,force:true});await mkdir(target,{recursive:true});await cp(new URL('public/',root),target,{recursive:true,filter:source=>!basename(source).startsWith('.')});
-for(const file of ['index.html','styles.css','app.js','navigation.js','model.js','site-renderer.js','component-patterns.js','exports.js','nature-scenes.js','additional-scenes.js','seasonal.js','weather-landscape.js','season-studio.js'])await copyFile(new URL('src/'+file,root),new URL(file,target));
-await cp(new URL('src/hrudhi/',root),new URL('hrudhi/',target),{recursive:true});
-await cp(new URL('src/farm-atlas/',root),new URL('farm-atlas/',target),{recursive:true});
-for(const kind of Object.keys(sceneDefinitions)){const path=new URL(`assets/scenes/${kind}.svg`,target);await mkdir(new URL('assets/scenes/',target),{recursive:true});await writeFile(path,sceneSvg(kind));await writeFile(new URL(`public/assets/scenes/${kind}.svg`,root),sceneSvg(kind));}
-const icons=JSON.parse(await readFile(new URL('public/data/icons.json',root),'utf8'));if(Object.keys(icons).length!==144)throw Error('The icon catalogue is incomplete.');
-for(const language of ['english','kannada','bilingual'])for(const layout of ['full','primary','horizontal','wordmark'])for(const mode of ['colour','forest','black','white'])for(const ext of ['svg','pdf'])await readFile(new URL(`public/assets/logos/${language}/aroha-${layout}-${mode}.${ext}`,root));
-await copyFile(new URL('LICENSE',root),new URL('LICENSE.txt',target));
-await copyFile(new URL('config/retreat-location.json',root),new URL('data/retreat-location.json',target));
-await writeFile(new URL('release.json',target),JSON.stringify({name:'Natura',version:'0.5.2',revision,hrudhiKitVersion:'0.2.2',farmAtlasVersion:'0.1.0',hrudhiReview:'draft',basePath:'/design/',scenes:Object.keys(sceneDefinitions)}));
-console.log('Built Natura v0.5.2 at /design/: 144 icons, 2 core illustrations, 8 animal references, 12 independent nature timelines and layered weather; Hrudhi draft kit with 120 action combinations.');
+const root=new URL('../',import.meta.url),target=new URL('dist/design/',root),preview=new URL('dist-preview/design/',root);
+await rm(target,{recursive:true,force:true});await cp(preview,target,{recursive:true});
+for(const name of ['index.html','app.js']){const p=new URL(name,target);await writeFile(p,(await readFile(p,'utf8')).replaceAll('0.6.0-preview.1','0.6.0'));}
+const release=JSON.parse(await readFile(new URL('release.json',target)));
+Object.assign(release,{version:'0.6.0',hrudhiKitVersion:'0.3.0-alpha.1',hrudhiReview:'alpha',status:'release',productionUpdated:undefined,revision:spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).stdout.trim(),farmAtlasVersion:'0.1.0'});
+await writeFile(new URL('release.json',target),JSON.stringify(release));
+const required=['hrudhi/NATIVE-STUDIES.html','assets/hrudhi/native-studies/Hrudhi-explorer-warm-expression-study-v5.psd','assets/hrudhi/native-studies/Hrudhi-Original-Feature-Study-v5.puppet','downloads/Hrudhi-Original-Art-Alpha.zip'];for(const name of required)await readFile(new URL(name,target));
+console.log('Built Natura 0.6.0 with Hrudhi 0.3.0-alpha.1 at /design/.');
