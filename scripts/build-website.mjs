@@ -73,7 +73,7 @@ await writeFile(
   new URL("website-release.json", dist),
   JSON.stringify({
     name: "Aroha Retreat",
-    version: "0.1.0",
+    version: "0.2.0",
     contentSchema: 1,
     admin: "/admin/",
     design: "/design/",

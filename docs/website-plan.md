@@ -52,3 +52,7 @@ Dynatrace target is the user-selected India CS tenant. Never reuse the privilege
 ## Deployed release
 
 Website/API 0.1.0 is deployed from 3088054b04f52dc59d1271c6dcff8281a06eda90; root, admin and retained design routes verified. All three code-head CI jobs passed. PR #17 and issue #16 remain open. See release-evidence/aroha-0.1.0/release.md for deployment/telemetry evidence and remaining acceptance criteria.
+
+## Revised visual direction — website 0.2.0
+
+Owner rejected the first public design as too basic. Rebuild follows the spatial behavior of the supplied HTML prototype and the immersive photographic/type hierarchy of the supplied references. A botanical two-leaf threshold opens and closes with scroll; a deliberate entry action opens it before visitors continue. Morning/evening toggling uses real approved photographs. The photographic journey has camera motion, chapter controls, progress and contextual exploration links. Cottage browsing becomes an arched scroll-snap collection, experiences use native disclosures, and gallery photographs form a moving layered composition. Reading/booking controls remain stable. Transform/opacity dominate motion; reduced motion and Simple View preserve all content. No new library, fake inventory, generated facility or surveyed route is introduced. The CMS schema/API stay unchanged.

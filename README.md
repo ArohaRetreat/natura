@@ -14,9 +14,9 @@ The page builder supports up to 16 sections, 8 service cards and 100 KB JSON imp
 
 ## Firebase Hosting
 
-Project and default site: `aroha-retreat`. Build output: `dist/design/`. `/design` redirects to `/design/`; only that route has an app rewrite. `npm run deploy` uses an already authenticated official Firebase CLI. Install Firebase CLI from its official npm package if needed, or set `FIREBASE_CLI_PATH` to its CLI JavaScript entry point. No authentication token is included in source.
+Project and default site: `aroha-retreat`. The shared build output is `dist/`: the public website at `/`, host studio at `/admin/`, and retained Natura at `/design/`. `/api/v1/` rewrites to the authenticated backend. `/design` redirects to `/design/`. `npm run deploy` uses an already authenticated official Firebase CLI. Install Firebase CLI from its official npm package if needed, or set `FIREBASE_CLI_PATH` to its CLI JavaScript entry point. No authentication token is included in source.
 
-This site was empty before Natura's first deployment. Hosting publishes the entire `dist` directory: if a root website is added later, preserve its build output and configuration before the next release. Never deploy a design-only manifest over unrelated root content.
+Hosting publishes the entire `dist` directory: preserve both the root website and Natura output/configuration in every release. Never deploy a design-only manifest over unrelated root content.
 
 The provided Firebase web configuration is retained in `config/firebase.web.json` for future application integration. Analytics is not initialized. Natura remains a public static workspace. The root Aroha website adds a separate Firebase-backed host studio; see the website section below. This is a public static design workspace; do not add confidential documents to public assets.
 
@@ -60,7 +60,7 @@ Mobile navigation uses a fixed safe-area header, independently scrolling drawer,
 
 Hrudhi is **0.3.0-alpha.1**: original-art cutout actions plus four native Photoshop studies. Native performance and family review remain incomplete. `npm run build` builds the production alpha distribution; `node scripts/build-original-preview.mjs` builds a local preview. Original masters remain immutable.
 
-## Aroha public website and host studio (0.1.0)
+## Aroha public website (0.2.0) and host studio
 
 The shared build now includes the enquiry-led retreat website at `/`, the Google-authenticated host studio at `/admin/`, and a validated Firebase Functions API at `/api/v1/`. Natura remains at `/design/`. Never deploy a design-only output over the shared site. `npm run build:website` builds the root site while retaining an existing design output; `npm run build` builds both.
 

@@ -1,3 +1,10 @@
+# Aroha website 0.2.0
+
+- Rebuild the public experience with a reversible botanical entrance, scroll-driven camera movement, chapter controls and a morning/evening photo switch.
+- Add arched cottage browsing, door interaction, native experience disclosures, parallax photo compositions and a photographic closing invitation.
+- Preserve editable content, host access controls, enquiry, Simple View and reduced motion.
+- Configure the approved Dynatrace browser tag behind monitoring consent; guard duplicate loads and withdrawal races.
+
 # Aroha website 0.1.0 (prepared)
 
 - Add the photographic retreat website, edited media and separate mobile hero crop.

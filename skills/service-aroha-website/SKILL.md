@@ -5,7 +5,7 @@ description: Maintain Aroha Retreat's photographic website and host content stud
 
 # Aroha website and host studio
 
-Owner: ArohaRetreat. Source: website/. Entries: site.mjs, admin.mjs, render.mjs. Build: npm run build:website; full shared Hosting build: npm run build. Website version 0.1.0 is independent of Natura 0.6.0. Read [plan](../../docs/website-plan.md), [API](../../docs/api/aroha-v1.md), [observability](../../docs/website-observability.md) and [continuation](continuation.md).
+Owner: ArohaRetreat. Source: website/. Entries: site.mjs, admin.mjs, render.mjs; cinematic.mjs owns the scroll-driven visual controller. Build: npm run build:website; full shared Hosting build: npm run build. Website version 0.2.0 is independent of Natura 0.6.0. Read [plan](../../docs/website-plan.md), [API](../../docs/api/aroha-v1.md), [observability](../../docs/website-observability.md) and [continuation](continuation.md).
 
 The enquiry-led public website has photographic chapters, Simple View, cottages, experiences, packages, gallery and practical information. WhatsApp receives a guest-reviewed enquiry; there is no payment, inventory check, room hold or booking confirmation. Preserve Natura identity/fonts and Hrudhi. Do not fabricate property geometry or label an unrelated photograph as a particular room.
 

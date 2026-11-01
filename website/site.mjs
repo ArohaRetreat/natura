@@ -1,3 +1,4 @@
+import { createCinematic } from "./cinematic.mjs";
 import { preference, setPreference } from "./preferences.mjs";
 import initial from "./content.json";
 import { renderSite, esc, picture } from "./render.mjs";
@@ -10,7 +11,9 @@ let content = initial,
   observer,
   unsubscribe,
   paintQueued = false,
-  pendingContent;
+  pendingContent,
+  cinematic,
+  afterSunset = false;
 const root = document.getElementById("site"),
   motion = matchMedia("(prefers-reduced-motion: reduce)"),
   preview = new URLSearchParams(location.search).has("preview");
@@ -19,6 +22,7 @@ function theme() {
   for (const k of ["forest", "ivory", "leaf", "bronze"])
     document.documentElement.style.setProperty("--" + k, content.theme[k]);
   document.body.classList.toggle("simple", simple || !content.theme.motion);
+  document.body.classList.toggle("after-sunset", afterSunset);
   document.title = content.seo.title;
   document
     .querySelector('meta[name="description"]')
@@ -27,6 +31,7 @@ function theme() {
 function render() {
   const y = scrollY;
   observer?.disconnect();
+  cinematic?.destroy();
   root.innerHTML = renderSite(content);
   theme();
   document.getElementById("view-toggle").textContent = simple
@@ -43,6 +48,10 @@ function render() {
     root.prepend(banner);
   }
   bind();
+  cinematic = createCinematic(
+    root,
+    !simple && content.theme.motion && !motion.matches,
+  );
   window.scrollTo({ top: y, behavior: "instant" });
   requestAnimationFrame(paint);
 }
@@ -58,16 +67,26 @@ function setStop(index) {
     if (i === index) el.setAttribute("aria-current", "step");
     else el.removeAttribute("aria-current");
   });
-  document.getElementById("journey-title").innerHTML = esc(x.title).replaceAll(
-    "\n",
-    "<br>",
-  );
+  const chapterTitle = document.getElementById("journey-title");
+  if (!chapterTitle) return;
+  chapterTitle.innerHTML = esc(x.title).replaceAll("\n", "<br>");
   document.getElementById("journey-description").textContent = x.description;
   document.getElementById("journey-link").href = "#" + x.target;
+  const counter = document.getElementById("chapter-counter");
+  if (counter)
+    counter.textContent =
+      String(index + 1).padStart(2, "0") +
+      " / " +
+      String(content.journey.length).padStart(2, "0");
+  const name = document.getElementById("journey-name");
+  if (name) name.textContent = x.name;
+  const hotspot = document.getElementById("journey-hotspot");
+  if (hotspot) hotspot.href = "#" + x.target;
   track("journey.stop", { section: x.id });
 }
 function paint() {
   paintQueued = false;
+  cinematic?.paint();
   if (simple || !content.theme.motion || !content.journey.length) return;
   const el = document.getElementById("journey");
   if (!el) return;
@@ -157,6 +176,19 @@ function enquire(packageId = "", cottageId = "") {
   };
 }
 function bind() {
+  const ambience = document.getElementById("ambience-toggle");
+  ambience.setAttribute("aria-pressed", String(afterSunset));
+  document.getElementById("ambience-label").textContent = afterSunset
+    ? "Morning light"
+    : "After sunset";
+  ambience.onclick = () => {
+    afterSunset = !afterSunset;
+    document.body.classList.toggle("after-sunset", afterSunset);
+    ambience.setAttribute("aria-pressed", String(afterSunset));
+    document.getElementById("ambience-label").textContent = afterSunset
+      ? "Morning light"
+      : "After sunset";
+  };
   activeStop = -1;
   setStop(0);
   document.getElementById("view-toggle").onclick = () => {
@@ -165,6 +197,7 @@ function bind() {
     const anchor = document.getElementById("journey"),
       wasJourney = anchor?.getBoundingClientRect().top < 0;
     render();
+    document.getElementById("view-toggle").focus({ preventScroll: true });
     if (wasJourney)
       document
         .getElementById("journey")
@@ -201,8 +234,43 @@ function bind() {
         );
       }),
   );
-  document.getElementById("start-journey").onclick = () =>
+  root.querySelectorAll("[data-chapter]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        const index = Math.max(
+          0,
+          Math.min(
+            content.journey.length - 1,
+            activeStop + Number(b.dataset.chapter),
+          ),
+        );
+        root.querySelector(`[data-stop="${index}"]`)?.click();
+      }),
+  );
+  root.querySelectorAll("[data-cottage-scroll]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        const collection = root.querySelector(".cottage-grid");
+        collection.scrollBy({
+          left: collection.clientWidth * 0.75 * Number(b.dataset.cottageScroll),
+          behavior: motion.matches ? "instant" : "smooth",
+        });
+      }),
+  );
+  document.getElementById("start-journey").onclick = (e) => {
     track("journey.started");
+    if (!simple && content.theme.motion && !motion.matches) {
+      e.preventDefault();
+      const arrival = root.querySelector(".arrival");
+      window.scrollTo({
+        top:
+          scrollY +
+          arrival.getBoundingClientRect().top +
+          (arrival.offsetHeight - innerHeight) * 0.94,
+        behavior: "smooth",
+      });
+    }
+  };
   const dialog = document.getElementById("details-dialog");
   document.querySelector(".dialog-close").onclick = () => dialog.close();
   dialog.onclose = () => {
@@ -301,5 +369,6 @@ window.addEventListener("pageshow", (e) => {
 });
 window.addEventListener("pagehide", () => {
   observer?.disconnect();
+  cinematic?.destroy();
   unsubscribe?.();
 });

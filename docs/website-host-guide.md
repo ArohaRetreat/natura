@@ -9,3 +9,5 @@ Save draft preserves the changes privately. Preview shows the current draft with
 People & access creates seven-day invitations and provides a link to share manually. No invitation email is sent. Admins manage editors/viewers; super-admins can manage admins. Editors save drafts but cannot publish or manage people. Viewers read only. Protected owner identities cannot be changed through this screen. Revoke access to stop future protected operations.
 
 The guest form prepares a WhatsApp enquiry for the guest to review and send. It does not confirm availability, hold a room or take payment. Hosts confirm the visit personally. Update provisional copy, tariff details and accurately matched room photographs before relying on them in customer conversations.
+
+The cinematic public view uses the final journey photograph for its evening atmosphere and closing invitation. Keep that chapter paired with an evening image when changing photographs. Simple View presents all journey chapters without spatial movement; guests can switch views at any time.

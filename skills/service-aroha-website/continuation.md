@@ -9,3 +9,9 @@ Latest unit, integrated rules/API, OTLP, complete build, foundation, GitHub CI/P
 Current release evidence: release-evidence/aroha-0.1.0/release.md. Root/admin/design live routes and thirty file hashes verified; fresh browser showed no errors or warnings.
 
 Owner supplied the public RUM tag; config/website-runtime.public.json is the versioned default. Both public and studio initialize the consent-controlled loader; duplicate/racing loads are guarded. 64 application tests pass including consent, duplicate insertion and withdrawal-during-fetch. Shared Hosting build/deployment must be repeated from this committed revision; browser and tenant evidence is reported in issue #16.
+
+## Cinematic revision 0.2.0
+
+The initial photographic brochure did not meet the owner's visual acceptance. The public site is rebuilt around a reversible 3D threshold, native scroll-driven camera movement, a morning/evening photographic switch, explicit chapter navigation and route progress, an arched horizontal cottage collection with door hover, native experience disclosures and layered parallax memory cards. Existing schema 1 content and protected CMS/API are retained. cinematic.mjs writes transform/opacity in the existing scroll RAF and disconnects reveal observers on replacement. Simple View and reduced motion bypass spatial movement. The threshold and route ornament are artistic narrative elements, not a surveyed gate or property map.
+
+Browser review covers entry open, chapter controls, morning/evening, mobile layouts at nominal 320/390 widths, cottage dialogs, Simple View and gallery. Source review fixed hidden-journey handling and keeps first/last chapter text readable. No physical-device FPS claim. The approved RUM tag was separately verified absent before consent, inserted after opt-in and absent again after withdrawal/reload. Beacon/session/backend linkage remains unverified. Read issue #16 / PR #17 for the final deployed revision and current-head checks.
