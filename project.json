@@ -30,7 +30,7 @@
     },
     "observability": {
       "status": "approved",
-      "value": "India CS Dynatrace tenant selected by user. Safe API logs, optional OTLP traces/logs/metrics and consent-controlled browser hooks. Fresh server secret and public RUM tag remain pending; no tenant-ingestion claim.",
+      "value": "India CS Dynatrace tenant selected by user. Safe API logs, optional OTLP traces/logs/metrics and consent-controlled browser hooks. Server Secret Manager binding is configured; public RUM tag and tenant-searchable record verification remain pending.",
       "approval": "User website/admin/access instructions and Blaze activation, 2026-11-01; Natura identity and existing deployment preserved."
     },
     "license": {

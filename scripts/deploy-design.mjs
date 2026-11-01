@@ -8,7 +8,7 @@ const head=spawnSync('git',['rev-parse','HEAD'],{cwd:new URL('../',import.meta.u
 if(release.revision!==head||release.status!=='release'||release.hrudhiReview!=='alpha')throw Error('Build the current release revision with Hrudhi explicitly alpha before deploying.');
 const website=JSON.parse(await readFile(new URL('../dist/website-release.json',import.meta.url)));
 if(website.name!=='Aroha Retreat')throw Error('Build the root website before deploying the shared Hosting site.');
-// This Hosting site currently contains Natura only. Preserve any future root app in dist before deploying.
+// The shared Hosting build must contain both Natura and the root Aroha website.
 const custom=process.env.FIREBASE_CLI_PATH;
 const result=spawnSync(custom?process.execPath:'firebase',[...(custom?[custom]:[]),'deploy','--only','hosting','--project','aroha-retreat','--non-interactive'],{stdio:'inherit',cwd:new URL('../',import.meta.url)});
 if(result.error)throw result.error;process.exitCode=result.status??1;

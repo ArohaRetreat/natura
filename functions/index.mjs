@@ -132,8 +132,8 @@ export const arohaApi = onRequest(
     invoker: "public",
     secrets: process.env.DT_EXPORT_ENABLED === "true" ? [monitoringSecret] : [],
   },
-  (req, res) =>
-    traceRequest(req, res, async () => {
+  async (req, res) => {
+    const payload = await traceRequest(req, res, async () => {
       const requestId = randomUUID(),
         started = Date.now();
       let operation = "unknown",
@@ -171,13 +171,13 @@ export const arohaApi = onRequest(
           throw new DomainError("JSON_REQUIRED", 415);
         if (path === "/session" && req.method === "POST") {
           operation = "access.session";
-          return res.json({ session: await session(token), requestId });
+          return ({ session: await session(token), requestId });
         }
         const actor = await requireMember(token, "read");
         if (path === "/draft" && req.method === "GET") {
           operation = "content.read";
           const snap = await collection("content").doc("draft").get();
-          return res.json({
+          return ({
             draft: snap.exists ? snap.data() : null,
             requestId,
           });
@@ -200,7 +200,7 @@ export const arohaApi = onRequest(
             audit(tx, actor, operation, "draft", { version: current + 1 });
             return current + 1;
           });
-          return res.json({ version, requestId });
+          return ({ version, requestId });
         }
         if (path === "/publish" && req.method === "POST") {
           operation = "content.published";
@@ -231,7 +231,7 @@ export const arohaApi = onRequest(
             audit(tx, actor, operation, "site", { version: value.version });
             return value.version;
           });
-          return res.json({ version, requestId });
+          return ({ version, requestId });
         }
         if (path === "/revisions" && req.method === "GET") {
           operation = "content.history";
@@ -247,7 +247,7 @@ export const arohaApi = onRequest(
             .limit(limit + 1);
           if (cursor) q = q.startAfter(Number(cursor));
           const rows = (await q.get()).docs;
-          return res.json({
+          return ({
             revisions: rows
               .slice(0, limit)
               .map((s) => ({
@@ -292,7 +292,7 @@ export const arohaApi = onRequest(
             });
             return version;
           });
-          return res.json({ version, requestId });
+          return ({ version, requestId });
         }
         if (
           (path === "/members" || path === "/invitations") &&
@@ -314,7 +314,7 @@ export const arohaApi = onRequest(
             q = q.startAfter(cursor);
           }
           const rows = (await q.get()).docs;
-          return res.json({
+          return ({
             [col]: rows.slice(0, 50).map(clean),
             nextCursor: rows.length > 50 ? rows[49].id : null,
             requestId,
@@ -342,7 +342,7 @@ export const arohaApi = onRequest(
             });
             audit(tx, actor, operation, hash(email));
           });
-          return res.json({
+          return ({
             inviteUrl: "https://aroha-retreat.web.app/admin/",
             expiresInDays: 7,
             requestId,
@@ -361,7 +361,7 @@ export const arohaApi = onRequest(
             tx.update(ref, { status: "revoked", updatedAt: now() });
             audit(tx, actor, operation, key);
           });
-          return res.json({ ok: true, requestId });
+          return ({ ok: true, requestId });
         }
         if (path.startsWith("/members/") && req.method === "POST") {
           operation = "access.updated";
@@ -390,14 +390,15 @@ export const arohaApi = onRequest(
             });
             audit(tx, actor, operation, uid);
           });
-          return res.json({ ok: true, requestId });
+          return ({ ok: true, requestId });
         }
         throw new DomainError("NOT_FOUND", 404);
       } catch (error) {
         const failure = classifyError(error);
         status = failure.status;
         errorCode = failure.code;
-        res.status(status).json({ error: { code: errorCode, requestId } });
+        res.status(status);
+        return { error: { code: errorCode, requestId } };
       } finally {
         recordSummary({ operation, status, requestId, errorCode });
         console.info(
@@ -412,5 +413,8 @@ export const arohaApi = onRequest(
           }),
         );
       }
-    }),
+    });
+    // Finish bounded telemetry exports while request CPU is still allocated.
+    return res.json(payload);
+  },
 );
