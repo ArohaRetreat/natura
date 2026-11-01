@@ -269,7 +269,18 @@ export function createFieldJourney(
     if (!raf && !dead) raf = requestAnimationFrame(paint);
   }
   listen(window, "scroll", request, { passive: true });
-  listen(window, "resize", request);
+  listen(window, "resize", () => {
+    // Keep the same place when a phone rotates or the viewport changes height.
+    // The section's svh geometry has already changed by the resize event.
+    if (motion && section && !offscreen && progress > 0 && progress < 1) {
+      const top = scrollY + section.getBoundingClientRect().top;
+      window.scrollTo({
+        top: top + progress * Math.max(1, section.offsetHeight - innerHeight),
+        behavior: "instant",
+      });
+    }
+    request();
+  });
   listen(document, "visibilitychange", playback);
   listen(stage, "pointermove", (e) => {
     if (e.pointerType === "mouse" && motion) {
