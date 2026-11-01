@@ -13,6 +13,9 @@ let content = initial,
   paintQueued = false,
   pendingContent,
   cinematic,
+  spatial,
+  renderGeneration = 0,
+  spatialProgress = 0,
   afterSunset = false,
   dayProgress = 0;
 const root = document.getElementById("site"),
@@ -33,6 +36,10 @@ function render() {
   const y = scrollY;
   observer?.disconnect();
   cinematic?.destroy();
+  spatial?.destroy();
+  spatial = null;
+  const generation = ++renderGeneration;
+  root.classList.remove("spatial-ready");
   root.innerHTML = renderSite(content);
   theme();
   document.getElementById("view-toggle").textContent = simple
@@ -55,6 +62,23 @@ function render() {
     requestPaint,
   );
   window.scrollTo({ top: y, behavior: "instant" });
+  if (!simple && content.theme.motion && !motion.matches) {
+    import("./spatial.mjs")
+      .then(async ({ createSpatial }) => {
+        if (generation !== renderGeneration) return;
+        const scene = await createSpatial(root, content, {
+          cottage: openCottage,
+          experience: openFarmExperience,
+          enquiry: enquire,
+          track,
+          error: reportError,
+          resumeAt: spatialProgress,
+        });
+        if (generation !== renderGeneration) scene?.destroy();
+        else spatial = scene;
+      })
+      .catch(() => reportError("SPATIAL_UNAVAILABLE"));
+  }
   requestAnimationFrame(paint);
 }
 function setStop(index) {
@@ -89,6 +113,7 @@ function setStop(index) {
 function paint() {
   paintQueued = false;
   cinematic?.paint();
+  if (root.classList.contains("spatial-ready")) return;
   if (simple || !content.theme.motion || !content.journey.length) return;
   const el = document.getElementById("journey");
   if (!el) return;
@@ -104,9 +129,12 @@ function paint() {
   );
 }
 function requestPaint() {
-  if(!paintQueued) {paintQueued=true;requestAnimationFrame(paint);}
+  if (!paintQueued) {
+    paintQueued = true;
+    requestAnimationFrame(paint);
+  }
 }
-window.addEventListener("scroll",requestPaint,{passive:true});
+window.addEventListener("scroll", requestPaint, { passive: true });
 window.addEventListener("resize", paint);
 function show(markup) {
   lastFocus = document.activeElement;
@@ -122,6 +150,16 @@ function openCottage(id) {
     `${picture(x.image, x.imageAlt, "dialog-photo")}<div class="dialog-copy"><p class="eyebrow">YOUR QUIET CORNER</p><h2 id="dialog-title">${esc(x.name)}</h2><p>${esc(x.description)}</p><p>${esc(x.detail)}</p>${x.images.length ? `<div class="interior-gallery">${x.images.map((src) => picture(src, x.name + " interior")).join("")}</div>` : ""}<button class="button" id="cottage-enquire">Enquire about a stay <span aria-hidden="true">↗</span></button></div>`,
   );
   document.getElementById("cottage-enquire").onclick = () => enquire("", id);
+}
+function openFarmExperience(id) {
+  const item =
+    content.experiences.find((x) => x.id === id) || content.experiences[0];
+  const photo =
+    id === "animals" ? "/assets/retreat/DSC_3823.webp" : content.intro.image;
+  show(
+    `${picture(photo, id === "animals" ? "Farm animals at Aroha" : content.intro.imageAlt, "dialog-photo")}<div class="dialog-copy"><p class="eyebrow">${esc(content.brand.tagline)}</p><h2 id="dialog-title">${esc(item.name)}</h2><p>${esc(item.description)}</p><button class="button" id="experience-enquire">${esc(content.visit.enquiryLabel)} ↗</button></div>`,
+  );
+  document.getElementById("experience-enquire").onclick = () => enquire();
 }
 function enquire(packageId = "", cottageId = "") {
   show(
@@ -172,33 +210,92 @@ function enquire(packageId = "", cottageId = "") {
   };
 }
 function bind() {
-  const ambience = document.getElementById("ambience-toggle"), clock = document.getElementById("world-time");
-  const changeLight = value => {
-    dayProgress = Math.max(0,Math.min(1,value));
-    afterSunset = dayProgress > .5;
-    document.body.classList.toggle("after-sunset",afterSunset);
+  const ambience = document.getElementById("ambience-toggle"),
+    clock = document.getElementById("world-time");
+  const changeLight = (value) => {
+    dayProgress = Math.max(0, Math.min(1, value));
+    afterSunset = dayProgress > 0.5;
+    document.body.classList.toggle("after-sunset", afterSunset);
     root.querySelector(".world-night").style.opacity = dayProgress;
-    clock.value = Math.round(dayProgress*100);
-    clock.setAttribute("aria-valuetext",dayProgress < .25 ? "Morning" : dayProgress > .75 ? "Evening" : "Afternoon");
-    ambience.setAttribute("aria-pressed",String(afterSunset));
-    ambience.setAttribute("aria-label",afterSunset?"Switch to morning":"Switch to evening");
-    document.getElementById("ambience-label").textContent=afterSunset?"☼":"◐";
+    clock.value = Math.round(dayProgress * 100);
+    clock.setAttribute(
+      "aria-valuetext",
+      dayProgress < 0.25
+        ? "Morning"
+        : dayProgress > 0.75
+          ? "Evening"
+          : "Afternoon",
+    );
+    ambience.setAttribute("aria-pressed", String(afterSunset));
+    ambience.setAttribute(
+      "aria-label",
+      afterSunset ? "Switch to morning" : "Switch to evening",
+    );
+    document.getElementById("ambience-label").textContent = afterSunset
+      ? "☼"
+      : "◐";
   };
-  ambience.onclick=()=>changeLight(afterSunset?0:1);
-  clock.oninput=()=>changeLight(Number(clock.value)/100);
+  ambience.onclick = () => changeLight(afterSunset ? 0 : 1);
+  clock.oninput = () => changeLight(Number(clock.value) / 100);
   changeLight(dayProgress);
-  root.querySelectorAll("[data-world-stop]").forEach(b=>b.onclick=()=>root.querySelector(`[data-stop="${b.dataset.worldStop}"]`)?.click());
+  root
+    .querySelectorAll("[data-world-stop]")
+    .forEach(
+      (b) =>
+        (b.onclick = () =>
+          root.querySelector(`[data-stop="${b.dataset.worldStop}"]`)?.click()),
+    );
   activeStop = -1;
   setStop(0);
   document.getElementById("view-toggle").onclick = () => {
     const sections = [...root.querySelectorAll("main > section")];
-    const current = sections.find(el => { const r=el.getBoundingClientRect(); return r.top <= 120 && r.bottom > 120; }) || sections[0];
-    const id = current?.id, offset = current?.getBoundingClientRect().top || 0;
+    const current =
+      sections.find((el) => {
+        const r = el.getBoundingClientRect();
+        return r.top <= 120 && r.bottom > 120;
+      }) || sections[0];
+    let id = current?.id,
+      offset = current?.getBoundingClientRect().top || 0;
+    const inWorld = id === "farm-journey";
+    if (inWorld) {
+      spatialProgress = spatial?.progress || 0;
+      id =
+        spatialProgress < 0.13
+          ? "home"
+          : spatialProgress > 0.95
+            ? "packages"
+            : "journey";
+    }
     simple = !simple;
     setPreference("aroha-view", simple ? "simple" : "journey");
     render();
-    const replacement = document.getElementById(id);
-    if (replacement) window.scrollTo({top: scrollY + replacement.getBoundingClientRect().top - (id === "journey" ? 100 : offset), behavior:"instant"});
+    let replacement = document.getElementById(id);
+    if (inWorld && id === "journey") {
+      const order = [
+        { at: 0.27, id: "path" },
+        { at: 0.48, id: "cottages" },
+        { at: 0.67, id: "stillness" },
+        { at: 0.83, id: "farm" },
+      ];
+      const nearest = order.reduce((a, b) =>
+        Math.abs(a.at - spatialProgress) < Math.abs(b.at - spatialProgress)
+          ? a
+          : b,
+      );
+      const index = content.journey.findIndex((x) => x.id === nearest.id);
+      replacement =
+        replacement?.querySelectorAll(".simple-chapters article")[
+          Math.max(0, index)
+        ] || replacement;
+    }
+    if (replacement)
+      window.scrollTo({
+        top:
+          scrollY +
+          replacement.getBoundingClientRect().top -
+          (id === "journey" ? 100 : offset),
+        behavior: "instant",
+      });
     document.getElementById("view-toggle").focus({ preventScroll: true });
   };
   root
@@ -210,16 +307,20 @@ function bind() {
   root.querySelectorAll("[data-stop]").forEach(
     (b) =>
       (b.onclick = () => {
-        const el = document.getElementById("journey"), i = Number(b.dataset.stop);
+        const el = document.getElementById("journey"),
+          i = Number(b.dataset.stop);
         if (simple || !content.theme.motion || motion.matches) {
-          el?.querySelectorAll(".simple-chapters article")[i]?.scrollIntoView({behavior:"instant",block:"start"});
+          el?.querySelectorAll(".simple-chapters article")[i]?.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
           return;
         }
         const top =
-            scrollY +
-            el.getBoundingClientRect().top +
-            ((el.offsetHeight - innerHeight) * (i + 0.1)) /
-              Math.max(1, content.journey.length);
+          scrollY +
+          el.getBoundingClientRect().top +
+          ((el.offsetHeight - innerHeight) * (i + 0.1)) /
+            Math.max(1, content.journey.length);
         window.scrollTo({
           top,
           behavior: motion.matches ? "instant" : "smooth",
@@ -258,7 +359,8 @@ function bind() {
         });
       }),
   );
-  document.getElementById("start-journey").onclick = () => track("journey.started");
+  document.getElementById("start-journey").onclick = () =>
+    track("journey.started");
   const dialog = document.getElementById("details-dialog");
   document.querySelector(".dialog-close").onclick = () => dialog.close();
   dialog.onclose = () => {
@@ -353,10 +455,14 @@ function watchContent() {
   );
 }
 window.addEventListener("pageshow", (e) => {
-  if (e.persisted && !preview) watchContent();
+  if (e.persisted) {
+    render();
+    if (!preview) watchContent();
+  }
 });
 window.addEventListener("pagehide", () => {
   observer?.disconnect();
   cinematic?.destroy();
+  spatial?.destroy();
   unsubscribe?.();
 });

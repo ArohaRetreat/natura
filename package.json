@@ -16,11 +16,12 @@
     "test:integration": "node --test functions/tests/integration.mjs"
   },
   "dependencies": {
-    "firebase": "13.1.0"
+    "firebase": "13.1.0",
+    "three": "0.187.0"
   },
   "devDependencies": {
-    "esbuild": "0.28.2",
-    "@firebase/rules-unit-testing": "6.0.0"
+    "@firebase/rules-unit-testing": "6.0.0",
+    "esbuild": "0.28.2"
   },
   "engines": {
     "node": ">=20"

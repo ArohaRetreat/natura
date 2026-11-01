@@ -9,3 +9,7 @@ Natura-specific application code, custom artwork, documentation and Aroha brand 
 - The botanical images were generated specifically for Natura with OpenAI image generation. Aroha-only authorisation applies to distribution/use of these branded deliverables to the extent such rights can be licensed; no exclusive rights in generic botanical ideas or third-party materials are claimed.
 
 No weather provider code or weather data is bundled as live data. Samples in the atmosphere atlas are synthetic. Provider licences and source attribution must be approved before production weather integration.
+
+## Three.js
+
+The optional connected farm journey bundles Three.js 0.187.0 under the MIT license, copyright 2010-2026 Three.js authors. The full license is distributed at `website/assets/licenses/three-LICENSE.txt`. Official source: https://github.com/mrdoob/three.js.

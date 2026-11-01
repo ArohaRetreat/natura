@@ -1,5 +1,5 @@
 import { build } from "esbuild";
-import { mkdir, cp, readFile, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, cp, readFile, writeFile, copyFile, rm } from "node:fs/promises";
 import { renderSite, esc } from "../website/render.mjs";
 import { validateContent } from "../functions/domain.mjs";
 const root = new URL("../", import.meta.url),
@@ -40,6 +40,8 @@ await copyFile(
   new URL("website/admin.html", root),
   new URL("admin/index.html", dist),
 );
+// This directory is owned by the website bundler; retire stale hashed chunks.
+await rm(new URL("chunks/", assets), { recursive: true, force: true });
 await build({
   entryPoints: {
     site: new URL("website/site.mjs", root).pathname,
@@ -47,6 +49,8 @@ await build({
   },
   bundle: true,
   format: "esm",
+  splitting: true,
+  chunkNames: "chunks/[name]-[hash]",
   outdir: assets.pathname,
   minify: true,
   target: ["es2022"],
@@ -73,7 +77,7 @@ await writeFile(
   new URL("website-release.json", dist),
   JSON.stringify({
     name: "Aroha Retreat",
-    version: "0.3.0",
+    version: "0.4.0",
     contentSchema: 1,
     admin: "/admin/",
     design: "/design/",
