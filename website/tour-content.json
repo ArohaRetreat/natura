@@ -213,6 +213,51 @@
   ],
   "media": [
     {
+      "id": "p-dsc-3795",
+      "kind": "photo",
+      "name": "Red-roofed A-frame cottages among the palms",
+      "description": "Red-roofed A-frame cottages among the palms. Photograph from Aroha Retreat.",
+      "image": "/assets/retreat/DSC_3795.webp",
+      "src": "",
+      "stop": "cottages"
+    },
+    {
+      "id": "p-dsc-3915",
+      "kind": "photo",
+      "name": "The main house and its stone terraces",
+      "description": "The main house and its stone terraces. Photograph from Aroha Retreat.",
+      "image": "/assets/retreat/DSC_3915.webp",
+      "src": "",
+      "stop": "house"
+    },
+    {
+      "id": "p-20261028-093813",
+      "kind": "photo",
+      "name": "Raised rooms and private decks among the palms",
+      "description": "Raised rooms and private decks among the palms. Photograph from Aroha Retreat.",
+      "image": "/assets/retreat/20261028_093813.webp",
+      "src": "",
+      "stop": "treehouses"
+    },
+    {
+      "id": "p-dsc-3823",
+      "kind": "photo",
+      "name": "The farm oxen and bullock cart",
+      "description": "The farm oxen and bullock cart. Photograph from Aroha Retreat.",
+      "image": "/assets/retreat/DSC_3823.webp",
+      "src": "",
+      "stop": "farm"
+    },
+    {
+      "id": "v-092325",
+      "kind": "video",
+      "name": "Along the pond and stone-lined path",
+      "description": "Along the pond and stone-lined path. A silent film recorded at the farm.",
+      "image": "/assets/retreat/20261028_092325-poster.webp",
+      "src": "/assets/retreat/20261028_092325.mp4",
+      "stop": "pond"
+    },
+    {
       "id": "p-dsc-3766",
       "kind": "photo",
       "name": "Light along the pond after dark",
@@ -294,15 +339,6 @@
       "stop": "pond"
     },
     {
-      "id": "p-dsc-3795",
-      "kind": "photo",
-      "name": "Red-roofed A-frame cottages among the palms",
-      "description": "Red-roofed A-frame cottages among the palms. Photograph from Aroha Retreat.",
-      "image": "/assets/retreat/DSC_3795.webp",
-      "src": "",
-      "stop": "cottages"
-    },
-    {
       "id": "p-dsc-3809",
       "kind": "photo",
       "name": "The meditation hall and its broad steps",
@@ -319,15 +355,6 @@
       "image": "/assets/retreat/DSC_3815.webp",
       "src": "",
       "stop": "meditation"
-    },
-    {
-      "id": "p-dsc-3823",
-      "kind": "photo",
-      "name": "The farm oxen and bullock cart",
-      "description": "The farm oxen and bullock cart. Photograph from Aroha Retreat.",
-      "image": "/assets/retreat/DSC_3823.webp",
-      "src": "",
-      "stop": "farm"
     },
     {
       "id": "p-dsc-3835",
@@ -456,15 +483,6 @@
       "stop": "meditation"
     },
     {
-      "id": "p-dsc-3915",
-      "kind": "photo",
-      "name": "The main house and its stone terraces",
-      "description": "The main house and its stone terraces. Photograph from Aroha Retreat.",
-      "image": "/assets/retreat/DSC_3915.webp",
-      "src": "",
-      "stop": "house"
-    },
-    {
       "id": "p-dsc-3916",
       "kind": "photo",
       "name": "The central path and stone walls",
@@ -481,24 +499,6 @@
       "image": "/assets/retreat/DSC_3917.webp",
       "src": "",
       "stop": "house"
-    },
-    {
-      "id": "v-092325",
-      "kind": "video",
-      "name": "Along the pond and stone-lined path",
-      "description": "Along the pond and stone-lined path. A silent film recorded at the farm.",
-      "image": "/assets/retreat/20261028_092325-poster.webp",
-      "src": "/assets/retreat/20261028_092325.mp4",
-      "stop": "pond"
-    },
-    {
-      "id": "p-20261028-093813",
-      "kind": "photo",
-      "name": "Raised rooms and private decks among the palms",
-      "description": "Raised rooms and private decks among the palms. Photograph from Aroha Retreat.",
-      "image": "/assets/retreat/20261028_093813.webp",
-      "src": "",
-      "stop": "treehouses"
     },
     {
       "id": "p-20261028-093817",

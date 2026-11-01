@@ -1,3 +1,9 @@
+# Aroha website 0.8.0 (preview)
+
+- Replace the 56-item gallery wall with a five-print album spread, consistent filters and sticky Previous/Next controls. Retain every supplied photograph/film and the existing full-screen viewer.
+- Keep photo/film filters scoped through viewer navigation, retain the current spread across repaints, and restore a visible media target after CMS updates.
+- Add separate paper-toned pricing surfaces, soft shadows, botanical corner details, rounded actions and aligned comparison rows. Tariffs and inclusions are unchanged.
+
 # Aroha website 0.7.0 (preview)
 
 - Continue germination into a growing leaf aperture that reveals the photographic hero, title and navigation as one arrival.

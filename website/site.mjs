@@ -1,3 +1,4 @@
+import { createAlbum } from "./album.mjs";
 import { startWelcome } from "./welcome.mjs";
 import { natureContent } from "./nature-render.mjs";
 import initial from "./content.json";
@@ -10,6 +11,7 @@ import { track, initializeMonitoring, reportError } from "./monitoring.mjs";
 let content = initial,
   lastFocus,
   journey,
+  album,
   unsubscribe,
   pendingContent,
   subscriptionGeneration = 0;
@@ -19,6 +21,8 @@ const root = document.getElementById("site"),
 let simple = motion.matches || preference("aroha-view") === "simple";
 function render() {
   const y = scrollY;
+  const albumState = album?.state;
+  album?.destroy();
   journey?.destroy();
   root.innerHTML = renderSite(content);
   for (const key of ["forest", "ivory", "leaf", "bronze"])
@@ -41,6 +45,10 @@ function render() {
     { stop: openTourStop, walk: openWalk, track, error: reportError },
     { simple: simple || !content.theme.motion },
   );
+  album = createAlbum(root, tourContent(content).media, {
+    resume: albumState,
+    motion: !simple && content.theme.motion && !motion.matches,
+  });
   if (Math.abs(scrollY - y) > 1)
     window.scrollTo({ top: y, behavior: "instant" });
   root.dataset.ready = "true";
@@ -237,23 +245,7 @@ function bind() {
     .forEach((b) => (b.onclick = openMap));
   root
     .querySelectorAll("[data-media]")
-    .forEach((b) => (b.onclick = () => openMedia(b.dataset.media)));
-  root.querySelectorAll("[data-media-filter]").forEach(
-    (b) =>
-      (b.onclick = () => {
-        root
-          .querySelectorAll("[data-media-filter]")
-          .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-        root
-          .querySelectorAll("[data-media-kind]")
-          .forEach(
-            (x) =>
-              (x.hidden =
-                b.dataset.mediaFilter !== "all" &&
-                x.dataset.mediaKind !== b.dataset.mediaFilter),
-          );
-      }),
-  );
+    .forEach((b) => (b.onclick = () => openMedia(b.dataset.media, album?.ids)));
   root.querySelector("#start-journey").onclick = (e) => {
     track("journey.started");
     if (root.querySelector("#journey")) {
@@ -281,6 +273,7 @@ function bind() {
       content = pendingContent;
       pendingContent = null;
       render();
+      if (attribute === "data-media") album?.reveal?.(value);
       if (id)
         root
           .querySelector("#" + CSS.escape(id))
@@ -388,4 +381,5 @@ window.addEventListener("pagehide", () => {
   finishWelcome();
   unsubscribe?.();
   journey?.destroy();
+  album?.destroy();
 });
