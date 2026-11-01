@@ -1,5 +1,12 @@
 # Changelog
 
+## Natura 0.6.0 / Hrudhi 0.3.0-alpha.1 - 2026-11-01
+
+- Publish the original-art character studio and 120 prototype cutout action combinations, replacing the visibly different simplified character in the current web distribution.
+- Add four native Photoshop face studies, transparent figure exports, layered PSD and an editable Character Animator puppet checkpoint.
+- Label Hrudhi alpha in the studio, navigation, downloads, guidance and release metadata. Family review, polished articulation, facial triggers, blinks, visemes and native performance remain unfinished.
+- Preserve immutable original masters and the existing nature, farm, logo and typography libraries. Earlier working sources remain archived.
+
 ## Natura 0.5.2 - 2026-10-31
 
 - Keep mobile navigation visible while scrolling, including safe-area spacing and phone landscape. The drawer scrolls independently, locks background scroll, traps keyboard focus and restores the page position on dismissal.

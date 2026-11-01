@@ -1,4 +1,4 @@
-# Natura v0.5.2
+# Natura v0.6.0
 
 Template version: **1.9.0**
 
@@ -57,3 +57,5 @@ Natura v0.5.0 includes the full Hrudhi collection and readable standards in `#hr
 Identity continuity is enforced by `public/assets/hrudhi/identity-lock.json` and `node scripts/verify-hrudhi-identity.mjs`. The original reference files and facial-rig source are immutable without a separately reviewed identity change. Seasonal outfits and motion must not substitute another face.
 
 Mobile navigation uses a fixed safe-area header, independently scrolling drawer, focus containment and scroll restoration. Browser regression checks cover 320–1280 CSS px, short landscape, route selection and resize. These checks emulate touch in isolated Chrome; physical-device acceptance remains separate.
+
+Hrudhi is **0.3.0-alpha.1**: original-art cutout actions plus four native Photoshop studies. Native performance and family review remain incomplete. `npm run build` builds the production alpha distribution; `node scripts/build-original-preview.mjs` builds a local preview. Original masters remain immutable.
