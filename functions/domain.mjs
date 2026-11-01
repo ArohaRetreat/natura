@@ -199,18 +199,22 @@ export function validateTour(t) {
   return t;
 }
 export function validateNature(n) {
-  obj(n, [
-    "enabled",
-    "welcome",
-    "welcomeTitle",
-    "welcomeLabel",
-    "leafImage",
-    "plantImage",
-    "eyebrow",
-    "title",
-    "description",
-    "items",
-  ]);
+  obj(
+    n,
+    [
+      "enabled",
+      "welcome",
+      "welcomeTitle",
+      "welcomeLabel",
+      "leafImage",
+      "plantImage",
+      "eyebrow",
+      "title",
+      "description",
+      "items",
+    ],
+    ["heroEveningImage", "heroEveningAlt"],
+  );
   bool(n.enabled);
   bool(n.welcome);
   for (const k of ["welcomeTitle", "welcomeLabel", "eyebrow", "title"])
@@ -218,6 +222,8 @@ export function validateNature(n) {
   text(n.description, 2000);
   imageUrl(n.leafImage);
   imageUrl(n.plantImage);
+  if (n.heroEveningImage !== undefined) imageUrl(n.heroEveningImage);
+  if (n.heroEveningAlt !== undefined) text(n.heroEveningAlt, 250);
   arr(n.items, 5, (x) => {
     obj(x, ["value", "name", "description"]);
     text(x.value, 80);

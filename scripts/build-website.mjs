@@ -36,6 +36,8 @@ for (const [source, target] of [
   ],
   ["public/assets/icons/full-aroha-icon-forest.svg", "brand/icon.svg"],
   ["public/assets/fonts/Lora/Lora-Variable.woff2", "fonts/Lora.woff2"],
+  ["public/assets/fonts/Allura/Allura-Regular.woff2", "fonts/Allura.woff2"],
+  ["public/assets/fonts/Allura/OFL.txt", "fonts/Allura-OFL.txt"],
   [
     "public/assets/fonts/SourceSans3/SourceSans3-Variable.woff2",
     "fonts/Source.woff2",
@@ -46,7 +48,13 @@ for (const [source, target] of [
   ],
 ])
   await copyFile(new URL(source, root), new URL(target, assets));
-for (const file of ["site.css", "admin.css", "field.css", "living.css"])
+for (const file of [
+  "site.css",
+  "admin.css",
+  "field.css",
+  "living.css",
+  "arrival.css",
+])
   await copyFile(new URL("website/" + file, root), new URL(file, assets));
 await copyFile(
   new URL("website/admin.html", root),
@@ -73,7 +81,7 @@ await build({
 });
 await writeFile(
   new URL("index.html", dist),
-  `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="${content.theme.forest}"><meta name="description" content="${esc(content.seo.description)}"><meta property="og:title" content="${esc(content.seo.title)}"><meta property="og:description" content="${esc(content.seo.description)}"><meta property="og:image" content="https://aroha-retreat.web.app${esc(content.hero.image)}"><title>${esc(content.seo.title)}</title><link rel="icon" href="/assets/brand/icon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/Lora.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/field.css"><link rel="stylesheet" href="/assets/living.css"></head><body>${welcomeMarkup(content, natureContent(tourContent(content)), esc)}<div id="site">${renderSite(content)}</div><noscript><style>#aroha-welcome{display:none!important}</style><p style="padding:20px">Interactive details require JavaScript. Call <a href="tel:+${content.visit.phone}">+${content.visit.phone}</a> to plan your visit.</p></noscript><script type="module" src="/assets/site.js"></script></body></html>`,
+  `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="${content.theme.forest}"><meta name="description" content="${esc(content.seo.description)}"><meta property="og:title" content="${esc(content.seo.title)}"><meta property="og:description" content="${esc(content.seo.description)}"><meta property="og:image" content="https://aroha-retreat.web.app${esc(content.hero.image)}"><title>${esc(content.seo.title)}</title><link rel="icon" href="/assets/brand/icon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/Lora.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/field.css"><link rel="stylesheet" href="/assets/living.css"><link rel="stylesheet" href="/assets/arrival.css"><link rel="preload" href="/assets/fonts/Allura.woff2" as="font" type="font/woff2" crossorigin></head><body>${welcomeMarkup(content, natureContent(tourContent(content)), esc)}<div id="site">${renderSite(content)}</div><noscript><style>#aroha-welcome{display:none!important}</style><p style="padding:20px">Interactive details require JavaScript. Call <a href="tel:+${content.visit.phone}">+${content.visit.phone}</a> to plan your visit.</p></noscript><script type="module" src="/assets/site.js"></script></body></html>`,
 );
 // Optional public RUM tag is configured independently; no ingestion credential belongs here.
 let runtime = JSON.parse(
@@ -89,7 +97,7 @@ await writeFile(
   new URL("website-release.json", dist),
   JSON.stringify({
     name: "Aroha Retreat",
-    version: "0.6.0",
+    version: "0.7.0",
     revision: /^[a-f0-9]{40}$/.test(process.env.AROHA_BUILD_REVISION || "")
       ? process.env.AROHA_BUILD_REVISION
       : null,

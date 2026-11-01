@@ -12,7 +12,7 @@ export function orbitPose(index, center, { radius = 640, step = 36 } = {}) {
 }
 export function createBotanicalMotion(root, enabled, request) {
   const hero = root.querySelector(".field-hero"),
-    pod = root.querySelector(".hero-pod-inner"),
+    light = root.querySelector(".hero-light"),
     gardenOrbit = root.querySelector(".hero-garden-orbit"),
     fronds = [...root.querySelectorAll(".hero-frond")],
     story = root.querySelector(".nature-story"),
@@ -77,8 +77,8 @@ export function createBotanicalMotion(root, enabled, request) {
       const r = story?.getBoundingClientRect();
       if (h.bottom > 0 && h.top < vh) {
         const p = clamp(-h.top / Math.max(1, h.height));
-        if (pod)
-          pod.style.transform = `perspective(1300px) translate3d(${px * 12}px,${py * 8 - p * 60}px,0) rotateX(${-py * 3}deg) rotateY(${px * 5 + p * 12}deg) rotateZ(${-p * 8}deg) scale(${1 + p * 0.12})`;
+        if (light)
+          light.style.transform = `translate3d(${px * 45}px,${py * 35 - p * 70}px,0) scale(${1 + p * 0.15})`;
         if (gardenOrbit)
           gardenOrbit.style.transform = `rotate(${p * 95 + px * 4}deg)`;
         fronds.forEach(

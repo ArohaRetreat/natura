@@ -1,3 +1,4 @@
+import { createHeroAtmosphere } from "./hero-atmosphere.mjs";
 import { createBotanicalMotion, orbitPose } from "./botanical-motion.mjs";
 import { tourContent } from "./field-render.mjs";
 const clamp = (n) => Math.max(0, Math.min(1, Number.isFinite(n) ? n : 0));
@@ -42,6 +43,7 @@ export function createFieldJourney(
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const lowData = navigator.connection?.saveData === true;
   const motion = !simple && !reduced && c.theme.motion;
+  const atmosphere = createHeroAtmosphere(root);
   const botanical = createBotanicalMotion(root, motion, () => request());
   const panels = [...root.querySelectorAll("[data-orbit-panel]")];
   const filmHome = frame?.parentElement;
@@ -364,6 +366,7 @@ export function createFieldJourney(
       dead = true;
       cancelAnimationFrame(raf);
       botanical.destroy();
+      atmosphere.destroy();
       if (frame && filmHome) filmHome.append(frame);
       listeners.forEach((fn) => fn());
       observer?.disconnect();

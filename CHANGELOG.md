@@ -1,3 +1,10 @@
+# Aroha website 0.7.0 (preview)
+
+- Continue germination into a growing leaf aperture that reveals the photographic hero, title and navigation as one arrival.
+- Replace the inset repeated-photo hero with an expansive landscape and a guest-controlled transition to actual evening cottage photography.
+- Use Natura’s locally licensed Allura for short invitation accents; preserve core reading/control fonts and Kannada artwork.
+- Keep Skip/failure/background/reduced-motion exits bounded; guard image-load races and preserve the complete farm tour.
+
 # Aroha website 0.6.0 (preview)
 
 - Add Natura’s seed-to-sprout welcome with skip, reduced-motion bypass, bounded fallback and tab-hide cleanup.

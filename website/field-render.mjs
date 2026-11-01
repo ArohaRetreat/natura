@@ -3,6 +3,9 @@ import {
   heroGarden,
   natureStory,
   orbitGallery,
+  heroTitle,
+  heroEvening,
+  heroMoments,
 } from "./nature-render.mjs";
 import defaultTour from "./tour-content.json" with { type: "json" };
 export function tourContent(c) {
@@ -70,12 +73,7 @@ export function renderFieldSite(c, { esc, lines, picture, money }) {
     .map(([id, label]) => `<a href="#${id}">${label}</a>`)
     .join(
       "",
-    )}</nav><div><button id="view-toggle" aria-pressed="false">Simple view</button><button class="field-header-enquire" data-enquire="">Plan a visit ${arrow}</button></div></header><main id="main"><section id="home" class="field-hero"><div class="field-hero-visual">${picture(hero.image, hero.imageAlt, "", true, hero.mobileImage)}</div><div class="field-hero-shade" aria-hidden="true"></div>${heroGarden(c, nature, { esc, picture })}<div class="field-hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1>${hero.title
-    .split("\n")
-    .map((t) => `<span class="hero-line"><span>${esc(t)}</span></span>`)
-    .join(
-      "",
-    )}</h1><p>${esc(hero.description)}</p><a href="${sections.has("journey") ? "#journey" : "#intro"}" id="start-journey" class="field-enter"><span class="enter-orbit" aria-hidden="true">↗</span>${esc(hero.primaryLabel)}</a></div><div class="field-hero-foot"><span lang="kn">${esc(c.brand.welcomeKannada)}</span><span>${esc(c.brand.tagline)}</span><a href="#intro">SCROLL TO SLOW DOWN <span aria-hidden="true">↓</span></a></div></section><section id="intro" class="field-section field-intro"><div><p class="eyebrow">${esc(c.intro.eyebrow)}</p><span lang="kn">${esc(c.brand.kannada)}</span>${picture(c.intro.image, c.intro.imageAlt, "field-intro-photo")}</div><h2>${lines(c.intro.title)}</h2><div class="field-intro-copy"><p>${esc(c.intro.description)}</p><span>${esc(c.brand.welcome)}</span></div></section>${natureStory(nature, { esc, lines, picture })}${c.sections
+    )}</nav><div><button id="view-toggle" aria-pressed="false">Simple view</button><button class="field-header-enquire" data-enquire="">Plan a visit ${arrow}</button></div></header><main id="main"><section id="home" class="field-hero"><div class="field-hero-visual hero-day">${picture(hero.image, hero.imageAlt, "", true, hero.mobileImage)}</div>${heroEvening(nature, esc)}<div class="field-hero-shade" aria-hidden="true"></div>${heroGarden(c, nature, { esc, picture })}<div class="field-hero-content"><p class="eyebrow">${esc(hero.eyebrow)}</p><h1>${heroTitle(hero.title, esc)}</h1><p>${esc(hero.description)}</p><a href="${sections.has("journey") ? "#journey" : "#intro"}" id="start-journey" class="field-enter"><span class="enter-orbit" aria-hidden="true">↗</span>${esc(hero.primaryLabel)}</a></div>${heroMoments(nature)}<div class="field-hero-foot"><span lang="kn">${esc(c.brand.welcomeKannada)}</span><span>${esc(c.brand.tagline)}</span><a href="#intro">SCROLL TO SLOW DOWN <span aria-hidden="true">↓</span></a></div></section><section id="intro" class="field-section field-intro"><div><p class="eyebrow">${esc(c.intro.eyebrow)}</p><span lang="kn">${esc(c.brand.kannada)}</span>${picture(c.intro.image, c.intro.imageAlt, "field-intro-photo")}</div><h2>${lines(c.intro.title)}</h2><div class="field-intro-copy"><p>${esc(c.intro.description)}</p><span>${esc(c.brand.welcome)}</span></div></section>${natureStory(nature, { esc, lines, picture })}${c.sections
     .filter((x) => x.visible)
     .map((x) => content[x.id]?.() || "")
     .join(
