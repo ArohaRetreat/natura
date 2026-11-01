@@ -60,7 +60,9 @@ await writeFile(
   `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="${content.theme.forest}"><meta name="description" content="${esc(content.seo.description)}"><meta property="og:title" content="${esc(content.seo.title)}"><meta property="og:description" content="${esc(content.seo.description)}"><meta property="og:image" content="https://aroha-retreat.web.app${esc(content.hero.image)}"><title>${esc(content.seo.title)}</title><link rel="icon" href="/assets/brand/icon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/Lora.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css"></head><body><div id="site">${renderSite(content)}</div><noscript><p style="padding:20px">Interactive details require JavaScript. Call <a href="tel:+${content.visit.phone}">+${content.visit.phone}</a> to plan your visit.</p></noscript><script type="module" src="/assets/site.js"></script></body></html>`,
 );
 // Optional public RUM tag is configured independently; no ingestion credential belongs here.
-let runtime = { rumScriptUrl: null };
+let runtime = JSON.parse(
+  await readFile(new URL("config/website-runtime.public.json", root), "utf8"),
+);
 try {
   runtime = JSON.parse(
     await readFile(new URL("config/website-runtime.json", root), "utf8"),

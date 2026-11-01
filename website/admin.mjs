@@ -10,7 +10,8 @@ import {
 } from "./firebase.mjs";
 import { can, validateContent } from "../functions/domain.mjs";
 import { esc } from "./render.mjs";
-import { track } from "./monitoring.mjs";
+import { track, initializeMonitoring } from "./monitoring.mjs";
+initializeMonitoring();
 const root = document.getElementById("admin");
 let session,
   draft,
