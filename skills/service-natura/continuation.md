@@ -33,3 +33,7 @@ Mobile header/drawer fix at 900px, independent drawer scrolling, scroll restorat
 ## Authorised alpha release / 2026-11-01
 
 User authorised production deployment with Hrudhi kept alpha. Release candidate: Natura 0.6.0, Hrudhi 0.3.0-alpha.1. Current original-art studio and four native study 05 expressions/PSD/puppet are included; rejected mouth experiments are excluded. Native rig/performance and family review remain open under issue #13. Build, current-head CI, merge, Firebase deployment and live verification must be recorded separately; no completion claim for the full character kit.
+
+## Website repository boundary — 1 November 2026
+
+The website, host studio and API now belong to https://github.com/ArohaRetreat/website. Natura main never included the website feature PR. Read docs/website-repository-handoff.md. Natura exports dist/design; it no longer deploys the shared Firebase site directly, since that would remove the root website. Composition and guarded Hosting deployment belong to the website repo. Existing production/preview releases are unchanged by the source move.
