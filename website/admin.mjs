@@ -1,3 +1,5 @@
+import { tourContent } from "./field-render.mjs";
+import defaultTour from "./tour-content.json";
 import defaults from "./content.json";
 import {
   api,
@@ -23,11 +25,11 @@ let session,
 const tabs = {
   story: ["Brand & welcome", ["brand", "hero", "intro", "seo"]],
   sections: ["Page layout", ["sections"]],
-  journey: ["The journey", ["journey"]],
+  tour: ["Farm tour & films", ["tour"]],
   cottages: ["Cottages", ["cottages"]],
   experiences: ["Experiences", ["experiences"]],
   packages: ["Visit packages", ["packages"]],
-  gallery: ["Gallery", ["gallery"]],
+
   contact: ["Contact & FAQs", ["visit", "faqs"]],
   theme: ["Design & motion", ["theme"]],
   access: ["People & access", []],
@@ -35,6 +37,14 @@ const tabs = {
 };
 const labels = {
   schemaVersion: "Schema version",
+  tour: "Farm tour and journal",
+  mapX: "Map position from left (%)",
+  mapY: "Map position from top (%)",
+  film: "Featured film identifier (optional)",
+  src: "Video URL (empty for photographs)",
+  nearby: "Nearby destination identifiers",
+  stop: "Destination identifier",
+  kind: "Media kind: photo or video",
   mobileImage: "Mobile hero photograph URL",
   worldImage: "Illustrated farm world",
   eveningImage: "Evening illustrated world",
@@ -95,15 +105,16 @@ function authScreen(error = "") {
     }
   };
   document.getElementById("signout")?.addEventListener("click", logout);
-  if (__AROHA_EMULATORS__) document
-    .getElementById("emulator-login")
-    ?.addEventListener("click", async () => {
-      try {
-        await emulatorLogin(document.getElementById("emulator-email").value);
-      } catch (e) {
-        authScreen(message(e.message));
-      }
-    });
+  if (__AROHA_EMULATORS__)
+    document
+      .getElementById("emulator-login")
+      ?.addEventListener("click", async () => {
+        try {
+          await emulatorLogin(document.getElementById("emulator-email").value);
+        } catch (e) {
+          authScreen(message(e.message));
+        }
+      });
 }
 function title(k) {
   return (
@@ -122,6 +133,12 @@ function set(path, value) {
   document.getElementById("draft-state").textContent = "Unsaved changes";
 }
 function field(value, path, key) {
+  // Keep historical schema keys for compatibility without offering controls that no longer affect the public layout.
+  if (
+    path.startsWith("hero.") &&
+    ["worldImage", "eveningImage", "foregroundImage"].includes(key)
+  )
+    return "";
   const label = title(key),
     disabled = can(session.role, "edit") ? "" : "disabled";
   if (Array.isArray(value))
@@ -145,11 +162,14 @@ function field(value, path, key) {
     return `<label class="checkbox-field"><input type="checkbox" data-path="${esc(path)}" ${value ? "checked" : ""} ${disabled}>${esc(label)}</label>`;
   if (key === "id")
     return `<label class="field">Stable identifier<input data-path="${esc(path)}" value="${esc(value)}" ${path.startsWith("sections.") ? "readonly" : disabled}><small>Lowercase letters, numbers and hyphens. Keep existing identifiers when editing.</small></label>`;
+  const videoField = key === "src" && path.startsWith("tour.media.");
   const imageField =
     key === "image" ||
-    ["mobileImage", "worldImage", "eveningImage", "foregroundImage"].includes(key) ||
+    ["mobileImage", "worldImage", "eveningImage", "foregroundImage"].includes(
+      key,
+    ) ||
     (path.startsWith("cottages.") && path.includes(".images."));
-  return `<label class="field">${esc(label)}${["description", "detail", "answer", "message", "note", "priceNote", "inclusions"].includes(key) || String(value).includes("\n") ? `<textarea rows="3" data-path="${esc(path)}" ${disabled}>${esc(value)}</textarea>` : `<input type="${typeof value === "number" ? "number" : key === "email" ? "email" : key === "mapUrl" ? "url" : "text"}" data-path="${esc(path)}" value="${esc(value)}" ${typeof value === "number" ? 'min="0" step="1"' : ""} ${disabled}>`}</label>${imageField ? `<div class="media-field">${value ? `<img src="${esc(value)}" alt="Selected photograph preview" loading="lazy">` : ""}${disabled ? "" : `<label class="upload-button">Upload photograph<input type="file" accept="image/jpeg,image/png,image/webp,image/avif" data-upload="${esc(path)}"></label>`}<small>Website media is public immediately after upload. JPEG, PNG, WebP or AVIF; under 10 MB. Originals stay on your device.</small></div>` : ""}`;
+  return `<label class="field">${esc(label)}${["description", "detail", "answer", "message", "note", "priceNote", "inclusions"].includes(key) || String(value).includes("\n") ? `<textarea rows="3" data-path="${esc(path)}" ${disabled}>${esc(value)}</textarea>` : `<input type="${typeof value === "number" ? "number" : key === "email" ? "email" : key === "mapUrl" ? "url" : "text"}" data-path="${esc(path)}" value="${esc(value)}" ${typeof value === "number" ? 'min="0" step="1"' : ""} ${disabled}>`}</label>${videoField ? `<div class="media-field">${value ? `<video controls muted playsinline preload="none" src="${esc(value)}"></video>` : ""}${disabled ? "" : `<label class="upload-button">Upload web video<input type="file" accept="video/mp4,video/webm" data-upload="${esc(path)}" data-media-type="video"></label>`}<small>Public immediately after upload. MP4 or WebM, under 40 MB. Upload an edited web version; originals stay on your device.</small></div>` : ""}${imageField ? `<div class="media-field">${value ? `<img src="${esc(value)}" alt="Selected photograph preview" loading="lazy">` : ""}${disabled ? "" : `<label class="upload-button">Upload photograph<input type="file" accept="image/jpeg,image/png,image/webp,image/avif" data-upload="${esc(path)}"></label>`}<small>Website media is public immediately after upload. JPEG, PNG, WebP or AVIF; under 10 MB. Originals stay on your device.</small></div>` : ""}`;
 }
 function shell() {
   root.innerHTML = `<aside class="studio-sidebar"><a href="/" class="studio-logo"><img src="/assets/brand/logo-forest.svg" alt="Aroha Retreat" width="190" height="65"></a><p class="eyebrow">HOST STUDIO</p><nav aria-label="Studio sections">${Object.entries(
@@ -263,7 +283,19 @@ function renderEditor() {
     (b) =>
       (b.onclick = () => {
         const a = get(b.dataset.add),
-          sample = a[0] ?? (b.dataset.add.endsWith("images") ? "" : null);
+          sample =
+            a[0] ??
+            (() => {
+              const templates = { ...defaults, tour: defaultTour };
+              const value = b.dataset.add
+                .split(".")
+                .reduce((v, k) => v?.[k], templates);
+              if (Array.isArray(value) && value.length) return value[0];
+              if (/\.(images|nearby)$/.test(b.dataset.add)) return "";
+              if (b.dataset.add.endsWith(".walk"))
+                return { name: "New viewpoint", film: "" };
+              return null;
+            })();
         if (sample === null) {
           notice(
             "Restore a backup or an existing item to use as a template.",
@@ -321,16 +353,21 @@ function renderEditor() {
           const path = input.dataset.upload;
           const parentPath = path.split(".").slice(0, -1).join(".");
           const parent = get(parentPath);
-          const url = await upload(file, (p) =>
-            notice("Uploading photograph: " + p + "%"),
+          const url = await upload(
+            file,
+            (p) => notice("Uploading media: " + p + "%"),
+            input.dataset.mediaType === "video" ? "video" : "image",
           );
           if (get(parentPath) !== parent) {
-            notice("The photograph uploaded, but this item moved during upload. Select the photograph again for the intended item.", true);
+            notice(
+              "The media uploaded, but this item moved during upload. Select the media again for the intended item.",
+              true,
+            );
             return;
           }
           set(path, url);
           renderEditor();
-          notice("Photograph uploaded. Save the draft to keep this selection.");
+          notice("Media uploaded. Save the draft to keep this selection.");
         })),
   );
   document.getElementById("import-backup")?.addEventListener("change", (e) =>
@@ -339,6 +376,7 @@ function renderEditor() {
       if (!file || file.size > 200000) throw Error("INVALID_BACKUP");
       draft = validateContent(JSON.parse(await file.text()));
       draft.hero = { ...defaults.hero, ...draft.hero };
+      if (!draft.tour) draft.tour = structuredClone(tourContent(draft));
       dirty = true;
       shell();
       notice("Backup loaded into the editor. Review before saving.");
@@ -386,6 +424,7 @@ async function save() {
 async function load() {
   const r = await api("/draft");
   draft = structuredClone(r.draft?.content || defaults);
+  if (!draft.tour) draft.tour = structuredClone(tourContent(draft));
   draft.hero = { ...defaults.hero, ...draft.hero };
   version = r.draft?.version || 0;
   dirty = false;

@@ -103,19 +103,26 @@ export async function api(path, method = "GET", body) {
     clearTimeout(timer);
   }
 }
-export async function upload(file, onProgress) {
+export async function upload(file, onProgress, kind = "image") {
+  const video = kind === "video";
   if (
-    !["image/jpeg", "image/png", "image/webp", "image/avif"].includes(
-      file.type,
-    ) ||
-    file.size >= 10 * 1024 * 1024
+    !(
+      video
+        ? ["video/mp4", "video/webm"]
+        : ["image/jpeg", "image/png", "image/webp", "image/avif"]
+    ).includes(file.type) ||
+    file.size >= (video ? 40 : 10) * 1024 * 1024
   )
-    throw Error("USE_AN_IMAGE_UNDER_10_MB");
+    throw Error(
+      video ? "USE_A_WEB_VIDEO_UNDER_40_MB" : "USE_AN_IMAGE_UNDER_10_MB",
+    );
   const ext = {
     "image/jpeg": "jpg",
     "image/png": "png",
     "image/webp": "webp",
     "image/avif": "avif",
+    "video/mp4": "mp4",
+    "video/webm": "webm",
   }[file.type];
   const target = ref(
     getStorage(app),

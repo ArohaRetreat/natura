@@ -9,3 +9,7 @@ Production owner addresses are configured only in ignored functions/.env.aroha-r
 Deployed code 3088054b04f52dc59d1271c6dcff8281a06eda90; all three CI jobs passed. Read release-evidence/aroha-0.1.0/release.md and issue #16 for precise evidence and open criteria.
 
 Illustration review adds optional hero worldImage/eveningImage/foregroundImage keys to schema 1, validated under the existing image URL allowlist. Legacy records remain valid; unsafe-host regression coverage passes. This source change is not yet deployed to the production API.
+
+## Additive film tour contract, revision 0.5
+
+functions/domain.mjs now validates optional tour content, bounded map positions, media/stop/film references and optional named walk sequences; existing schema 1 content remains accepted. Local MP4/WebM paths and the project's Storage media prefix are allowed, arbitrary video origins remain denied. Storage rules permit active editors to create immutable public MP4/WebM objects below 40 MiB; image caps remain unchanged. New studio upload controls choose the expected media kind. Integration fixture publishes the expanded tour and checks permitted editor video writes, denied anonymous writes and denied QuickTime uploads. Production rollout is separate from Hosting preview; preserve owner environment and Secret Manager bindings, never deploy the synthetic emulator owner configuration.

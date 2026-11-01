@@ -433,3 +433,5 @@
     font-size: 41px;
   }
 }
+
+.media-field video{display:block;max-width:420px;max-height:260px;background:#142b22}

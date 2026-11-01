@@ -101,6 +101,98 @@ export function imageUrl(v) {
     throw new DomainError("INVALID_IMAGE_URL");
   return v;
 }
+export function videoUrl(v) {
+  text(v, 1500);
+  if (v === "" || /^\/assets\/retreat\/[a-zA-Z0-9_.-]+\.(mp4|webm)$/.test(v))
+    return v;
+  try {
+    const u = new URL(v);
+    if (
+      u.protocol === "https:" &&
+      u.hostname === "firebasestorage.googleapis.com" &&
+      u.pathname.startsWith(
+        "/v0/b/aroha-retreat.firebasestorage.app/o/media%2F",
+      )
+    )
+      return v;
+  } catch {}
+  throw new DomainError("INVALID_VIDEO_URL");
+}
+export function validateTour(t) {
+  obj(t, ["eyebrow", "title", "description", "mapNote", "stops", "media"]);
+  for (const key of ["eyebrow", "title", "description", "mapNote"])
+    text(t[key], 1500);
+  arr(t.stops, 20, (s) => {
+    obj(
+      s,
+      [
+        "id",
+        "name",
+        "title",
+        "description",
+        "detail",
+        "image",
+        "imageAlt",
+        "film",
+        "mapX",
+        "mapY",
+        "nearby",
+        "target",
+      ],
+      ["walk", "onMap"],
+    );
+    id(s.id);
+    text(s.name, 80);
+    text(s.title, 200);
+    text(s.description, 600);
+    text(s.detail);
+    image(s);
+    text(s.film, 48);
+    if (s.onMap !== undefined) bool(s.onMap);
+    if (s.walk !== undefined)
+      arr(s.walk, 12, (w) => {
+        obj(w, ["name", "film"]);
+        text(w.name, 100);
+        id(w.film);
+      });
+    for (const k of ["mapX", "mapY"])
+      if (!Number.isFinite(s[k]) || s[k] < 0 || s[k] > 100)
+        throw new DomainError("INVALID_MAP_POSITION");
+    arr(s.nearby, 8, id);
+    if (!["cottages", "experiences", "packages", "visit"].includes(s.target))
+      throw new DomainError("INVALID_TARGET");
+  });
+  unique(t.stops);
+  arr(t.media, 100, (m) => {
+    obj(m, ["id", "kind", "name", "description", "image", "src", "stop"]);
+    id(m.id);
+    id(m.stop);
+    text(m.name, 250);
+    text(m.description, 1500);
+    imageUrl(m.image);
+    if (!["photo", "video"].includes(m.kind))
+      throw new DomainError("INVALID_MEDIA_KIND");
+    videoUrl(m.src);
+    if ((m.kind === "photo" && m.src !== "") || (m.kind === "video" && !m.src))
+      throw new DomainError("INVALID_MEDIA_SOURCE");
+    if (!t.stops.some((s) => s.id === m.stop))
+      throw new DomainError("INVALID_TOUR_REFERENCE");
+  });
+  unique(t.media);
+  for (const s of t.stops) {
+    if (
+      s.walk?.some(
+        (w) => !t.media.some((m) => m.id === w.film && m.kind === "video"),
+      )
+    )
+      throw new DomainError("INVALID_TOUR_REFERENCE");
+    if (s.film && !t.media.some((m) => m.id === s.film && m.kind === "video"))
+      throw new DomainError("INVALID_TOUR_REFERENCE");
+    if (s.nearby.some((id) => !t.stops.some((x) => x.id === id)))
+      throw new DomainError("INVALID_TOUR_REFERENCE");
+  }
+  return t;
+}
 function image(v) {
   imageUrl(v.image);
   text(v.imageAlt, 250);
@@ -110,36 +202,45 @@ function unique(v) {
     throw new DomainError("DUPLICATE_ID");
 }
 export function validateContent(c) {
-  obj(c, [
-    "schemaVersion",
-    "brand",
-    "hero",
-    "intro",
-    "sections",
-    "journey",
-    "cottages",
-    "experiences",
-    "packages",
-    "gallery",
-    "visit",
-    "faqs",
-    "theme",
-    "seo",
-  ]);
+  obj(
+    c,
+    [
+      "schemaVersion",
+      "brand",
+      "hero",
+      "intro",
+      "sections",
+      "journey",
+      "cottages",
+      "experiences",
+      "packages",
+      "gallery",
+      "visit",
+      "faqs",
+      "theme",
+      "seo",
+    ],
+    ["tour"],
+  );
   if (c.schemaVersion !== 1 || JSON.stringify(c).length > 180000)
     throw new DomainError("INVALID_SCHEMA");
+  if (c.tour !== undefined) validateTour(c.tour);
   obj(c.brand, ["name", "kannada", "tagline", "welcome", "welcomeKannada"]);
   Object.values(c.brand).forEach((v) => text(v, 240));
-  obj(c.hero, [
-    "eyebrow",
-    "title",
-    "description",
-    "image",
-    "imageAlt",
-    "primaryLabel",
-    "secondaryLabel",
-    "mobileImage",
-  ], ["worldImage", "eveningImage", "foregroundImage"]);
+  obj(
+    c.hero,
+    [
+      "eyebrow",
+      "title",
+      "description",
+      "image",
+      "imageAlt",
+      "primaryLabel",
+      "secondaryLabel",
+      "mobileImage",
+    ],
+    ["worldImage", "eveningImage", "foregroundImage"],
+  );
   Object.entries(c.hero)
     .filter(([k]) => k !== "image")
     .forEach(([, v]) => text(v, 1500));

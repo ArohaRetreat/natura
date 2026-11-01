@@ -143,7 +143,7 @@ test("illustrated hero assets remain optional for existing published records and
   const old = copy();
   for (const key of ["worldImage", "eveningImage", "foregroundImage"]) delete old.hero[key];
   assert.equal(validateContent(old).schemaVersion, 1);
-  assert.ok(renderSite(old).includes("art-world-dawn-v1.webp"));
+  assert.ok(renderSite(old).includes(old.hero.image));
   for (const key of ["worldImage", "eveningImage", "foregroundImage"]) {
     const invalid = copy(); invalid.hero[key] = "https://example.com/tracker.png";
     assert.throws(() => validateContent(invalid), /INVALID_IMAGE_URL/);

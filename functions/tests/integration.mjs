@@ -18,6 +18,9 @@ const project = "demo-aroha",
 const content = JSON.parse(
   await readFile(new URL("../../website/content.json", import.meta.url)),
 );
+content.tour = JSON.parse(
+  await readFile(new URL("../../website/tour-content.json", import.meta.url)),
+);
 async function google(email, verified = true) {
   const jwt = [
     Buffer.from(JSON.stringify({ alg: "none", typ: "JWT" })).toString(
@@ -173,6 +176,21 @@ test("complete content and membership lifecycle with independent rule denials", 
     await assertSucceeds(
       uploadBytes(ref(client.storage(), "media/allowed.png"), png, {
         contentType: "image/png",
+      }),
+    );
+    await assertSucceeds(
+      uploadBytes(ref(client.storage(), "media/walk.mp4"), png, {
+        contentType: "video/mp4",
+      }),
+    );
+    await assertFails(
+      uploadBytes(ref(anon.storage(), "media/anonymous.mp4"), png, {
+        contentType: "video/mp4",
+      }),
+    );
+    await assertFails(
+      uploadBytes(ref(client.storage(), "media/raw.mov"), png, {
+        contentType: "video/quicktime",
       }),
     );
     await assertFails(

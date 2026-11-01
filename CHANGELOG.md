@@ -1,3 +1,10 @@
+# Aroha website 0.5.0 (preview)
+
+- **Real farm tour** — replace the procedural public entry with moving photographic viewpoints, a host-described route map, readable destination navigation and an interactive tree-house interior sequence.
+- **Complete media journal** — include all 35 owner photographs and 21 colour-corrected silent web films; preserve full-resolution originals and source/output provenance.
+- **Editable tour and films** — add validated, backward-compatible CMS tour/media fields and immutable MP4/WebM uploads for active editors. Production backend/rule rollout remains separate from Hosting preview.
+- **Reading and access** — unify Natura typography, expand package/experience information, preserve native scrolling and modal focus, pause hidden media and provide Simple View/reduced motion.
+
 # Aroha website 0.2.0
 
 - Rebuild the public experience with a reversible botanical entrance, scroll-driven camera movement, chapter controls and a morning/evening photo switch.

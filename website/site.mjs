@@ -1,54 +1,31 @@
-import { createCinematic } from "./cinematic.mjs";
-import { preference, setPreference } from "./preferences.mjs";
 import initial from "./content.json";
-import { renderSite, esc, picture } from "./render.mjs";
+import { preference, setPreference } from "./preferences.mjs";
+import { renderSite, esc, picture, money } from "./render.mjs";
+import { tourContent, renderFarmMap } from "./field-render.mjs";
+import { createFieldJourney } from "./field-journey.mjs";
 import { validateContent, enquiryText } from "../functions/domain.mjs";
-import { subscribeSite } from "./firebase.mjs";
 import { track, initializeMonitoring, reportError } from "./monitoring.mjs";
 let content = initial,
-  activeStop = 0,
   lastFocus,
-  observer,
+  journey,
   unsubscribe,
-  paintQueued = false,
   pendingContent,
-  cinematic,
-  spatial,
-  renderGeneration = 0,
-  spatialProgress = 0,
-  afterSunset = false,
-  dayProgress = 0;
+  subscriptionGeneration = 0;
 const root = document.getElementById("site"),
   motion = matchMedia("(prefers-reduced-motion: reduce)"),
   preview = new URLSearchParams(location.search).has("preview");
 let simple = motion.matches || preference("aroha-view") === "simple";
-function theme() {
-  for (const k of ["forest", "ivory", "leaf", "bronze"])
-    document.documentElement.style.setProperty("--" + k, content.theme[k]);
+function render() {
+  const y = scrollY;
+  journey?.destroy();
+  root.innerHTML = renderSite(content);
+  for (const key of ["forest", "ivory", "leaf", "bronze"])
+    document.documentElement.style.setProperty("--" + key, content.theme[key]);
   document.body.classList.toggle("simple", simple || !content.theme.motion);
-  document.body.classList.toggle("after-sunset", afterSunset);
   document.title = content.seo.title;
   document
     .querySelector('meta[name="description"]')
     ?.setAttribute("content", content.seo.description);
-}
-function render() {
-  const y = scrollY;
-  observer?.disconnect();
-  cinematic?.destroy();
-  spatial?.destroy();
-  spatial = null;
-  const generation = ++renderGeneration;
-  root.classList.remove("spatial-ready");
-  root.innerHTML = renderSite(content);
-  theme();
-  document.getElementById("view-toggle").textContent = simple
-    ? "Journey view"
-    : "Simple view";
-  document
-    .getElementById("view-toggle")
-    .setAttribute("aria-pressed", String(simple));
-  document.getElementById("view-toggle").hidden = !content.theme.motion;
   if (preview) {
     const banner = document.createElement("div");
     banner.className = "preview-banner";
@@ -56,88 +33,20 @@ function render() {
     root.prepend(banner);
   }
   bind();
-  cinematic = createCinematic(
+  journey = createFieldJourney(
     root,
-    !simple && content.theme.motion && !motion.matches,
-    requestPaint,
+    content,
+    { stop: openTourStop, walk: openWalk, track, error: reportError },
+    { simple: simple || !content.theme.motion },
   );
-  window.scrollTo({ top: y, behavior: "instant" });
-  if (!simple && content.theme.motion && !motion.matches) {
-    import("./spatial.mjs")
-      .then(async ({ createSpatial }) => {
-        if (generation !== renderGeneration) return;
-        const scene = await createSpatial(root, content, {
-          cottage: openCottage,
-          experience: openFarmExperience,
-          enquiry: enquire,
-          track,
-          error: reportError,
-          resumeAt: spatialProgress,
-        });
-        if (generation !== renderGeneration) scene?.destroy();
-        else spatial = scene;
-      })
-      .catch(() => reportError("SPATIAL_UNAVAILABLE"));
-  }
-  requestAnimationFrame(paint);
+  if (Math.abs(scrollY - y) > 1)
+    window.scrollTo({ top: y, behavior: "instant" });
+  root.dataset.ready = "true";
 }
-function setStop(index) {
-  if (index === activeStop) return;
-  activeStop = index;
-  const x = content.journey[index];
-  if (!x) return;
-  document
-    .querySelectorAll(".journey-photo")
-    .forEach((el, i) => el.classList.toggle("active", i === index));
-  document.querySelectorAll("[data-stop]").forEach((el, i) => {
-    if (i === index) el.setAttribute("aria-current", "step");
-    else el.removeAttribute("aria-current");
-  });
-  const chapterTitle = document.getElementById("journey-title");
-  if (!chapterTitle) return;
-  chapterTitle.innerHTML = esc(x.title).replaceAll("\n", "<br>");
-  document.getElementById("journey-description").textContent = x.description;
-  document.getElementById("journey-link").href = "#" + x.target;
-  const counter = document.getElementById("chapter-counter");
-  if (counter)
-    counter.textContent =
-      String(index + 1).padStart(2, "0") +
-      " / " +
-      String(content.journey.length).padStart(2, "0");
-  const name = document.getElementById("journey-name");
-  if (name) name.textContent = x.name;
-  const hotspot = document.getElementById("journey-hotspot");
-  if (hotspot) hotspot.href = "#" + x.target;
-  track("journey.stop", { section: x.id });
-}
-function paint() {
-  paintQueued = false;
-  cinematic?.paint();
-  if (root.classList.contains("spatial-ready")) return;
-  if (simple || !content.theme.motion || !content.journey.length) return;
-  const el = document.getElementById("journey");
-  if (!el) return;
-  const r = el.getBoundingClientRect(),
-    range = el.offsetHeight - innerHeight;
-  if (range <= 0) return;
-  const p = Math.max(0, Math.min(0.9999, -r.top / range));
-  setStop(
-    Math.min(
-      content.journey.length - 1,
-      Math.floor(p * content.journey.length),
-    ),
-  );
-}
-function requestPaint() {
-  if (!paintQueued) {
-    paintQueued = true;
-    requestAnimationFrame(paint);
-  }
-}
-window.addEventListener("scroll", requestPaint, { passive: true });
-window.addEventListener("resize", paint);
 function show(markup) {
-  lastFocus = document.activeElement;
+  if (!document.getElementById("details-dialog").open)
+    lastFocus = document.activeElement;
+  document.querySelectorAll("#dialog-content video").forEach((v) => v.pause());
   document.getElementById("dialog-content").innerHTML = markup;
   document.getElementById("details-dialog").showModal();
   document.querySelector(".dialog-close").focus({ preventScroll: true });
@@ -209,177 +118,175 @@ function enquire(packageId = "", cottageId = "") {
     }
   };
 }
-function bind() {
-  const ambience = document.getElementById("ambience-toggle"),
-    clock = document.getElementById("world-time");
-  const changeLight = (value) => {
-    dayProgress = Math.max(0, Math.min(1, value));
-    afterSunset = dayProgress > 0.5;
-    document.body.classList.toggle("after-sunset", afterSunset);
-    root.querySelector(".world-night").style.opacity = dayProgress;
-    clock.value = Math.round(dayProgress * 100);
-    clock.setAttribute(
-      "aria-valuetext",
-      dayProgress < 0.25
-        ? "Morning"
-        : dayProgress > 0.75
-          ? "Evening"
-          : "Afternoon",
-    );
-    ambience.setAttribute("aria-pressed", String(afterSunset));
-    ambience.setAttribute(
-      "aria-label",
-      afterSunset ? "Switch to morning" : "Switch to evening",
-    );
-    document.getElementById("ambience-label").textContent = afterSunset
-      ? "☼"
-      : "◐";
-  };
-  ambience.onclick = () => changeLight(afterSunset ? 0 : 1);
-  clock.oninput = () => changeLight(Number(clock.value) / 100);
-  changeLight(dayProgress);
+
+function openTourStop(index) {
+  const t = tourContent(content),
+    s = t.stops[index];
+  if (!s) return;
+  const media = t.media.filter((m) => m.stop === s.id),
+    ids = media.map((m) => m.id);
+  show(
+    `<article class="field-stop-dialog">${picture(s.image, s.imageAlt, "stop-dialog-photo")}<p class="stop-dialog-caption">${esc(s.imageAlt)}</p><div class="dialog-copy"><p class="eyebrow">${String(index + 1).padStart(2, "0")} / ${esc(s.name)}</p><h2 id="dialog-title">${esc(s.title)}</h2><p>${esc(s.detail)}</p>${media.length ? `<div class="stop-media-grid">${media.map((m) => `<button data-stop-media="${esc(m.id)}" aria-label="${m.kind === "video" ? "Watch" : "View"}: ${esc(m.name)}">${picture(m.image, m.name)}<span>${m.kind === "video" ? "▷ Film" : "View ↗"}</span></button>`).join("")}</div>` : ""}<button class="button" id="stop-enquire">${esc(content.visit.enquiryLabel)} ↗</button><button class="field-text-link" id="stop-section">${s.target === "cottages" ? "Explore accommodation" : s.target === "packages" ? "Compare visits" : "Discover more"} ↗</button><div class="stop-nearby"><span>Continue exploring</span>${s.nearby
+      .map((id) => {
+        const next = t.stops.find((x) => x.id === id);
+        return next
+          ? `<button data-nearby="${esc(id)}">${esc(next.name)} ↗</button>`
+          : "";
+      })
+      .join("")}</div></div></article>`,
+  );
   root
-    .querySelectorAll("[data-world-stop]")
+    .querySelectorAll("[data-stop-media]")
     .forEach(
-      (b) =>
-        (b.onclick = () =>
-          root.querySelector(`[data-stop="${b.dataset.worldStop}"]`)?.click()),
+      (b) => (b.onclick = () => openMedia(b.dataset.stopMedia, ids, index)),
     );
-  activeStop = -1;
-  setStop(0);
-  document.getElementById("view-toggle").onclick = () => {
-    const sections = [...root.querySelectorAll("main > section")];
-    const current =
-      sections.find((el) => {
-        const r = el.getBoundingClientRect();
-        return r.top <= 120 && r.bottom > 120;
-      }) || sections[0];
-    let id = current?.id,
-      offset = current?.getBoundingClientRect().top || 0;
-    const inWorld = id === "farm-journey";
-    if (inWorld) {
-      spatialProgress = spatial?.progress || 0;
-      id =
-        spatialProgress < 0.13
-          ? "home"
-          : spatialProgress > 0.95
-            ? "packages"
-            : "journey";
-    }
+  root.querySelector("#stop-enquire").onclick = () => enquire();
+  root.querySelector("#stop-section").onclick = () => {
+    root.querySelector("#details-dialog").close();
+    requestAnimationFrame(() =>
+      root
+        .querySelector("#" + s.target)
+        ?.scrollIntoView({ behavior: motion.matches ? "instant" : "smooth" }),
+    );
+  };
+  root.querySelectorAll("[data-nearby]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        const i = t.stops.findIndex((x) => x.id === b.dataset.nearby);
+        openTourStop(i);
+      }),
+  );
+}
+function openWalk(index, part = 0) {
+  const t = tourContent(content),
+    s = t.stops[index],
+    steps = s?.walk,
+    step = steps?.[part],
+    m = t.media.find((m) => m.id === step?.film);
+  if (!m) return;
+  show(
+    `<article class="walk-dialog"><video controls autoplay muted playsinline preload="metadata" poster="${esc(m.image)}" src="${esc(m.src)}" aria-label="${esc(step.name)}"></video><div class="walk-caption"><p class="eyebrow">A WALK INSIDE / ${esc(s.name)}</p><h2 id="dialog-title">${esc(step.name)}</h2><nav aria-label="Room walkthrough">${steps.map((x, i) => `<button data-walk-step="${i}" ${i === part ? 'aria-current="step"' : ""}><span>0${i + 1}</span>${esc(x.name)}</button>`).join("")}</nav><button class="field-light-link" id="walk-continue">${part < steps.length - 1 ? esc(steps[part + 1].name) + " →" : "Return to the farm ↗"}</button></div></article>`,
+  );
+  root
+    .querySelectorAll("[data-walk-step]")
+    .forEach(
+      (b) => (b.onclick = () => openWalk(index, Number(b.dataset.walkStep))),
+    );
+  root.querySelector("#walk-continue").onclick = () =>
+    part < steps.length - 1
+      ? openWalk(index, part + 1)
+      : root.querySelector("#details-dialog").close();
+}
+function openMedia(id, scope, returnStop) {
+  const t = tourContent(content),
+    ids = scope || t.media.map((m) => m.id),
+    i = ids.indexOf(id),
+    m = t.media.find((m) => m.id === id);
+  if (!m) return;
+  show(
+    `<article class="field-media-dialog">${m.kind === "video" ? `<video controls playsinline muted autoplay preload="metadata" poster="${esc(m.image)}" src="${esc(m.src)}" aria-label="${esc(m.name)}"></video>` : picture(m.image, m.name)}<div><h2 id="dialog-title">${esc(m.name)}</h2><p>${esc(m.description)}</p><div class="media-dialog-navigation"><button id="media-previous" aria-label="Previous moment">← Previous</button><span>${i + 1} / ${ids.length}</span><button id="media-next" aria-label="Next moment">Next →</button></div>${returnStop !== undefined ? '<button class="field-light-link" id="media-back">Back to this place ↗</button>' : ""}</div></article>`,
+  );
+  root.querySelector("#media-previous").onclick = () =>
+    openMedia(ids[(i - 1 + ids.length) % ids.length], ids, returnStop);
+  root.querySelector("#media-next").onclick = () =>
+    openMedia(ids[(i + 1) % ids.length], ids, returnStop);
+  if (returnStop !== undefined)
+    root.querySelector("#media-back").onclick = () => openTourStop(returnStop);
+  track("gallery.opened", { section: m.stop });
+}
+function openMap() {
+  show(renderFarmMap(content, esc));
+  root.querySelectorAll("[data-map-stop]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        const i = Number(b.dataset.mapStop);
+        root.querySelector("#details-dialog").close();
+        requestAnimationFrame(() => journey?.go(i));
+      }),
+  );
+}
+function bind() {
+  const toggle = root.querySelector("#view-toggle");
+  toggle.textContent = simple ? "Journey view" : "Simple view";
+  toggle.setAttribute("aria-pressed", String(simple));
+  toggle.hidden = !content.theme.motion;
+  toggle.onclick = () => {
+    const el = root.querySelector("#journey"),
+      r = el?.getBoundingClientRect(),
+      inTour = r && r.top <= 120 && r.bottom > 120,
+      index = journey?.index || 0;
     simple = !simple;
     setPreference("aroha-view", simple ? "simple" : "journey");
     render();
-    let replacement = document.getElementById(id);
-    if (inWorld && id === "journey") {
-      const order = [
-        { at: 0.27, id: "path" },
-        { at: 0.48, id: "cottages" },
-        { at: 0.67, id: "stillness" },
-        { at: 0.83, id: "farm" },
-      ];
-      const nearest = order.reduce((a, b) =>
-        Math.abs(a.at - spatialProgress) < Math.abs(b.at - spatialProgress)
-          ? a
-          : b,
-      );
-      const index = content.journey.findIndex((x) => x.id === nearest.id);
-      replacement =
-        replacement?.querySelectorAll(".simple-chapters article")[
-          Math.max(0, index)
-        ] || replacement;
-    }
-    if (replacement)
-      window.scrollTo({
-        top:
-          scrollY +
-          replacement.getBoundingClientRect().top -
-          (id === "journey" ? 100 : offset),
-        behavior: "instant",
-      });
-    document.getElementById("view-toggle").focus({ preventScroll: true });
+    if (inTour) journey.go(index);
+    root.querySelector("#view-toggle").focus({ preventScroll: true });
   };
+  root
+    .querySelectorAll("[data-simple-view]")
+    .forEach((b) => (b.onclick = toggle.onclick));
   root
     .querySelectorAll("[data-cottage]")
     .forEach((b) => (b.onclick = () => openCottage(b.dataset.cottage)));
   root
     .querySelectorAll("[data-enquire]")
     .forEach((b) => (b.onclick = () => enquire(b.dataset.enquire)));
-  root.querySelectorAll("[data-stop]").forEach(
+  root
+    .querySelectorAll("[data-farm-map]")
+    .forEach((b) => (b.onclick = openMap));
+  root
+    .querySelectorAll("[data-media]")
+    .forEach((b) => (b.onclick = () => openMedia(b.dataset.media)));
+  root.querySelectorAll("[data-media-filter]").forEach(
     (b) =>
       (b.onclick = () => {
-        const el = document.getElementById("journey"),
-          i = Number(b.dataset.stop);
-        if (simple || !content.theme.motion || motion.matches) {
-          el?.querySelectorAll(".simple-chapters article")[i]?.scrollIntoView({
-            behavior: "instant",
-            block: "start",
-          });
-          return;
-        }
-        const top =
-          scrollY +
-          el.getBoundingClientRect().top +
-          ((el.offsetHeight - innerHeight) * (i + 0.1)) /
-            Math.max(1, content.journey.length);
-        window.scrollTo({
-          top,
-          behavior: motion.matches ? "instant" : "smooth",
-        });
+        root
+          .querySelectorAll("[data-media-filter]")
+          .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        root
+          .querySelectorAll("[data-media-kind]")
+          .forEach(
+            (x) =>
+              (x.hidden =
+                b.dataset.mediaFilter !== "all" &&
+                x.dataset.mediaKind !== b.dataset.mediaFilter),
+          );
       }),
   );
-  root.querySelectorAll("[data-gallery]").forEach(
-    (b) =>
-      (b.onclick = () => {
-        const x = content.gallery[Number(b.dataset.gallery)];
-        show(
-          `${picture(x.image, x.imageAlt, "dialog-photo")}<div class="dialog-copy"><h2 id="dialog-title" style="font-size:22px">${esc(x.imageAlt)}</h2></div>`,
-        );
-      }),
-  );
-  root.querySelectorAll("[data-chapter]").forEach(
-    (b) =>
-      (b.onclick = () => {
-        const index = Math.max(
-          0,
-          Math.min(
-            content.journey.length - 1,
-            activeStop + Number(b.dataset.chapter),
-          ),
-        );
-        root.querySelector(`[data-stop="${index}"]`)?.click();
-      }),
-  );
-  root.querySelectorAll("[data-cottage-scroll]").forEach(
-    (b) =>
-      (b.onclick = () => {
-        const collection = root.querySelector(".cottage-grid");
-        collection.scrollBy({
-          left: collection.clientWidth * 0.75 * Number(b.dataset.cottageScroll),
-          behavior: motion.matches ? "instant" : "smooth",
-        });
-      }),
-  );
-  document.getElementById("start-journey").onclick = () =>
+  root.querySelector("#start-journey").onclick = (e) => {
     track("journey.started");
-  const dialog = document.getElementById("details-dialog");
-  document.querySelector(".dialog-close").onclick = () => dialog.close();
+    if (root.querySelector("#journey")) {
+      e.preventDefault();
+      journey.go(0);
+    }
+  };
+  const dialog = root.querySelector("#details-dialog");
+  root.querySelector(".dialog-close").onclick = () => dialog.close();
   dialog.onclose = () => {
+    root.querySelectorAll("#dialog-content video").forEach((v) => {
+      v.pause();
+      v.removeAttribute("src");
+      v.load();
+    });
     if (pendingContent) {
-      const id = lastFocus?.id,
-        cottage = lastFocus?.getAttribute("data-cottage"),
-        enquiry = lastFocus?.getAttribute("data-enquire");
+      const id = lastFocus?.id;
+      const attribute = [
+        "data-media",
+        "data-cottage",
+        "data-enquire",
+        "data-farm-map",
+      ].find((key) => lastFocus?.hasAttribute(key));
+      const value = attribute ? lastFocus.getAttribute(attribute) : null;
       content = pendingContent;
       pendingContent = null;
       render();
-      const selector = id
-        ? "#" + CSS.escape(id)
-        : cottage !== null && cottage !== undefined
-          ? '[data-cottage="' + CSS.escape(cottage) + '"]'
-          : enquiry !== null && enquiry !== undefined
-            ? '[data-enquire="' + CSS.escape(enquiry) + '"]'
-            : null;
-      if (selector)
-        document.querySelector(selector)?.focus({ preventScroll: true });
+      if (id)
+        root
+          .querySelector("#" + CSS.escape(id))
+          ?.focus({ preventScroll: true });
+      else if (attribute)
+        root
+          .querySelector(`[${attribute}="${CSS.escape(value)}"]`)
+          ?.focus({ preventScroll: true });
     } else if (lastFocus?.isConnected) lastFocus.focus({ preventScroll: true });
   };
   dialog.onclick = (e) => {
@@ -394,16 +301,16 @@ function bind() {
         dialog.close();
     }
   };
-  document.getElementById("privacy-settings").onclick = () => {
+  root.querySelector("#privacy-settings").onclick = () => {
     show(
       '<div class="dialog-copy"><h2 id="dialog-title">Privacy & monitoring</h2><p>Optional Dynatrace monitoring helps us understand page performance and errors. Enquiry messages, names and phone numbers are excluded. Google Analytics and session replay are not enabled.</p><p>You can use the site without optional monitoring. Essential Google sign-in is used only in the host portal.</p><button class="button" id="allow-monitoring">Allow monitoring</button> <button class="text-link" id="deny-monitoring">Decline / withdraw</button></div>',
     );
-    document.getElementById("allow-monitoring").onclick = () => {
+    root.querySelector("#allow-monitoring").onclick = () => {
       setPreference("aroha-monitoring", "allowed");
       initializeMonitoring();
       dialog.close();
     };
-    document.getElementById("deny-monitoring").onclick = () => {
+    root.querySelector("#deny-monitoring").onclick = () => {
       setPreference("aroha-monitoring", "denied");
       location.reload();
     };
@@ -417,7 +324,7 @@ motion.addEventListener("change", (e) => {
     render();
   }
 });
-if (preview) {
+if (preview)
   window.addEventListener("message", (e) => {
     if (
       e.origin !== location.origin ||
@@ -432,16 +339,25 @@ if (preview) {
       reportError("INVALID_PREVIEW");
     }
   });
-} else {
-  watchContent();
-}
-function watchContent() {
+else watchContent();
+async function watchContent() {
+  const generation = ++subscriptionGeneration;
   unsubscribe?.();
+  // Public controls become interactive before loading the optional live-data SDK.
+  let subscribeSite;
+  try {
+    ({ subscribeSite } = await import("./firebase.mjs"));
+  } catch {
+    reportError("CONTENT_READ_FAILED");
+    return;
+  }
+  if (generation !== subscriptionGeneration) return;
   unsubscribe = subscribeSite(
     (data) => {
       try {
         const next = validateContent(data.content);
-        if (document.getElementById("details-dialog")?.open) {
+        if (JSON.stringify(next) === JSON.stringify(content)) return;
+        if (root.querySelector("#details-dialog")?.open) {
           pendingContent = next;
           return;
         }
@@ -455,14 +371,10 @@ function watchContent() {
   );
 }
 window.addEventListener("pageshow", (e) => {
-  if (e.persisted) {
-    render();
-    if (!preview) watchContent();
-  }
+  if (e.persisted && !preview) watchContent();
 });
 window.addEventListener("pagehide", () => {
-  observer?.disconnect();
-  cinematic?.destroy();
-  spatial?.destroy();
+  subscriptionGeneration++;
   unsubscribe?.();
+  journey?.destroy();
 });

@@ -1,3 +1,5 @@
+import { spatialStories, renderSpatialFacts } from "./spatial-content.mjs";
+import { esc } from "./render.mjs";
 import * as T from "three";
 import { createFarmWorld } from "./farm-world.mjs";
 import { FARM_STOPS, clamp, sampleRoute } from "./farm-route.mjs";
@@ -5,7 +7,7 @@ import { FARM_STOPS, clamp, sampleRoute } from "./farm-route.mjs";
 export async function createSpatial(
   root,
   content,
-  { cottage, enquiry, experience, track, error, resumeAt = 0 },
+  { cottage, enquiry, experience, guide, track, error, resumeAt = 0 },
 ) {
   const section = root.querySelector("#farm-journey"),
     canvas = root.querySelector("#farm-canvas");
@@ -31,7 +33,8 @@ export async function createSpatial(
     drag,
     frames = 0,
     frameTime = 0,
-    reducedQuality = false;
+    reducedQuality = false,
+    viewportWidth=0;
   const story = root.querySelector(".spatial-story"),
     title = root.querySelector("#spatial-title"),
     desc = root.querySelector("#spatial-description"),
@@ -62,51 +65,9 @@ export async function createSpatial(
         }),
     );
   };
-  const j = (id) =>
-    content.journey.find((x) => x.id === id) || content.journey[0];
-  const farm = j("path"),
-    stay = j("cottages"),
-    still = j("stillness"),
-    life = j("farm"),
-    packages = content.sections.find((x) => x.id === "packages");
-  const stories = [
-    {
-      k: content.hero.eyebrow,
-      t: content.hero.title,
-      d: content.hero.description,
-      a: content.hero.primaryLabel,
-    },
-    {
-      k: "01 / " + farm.name,
-      t: farm.title,
-      d: farm.description,
-      a: "Follow the path",
-    },
-    {
-      k: "02 / " + stay.name,
-      t: stay.title,
-      d: stay.description,
-      a: "Open the cottage",
-    },
-    {
-      k: "03 / " + still.name,
-      t: still.title,
-      d: still.description,
-      a: "Discover the real moments",
-    },
-    {
-      k: "04 / " + life.name,
-      t: life.title,
-      d: life.description,
-      a: "Meet your hosts",
-    },
-    {
-      k: content.brand.tagline,
-      t: packages?.title || content.brand.welcome,
-      d: content.visit.priceNote,
-      a: content.visit.enquiryLabel,
-    },
-  ];
+  const stories = spatialStories(content);
+  const facts = root.querySelector("#spatial-facts"),
+    more = root.querySelector("#spatial-more");
   function measure() {
     if (disposed) return;
     const r = section.getBoundingClientRect();
@@ -119,10 +80,13 @@ export async function createSpatial(
     if (!renderer || disposed) return;
     const w = stage.clientWidth,
       h = stage.clientHeight;
+    const keepPosition=ready&&visible&&Math.abs(w-viewportWidth)>2;
+    viewportWidth=w;
     camera.aspect = w / Math.max(1, h);
     camera.fov = w < 600 ? 61 : 48;
     camera.updateProjectionMatrix();
     renderer.setSize(w, h, false);
+    if(keepPosition)window.scrollTo({top:scrollY+section.getBoundingClientRect().top+(section.offsetHeight-innerHeight)*current,behavior:"instant"});
     measure();
   }
   function goto(i) {
@@ -135,13 +99,19 @@ export async function createSpatial(
       behavior: "smooth",
     });
   }
+  const hotspotAction = () =>
+    stop === 2 && content.cottages[0] ? cottage(content.cottages[0].id) : guide(stop);
   function openDetail() {
-    if (stop === 2) cottage(content.cottages[0].id);
-    else if (stop === 4) experience("animals");
-    else if (stop === 3) experience("meditation");
-    else if (stop === 5) enquiry();
-    else goto(stop + 1);
+    if (stop === 0 || stop === 1) goto(stop + 1);
+    else guide(stop);
   }
+  const showMore = () => guide([0, 1, 5, 5, 5, 0][Math.max(0, stop)]);
+  const factAction = (e) => {
+    const b = e.target.closest("button");
+    if (b?.dataset.spatialCottage) cottage(b.dataset.spatialCottage);
+    else if (b?.dataset.spatialExperience)
+      experience(b.dataset.spatialExperience);
+  };
   function updateStory(i) {
     if (stop === i) return;
     stop = i;
@@ -150,6 +120,8 @@ export async function createSpatial(
     desc.textContent = s.d;
     kicker.textContent = s.k;
     action.firstChild.textContent = s.a + " ";
+    facts.innerHTML = renderSpatialFacts(s.facts, esc);
+    more.firstChild.textContent = s.more + " ";
     nextLabel.textContent =
       i === 5
         ? "Continue to real Aroha"
@@ -167,6 +139,14 @@ export async function createSpatial(
       ],
       { duration: 240, easing: "cubic-bezier(0.23,1,0.32,1)" },
     );
+    const dock = nav[i].parentElement;
+    dock.scrollTo({
+      left: Math.max(
+        0,
+        nav[i].offsetLeft - dock.clientWidth / 2 + nav[i].clientWidth / 2,
+      ),
+      behavior: "smooth",
+    });
     status.textContent = FARM_STOPS[i].name;
     track("journey.stop", { section: FARM_STOPS[i].id });
   }
@@ -221,7 +201,7 @@ export async function createSpatial(
         Math.abs(project.y) < 0.75;
       hotspot.hidden = !onscreen;
       if (onscreen) {
-        hotspot.style.transform = `translate3d(${(project.x * 0.5 + 0.5) * stage.clientWidth}px,${(-project.y * 0.5 + 0.5) * stage.clientHeight}px,0)`;
+        hotspot.style.transform = `translate3d(${Math.max(12, Math.min((project.x * 0.5 + 0.5) * stage.clientWidth, stage.clientWidth - 210))}px,${(-project.y * 0.5 + 0.5) * stage.clientHeight}px,0)`;
         hotspotName.textContent =
           stop === 2
             ? "Open the cottage"
@@ -323,7 +303,9 @@ export async function createSpatial(
     canvas.removeEventListener("pointercancel", up);
     clock.removeEventListener("input", lightChange);
     action.removeEventListener("click", openDetail);
-    hotspot.removeEventListener("click", openDetail);
+    hotspot.removeEventListener("click", hotspotAction);
+    more.removeEventListener("click", showMore);
+    facts.removeEventListener("click", factAction);
     next.removeEventListener("click", nextFn);
     nav.forEach((b, i) => b.removeEventListener("click", navFns[i]));
     world?.dispose();
@@ -398,7 +380,9 @@ export async function createSpatial(
     canvas.addEventListener("pointercancel", up);
     clock.addEventListener("input", lightChange);
     action.addEventListener("click", openDetail);
-    hotspot.addEventListener("click", openDetail);
+    hotspot.addEventListener("click", hotspotAction);
+    more.addEventListener("click", showMore);
+    facts.addEventListener("click", factAction);
     next.addEventListener("click", nextFn);
     observer = new IntersectionObserver(
       (entries) => {

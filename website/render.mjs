@@ -1,3 +1,4 @@
+import { renderFieldSite } from "./field-render.mjs";
 import { renderSpatial } from "./spatial-render.mjs";
 export const esc = (v) =>
   String(v ?? "").replace(
@@ -34,7 +35,8 @@ function section(c,s) {
  }[s.id]?.()||"";
  return `<section id="${s.id}" class="section section-${s.id}">${heading(s)}${body}</section>`;
 }
-export function renderSite(c) {
+export function renderSite(c) { return renderFieldSite(c,{esc,lines,picture,money}); }
+export function renderLegacySite(c) {
  const hasJourney=c.sections.some(s=>s.id==="journey"&&s.visible);
  const foreground=c.hero.foregroundImage===undefined?artPath("palm-foreground"):c.hero.foregroundImage;
  const pinPositions=[[49,69],[47,40],[80,73],[65,22]];

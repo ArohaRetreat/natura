@@ -3,6 +3,7 @@ const names = new Set([
   "journey.started",
   "journey.stop",
   "cottage.opened",
+  "gallery.opened",
   "enquiry.prepared",
   "admin.saved",
   "admin.published",

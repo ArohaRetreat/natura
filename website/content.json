@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "HRUDHI FARMS · KANAKAPURA",
     "title": "Leave the world\nat the gate.",
-    "description": "Leave the rush at the gate. A working farm, a quiet corner, and a little room to breathe.",
+    "description": "A working farm at Hrudhi Farms, Kanakapura. Come for a day, stay among the palms, or make time for meditation—with vegetarian farm food and a personal welcome.",
     "image": "/assets/retreat/hero-desktop.webp",
     "imageAlt": "Red-roofed A-frame cottages beneath coconut palms at Aroha",
     "primaryLabel": "Start your journey",
@@ -23,7 +23,7 @@
   "intro": {
     "eyebrow": "YOUR OWN LITTLE CORNER OF THE EARTH",
     "title": "Less rush.\nMore room to be.",
-    "description": "Walk among the palms. Meet the animals. Sit a little longer over a home-cooked meal. At Aroha, nature, meditation and farm life come together — with space to do as much, or as little, as you like.",
+    "description": "Aroha is a nature and wellness retreat on a working farm at Hrudhi Farms, Kanakapura, near Bengaluru. More than 9,800 trees across 94 species grow among coconut groves and orchards. Discover farm animals, cottages, a pond, a swimming pool and the surrounding boulder hills. Join what interests you, share a vegetarian meal, and leave time to simply enjoy the place.",
     "image": "/assets/retreat/DSC_3890.webp",
     "imageAlt": "Fresh green leaves on the farm"
   },
@@ -70,7 +70,7 @@
       "id": "path",
       "name": "The farm",
       "title": "Let the day\nfind its own pace.",
-      "description": "Follow the palms, the stone paths and the small discoveries along the way. There is no hurry here.",
+      "description": "Explore coconut groves, orchards and quiet farm paths with your hosts. Nature walks, swimming, seasonal fruits and vegetarian farm meals are part of every visit package.",
       "image": "/assets/retreat/art-world-dawn-v1.webp",
       "imageAlt": "Artistic impression of Aroha: cottages, palms, pond and farm life",
       "target": "experiences"
@@ -79,7 +79,7 @@
       "id": "cottages",
       "name": "The cottages",
       "title": "A quiet corner,\njust for you.",
-      "description": "Red roofs among the palms. Private spaces for slow mornings and an unhurried night on the farm.",
+      "description": "Choose from three private, en-suite cottage styles: A-Frame Cottages, Verandah Cottage and Garden Row. Overnight accommodation is included with Farm Stay and Meditation & Wellness; your hosts confirm the room personally.",
       "image": "/assets/retreat/art-stay-vignette-v1.webp",
       "imageAlt": "Illustrated impression of a red-roofed cottage beneath coconut palms",
       "target": "cottages"
@@ -88,7 +88,7 @@
       "id": "farm",
       "name": "Farm life",
       "title": "Meet the farm.\nAnd its family.",
-      "description": "Walk the groves, meet the animals with your hosts, and discover the everyday pleasures of a working farm.",
+      "description": "Meet the ox and sheep with your hosts, walk the groves, taste seasonal fruit, swim or simply linger over a farm-grown meal. Overnight guests can gather for a campfire evening. Participation is always relaxed.",
       "image": "/assets/retreat/art-farm-vignette-v1.webp",
       "imageAlt": "Illustrated ox, sheep and bullock cart under a mango tree",
       "target": "experiences"
@@ -97,7 +97,7 @@
       "id": "stillness",
       "name": "Stillness",
       "title": "A little space.\nJust for you.",
-      "description": "Quiet mornings, guided meditation and the boulder hills beyond. Make room for a slower kind of day.",
+      "description": "Morning and evening guided meditation, time in the meditation hall, and sunrise mountain meditation for retreat guests. The wellness retreat includes a private room, all meals, farm experiences and space to follow your own pace.",
       "image": "/assets/retreat/art-stillness-vignette-v1.webp",
       "imageAlt": "Illustrated granite boulders and a quiet meditation clearing",
       "target": "experiences"
@@ -136,37 +136,37 @@
     {
       "id": "walk",
       "name": "Wander the farm",
-      "description": "Coconut groves, orchards and seasonal fruit. Explore the working farm with your hosts.",
+      "description": "Walk through coconut groves and orchards with the farm hosts. Learn about the working farm, discover the trees and taste seasonal fruit when available. Nature and farm walks are included with every visit package.",
       "icon": "leaf"
     },
     {
       "id": "meditation",
       "name": "Make room for stillness",
-      "description": "Guided meditation and wellness activities, with sunrise mountain meditation for retreat guests.",
+      "description": "Join morning and evening guided meditation and wellness activities. Meditation & Wellness guests have meditation hall access and sunrise mountain meditation, together with their room, meals and farm experiences.",
       "icon": "sun"
     },
     {
       "id": "animals",
       "name": "Meet the animals",
-      "description": "Spend time with the ox and sheep, with feeding and grazing alongside your hosts.",
+      "description": "Meet the ox and sheep alongside the hosts. Spend time feeding and grazing with the animals and discovering the everyday rhythm of the farm. This experience is included with all three packages.",
       "icon": "heart"
     },
     {
       "id": "food",
       "name": "Eat with the seasons",
-      "description": "Strictly vegetarian meals, with organic, farm-grown produce and seasonal flavours.",
+      "description": "Share strictly vegetarian meals made using organic, farm-grown produce and seasonal flavours. Day visits include lunch, high tea and snacks; overnight packages include all meals. Aroha is alcohol-free.",
       "icon": "bowl"
     },
     {
       "id": "pool",
       "name": "Take an unhurried swim",
-      "description": "Pool access is included with every visit package. Leave some time to simply relax.",
+      "description": "Leave time for an unhurried swim. Swimming pool access is included with Day Visit, Farm Stay and Meditation & Wellness. Join the other activities that interest you and relax between them.",
       "icon": "water"
     },
     {
       "id": "evenings",
       "name": "Stay for the stories",
-      "description": "Campfire evenings for overnight guests. Conversations, company and the open sky.",
+      "description": "Overnight guests can gather around the campfire for conversations and stories under the open sky. Farm Stay guests can discuss an optional mountain visit at extra cost; the wellness retreat includes the mountain experience.",
       "icon": "fire"
     }
   ],
@@ -179,13 +179,17 @@
       "unit": "per person",
       "overnight": false,
       "featured": false,
-      "description": "Arrive after breakfast. Leave after evening chai.",
+      "description": "A full day on the farm: arrive after breakfast and leave after evening chai. Includes lunch, high tea, snacks and farm experiences; no overnight room.",
       "inclusions": [
-        "Lunch, high tea & snacks",
-        "Swimming pool & farm walk",
-        "Seasonal fruit & animal experiences"
+        "Vegetarian lunch from farm-grown produce",
+        "High tea and snacks",
+        "Swimming pool access",
+        "Nature / farm walk with hosts",
+        "Ox and sheep experience",
+        "Organic, seasonal farm fruits",
+        "Farm hosts and basic housekeeping"
       ],
-      "note": "No overnight room. Children 5–10: ₹500. Below 5: free when sharing with parents."
+      "note": "Children 5–10: ₹500. Below 5: free when sharing with parents. Group of 10: ₹12,000; each additional guest ₹1,500. No overnight room."
     },
     {
       "id": "stay",
@@ -195,13 +199,18 @@
       "unit": "per person, per night",
       "overnight": true,
       "featured": true,
-      "description": "Call the farm home for a little longer.",
+      "description": "Two days and one night in a private, en-suite room, with all meals and time to enjoy the farm at your own pace.",
       "inclusions": [
-        "Private en-suite room & all meals",
-        "Swimming, walks & farm experiences",
-        "Campfire evening"
+        "Private en-suite room",
+        "Breakfast, lunch, dinner, high tea and snacks",
+        "Swimming pool access",
+        "Nature / farm walk with hosts",
+        "Ox and sheep experience",
+        "Organic, seasonal farm fruits",
+        "Campfire evening",
+        "Farm hosts and housekeeping"
       ],
-      "note": "Mountain visit optional at extra cost. Children 5–10: ₹1,500 per night."
+      "note": "Mountain visit optional at extra cost. Children 5–10: ₹1,500 per night. Below 5: free when sharing with parents. Group of 10: ₹30,000 for 1 night / 2 days; each additional guest ₹2,500."
     },
     {
       "id": "wellness",
@@ -211,13 +220,20 @@
       "unit": "per person, per night",
       "overnight": true,
       "featured": false,
-      "description": "The farm stay, with more space for stillness.",
+      "description": "Two days and one night combining the Farm Stay with guided meditation, wellness activities and sunrise mountain meditation.",
       "inclusions": [
-        "Everything in Farm Stay",
-        "Meditation hall & guided sessions",
-        "Wellness & sunrise mountain meditation"
+        "Private en-suite room and all meals",
+        "Swimming pool access",
+        "Nature / farm walk with hosts",
+        "Ox and sheep experience",
+        "Organic, seasonal farm fruits",
+        "Campfire evening",
+        "Meditation hall access and guided meditation",
+        "Wellness activities",
+        "Mountain visit and sunrise mountain meditation",
+        "Farm hosts and housekeeping"
       ],
-      "note": "Children 5–10: ₹1,500 per night. Below 5: free when sharing with parents."
+      "note": "Children 5–10: ₹1,500 per night. Below 5: free when sharing with parents. Group of 10: ₹40,000 for 1 night / 2 days; each additional guest ₹3,200."
     }
   ],
   "gallery": [

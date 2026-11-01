@@ -60,10 +60,12 @@ Mobile navigation uses a fixed safe-area header, independently scrolling drawer,
 
 Hrudhi is **0.3.0-alpha.1**: original-art cutout actions plus four native Photoshop studies. Native performance and family review remain incomplete. `npm run build` builds the production alpha distribution; `node scripts/build-original-preview.mjs` builds a local preview. Original masters remain immutable.
 
-## Aroha public website (0.2.0) and host studio
+## Aroha public website (0.5.0 preview) and host studio
 
 The shared build now includes the enquiry-led retreat website at `/`, the Google-authenticated host studio at `/admin/`, and a validated Firebase Functions API at `/api/v1/`. Natura remains at `/design/`. Never deploy a design-only output over the shared site. `npm run build:website` builds the root site while retaining an existing design output; `npm run build` builds both.
 
 Run `npm ci`, `npm ci --prefix functions`, `npm run test:website`, then the documented emulator tests. Production uses Firestore and Cloud Storage in asia-south2 and requires Blaze. Owner identities are supplied via ignored runtime env; Google sign-in alone does not grant editing access. Invitations are copied/shared by administrators and do not send email. Content edits persist as private drafts and require an explicit versioned publication.
 
 See [website plan](docs/website-plan.md), [API contract](docs/api/aroha-v1.md), [photography](docs/website-photography.md), and [observability boundaries](docs/website-observability.md). Initial copy/tariffs follow owner-supplied material and remain editable. No availability, payment, room hold or instant confirmation is implemented.
+
+The 0.5 preview replaces the procedural entry scene with a film-led tour using all 35 supplied photographs and 21 films, an indicative host-described route and a tree-house interior sequence. New tour/journal/video fields are editable through the protected studio after the additive API and Storage-rule rollout. See [current direction and limits](docs/website-film-direction.md) and current release evidence; preview publication is separate from production promotion.
