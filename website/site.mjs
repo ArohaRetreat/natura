@@ -210,9 +210,12 @@ function bind() {
   root.querySelectorAll("[data-stop]").forEach(
     (b) =>
       (b.onclick = () => {
-        const el = document.getElementById("journey"),
-          i = Number(b.dataset.stop),
-          top =
+        const el = document.getElementById("journey"), i = Number(b.dataset.stop);
+        if (simple || !content.theme.motion || motion.matches) {
+          el?.querySelectorAll(".simple-chapters article")[i]?.scrollIntoView({behavior:"instant",block:"start"});
+          return;
+        }
+        const top =
             scrollY +
             el.getBoundingClientRect().top +
             ((el.offsetHeight - innerHeight) * (i + 0.1)) /
