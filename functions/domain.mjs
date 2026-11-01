@@ -58,12 +58,12 @@ const text = (v, max = 3000) => {
     throw new DomainError("INVALID_CONTENT");
   return v;
 };
-const obj = (v, keys) => {
+const obj = (v, keys, optional = []) => {
   if (
     !v ||
     Array.isArray(v) ||
     typeof v !== "object" ||
-    Object.keys(v).some((k) => !keys.includes(k)) ||
+    Object.keys(v).some((k) => !keys.includes(k) && !optional.includes(k)) ||
     keys.some((k) => !(k in v))
   )
     throw new DomainError("INVALID_CONTENT");
@@ -139,12 +139,15 @@ export function validateContent(c) {
     "primaryLabel",
     "secondaryLabel",
     "mobileImage",
-  ]);
+  ], ["worldImage", "eveningImage", "foregroundImage"]);
   Object.entries(c.hero)
     .filter(([k]) => k !== "image")
     .forEach(([, v]) => text(v, 1500));
   image(c.hero);
   imageUrl(c.hero.mobileImage);
+  for (const key of ["worldImage", "eveningImage", "foregroundImage"]) {
+    if (key in c.hero) imageUrl(c.hero[key]);
+  }
   obj(c.intro, ["eyebrow", "title", "description", "image", "imageAlt"]);
   Object.entries(c.intro)
     .filter(([k]) => k !== "image")

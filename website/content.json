@@ -9,13 +9,16 @@
   },
   "hero": {
     "eyebrow": "HRUDHI FARMS · KANAKAPURA",
-    "title": "A little closer\nto what matters.",
-    "description": "Among coconut palms and quiet boulder hills, find your own rhythm. A working farm. A place to pause. A welcome that feels like home.",
+    "title": "A little\ncloser.",
+    "description": "Leave the rush at the gate. A working farm, a quiet corner, and a little room to breathe.",
     "image": "/assets/retreat/hero-desktop.webp",
     "imageAlt": "Red-roofed A-frame cottages beneath coconut palms at Aroha",
-    "primaryLabel": "Start your journey",
+    "primaryLabel": "Wander inside",
     "secondaryLabel": "Plan a visit",
-    "mobileImage": "/assets/retreat/hero-mobile.webp"
+    "mobileImage": "/assets/retreat/hero-mobile.webp",
+    "worldImage": "/assets/retreat/art-world-dawn-v1.webp",
+    "eveningImage": "/assets/retreat/art-world-dusk-v1.webp",
+    "foregroundImage": "/assets/retreat/art-palm-foreground-v1.webp"
   },
   "intro": {
     "eyebrow": "YOUR OWN LITTLE CORNER OF THE EARTH",
@@ -27,8 +30,8 @@
   "sections": [
     {
       "id": "journey",
-      "title": "Take the slower way in.",
-      "eyebrow": "A WALK THROUGH AROHA",
+      "title": "Find your own\nkind of quiet.",
+      "eyebrow": "ONE FARM. MANY WAYS TO FEEL AT HOME.",
       "visible": true
     },
     {
@@ -65,11 +68,11 @@
   "journey": [
     {
       "id": "path",
-      "name": "The path",
+      "name": "The farm",
       "title": "Let the day\nfind its own pace.",
       "description": "Follow the palms, the stone paths and the small discoveries along the way. There is no hurry here.",
-      "image": "/assets/retreat/DSC_3916.webp",
-      "imageAlt": "A sunlit farm pathway lined with palms and stone walls",
+      "image": "/assets/retreat/art-world-dawn-v1.webp",
+      "imageAlt": "Artistic impression of Aroha: cottages, palms, pond and farm life",
       "target": "experiences"
     },
     {
@@ -77,8 +80,8 @@
       "name": "The cottages",
       "title": "A quiet corner,\njust for you.",
       "description": "Red roofs among the palms. Private spaces for slow mornings and an unhurried night on the farm.",
-      "image": "/assets/retreat/DSC_3795.webp",
-      "imageAlt": "A-frame cottage exteriors on the farm",
+      "image": "/assets/retreat/art-stay-vignette-v1.webp",
+      "imageAlt": "Illustrated impression of a red-roofed cottage beneath coconut palms",
       "target": "cottages"
     },
     {
@@ -86,18 +89,18 @@
       "name": "Farm life",
       "title": "Meet the farm.\nAnd its family.",
       "description": "Walk the groves, meet the animals with your hosts, and discover the everyday pleasures of a working farm.",
-      "image": "/assets/retreat/DSC_3823.webp",
-      "imageAlt": "Farm cattle beside their shelter",
+      "image": "/assets/retreat/art-farm-vignette-v1.webp",
+      "imageAlt": "Illustrated ox, sheep and bullock cart under a mango tree",
       "target": "experiences"
     },
     {
-      "id": "evening",
-      "name": "Stay awhile",
-      "title": "Let evening\narrive gently.",
-      "description": "Warm lights, a little conversation and time together. Some days deserve a slower ending.",
-      "image": "/assets/retreat/DSC_3780.webp",
-      "imageAlt": "A-frame cottages illuminated in the evening",
-      "target": "packages"
+      "id": "stillness",
+      "name": "Stillness",
+      "title": "A little space.\nJust for you.",
+      "description": "Quiet mornings, guided meditation and the boulder hills beyond. Make room for a slower kind of day.",
+      "image": "/assets/retreat/art-stillness-vignette-v1.webp",
+      "imageAlt": "Illustrated granite boulders and a quiet meditation clearing",
+      "target": "experiences"
     }
   ],
   "cottages": [

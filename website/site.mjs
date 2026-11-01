@@ -13,7 +13,8 @@ let content = initial,
   paintQueued = false,
   pendingContent,
   cinematic,
-  afterSunset = false;
+  afterSunset = false,
+  dayProgress = 0;
 const root = document.getElementById("site"),
   motion = matchMedia("(prefers-reduced-motion: reduce)"),
   preview = new URLSearchParams(location.search).has("preview");
@@ -51,6 +52,7 @@ function render() {
   cinematic = createCinematic(
     root,
     !simple && content.theme.motion && !motion.matches,
+    requestPaint,
   );
   window.scrollTo({ top: y, behavior: "instant" });
   requestAnimationFrame(paint);
@@ -101,16 +103,10 @@ function paint() {
     ),
   );
 }
-window.addEventListener(
-  "scroll",
-  () => {
-    if (!paintQueued) {
-      paintQueued = true;
-      requestAnimationFrame(paint);
-    }
-  },
-  { passive: true },
-);
+function requestPaint() {
+  if(!paintQueued) {paintQueued=true;requestAnimationFrame(paint);}
+}
+window.addEventListener("scroll",requestPaint,{passive:true});
 window.addEventListener("resize", paint);
 function show(markup) {
   lastFocus = document.activeElement;
@@ -176,32 +172,34 @@ function enquire(packageId = "", cottageId = "") {
   };
 }
 function bind() {
-  const ambience = document.getElementById("ambience-toggle");
-  ambience.setAttribute("aria-pressed", String(afterSunset));
-  document.getElementById("ambience-label").textContent = afterSunset
-    ? "Morning light"
-    : "After sunset";
-  ambience.onclick = () => {
-    afterSunset = !afterSunset;
-    document.body.classList.toggle("after-sunset", afterSunset);
-    ambience.setAttribute("aria-pressed", String(afterSunset));
-    document.getElementById("ambience-label").textContent = afterSunset
-      ? "Morning light"
-      : "After sunset";
+  const ambience = document.getElementById("ambience-toggle"), clock = document.getElementById("world-time");
+  const changeLight = value => {
+    dayProgress = Math.max(0,Math.min(1,value));
+    afterSunset = dayProgress > .5;
+    document.body.classList.toggle("after-sunset",afterSunset);
+    root.querySelector(".world-night").style.opacity = dayProgress;
+    clock.value = Math.round(dayProgress*100);
+    clock.setAttribute("aria-valuetext",dayProgress < .25 ? "Morning" : dayProgress > .75 ? "Evening" : "Afternoon");
+    ambience.setAttribute("aria-pressed",String(afterSunset));
+    ambience.setAttribute("aria-label",afterSunset?"Switch to morning":"Switch to evening");
+    document.getElementById("ambience-label").textContent=afterSunset?"☼":"◐";
   };
+  ambience.onclick=()=>changeLight(afterSunset?0:1);
+  clock.oninput=()=>changeLight(Number(clock.value)/100);
+  changeLight(dayProgress);
+  root.querySelectorAll("[data-world-stop]").forEach(b=>b.onclick=()=>root.querySelector(`[data-stop="${b.dataset.worldStop}"]`)?.click());
   activeStop = -1;
   setStop(0);
   document.getElementById("view-toggle").onclick = () => {
+    const sections = [...root.querySelectorAll("main > section")];
+    const current = sections.find(el => { const r=el.getBoundingClientRect(); return r.top <= 120 && r.bottom > 120; }) || sections[0];
+    const id = current?.id, offset = current?.getBoundingClientRect().top || 0;
     simple = !simple;
     setPreference("aroha-view", simple ? "simple" : "journey");
-    const anchor = document.getElementById("journey"),
-      wasJourney = anchor?.getBoundingClientRect().top < 0;
     render();
+    const replacement = document.getElementById(id);
+    if (replacement) window.scrollTo({top: scrollY + replacement.getBoundingClientRect().top - (id === "journey" ? 100 : offset), behavior:"instant"});
     document.getElementById("view-toggle").focus({ preventScroll: true });
-    if (wasJourney)
-      document
-        .getElementById("journey")
-        ?.scrollIntoView({ behavior: "instant" });
   };
   root
     .querySelectorAll("[data-cottage]")
@@ -257,20 +255,7 @@ function bind() {
         });
       }),
   );
-  document.getElementById("start-journey").onclick = (e) => {
-    track("journey.started");
-    if (!simple && content.theme.motion && !motion.matches) {
-      e.preventDefault();
-      const arrival = root.querySelector(".arrival");
-      window.scrollTo({
-        top:
-          scrollY +
-          arrival.getBoundingClientRect().top +
-          (arrival.offsetHeight - innerHeight) * 0.94,
-        behavior: "smooth",
-      });
-    }
-  };
+  document.getElementById("start-journey").onclick = () => track("journey.started");
   const dialog = document.getElementById("details-dialog");
   document.querySelector(".dialog-close").onclick = () => dialog.close();
   dialog.onclose = () => {

@@ -36,6 +36,9 @@ const tabs = {
 const labels = {
   schemaVersion: "Schema version",
   mobileImage: "Mobile hero photograph URL",
+  worldImage: "Illustrated farm world",
+  eveningImage: "Evening illustrated world",
+  foregroundImage: "Foreground botanical artwork",
   imageAlt: "Image description for accessibility",
   image: "Photograph URL",
   images: "Interior photographs",
@@ -144,7 +147,7 @@ function field(value, path, key) {
     return `<label class="field">Stable identifier<input data-path="${esc(path)}" value="${esc(value)}" ${path.startsWith("sections.") ? "readonly" : disabled}><small>Lowercase letters, numbers and hyphens. Keep existing identifiers when editing.</small></label>`;
   const imageField =
     key === "image" ||
-    key === "mobileImage" ||
+    ["mobileImage", "worldImage", "eveningImage", "foregroundImage"].includes(key) ||
     (path.startsWith("cottages.") && path.includes(".images."));
   return `<label class="field">${esc(label)}${["description", "detail", "answer", "message", "note", "priceNote", "inclusions"].includes(key) || String(value).includes("\n") ? `<textarea rows="3" data-path="${esc(path)}" ${disabled}>${esc(value)}</textarea>` : `<input type="${typeof value === "number" ? "number" : key === "email" ? "email" : key === "mapUrl" ? "url" : "text"}" data-path="${esc(path)}" value="${esc(value)}" ${typeof value === "number" ? 'min="0" step="1"' : ""} ${disabled}>`}</label>${imageField ? `<div class="media-field">${value ? `<img src="${esc(value)}" alt="Selected photograph preview" loading="lazy">` : ""}${disabled ? "" : `<label class="upload-button">Upload photograph<input type="file" accept="image/jpeg,image/png,image/webp,image/avif" data-upload="${esc(path)}"></label>`}<small>Website media is public immediately after upload. JPEG, PNG, WebP or AVIF; under 10 MB. Originals stay on your device.</small></div>` : ""}`;
 }
@@ -335,6 +338,7 @@ function renderEditor() {
       const file = e.target.files[0];
       if (!file || file.size > 200000) throw Error("INVALID_BACKUP");
       draft = validateContent(JSON.parse(await file.text()));
+      draft.hero = { ...defaults.hero, ...draft.hero };
       dirty = true;
       shell();
       notice("Backup loaded into the editor. Review before saving.");
@@ -382,6 +386,7 @@ async function save() {
 async function load() {
   const r = await api("/draft");
   draft = structuredClone(r.draft?.content || defaults);
+  draft.hero = { ...defaults.hero, ...draft.hero };
   version = r.draft?.version || 0;
   dirty = false;
 }
