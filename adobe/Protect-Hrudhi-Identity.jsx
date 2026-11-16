@@ -1,0 +1,11 @@
+#target photoshop
+(function(){
+ var out=Folder(File($.fileName).parent+'/output'),target=File(out+'/Hrudhi-explorer-warm-expression-study-v5.psd');if(target.exists)throw Error('Refusing to overwrite reviewed study.');var units=app.preferences.rulerUnits,dialogs=app.displayDialogs;app.preferences.rulerUnits=Units.PIXELS;app.displayDialogs=DialogModes.NO;
+ try{var source=app.open(File(out+'/Hrudhi-explorer-warm-expression-study-v4.psd')),doc=source.duplicate('Hrudhi - protected original face'),head=doc.layerSets.getByName('+Hrudhi').layerSets.getByName('Head'),master=head.artLayers.getByName('Original identity - untouched'),states=head.layerSets.getByName('Expression studies - review required');
+ function activate(l){var r=new ActionReference();r.putIdentifier(charIDToTypeID('Lyr '),l.id);var d=new ActionDescriptor();d.putReference(charIDToTypeID('null'),r);executeAction(charIDToTypeID('slct'),d,DialogModes.NO);}
+ var protectedParts=[['Original left eye - protected',[458,248,522,296]],['Original right eye - protected',[561,203,612,260]],['Original nose - protected',[537,249,585,289]]];
+ for(var i=0;i<protectedParts.length;i++){var a=protectedParts[i],l=master.duplicate(head,ElementPlacement.INSIDE);l.name=a[0];l.visible=true;activate(l);var b=a[1];doc.selection.select([[b[0],b[1]],[b[2],b[1]],[b[2],b[3]],[b[0],b[3]]],SelectionType.REPLACE);doc.selection.invert();doc.selection.clear();doc.selection.deselect();}
+ var names=['Neutral','Happy','Curious','Thoughtful'];for(var n=0;n<names.length;n++){for(var j=0;j<states.layerSets.length;j++)states.layerSets[j].visible=states.layerSets[j].name===names[n];var slug=names[n].toLowerCase();doc.saveAs(File(out+'/Hrudhi-expression-'+slug+'-v5.png'),new PNGSaveOptions(),true,Extension.LOWERCASE);var crop=doc.duplicate('Face comparison');crop.crop([355,125,650,390]);crop.saveAs(File(out+'/Hrudhi-face-'+slug+'-v5.png'),new PNGSaveOptions(),true,Extension.LOWERCASE);crop.close(SaveOptions.DONOTSAVECHANGES);app.activeDocument=doc;}
+ for(var j=0;j<states.layerSets.length;j++)states.layerSets[j].visible=states.layerSets[j].name==='Neutral';var opts=new PhotoshopSaveOptions();opts.layers=true;opts.embedColorProfile=true;doc.saveAs(target,opts,false,Extension.LOWERCASE);
+ }finally{app.preferences.rulerUnits=units;app.displayDialogs=dialogs;}
+})();
